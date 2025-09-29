@@ -1,0 +1,378 @@
+{
+    "recipes": [{
+            "id": "trickal.talktoerpin",
+            "actionid": "trickal.talk",
+            "craftable": true,
+			"extantreqs": {
+				"trickal.prophecy": -1
+			},
+            "description": "\"우씨! 아니 어떻게 된 게 엘리아스의 여왕도 누군지 못 알아봐?\"",
+            "label": "에르핀과 대화를 한다.",
+            "maxexecutions": 1,
+			"$priority": -1,
+            "requirements": {
+                "trickal.erpin": 1
+            },
+            "startdescription": "자신을 에르핀이라 부르는, 왕관을 쓰고 있는 작은 요정에게 말을 건다.",
+            "warmup": 10
+        }, {
+            "id": "trickal.talktoner",
+            "actionid": "trickal.talk",
+			"extantreqs": {
+				"trickal.prophecy": -1
+			},
+            "craftable": true,
+            "description": "\"인..간? 당신이 정말 인간이란 말씀이신가요? 예언에 따르면 당신은 우릴 구원하실 구원자에요!\"\n네르라고 불리는 요정은 당신을 세계수 교단이라 불리는 곳으로 안내한다.",
+            "label": "네르와 대화를 한다.",
+            "maxexecutions": 1,
+			"$priority": -1,
+            "requirements": {
+                "trickal.ner": 1
+            },
+			"effects" : {
+				"trickal.headquarters": 1
+			},
+            "startdescription": "자신을 네르라 부르는, 도끼를 든 작은 요정에게 말을 건다.",
+            "warmup": 10
+		},
+		{
+            "id": "trickal.talktobloomin",
+            "actionid": "trickal.talk",
+            "craftable": true,
+            "description": "\"안녕! 나는 세계수의 부하. 영춘이라고 해!\"",
+            "label": "껌뭉치와 대화를 한다.",
+            "maxexecutions": 1,
+            "requirements": {
+                "trickal.bloomy": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.talktobloomin2",
+                    "chance": 100
+                }
+            ],
+            "startdescription": "갑자기 눈 앞에 나타난 껌뭉치 같은 생물에 말을 건다.",
+            "warmup": 3
+        },
+		{
+            "id": "trickal.talktobloomin2",
+            "actionid": "trickal.talk",
+            "description": ".",
+            "label": "영춘과 대화를 한다.",
+            "linked": [
+                {
+                    "id": "trickal.talktobloomin3",
+                    "chance": 100
+                }
+            ],
+            "startdescription": "\"안녕! 나는 영춘이라고 해! 세계수 대장의 부하같은 존재지!\"\n자신을 영춘이라 소개한 이 존재는 말을 계속한다.",
+            "warmup": 3
+        },
+		{
+            "id": "trickal.talktobloomin3",
+            "actionid": "trickal.talk",
+            "description": "\"이제 세계수 교단의 교주로서 본격적인 활동을 시작할거야. 또 궁금한게 있으면 나에게 물어봐!\" [이제 시간이 흐르기 시작한다.]",
+            "label": "영춘과 대화를 한다.",
+            "effects": {
+                "trickal.culttree": 1,
+                "trickal.candy": 1,
+                "trickal.starcandy": 1,
+                "trickal.elif": 99
+            },
+            "inductions": [{
+                    "id": "trickal.drawseason",
+                },{
+                    "id": "trickal.addwork"
+                }
+            ],
+            "startdescription": "\"방금 대장님이 너에게 생각을 읽는 힘을 주셨어. 세계수 교단을 이끌어가려면 도움이 될꺼야!\"",
+            "warmup": 3
+        },
+        {
+            "id": "trickal.talktofollower",
+            "label": "추종자에게 교단을 위한 일을 시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": -1,
+                "trickal.follower": 1
+            },
+            "slots": [
+                {
+                    "id": "Subject",
+                    "label": "대화 주제",
+                    "description": "교단 업무를 시키려면 교단에 대해, 아니면 다른 주제를 꺼내야 한다.",
+                    "required": {
+                        "society": 1,
+                        "location": 1
+                    }
+                }
+            ],
+			"alt": [
+				{
+                    "id": "trickal.adventure.sheep",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.adventure.potion",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.adventure.bread",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.adventure.mart",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.adventure.owl",
+                    "chance": 100
+                }
+            ],
+            "startdescription": "추종자를 교단의 방에 불러들였다. [교단 카드를 올리면 교단 업무를 시킬 수 있습니다. 그 외에도 다른 것들을 올릴 수 있습니다.]",
+            "description": "@#trickal.erpin_|아이씨, 용건이 있을때 부르라고!#trickal.ner_|알겠습니다. 또 부를 일이 있으면 말씀하세요.#trickal.ashur_|전 여왕님 먹을 빵 굽느라 바쁘다고요!#trickal.tig_|부를 일 없으면 부르지마! 시간만 낭비했잖아!#|딱히 할 말이 없어서 돌려보냈다.@",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.adventure.sheep",
+            "label": "모험회: 대관절 양떼목장",
+            "actionid": "trickal.talk",
+            "startdescription": "내 신도를 시켜 교단을 위해 아르바이트를 시킬 수 있다.",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+				"trickal.beast": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.adventure.sheep.end",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.adventure.sheep.end",
+            "label": "알바를 수행한 결과...",
+            "actionid": "trickal.talk",
+            "startdescription": "엘리아스의 양들은 다루기 힘들다. 일부는 무서운 기술을 쓰기도 한다.",
+            "description": ".",
+			"alt": [
+				{
+                    "chance": 30,
+					"description": "엘리아스의 양들은 다루기 힘들다. 일부는 무서운 기술을 쓰기도 한다.\n대성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.sheep": 3
+					}
+                },
+				{
+                    "chance": 70,
+					"description": "엘리아스의 양들은 다루기 힘들다. 일부는 무서운 기술을 쓰기도 한다.\n성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.sheep": 2
+					}
+                },
+				{
+                    "chance": 100,
+					"description": "엘리아스의 양들은 다루기 힘들다. 일부는 무서운 기술을 쓰기도 한다.\n실패!",
+					"deckeffects": {
+						"trickal.adventuredeck.sheep": 1
+					}
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.adventure.potion",
+            "label": "모험회: 포션 실험 알바",
+            "actionid": "trickal.talk",
+            "startdescription": "내 신도를 시켜 교단을 위해 아르바이트를 시킬 수 있다.",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+				"trickal.witch": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.adventure.potion.end",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.adventure.potion.end",
+            "label": "알바를 수행한 결과...",
+            "actionid": "trickal.talk",
+            "startdescription": "엘리아스에는 죽음이란 개념이 없기때문에 임상 실험에 더 적극적이다. 아쉽게도 그 사실이 알바생의 고통을 덜어주진 못한다.",
+            "description": ".",
+			"alt": [
+				{
+                    "chance": 30,
+					"description": "엘리아스에는 죽음이란 개념이 없기때문에 임상 실험에 더 적극적이다. 아쉽게도 그 사실이 알바생의 고통을 덜어주진 못한다.\n대성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.potion": 3
+					}
+                },
+				{
+                    "chance": 70,
+					"description": "엘리아스에는 죽음이란 개념이 없기때문에 임상 실험에 더 적극적이다. 아쉽게도 그 사실이 알바생의 고통을 덜어주진 못한다.\n성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.potion": 2
+					}
+                },
+				{
+                    "chance": 100,
+					"description": "엘리아스에는 죽음이란 개념이 없기때문에 임상 실험에 더 적극적이다. 아쉽게도 그 사실이 알바생의 고통을 덜어주진 못한다.\n실패!",
+					"deckeffects": {
+						"trickal.adventuredeck.potion": 1
+					}
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.adventure.bread",
+            "label": "모험회: 어제 팔리지 않은 빵 판매",
+            "actionid": "trickal.talk",
+            "startdescription": "내 신도를 시켜 교단을 위해 아르바이트를 시킬 수 있다.",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+				"trickal.fairy": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.adventure.bread.end",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.adventure.bread.end",
+            "label": "알바를 수행한 결과...",
+            "actionid": "trickal.talk",
+            "startdescription": "에심당의 빵이 팔리지 않고 남았다는 말은 두 가지중 하나를 의미한다. 여왕님이 가출중이거나, 갇혀서 밀린 일기를 쓰고있거나.",
+            "description": ".",
+			"alt": [
+				{
+                    "chance": 30,
+					"description": "에심당의 빵이 팔리지 않고 남았다는 말은 두 가지중 하나를 의미한다. 여왕님이 가출중이거나, 갇혀서 밀린 일기를 쓰고있거나.\n대성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.bread": 3
+					}
+                },
+				{
+                    "chance": 70,
+					"description": "에심당의 빵이 팔리지 않고 남았다는 말은 두 가지중 하나를 의미한다. 여왕님이 가출중이거나, 갇혀서 밀린 일기를 쓰고있거나.\n성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.bread": 2
+					}
+                },
+				{
+                    "chance": 100,
+					"description": "에심당의 빵이 팔리지 않고 남았다는 말은 두 가지중 하나를 의미한다. 여왕님이 가출중이거나, 갇혀서 밀린 일기를 쓰고있거나.\n실패!",
+					"deckeffects": {
+						"trickal.adventuredeck.bread": 1
+					}
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.adventure.mart",
+            "label": "모험회: 엘드 마트 강탈",
+            "actionid": "trickal.talk",
+            "startdescription": "내 신도를 시켜 교단을 위해 아르바이트를 시킬 수 있다.",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+				"trickal.elf": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.adventure.mart.end",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.adventure.mart.end",
+            "label": "알바를 수행한 결과...",
+            "actionid": "trickal.talk",
+            "startdescription": "엘프들의 마트에는 요리 재료보단 가공 식품이 대부분이다. 대부분의 가공 식품들은 훔칠 가치도 없다.",
+            "description": ".",
+			"alt": [
+				{
+                    "chance": 30,
+					"description": "엘프들의 마트에는 요리 재료보단 가공 식품이 대부분이다. 대부분의 가공 식품들은 훔칠 가치도 없다.\n대성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.mart": 3
+					}
+                },
+				{
+                    "chance": 70,
+					"description": "엘프들의 마트에는 요리 재료보단 가공 식품이 대부분이다. 대부분의 가공 식품들은 훔칠 가치도 없다.\n성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.mart": 2
+					}
+                },
+				{
+                    "chance": 100,
+					"description": "엘프들의 마트에는 요리 재료보단 가공 식품이 대부분이다. 대부분의 가공 식품들은 훔칠 가치도 없다.\n실패!",
+					"deckeffects": {
+						"trickal.adventuredeck.mart": 1
+					}
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.adventure.owl",
+            "label": "모험회: 일찍 일어나는 올빼미 조사",
+            "actionid": "trickal.talk",
+            "startdescription": "내 신도를 시켜 교단을 위해 아르바이트를 시킬 수 있다.",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+				"trickal.ghost": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.adventure.owl.end",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.adventure.owl.end",
+            "label": "알바를 수행한 결과...",
+            "actionid": "trickal.talk",
+            "startdescription": "대부분의 아르바이트는 사실 큰 의미가 없다. 일을 받은 추종자들은 단지 산책을 할 겸 땅에 떨어져있는 재료를 주워올 뿐이다.",
+            "description": ".",
+			"alt": [
+				{
+                    "chance": 30,
+					"description": "대부분의 아르바이트는 사실 큰 의미가 없다. 일을 받은 추종자들은 단지 산책을 할 겸 땅에 떨어져있는 재료를 주워올 뿐이다.\n대성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.owl": 3
+					}
+                },
+				{
+                    "chance": 70,
+					"description": "대부분의 아르바이트는 사실 큰 의미가 없다. 일을 받은 추종자들은 단지 산책을 할 겸 땅에 떨어져있는 재료를 주워올 뿐이다.\n성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.owl": 2
+					}
+                },
+				{
+                    "chance": 100,
+					"description": "대부분의 아르바이트는 사실 큰 의미가 없다. 일을 받은 추종자들은 단지 산책을 할 겸 땅에 떨어져있는 재료를 주워올 뿐이다.\n실패!",
+					"deckeffects": {
+						"trickal.adventuredeck.owl": 1
+					}
+                }
+            ],
+            "warmup": 30
+        }
+	]
+}

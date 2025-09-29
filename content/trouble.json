@@ -1,0 +1,313 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.troubletime",
+            "label": "불온한 기운",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.seasontrouble": 1
+            },
+            "slots": [
+                {
+                    "id": "Troublemaker",
+                    "label": "누군가?",
+                    "required": {
+                        "trickal.troublemaker": 1
+                    },
+                    "description": "무언가 꿍꿍이가 있는 자.",
+                    "greedy": true
+                }
+            ],
+            "startdescription": "엘리아스는 너무나도 조용하고 평화롭다. 이런 날일수록 누군가가 말썽을 일으키던데...",
+            "description": ".",
+            "craftable": false,
+            "warmup": 40,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.tig",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.error",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.tig",
+            "label": "모여라 사료스탕스!",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.tig_": 1
+            },
+            "slots": [
+                {
+                    "id": "Troublemaker1",
+                    "label": "지능 담당!",
+                    "required": {
+                        "trickal.rufo": 1,
+                        "trickal.rufo_": 1
+                    },
+                    "description": "사료스탕스의 책사.",
+                    "greedy": true
+                }
+            ],
+            "startdescription": "털 부락 마을의 문제아들이 무언가를 꾸미고 있다...",
+            "description": ".",
+            "warmup": 10,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.tig2",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.tig2",
+            "label": "모여라 사료스탕스!",
+            "actionid": "trickal.troubletime",
+            "slots": [
+                {
+                    "id": "Troublemaker",
+                    "label": "힘 담당!",
+                    "required": {
+                        "trickal.beni": 1,
+                        "trickal.beni_": 1
+                    },
+                    "description": "사료스탕스의 말단.",
+                    "greedy": true
+                }
+            ],
+            "startdescription": "털 부락 마을의 문제아들이 무언가를 꾸미고 있다...",
+            "description": ".",
+            "warmup": 10,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.tig3",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.tig3",
+            "label": "사료스탕스 활동개시",
+            "actionid": "trickal.troubletime", 
+            "alt": [
+				{
+					"requirements": {
+						"trickal.rufo_": 1,
+						"trickal.beni_": 1
+					},
+					"startdescription": "사료스탕스 최악의 3인방이 모두 모여버렸다. 이제 기도할 수 밖에 없다. [이 악동들을 혼줄 누군가가 있다면 이들을 막을 수 있을겁니다.]",
+					"linked": [
+						{
+							"id": "trickal.troubletime.tig.pillage",
+							"chance": 100
+						},
+						{
+							"id": "trickal.troubletime.tig.solve",
+							"chance": 100
+						}
+					]
+				},
+				{
+					"requirements": {
+						"trickal.rufo_": 1,
+						"trickal.beni_": -1
+					},
+					"startdescription": "티그는 골치아프지만 멍청하다. 거기에 루포의 꾀가 더해지면 재앙이 된다. [이 악동들을 혼내줄 누군가가 있다면 이들을 막을 수 있을겁니다.]",
+					"linked": [
+						{
+							"id": "trickal.troubletime.tig.pillage",
+							"chance": 100
+						},
+						{
+							"id": "trickal.troubletime.tig.solve",
+							"chance": 100
+						}
+					]
+				},
+				{
+					"requirements": {
+						"trickal.rufo_": -1,
+						"trickal.beni_": 1
+					},
+					"startdescription": "티그의 작전은 무식하지만, 군말없이 따르는 우직한 베니가 있다면 말이 달라진다. [이 악동들을 혼내줄 누군가가 있다면 이들을 막을 수 있을겁니다.]",
+					"linked": [
+						{
+							"id": "trickal.troubletime.tig.pillage",
+							"chance": 100
+						},
+						{
+							"id": "trickal.troubletime.tig.solve",
+							"chance": 100
+						}
+					]
+				}
+			],
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "해결사",
+                    "required": {
+                        "trickal.creature": 1
+                    },
+                    "description": "누가 이 문제아를 막을 수 있을 것인가."
+                }
+            ],
+            "startdescription": "비록 사료스탕스가 전부 모이진않았지만, 티그는 멈추지 않는다. [이 악동을 혼내줄 누군가가 있다면 이들을 막을 수 있을겁니다.]",
+            "description": ".",
+            "warmup": 30,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.tig.pillage",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.tig.solve",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.tig.pillage",
+            "requirements": {
+                "trickal.diana_": -1
+            },
+            "alt": [
+				{
+                    "id": "trickal.troubletime.pillage.rufo",
+                    "chance": 100,
+                    "additional": true,
+                    "expulsion": {
+                        "limit": 1,
+                        "filter": {
+                            "trickal.rufo_": 1
+                        }
+                    }
+                },
+                {
+                    "id": "trickal.troubletime.pillage.beni",
+                    "chance": 100,
+                    "additional": true,
+                    "expulsion": {
+                        "limit": 1,
+                        "filter": {
+                            "trickal.beni_": 1
+                        }
+                    }
+                }
+			],
+            "label": "사료스탕스 활동개시",
+            "actionid": "trickal.troubletime",
+            "startdescription": "사료스탕스에 의한 약탈이 시작된다!",
+            "description": ".",
+            "warmup": 10,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.pillage.tig",
+                    "chance": 100
+                }
+            ]
+		},
+		{
+            "id": "trickal.troubletime.pillage.tig",
+            "label": "약탈!",
+            "actionid": "trickal.troubletime",
+            "slots": [
+                {
+                    "id": "Pillage",
+                    "label": "약탈 대상",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "greedy": true,
+					"consumes": true
+                }
+            ],
+            "startdescription": "\"약탈할 시간이야! \"",
+            "description": ".",
+            "warmup": 30
+		},
+		{
+            "id": "trickal.troubletime.pillage.rufo",
+            "requirements": {
+                "trickal.rufo_": 1
+            },
+            "label": "약탈!",
+            "actionid": "trickal.troubletime.rufo",
+            "slots": [
+                {
+                    "id": "Pillage",
+                    "label": "약탈 대상",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "greedy": true,
+					"consumes": true
+                }
+            ],
+            "startdescription": "\"약탈인 것이다! \"",
+            "description": ".",
+            "warmup": 30
+		},
+		{
+            "id": "trickal.troubletime.pillage.beni",
+            "requirements": {
+                "trickal.beni_": 1
+            },
+            "label": "약탈!",
+            "actionid": "trickal.troubletime.beni",
+            "slots": [
+                {
+                    "id": "Pillage",
+                    "label": "약탈 대상",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "greedy": true,
+					"consumes": true
+                }
+            ],
+            "startdescription": "\"약탈 놀이 재밌어! \"",
+            "description": ".",
+            "warmup": 30
+		},
+		{
+            "id": "trickal.troubletime.tig.solve",
+            "requirements": {
+                "trickal.diana_": 1
+            },
+            "effects": {
+                "trickal.niceticket": 1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.tig",
+                    "mutate": "trickal.troublemaker",
+                    "level": -1,
+					"additive": true
+                }
+            ],
+            "label": "사료스탕스의 결말",
+            "actionid": "trickal.troubletime",
+            "startdescription": "디아나는 주동자인 티그에 따끔한 징계를 내린다. 이걸로 디아나가 있는 한 티그는 얌전히 지낼 것이다.",
+            "description": ".",
+            "warmup": 10
+        },
+        {
+            "id": "trickal.troubletime.end",
+            "label": "조용한 하루",
+            "requirements": {
+                "trickal.troublemaker": -1
+            },
+            "actionid": "trickal.troubletime",
+            "startdescription": ".",
+            "description": "기분 탓이었나, 엘리아스는 여전히 평화롭다."
+        }
+	]
+}

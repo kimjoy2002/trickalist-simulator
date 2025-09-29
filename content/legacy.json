@@ -1,0 +1,23 @@
+{
+    "legacies": [
+        {
+            "id": "butter.legacy",
+            "image": "butter.legacy",
+            "label": "트릭컬 리바이브",
+            "description": "컬티스트 시뮬레이터 트릭컬 리바이브 모드입니다.",
+            "startdescription": "낯선 장소로 전이해오다.",
+            "startingVerbId": "trickal.explore",
+            "availableWithoutEndingMatch": true,
+            "newstart": true,
+            "effects": {
+                "trickal.candy": 1
+            },
+            "statusbarelements": [
+                "trickal.candy",
+                "trickal.starcandy",
+                "trickal.elif",
+                "trickal.gold"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "verbs": [
+        {
+            "id": "trickal.talk",
+            "label": "대화",
+            "description": "심문, 협박, 구슬림, 지시, 전도.",
+            "slot": {
+                "id": "talk",
+                "label": "대상",
+                "description": "아군, 적, 아니면 그 경계에 있는 것.",
+                "required": {
+                    "trickal.creature": 1,
+					"society": 1,
+                    "trickal.elif": 1
+					
+                }
+            },
+			"icon": "talk"
+        },
+        {
+            "id": "trickal.explore",
+            "label": "탐사",
+            "description": "엘리아스 탐험. 탐사는 종종 예상치 모한 결과를 가져온다.",
+            "slot": {
+                "id": "location",
+                "label": "탐사",
+                "description": "탐험하고자 하는 장소, 혹은 탐험을 진행한 하수인. 혹은 아무런 목적없이 돌아다닐 수 도 있다.",
+                "required": {
+                    "trickal.candy": 1,
+                    "location": 1,
+                    "trickal.follower": 1
+                }
+            },
+			"icon": "explore"
+        },
+        {
+            "id": "trickal.study",
+            "label": "공부",
+            "description": "서적과 다른 보물들의 이해.",
+            "slot": {
+                "id": "study",
+                "label": "공부",
+                "description": "읽을 것. 배울 것. 거울로 삼아야할 것.",
+                "required": {
+                    "text": 1
+                }
+            },
+			"icon": "study"
+        },
+        {
+            "id": "trickal.mindreading",
+            "label": "속마음",
+            "description": "당신이 세계수로부터 받은 생각을 읽을 수 있는 능력.",
+            "slot": {
+                "id": "target",
+                "label": "대상",
+                "description": "생각이 가능한 생명체.",
+                "required": {
+                    "trickal.creature": 1
+                }
+            },
+			"icon": "dream"
+        },
+        {
+            "id": "trickal.work",
+            "label": "일",
+            "description": "교주로서 해야할 교단의 업무.",
+            "slot": {
+                "id": "work",
+                "label": "일",
+                "description": "해야할 일. 하고자 하는 의지. 체력.",
+                "required": {
+                    "trickal.candy": 1,
+                    "trickal.starcandy": 1,
+                    "trickal.job": 1,
+                    "hq": 1
+                }
+            },
+			"icon": "work"
+        },
+        {
+            "id": "trickal.time",
+            "label": "시간은 흘러가고...",
+            "description": "해시계의 그림자처럼 천천히, 그러나 멈추지 않고 다가오는 것.",
+            "slot": {
+                "id": "time",
+                "label": "Time"
+            },
+			"icon": "time"
+		}
+    ]
+}

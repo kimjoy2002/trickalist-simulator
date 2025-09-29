@@ -1,0 +1,68 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.explorecandy",
+            "label": "주변을 탐사하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.candy": 1,
+                "location": -1
+            },
+            "deckeffects": {
+                "trickal.exploreevents": 1
+            },
+            "aspects": {
+                "fatiguing": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.explorefindplace",
+                    "chance": 100
+                }
+            ],
+            "startdescription": "나는 엘리아스의 거리를 정처없이 돌아다니기로 했다.",
+            "description": ".",
+            "warmup": 10,
+            "craftable": true
+        },
+        {
+            "id": "trickal.explorefollower",
+            "label": "주변을 탐사하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.follower": 1,
+                "location": -1
+            },
+            "deckeffects": {
+                "trickal.exploreevents": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.explorefindplace",
+                    "chance": 100
+                }
+            ],
+            "startdescription": "나는 추종자들을 보내 기회가 될 만한 일을 찾을 생각이다.",
+            "description": ".",
+            "warmup": 10,
+            "craftable": true
+        },
+        {
+            "id": "trickal.explorefindplace",
+            "label": "못 보고 지나친 장소?",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "dayplaces": 1
+            },
+            "startdescription": "나는 뭔가 특이한 장소를 찾아낸 것 같다.",
+            "description": ".",
+            "deckeffects": {
+                "trickal.placedeck": 1
+            },
+            "effects": {
+                "season": -1
+            },
+            "warmup": 5
+        }
+    ]
+}

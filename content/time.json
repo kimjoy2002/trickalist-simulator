@@ -1,0 +1,327 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.drawseason",
+            "actionid": "trickal.time",
+            "deckeffects": {
+                "trickal.seasonevents": 1
+            },
+            "warmup": 0,
+            "linked": [
+                {
+                    "id": "trickal.needs",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.needs",
+            "label": "시간은 흘러가고...",
+            "actionid": "trickal.time",
+            "requirements": {},
+            "alt": [
+				{
+                    "id": "trickal.sickness",
+                    "chance": 100,
+                    "additional": true
+                },
+				{
+                    "id": "trickal.docutime.start",
+                    "chance": 100,
+                    "additional": true
+                },
+				{
+                    "id": "trickal.troubletime",
+                    "chance": 100,
+                    "additional": true
+                },
+                {
+                    "id": "trickal.indigence",
+                    "chance": 100,
+                    "additional": true
+                }
+			],
+            "startdescription": "시간은 해시계의 그림자처럼 천천히 흘러간다. 살아갈 자금이 필요하다. 그렇지 못하면 병들 것이다.",
+            "description": ".",
+            "warmup": 60,
+            "slots": [
+                {
+                    "id": "Expenses",
+                    "label": "지출",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "greedy": true,
+                    "description": "가게 주인은 받아야 할 돈을 요구한다. 지불하지 못하면 굶주릴 것이다."
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.discardseason",
+                    "chance": 100
+                }
+            ],
+            "signalimportantloop": true
+        },
+        {
+            "id": "trickal.discardseason",
+            "actionid": "time",
+            "effects": {
+                "season": -1,
+                "trickal.gold": -999
+            },
+            "warmup": 0,
+            "linked": [
+                {
+                    "id": "trickal.drawseason",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.sickness",
+            "label": "럭키!",
+            "actionid": "illhealth",
+            "startdescription": "돈을 주웠다!",
+            "description": "[이것은 디버깅용입니다.]",
+            "requirements": {
+                "trickal.seasonsickness": 1
+            },
+            "warmup": 60,
+            "effects": {
+                 "trickal.gold": 5
+            }
+        },
+        {
+            "id": "trickal.indigence",
+            "label": "재정 악화",
+            "actionid": "trickal.nerfury",
+            "requirements": {
+                "trickal.gold": -1
+            },
+            "description": "",
+            "startdescription": "내 힘으론 교단을 유지할 수 없다! 도움이 필요하다! [네르의 분노가 3개 넘게 쌓인채로 들키면 미래는 없을 것입니다.]",
+            "warmup": 30,
+            "slots": [
+                {
+                    "id": "ner",
+                    "label": "사제장",
+                    "required": {
+                        "trickal.ner": 1,
+                        "trickal.ner_": 1
+                    },
+                    "description": "공포의 사신이 온다.",
+                    "greedy": true
+                }
+            ],
+			"linked": [
+                {
+                    "id": "trickal.indigence.ner.fury",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.indigence.ner.gold",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.indigence.nergone",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.indigence.ner.gold",
+            "label": "네르가 교단을 도왔다",
+            "requirements": {
+                "trickal.ner_": 1
+            },
+            "actionid": "trickal.nerfury",
+            "effects": {
+                "trickal.gold": 3
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.ner_",
+                    "mutate": "trickal.nerfury",
+                    "level": 1,
+					"additive": true
+                }
+            ],
+            "startdescription": ".",
+            "description": "우선은 사제장의 비상금을 교단 재정에 보탰다. 네르의 따가운 시선이 아프다.",
+            "craftable": false
+        },
+        {
+            "id": "trickal.indigence.nergone",
+            "label": "아직은 들키지 않았다",
+            "requirements": {
+                "trickal.ner_": -1
+            },
+            "actionid": "trickal.nerfury",
+            "startdescription": ".",
+            "description": "잠깐의 평화. [교단의 재정상황을 네르에게 들키지 않았습니다. 최소한 지금은 안전합니다.]",
+            "craftable": false
+        },
+        {
+            "id": "trickal.indigence.ner.fury",
+            "label": "네르의 분노가 폭발한다!",
+            "actionid": "trickal.nerfury",
+            "requirements": {
+                "trickal.nerfury": 3
+            },
+            "slots": [
+                {
+                    "id": "Thoughts",
+                    "label": "제물",
+                    "required": {
+                        "trickal.sweet": 1
+                    },
+                    "greedy": true
+                }
+            ],
+            "effects": {},
+            "startdescription": "끝이 다가온다- [당장 네르의 분노를 잠재울 수 없다면, 모든 게 끝날 것입니다.]",
+            "description": "서비스 종료날이 다가왔다... ",
+            "warmup": 60,
+            "craftable": false,
+            "alt": [
+                {
+                    "id": "trickal.indigence.ner.furyend",
+                    "chance": 100
+                }
+            ],
+            "ending": "despairending",
+            "signalEndingFlavour": "Melancholy"
+        },
+        {
+            "id": "trickal.indigence.ner.furyend",
+            "label": "분노가 사그라들다",
+            "actionid": "despair",
+            "requirements": {
+                "trickal.sweet": 1
+            },
+            "effects": {
+                "trickal.sweet": -1
+            },
+            "startdescription": "달달한 음식이 사신의 분노를 중화시킨다. [제물 하나는 네르의 분노를 하나 없앨 수 있습니다.]",
+            "description": "사제장은 달콤함에 물러났다. 지금은 안전하다.",
+            "warmup": 10,
+            "craftable": false
+        },{
+            "id": "trickal.docutime.start",
+            "label": "아직 못 다한 일이 있나?",
+            "actionid": "trickal.docu",
+            "startdescription": "아직 처리 못한 일이 있다면, 새로운 서류를 감당하지 못할 것이다.",
+            "description": "새로운 서류들이 나를 바라보고 있다.",
+            "slots": {
+                "id": "Document",
+                "label": "아직 처리 못한 일들",
+                "required": {
+                    "trickal.document": 1
+                },
+                "description": "미루기만 하면 해결할 수 없다.",
+                "greedy": true
+            },
+            "warmup": 10,
+			"linked": [
+				{
+					"id": "trickal.muchwork",
+					"chance": 100
+				},
+				{
+					"id": "trickal.docutime.end",
+					"chance": 100
+				}
+			]
+        },{
+            "id": "trickal.docutime.end",
+            "label": "새로운 일이다",
+            "actionid": "trickal.docu",
+            "startdescription": "나는 이 끝나지 않는 서류 더미를 초점 없는 눈으로 바라본다.",
+            "description": ".",
+            "warmup": 3,
+            "effects": {
+                 "trickal.document": 3
+            }
+        },
+        {
+            "id": "trickal.muchwork",
+            "label": "업무 과다",
+            "actionid": "trickal.docu",
+            "requirements": {
+                "trickal.document": 1
+            },
+            "description": "지금은 서류가 중요한게 아니다!",
+            "startdescription": "쌓인 서류를 내 힘만으론 처리할 수 없다! 도움이 필요하다! [네르의 분노가 3개 넘게 쌓인채로 들키면 미래는 없을 것입니다.]",
+            "warmup": 30,
+            "slots": [
+                {
+                    "id": "ner",
+                    "label": "사제장",
+                    "required": {
+                        "trickal.ner": 1,
+                        "trickal.ner_": 1
+                    },
+                    "description": "공포의 사신이 온다.",
+                    "greedy": true
+                }
+            ],
+			"linked": [
+                {
+                    "id": "trickal.indigence.ner.fury",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.muchwork.ner.work",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.muchwork.nergone",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.muchwork.ner.work",
+            "label": "네르가 교단을 도왔다",
+            "requirements": {
+                "trickal.ner_": 1
+            },
+            "actionid": "trickal.docu",
+            "effects": {
+                "trickal.document": -99
+            },
+            "alt": [
+                {
+                    "id": "trickal.indigence.ner.fury",
+                    "chance": 100
+                }
+            ],
+            "mutations": [
+                {
+                    "filter": "trickal.ner_",
+                    "mutate": "trickal.nerfury",
+                    "level": 1,
+					"additive": true
+                }
+            ],
+            "startdescription": ".",
+            "description": "우선은 사제장이 나 대신 쌓인 서류를 처리했다. 네르의 따가운 시선이 아프다.",
+            "craftable": false
+        },
+        {
+            "id": "trickal.muchwork.nergone",
+            "label": "아직은 들키지 않았다",
+            "requirements": {
+                "trickal.ner_": -1
+            },
+            "effects": {
+                 "trickal.document": 3
+            },
+            "actionid": "trickal.docu",
+            "startdescription": ".",
+            "description": "언젠간 이 서류의 산이 나를 파멸시키겠지. [쌓인 서류를 네르에게 들키지 않았습니다. 최소한 지금은 안전합니다.]",
+            "craftable": false
+        }
+	]
+}

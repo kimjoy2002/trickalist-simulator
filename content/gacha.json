@@ -1,0 +1,369 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.newgacha",
+            "label": "사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "location": -1,
+				"society": -1
+            },
+            "startdescription": "세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "deckeffects": {
+                "trickal.gacha": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.newgacha.erpien",
+            "label": "에르피엔에서 사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "trickal.erpien": 1,
+				"society": -1
+            },
+            "startdescription": "에르피엔에서 세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle.erpien",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.newgacha.furvillage",
+            "label": "털 부락에서 사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "trickal.furvillage": 1,
+				"society": -1
+            },
+            "startdescription": "털 부락에서 세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle.furvillage",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.newgacha.monatium",
+            "label": "모나티엄에서 사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "trickal.monatium": 1,
+				"society": -1
+            },
+            "startdescription": "모나티엄에서 세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle.monatium",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.newgacha.elementalmountain",
+            "label": "정령산에서 사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "trickal.elementalmountain": 1,
+				"society": -1
+            },
+            "startdescription": "정령산에서 세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle.elementalmountain",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.newgacha.phantommarsh",
+            "label": "유령 늪에서 사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "trickal.phantommarsh": 1,
+				"society": -1
+            },
+            "startdescription": "유령 늪에서 세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle.phantommarsh",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.newgacha.dragoncave",
+            "label": "불길과 물길의 터에서 사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "trickal.dragoncave": 1,
+				"society": -1
+            },
+            "startdescription": "불길과 물길의 터에서 세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle.dragoncave",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.newgacha.witchkingdom",
+            "label": "벨리티엔에서 사도를 모집하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1,
+                "trickal.witchkingdom": 1,
+				"society": -1
+            },
+            "startdescription": "벨리티엔에서 세계수 교단에 입교할 사도를 모집한다. 물론, 내가 원하는 사도가 나온다는 보장은 없다.",
+            "description": ".",
+            "warmup": 6,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.gachaapostle.witchkingdom",
+                    "chance": 100
+                }
+            ]
+        },
+
+        {
+            "id": "trickal.gachaapostle",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+            "alt": [
+				{
+					"requirements": {
+						"trickal.erpien": 1
+					},
+					"deckeffects": {
+						"trickal.deckfairy": 1
+					},
+					"effects": {
+						"trickal.elif": -1,
+						"location": -1
+					},
+					"description": ""
+				},
+				{
+					"requirements": {
+						"trickal.furvillage": 1
+					},
+					"deckeffects": {
+						"trickal.deckbeast": 1
+					},
+					"effects": {
+						"trickal.elif": -1,
+						"location": -1
+					},
+					"description": ""
+				},
+				{
+					"requirements": {
+						"trickal.monatium": 1
+					},
+					"deckeffects": {
+						"trickal.deckelf": 1
+					},
+					"effects": {
+						"trickal.elif": -1,
+						"location": -1
+					},
+					"description": ""
+				},
+				{
+					"requirements": {
+						"trickal.elementalmountain": 1
+					},
+					"deckeffects": {
+						"trickal.deckelement": 1
+					},
+					"effects": {
+						"trickal.elif": -1,
+						"location": -1
+					},
+					"description": ""
+				},
+				{
+					"requirements": {
+						"trickal.phantommarsh": 1
+					},
+					"deckeffects": {
+						"trickal.deckghost": 1
+					},
+					"effects": {
+						"trickal.elif": -1,
+						"location": -1
+					},
+					"description": ""
+				},
+				{
+					"requirements": {
+						"trickal.dragoncave": 1
+					},
+					"deckeffects": {
+						"trickal.deckdragon": 1
+					},
+					"effects": {
+						"trickal.elif": -1,
+						"location": -1
+					},
+					"description": ""
+				},
+				{
+					"requirements": {
+						"trickal.witchkingdom": 1
+					},
+					"deckeffects": {
+						"trickal.deckwitch": 1
+					},
+					"effects": {
+						"trickal.elif": -1,
+						"location": -1
+					},
+					"description": ""
+				}
+			],
+		   	"description": "아무도 찾을 수 없었다.",
+            "warmup": 6
+		},
+
+        {
+            "id": "trickal.gachaapostle.erpien",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+			"deckeffects": {
+				"trickal.deckfairy": 1
+			},
+			"effects": {
+				"trickal.elif": -1
+			},
+			"description": "",
+            "warmup": 6
+		},
+		{
+            "id": "trickal.gachaapostle.furvillage",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+			"deckeffects": {
+				"trickal.deckbeast": 1
+			},
+			"effects": {
+				"trickal.elif": -1
+			},
+			"description": "",
+            "warmup": 6
+		},
+		{
+            "id": "trickal.gachaapostle.monatium",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+			"deckeffects": {
+				"trickal.deckelf": 1
+			},
+			"effects": {
+				"trickal.elif": -1
+			},
+			"description": "",
+            "warmup": 6
+		},
+		{
+            "id": "trickal.gachaapostle.elementalmountain",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+			"deckeffects": {
+				"trickal.deckelement": 1
+			},
+			"effects": {
+				"trickal.elif": -1
+			},
+			"description": "",
+            "warmup": 6
+		},
+		{
+            "id": "trickal.gachaapostle.phantommarsh",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+			"deckeffects": {
+				"trickal.deckghost": 1
+			},
+			"effects": {
+				"trickal.elif": -1
+			},
+			"description": "",
+            "warmup": 6
+		},
+		{
+            "id": "trickal.gachaapostle.dragoncave",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+			"deckeffects": {
+				"trickal.deckdragon": 1
+			},
+			"effects": {
+				"trickal.elif": -1
+			},
+			"description": "",
+            "warmup": 6
+		},
+		{
+            "id": "trickal.gachaapostle.witchkingdom",
+            "label": "새로운 사도?",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가가 교단의 문을 두드렸다.",
+			"deckeffects": {
+				"trickal.deckwitch": 1
+			},
+			"effects": {
+				"trickal.elif": -1
+			},
+			"description": "",
+            "warmup": 6
+		}
+	]
+
+}

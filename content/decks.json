@@ -1,0 +1,176 @@
+{
+    "decks": [
+        {
+            "id": "trickal.deckfairy",
+            "label": "에르피엔의 일원",
+            "description": "요정 왕국 에르피엔의 누군가.",
+            "spec": [
+                "trickal.ashur",
+				"trickal.mayo"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.deckbeast",
+            "label": "털 부락의 일원",
+            "description": "수인 숲 털 부락의 누군가.",
+            "spec": [
+				"trickal.butter",
+				"trickal.kommy",
+				"trickal.tig",
+				"trickal.rufo",
+				"trickal.beni",
+				"trickal.diana"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.deckelf",
+            "label": "모나티엄의 일원",
+            "description": "엘프 도시 모나티엄의 누군가.",
+            "spec": [
+				"trickal.elena"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.deckelement",
+            "label": "정령산의 일원",
+            "description": "정령산의 누군가.",
+            "spec": [
+				"trickal.gabia"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.deckghost",
+            "label": "유령 늪의 일원",
+            "description": "유령 늪의 누군가.",
+            "spec": [
+				"trickal.speaki"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.deckdragon",
+            "label": "불길과 물길의 터의 일원",
+            "description": "불길과 물길의 터의 누군가.",
+            "spec": [
+				"trickal.sist"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.deckwitch",
+            "label": "벨리티엔의 일원",
+            "description": "마녀 왕국 벨리티엔의 누군가.",
+            "spec": [
+				"trickal.levi"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.gacha",
+            "label": "가챠",
+            "description": "이건 실제로 가챠다!",
+            "spec": [
+                "trickal.erpien",
+                "trickal.furvillage",
+                "trickal.monatium",
+                "trickal.elementalmountain",
+                "trickal.phantommarsh",
+                "trickal.dragoncave",
+                "trickal.witchkingdom"
+            ],
+            "defaultcard": "contentment",
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.seasonevents",
+            "label": "날들",
+            "description": "시간이 흘러갈 때마다 예기치 못한 일이 일어날 것이다.",
+            "spec": [
+                "trickal.seasonsickness",
+                "trickal.seasondocument",
+                "trickal.seasontrouble",
+                "trickal.seasontrouble",
+                "trickal.seasonsilence",
+                "trickal.seasonsilence",
+                "trickal.seasonsilence",
+                "trickal.seasonsilence"
+            ],
+            "defaultcard": "contentment",
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.exploreevents",
+            "label": "엘리아스 탐험",
+            "description": "엘리아스를 돌아다니다 발견한 것...",
+            "spec": [
+                "dayplaces",
+                "dayplaces"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.placedeck",
+            "label": "새로운 장소들",
+            "description": "눈 여겨볼만한 곳.",
+            "spec": [
+                "trickal.erpien",
+                "trickal.furvillage",
+                "trickal.monatium",
+                "trickal.elementalmountain",
+                "trickal.phantommarsh",
+                "trickal.dragoncave",
+                "trickal.witchkingdom"
+            ],
+            "defaultcard": "locationstreetsstrange"
+        },
+        {
+            "id": "trickal.adventuredeck.sheep",
+            "spec": [
+                "trickal.meat",
+                "trickal.milk",
+                "trickal.cheese"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.adventuredeck.potion",
+            "spec": [
+                "trickal.sap",
+                "trickal.honey",
+                "trickal.glass"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.adventuredeck.bread",
+            "spec": [
+                "trickal.flour",
+                "trickal.egg",
+                "trickal.milk"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.adventuredeck.mart",
+            "spec": [
+                "trickal.fruit",
+                "trickal.flour",
+                "trickal.honey"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.adventuredeck.owl",
+            "spec": [
+                "trickal.meat",
+                "trickal.leaf",
+                "trickal.sap"
+            ],
+            "resetonexhaustion": true
+        }
+	]
+}

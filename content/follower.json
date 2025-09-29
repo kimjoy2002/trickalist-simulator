@@ -1,0 +1,1087 @@
+{
+    "elements": [
+        {
+            "id": "trickal.bloomy",
+            "label": "영춘",
+            "description": "개나리 같은 무언가.",
+            "aspects": {
+                "trickal.creature": 1
+            },
+            "icon": "trickal.bloomy"
+        },
+
+        {
+            "id": "trickal.erpin4",
+            "label": "요정 여왕 에르핀",
+            "description": "에르핀은 아직 눈물이 많지만, 예전만큼 철부지는 아니다.",
+            "aspects": {
+				"trickal.erpin_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.erpin"
+        },
+        {
+            "id": "trickal.erpin3",
+            "label": "사도 에르핀",
+            "description": "에르핀의 왕관에는 놀라운 힘이 숨어있다. 그것이 그녀를 속박하고있더라도",
+            "aspects": {
+				"trickal.erpin_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.erpin",
+			"xtriggers": {
+                "promote": "trickal.erpin4"
+			}
+        },
+        {
+            "id": "trickal.erpin2",
+            "label": "신도 에르핀",
+            "description": "에르핀은 한 나라의 여왕이지만, 아직 먹을걸 좋아하는 어린 아이다.",
+            "aspects": {
+				"trickal.erpin_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.erpin",
+			"xtriggers": {
+                "promote": "trickal.erpin3"
+			}
+        },
+        {
+            "id": "trickal.erpin",
+            "label": "에르핀",
+            "description": "엘리아스의 세계수를 수호하는 요정 왕국 에르피엔의 여왕.",
+            "aspects": {
+				"trickal.erpin_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+				"acquaintance": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.erpin",
+			"xtriggers": {
+                "recruiting": "trickal.erpin2"
+			}
+        },
+        {
+            "id": "trickal.erpin_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+        {
+            "id": "trickal.ner4",
+            "label": "최고위 사제 네르",
+            "description": "모든 왕국의 업무는 네르를 거친다. 왕국에서 그녀의 입김이 닿지않는 곳은 없다.",
+            "aspects": {
+				"trickal.ner_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.madness": 10
+            }, 
+            "icon": "trickal.ner"
+        },
+        {
+            "id": "trickal.ner3",
+            "label": "사도 네르",
+            "description": "한때 그녀는 단순한 날라리 요정이었다. 어느날 세계수의 계시를 받기전까진",
+            "aspects": {
+				"trickal.ner_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            }, 
+            "icon": "trickal.ner",
+			"xtriggers": {
+                "promote": "trickal.ner4"
+			}
+        },
+        {
+            "id": "trickal.ner2",
+            "label": "신도 네르",
+            "description": "네르는 엄하고 깐깐하며, 항상 당신이 놀고있는지 감시한다.",
+            "aspects": {
+				"trickal.ner_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            }, 
+            "icon": "trickal.ner",
+			"xtriggers": {
+                "promote": "trickal.ner3"
+			}
+        },
+        {
+            "id": "trickal.ner",
+            "label": "네르",
+            "description": "자애로운 미소 뒤에 무언가를 숨기고 있는 세계수 교단의 사제장.",
+            "aspects": {
+				"trickal.ner_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+				"acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.ner",
+			"xtriggers": {
+                "recruiting": "trickal.ner2"
+			}
+        },
+        {
+            "id": "trickal.ner_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+        {
+            "id": "trickal.ashur4",
+            "label": "엘리아스 제빵왕 에슈르",
+            "description": "에슈르는 이제 자신의 존재 증명을 위해 빵을 만든다.",
+            "aspects": {
+				"trickal.ashur_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.ashur"
+        },
+        {
+            "id": "trickal.ashur3",
+            "label": "사도 에슈르",
+            "description": "에슈르는 자신의 빵집을 싫어하지만 절대로 대충 하지않는다.",
+            "aspects": {
+				"trickal.ashur_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.ashur",
+			"xtriggers": {
+                "promote": "trickal.ashur4"
+			}
+        },
+        {
+            "id": "trickal.ashur2",
+            "label": "신도 에슈르",
+            "description": "에슈르는 재빵사지만 마법을 연구한다. 이상을 위해 현실과 타협한다.",
+            "aspects": {
+				"trickal.ashur_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.ashur",
+			"xtriggers": {
+                "promote": "trickal.ashur3"
+			}
+        },
+        {
+            "id": "trickal.ashur",
+            "label": "에슈르",
+            "description": "요정 왕국의 최고 빵집 주인이자 최저 마법 학교 교장. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.ashur_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+				"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.ashur",
+			"xtriggers": {
+                "recruiting": "trickal.ashur2"
+			}
+        },
+        {
+            "id": "trickal.ashur_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+		{
+            "id": "trickal.butter4",
+            "label": "친구 좋아 버터",
+            "description": "버터는 여전히 상냥하지만, 더 이상 괴롭힘에 참지 않는다.",
+            "aspects": {
+				"trickal.butter_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.butter"
+        },
+		{
+            "id": "trickal.butter3",
+            "label": "사도 버터",
+            "description": "버터는 숨겨진 자아가 있다. 그 실체를 아는 자는 얼마 없다.",
+            "aspects": {
+				"trickal.butter_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.butter",
+			"xtriggers": {
+                "promote": "trickal.butter4"
+			}
+        },
+        {
+            "id": "trickal.butter2",
+            "label": "신도 버터",
+            "description": "버터는 처음 보는 사람과도 친하게 지낸다.",
+            "aspects": {
+				"trickal.butter_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.butter",
+			"xtriggers": {
+                "promote": "trickal.butter3"
+			}
+        },
+        {
+            "id": "trickal.butter",
+            "label": "버터",
+            "description": "수인 마을에서 거주하는 강아지 수인. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.butter_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+				"acquaintance": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.butter",
+			"xtriggers": {
+                "recruiting": "trickal.butter2"
+			}
+        },
+        {
+            "id": "trickal.butter_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+        {
+            "id": "trickal.elena4",
+            "label": "엘레나",
+            "description": "엘레나는 당신의 신뢰를 얻기위해 희생할 각오가 되어있다.",
+            "aspects": {
+				"trickal.elena_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.elena"
+        },
+        {
+            "id": "trickal.elena3",
+            "label": "엘레나",
+            "description": "엘레나는 항상 일을 한다. 죽음이 없기에 멈출 수 없다.",
+            "aspects": {
+				"trickal.elena_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.elena",
+			"xtriggers": {
+                "promote": "trickal.elena4"
+			}
+        },
+        {
+            "id": "trickal.elena2",
+            "label": "엘레나",
+            "description": "엘프는 대부분 신뢰하기 어렵다. 엘레나는 더욱 더 그렇다.",
+            "aspects": {
+				"trickal.elena_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.elena",
+			"xtriggers": {
+                "promote": "trickal.elena3"
+			}
+        },
+        {
+            "id": "trickal.elena",
+            "label": "엘레나",
+            "description": "엘프족들의 도시인 모나티엄의 창립자이자 시장. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.elena_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+				"acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.elena",
+			"xtriggers": {
+                "recruiting": "trickal.elena2"
+			}
+        },
+        {
+            "id": "trickal.elena_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+        {
+            "id": "trickal.mayo4",
+            "label": "장물 수집가 마요",
+            "description": "마요는 한때 자신의 가장 친한 친구를 잃었다. 마요는 더 이상 잃고 싶지않다.",
+            "aspects": {
+				"trickal.mayo_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.mayo"
+        },
+        {
+            "id": "trickal.mayo3",
+            "label": "사도 마요",
+            "description": "마요는 마음에 든 것을 절대로 포기하지않는다.",
+            "aspects": {
+				"trickal.mayo_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.mayo",
+			"xtriggers": {
+                "promote": "trickal.mayo4"
+			}
+        },
+        {
+            "id": "trickal.mayo2",
+            "label": "신도 마요",
+            "description": "마요는 마음에 든 모든 것을 수집한다.",
+            "aspects": {
+				"trickal.mayo_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.mayo",
+			"xtriggers": {
+                "promote": "trickal.mayo3"
+			}
+        },
+        {
+            "id": "trickal.mayo",
+            "label": "마요",
+            "description": "전당포를 운영하는 수집광 요정. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.mayo_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+				"acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.mayo",
+			"xtriggers": {
+                "recruiting": "trickal.mayo2"
+			}
+        },
+        {
+            "id": "trickal.mayo_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+
+        {
+            "id": "trickal.kommy4",
+            "label": "수인 독서왕 코미",
+            "description": "코미는 빨간 책으로 배운 진리를 따른다.",
+            "aspects": {
+				"trickal.kommy_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.kommy"
+        },
+        {
+            "id": "trickal.kommy3",
+            "label": "사도 코미",
+            "description": "코미에게 책은 등불이다. 등불은 길을 밝혀주지만, 때로는 잘못된 길을 보여준다.",
+            "aspects": {
+				"trickal.kommy_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.kommy",
+			"xtriggers": {
+                "promote": "trickal.kommy4"
+			}
+        },
+        {
+            "id": "trickal.kommy2",
+            "label": "신도 코미",
+            "description": "코미는 책을 읽을 때를 제외하면 항상 지루해하며 잠을 잔다.",
+            "aspects": {
+				"trickal.kommy_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.kommy",
+			"xtriggers": {
+                "promote": "trickal.kommy3"
+			}
+        },
+        {
+            "id": "trickal.kommy",
+            "label": "코미",
+            "description": "독서를 좋아하는 수인 마을의 잠꾸러기 고양이 수인. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.kommy_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+				"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.kommy",
+			"xtriggers": {
+                "recruiting": "trickal.kommy2"
+			}
+        },
+        {
+            "id": "trickal.kommy_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+
+        {
+            "id": "trickal.gabia4",
+            "label": "가장 조용한 정령 가비아",
+            "description": "이제 가비아는 말을 하지 않는다. 그럴 필요가 없다.",
+            "aspects": {
+				"trickal.gabia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.gabia"
+        },
+        {
+            "id": "trickal.gabia3",
+            "label": "사도 가비아",
+            "description": "가비아는 들리지 않게 속삭인다. 그것으로 즐거움을 추구한다.",
+            "aspects": {
+				"trickal.gabia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.gabia",
+			"xtriggers": {
+                "promote": "trickal.gabia4"
+			}
+        },
+        {
+            "id": "trickal.gabia2",
+            "label": "신도 가비아",
+            "description": "가비아는 들리지 않는 말 대신, 고개를 끄덕인다.",
+            "aspects": {
+				"trickal.gabia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.gabia",
+			"xtriggers": {
+                "promote": "trickal.gabia3"
+			}
+        },
+        {
+            "id": "trickal.gabia",
+            "label": "가비아",
+            "description": "정령산 지하에 자리잡고 있는 땅의 고위 정령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.gabia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+				"acquaintance": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.gabia",
+			"xtriggers": {
+                "recruiting": "trickal.gabia2"
+			}
+        },
+        {
+            "id": "trickal.gabia_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+
+        {
+            "id": "trickal.levi4",
+            "label": "아르바이트 전문가 레비",
+            "description": "레비는 모든 일을 해낸다. 레비 없이는 더 이상 왕국이 돌아가지 않는다.",
+            "aspects": {
+				"trickal.levi_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.levi"
+        },
+        {
+            "id": "trickal.levi3",
+            "label": "사도 레비",
+            "description": "레비는 일에 지칠때 가끔 자신의 후임을 꿈꾼다.",
+            "aspects": {
+				"trickal.levi_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.levi",
+			"xtriggers": {
+                "promote": "trickal.levi4"
+			}
+        },
+        {
+            "id": "trickal.levi2",
+            "label": "신도 레비",
+            "description": "레비는 하루에도 서너개의 알바를 다닌다. 어쩌면 교단 활동도 알바의 연장일지도 모른다.",
+            "aspects": {
+				"trickal.levi_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.levi",
+			"xtriggers": {
+                "promote": "trickal.levi3"
+			}
+        },
+        {
+            "id": "trickal.levi",
+            "label": "레비",
+            "description": "정식 마녀를 꿈꾸는 마녀 왕국의 알바생. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.levi_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+				"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.levi",
+			"xtriggers": {
+                "recruiting": "trickal.levi2"
+			}
+        },
+        {
+            "id": "trickal.levi_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+
+        {
+            "id": "trickal.speaki4",
+            "label": "과몰입 유령 스피키",
+            "description": "스피키는 사실 자신의 본 모습이 있다. 드러낼 필요가 없을뿐이다.",
+            "aspects": {
+				"trickal.speaki_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.speaki"
+        },
+        {
+            "id": "trickal.speaki3",
+            "label": "사도 스피키",
+            "description": "스피키는 가끔씩 다른 사도의 모습을 훔친다. 당신을 제외하면 쉽게 들키지 않는다.",
+            "aspects": {
+				"trickal.speaki_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.speaki",
+			"xtriggers": {
+                "promote": "trickal.speaki4"
+			}
+        },
+        {
+            "id": "trickal.speaki2",
+            "label": "신도 스피키",
+            "description": "다른 사람의 정체성을 훔치는 이 유령은 자기 자신을 네르라 소개한다." ,
+            "aspects": {
+				"trickal.speaki_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.speaki",
+			"xtriggers": {
+                "promote": "trickal.speaki3"
+			}
+        },
+        {
+            "id": "trickal.speaki",
+            "label": "스피키",
+            "description": "유령늪에 사는 정체성의 유령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.speaki_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+				"acquaintance": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.speaki",
+			"xtriggers": {
+                "recruiting": "trickal.speaki2"
+			}
+        },
+        {
+            "id": "trickal.speaki_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+
+        {
+            "id": "trickal.sist4",
+            "label": "사기꾼 꿈나무 시스트",
+            "description": "시스트는 언젠가 엘리아스를 통채로 사기위해 돈을 모은다.",
+            "aspects": {
+				"trickal.sist_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.sist"
+        },
+        {
+            "id": "trickal.sist3",
+            "label": "사도 시스트",
+            "description": "시스트는 손해보는 장사는 하지않는다. 어디까지나 이득이 되는 방향으로 행동한다.",
+            "aspects": {
+				"trickal.sist_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.sist",
+			"xtriggers": {
+                "promote": "trickal.sist4"
+			}
+        },
+        {
+            "id": "trickal.sist2",
+            "label": "신도 시스트",
+            "description": "시스트는 용족임을 숨기기위해서 용족임에도 가짜 뿔과 가짜 날개를 단다.",
+            "aspects": {
+				"trickal.sist_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.sist",
+			"xtriggers": {
+                "promote": "trickal.sist3"
+			}
+        },
+        {
+            "id": "trickal.sist",
+            "label": "시스트",
+            "description": "무엇이든 사고 팔며 장사하는 자수정의 용족. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.sist_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+				"acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.sist",
+			"xtriggers": {
+                "recruiting": "trickal.sist2"
+			}
+        },
+        {
+            "id": "trickal.sist_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+		{
+            "id": "trickal.tig4",
+            "label": "수인 최고의 검 티그",
+            "description": "티그는 아직은 미숙하다. 그러나 지켜야할 친구가 있다.",
+            "aspects": {
+				"trickal.tig_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.tig"
+        },
+		{
+            "id": "trickal.tig3",
+            "label": "사도 티그",
+            "description": "티그는 복잡한건 굳이 생각하지않는다. 그녀에겐 검이 있다.",
+            "aspects": {
+				"trickal.tig_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.tig",
+			"xtriggers": {
+                "promote": "trickal.tig4"
+			}
+        },
+        {
+            "id": "trickal.tig2",
+            "label": "신도 티그",
+            "description": "티그는 차기 촌장 후보지만 수인 마을의 촌장님과 항상 다투곤 한다.",
+            "aspects": {
+				"trickal.tig_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.tig",
+			"xtriggers": {
+                "promote": "trickal.tig3"
+			}
+        },
+        {
+            "id": "trickal.tig",
+            "label": "티그",
+            "description": "자칭 수인 마을의 검성이자 '사료스탕스'라는 집단의 리더인 백호 수인. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.tig_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+				"acquaintance": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.tig",
+			"xtriggers": {
+                "recruiting": "trickal.tig2"
+			}
+        },
+        {
+            "id": "trickal.tig_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+		{
+            "id": "trickal.rufo4",
+            "label": "사료스탕스 지식왕 루포",
+            "description": "이제 루포는 교단과 현재의 성취를 위해 자신의 두뇌를 쓴다.",
+            "aspects": {
+				"trickal.rufo_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.rufo"
+        },
+		{
+            "id": "trickal.rufo3",
+            "label": "사도 루포",
+            "description": "루포는 최근 아침 낮 저녁으로 교단을 위한 아르바이트를 다니고 있다.",
+            "aspects": {
+				"trickal.rufo_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.rufo",
+			"xtriggers": {
+                "promote": "trickal.rufo4"
+			}
+        },
+        {
+            "id": "trickal.rufo2",
+            "label": "신도 루포",
+            "description": "루포는 주기적으로 약이 든 사료를 먹는다. 이 때문에 수인 치고는 높은 지능을 지녔다.",
+            "aspects": {
+				"trickal.rufo_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.rufo",
+			"xtriggers": {
+                "promote": "trickal.rufo3"
+			}
+        },
+        {
+            "id": "trickal.rufo",
+            "label": "루포",
+            "description": "사료스탕스의 책사, 여우 수인. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.rufo_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+				"acquaintance": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.rufo",
+			"xtriggers": {
+                "recruiting": "trickal.rufo2"
+			}
+        },
+        {
+            "id": "trickal.rufo_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+		{
+            "id": "trickal.beni4",
+            "label": "사료스탕스의 힘 베니",
+            "description": "베니는 베니다. 베니는 지금 해야할 일을 할 뿐이다.",
+            "aspects": {
+				"trickal.beni_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.beni"
+        },
+		{
+            "id": "trickal.beni3",
+            "label": "사도 베니",
+            "description": "베니는 둔하지만 우직하게 교단의 일을 해낸다.",
+            "aspects": {
+				"trickal.beni_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.beni",
+			"xtriggers": {
+                "promote": "trickal.beni4"
+			}
+        },
+        {
+            "id": "trickal.beni2",
+            "label": "신도 베니",
+            "description": "베니는 나를 따르고 있지만 교리에 대해서는 아직 잘 이해하지 못한듯하다.",
+            "aspects": {
+				"trickal.beni_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.beni",
+			"xtriggers": {
+                "promote": "trickal.beni3"
+			}
+        },
+        {
+            "id": "trickal.beni",
+            "label": "베니",
+            "description": "항상 느긋하고, 항상 먹부리는 곰 수인. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.beni_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+				"acquaintance": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.beni",
+			"xtriggers": {
+                "recruiting": "trickal.beni2"
+			}
+        },
+        {
+            "id": "trickal.beni_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+
+		{
+            "id": "trickal.diana4",
+            "label": "세월이 준 현명함 디아나",
+            "description": "디아나는 세계수의 힘을 받아들였다. 그 눈동자엔 초점이 없고 광기에 서려있다.",
+            "aspects": {
+				"trickal.diana_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.diana"
+        },
+		{
+            "id": "trickal.diana3",
+            "label": "사도 디아나",
+            "description": "디아나에겐 잊고 싶은 과거가 있다. 떠들썩한 교단은 그 과거를 잊게 해준다.",
+            "aspects": {
+				"trickal.diana_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.diana",
+			"xtriggers": {
+                "promote": "trickal.diana4"
+			}
+        },
+        {
+            "id": "trickal.diana2",
+            "label": "신도 디아나",
+            "description": "디아나는 현명하지만 어린 수인들과 의견 충돌을 자주 빚는다.",
+            "aspects": {
+				"trickal.diana_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.diana",
+			"xtriggers": {
+                "promote": "trickal.diana3"
+			}
+        },
+        {
+            "id": "trickal.diana",
+            "label": "디아나",
+            "description": "수인들이 믿고 따르고 평화를 사랑하는 수인 마을의 촌장. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+				"trickal.diana_": 1,
+                "trickal.creature": 1,
+				"trickal.beast": 1,
+				"acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.diana",
+			"xtriggers": {
+                "recruiting": "trickal.diana2"
+			}
+        },
+        {
+            "id": "trickal.diana_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "recipes": [{
+            "id": "trickal.startculthint",
+            "label": "교단의 첫 사도를 결정하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+				"trickal.worshippure": -1,
+				"trickal.worshipmadness": -1,
+				"trickal.worshipcool": -1,
+				"trickal.worshipactive": -1,
+				"trickal.worshipdepression": -1
+            },
+            "startdescription": "신도가 한 명밖에 없는 교단은 정상적인 교단이 아니다. 내 업무를 도와줄 첫 사도를 정한다. [첫 신도는 교단의 교리를 결정합니다.]",
+            "hintonly": true,
+            "craftable": false
+        },{
+            "id": "trickal.promotetoapostlehint",
+            "label": "신도를 사도로 진급시킬까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": -1
+            },
+            "startdescription": "신도를 사도로 만드려면, 교리에 맞는 힘을 최소한 7단계까지는 끌어올려야 한다.",
+            "hintonly": true,
+            "craftable": false
+        }, {
+            "id": "trickal.promotetoexaltedhint",
+            "label": "사도를 관심 사도로 진급시킬까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1
+            },
+            "startdescription": "사도를 관심 사도로 만드려면, 교리에 맞는 힘을 최소한 21단계까지는 끌어올려야 한다.",
+            "hintonly": true,
+            "craftable": false
+        }, {
+            "id": "trickal.recruitacquaintancehint",
+            "label": "이 사람을 추종자로 끌어들일까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "acquaintance": 1
+            },
+            "startdescription": "달콤한 무언가를 통해 유인하면 교단에 불러들일 수 있을 것이다.",
+            "craftable": false,
+            "hintonly": true
+		}, {
+            "id": "trickal.hint.cook.fail",
+            "label": "연회장에서 요리를 해볼까?",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+				"trickal.candy": -1
+            },
+			"$priority": 5,
+            "startdescription": "요리를 시작하기 위해선 우선 체력이 필요하다. [요리를 하기위해선 왕사탕을 슬롯에 넣어야합니다.]",
+            "craftable": false,
+            "hintonly": true
+		}, {
+            "id": "trickal.hint.cook",
+            "label": "연회장에서 요리를 해볼까?",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+				"trickal.candy": 1
+            },
+			"$priority": 0,
+            "startdescription": "교단 본부에 있는 연회장에는 작은 주방이 달려있다. 여기서 최소한 2개의 재료를 혼합해서 새로운 음식을 만들어볼 수 있다.",
+            "craftable": false,
+            "hintonly": true
+		}, {
+            "id": "trickal.hint.cook.pure_one",
+            "label": "연회장에서 요리를 해볼까? : 약간의 순수",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+				"trickal.pure": 4
+            },
+			"$priority": 1,
+            "startdescription": "순수는 요리의 단 맛을 살려준다. 여기에 우울을 더해 달콤하고 푹신푹신한 무언가를 만들어볼 수 있다.",
+            "craftable": false,
+            "hintonly": true
+		}
+	]
+}

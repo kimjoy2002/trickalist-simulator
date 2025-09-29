@@ -1,0 +1,90 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.work.candy",
+            "label": "막노동",
+            "actionid": "trickal.work",
+            "requirements": {
+                "trickal.candy": 1,
+                "location": -1,
+				"society": -1
+            },
+			"aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 1
+            },
+            "startdescription": "등골이 부서지는 일과 쥐꼬리만한 대가. 정말 이게 최선이란 말인가?",
+            "description": "하루 일과가 끝나고, 나는 지쳐 버렸다. 하지만 봉급은 받았다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.document",
+            "label": "서류 처리",
+            "actionid": "trickal.work",
+            "requirements": {
+                "trickal.document": 1,
+				"trickal.starcandy": -1,
+                "location": -1,
+				"society": -1
+            },
+			"aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 1,
+                "trickal.document": -1
+            },
+            "startdescription": "밀려있는 서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
+            "description": "대충 서류들을 훑어본 후, 도장을 기계적으로 찍었다. 교단의 수고비를 받았다.",
+            "warmup": 45,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.document.starcandy",
+            "label": "서류 처리",
+            "actionid": "trickal.work",
+            "requirements": {
+                "trickal.document": 1,
+				"trickal.starcandy": 1,
+                "location": -1,
+				"society": -1
+            },
+			"aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 1,
+                "trickal.document": -1
+            },
+            "startdescription": "밀려있는 서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
+            "description": "빠르게 집중하여 평소보다 빨리 서류의 정리가 끝났다. 교단의 수고비를 받았다.",
+            "warmup": 30,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.cake",
+            "label": "달달하고 푹신한 것을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+				"trickal.candy": 1,
+				"trickal.pure": 4,
+				"trickal.depression": 2
+            },
+			"aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.cake": 1
+            },
+            "startdescription": "요정들에게 호평인 단 맛을 최대한 살릴 수 있는 레시피를 준비한다.",
+            "description": "달콤한 딸기 케이크가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        }
+	]
+
+}

@@ -1,0 +1,101 @@
+{
+    "recipes": [{
+            "id": "trickal.cometoyoursenses",
+            "actionid": "trickal.explore",
+            "craftable": true,
+            "description": "낯선 곳. 작은 집들이 있는 도시. 옆에 떨어진 의문의 권총.",
+            "effects": {
+                "trickal.candy": -1,
+                "trickal.koko": 1
+            },
+			"$priority": 5,
+            "requirements": {
+                "trickal.candy": 1
+            },
+            "inductions": [{
+                    "id": "trickal.addtalk"
+                }
+            ],
+            "label": "정신을 차린다.",
+            "maxexecutions": 1,
+            "startdescription": "주머니에 들어있는 사탕을 입에 물고 현재 생황을 정리해본다...",
+            "warmup": 1
+        }, {
+            "id": "trickal.addtalk",
+            "actionid": "trickal.talk",
+            "description": "키가 작고, 작은 날개를 달고 있는 두 명이 당신을 지켜보고있다. 당신의 상황을 설명한다.",
+            "effects": {
+                "trickal.erpin": 1,
+                "trickal.ner": 1
+            },
+			"$priority": 5,
+            "label": "누군가 말을 건다.",
+            "startdescription": "\"너 지금 길바닥에서 누워서 뭐 하는거야?\"\n\"이제 정신이 드셨나요?\"",
+            "warmup": 3
+        }, {
+            "id": "trickal.exploreheadquartersfirst",
+            "actionid": "trickal.explore",
+            "craftable": true,
+            "description": "당신은 엘리아스를 구원하게될 교주님이라는 설명과 함께, 세계수 교단에 도착한다.",
+            "requirements": {
+                "trickal.headquarters": 1
+            },
+			"$priority": 5,
+            "inductions": [{
+                    "id": "trickal.addstudy"
+                }
+            ],
+            "maxexecutions": 1,
+            "label": "교단으로 향하다.",
+            "startdescription": "두 요정에게 이끌려서 세계수 교단 본부란 장소로 향한다.",
+            "warmup": 3
+        }, {
+            "id": "trickal.addstudy",
+            "actionid": "trickal.study",
+            "description": "두 요정으로부터 교단의 예언서와 교단에서 생활 할 수 있는 자금을 받았다.",
+            "effects": {
+                "trickal.book1": 1,
+                "trickal.gold": 10
+            },
+            "label": "낡은 책과 활동 자금을 건네받다.",
+            "startdescription": ".",
+            "warmup": 1
+        }, {
+            "id": "trickal.startcultleader",
+            "actionid": "trickal.study",
+            "craftable": true,
+            "description": "'과거에 <b>세계수 엘드르</b>가 있는 땅. 엘리아스에 <b>인간</b>이 찾아왔다. 인간은 엘리아스의 혼란을 잠재우고 홀연히 사라졌다. 먼 훗날에도 똑같은 일이 벌어진다면 <b>반드시 인간이 나타나 엘리아스를 구원</b>할 것이다.'",
+            "label": "수양록을 읽는다.",
+            "maxexecutions": 1,
+            "requirements": {
+                "trickal.book1": 1
+            },
+            "inductions": [{
+                    "id": "trickal.addmindreading"
+                }
+            ],
+            "aspects": {
+				"ascend": 1
+            },
+            "startdescription": "당신은 낡은 수양록의 첫 페이지를 읽는다.",
+            "warmup": 3
+        }, {
+            "id": "trickal.addmindreading",
+            "actionid": "trickal.mindreading",
+            "description": "'세계수의 가지가 스치고 지나간 자는 진실을 꿰뚫어 보는 자가 될 것이다.'",
+            "effects": {
+                "trickal.bloomy": 1
+            },
+            "label": "책을 자세히 살펴보니...",
+            "startdescription": "책의 커버 속에서 특이한 종이를 찾았다.",
+            "warmup": 3
+        }, {
+            "id": "trickal.addwork",
+            "actionid": "trickal.work",
+            "description": "교단의 집무실을 사용할 수 있게 되었다.",
+            "label": "교단 집무실.",
+            "startdescription": ".",
+            "warmup": 1
+        }
+    ]
+}

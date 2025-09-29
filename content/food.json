@@ -1,0 +1,274 @@
+{
+    "elements": [
+        {
+            "id": "trickal.cheese",
+            "label": "치즈",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.cool": 2,
+				"trickal.pure": 2
+            },
+            "icon": "trickal.cheese"
+        },
+        {
+            "id": "trickal.egg",
+            "label": "달걀",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.depression": 2,
+				"trickal.madness": 2
+            },
+            "icon": "trickal.egg"
+        },
+        {
+            "id": "trickal.flour",
+            "label": "밀가루",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.active": 2,
+				"trickal.cool": 2
+            },
+            "icon": "trickal.flour"
+        },
+        {
+            "id": "trickal.fruit",
+            "label": "과일 바구니",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.pure": 2,
+				"trickal.depression": 2
+            },
+            "icon": "trickal.fruit"
+        },
+        {
+            "id": "trickal.honey",
+            "label": "꿀",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.pure": 3
+            },
+            "icon": "trickal.honey"
+        },
+        {
+            "id": "trickal.meat",
+            "label": "육고기",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.active": 3
+            },
+            "icon": "trickal.meat"
+        },
+        {
+            "id": "trickal.milk",
+            "label": "우유",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.cool": 3
+            },
+            "icon": "trickal.milk"
+        },
+        {
+            "id": "trickal.sap",
+            "label": "고로쇠 수액",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.madness": 2,
+				"trickal.active": 2
+            },
+            "icon": "trickal.sap"
+        },
+        {
+            "id": "trickal.glass",
+            "label": "조각 보석",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.depression": 3
+            },
+            "icon": "trickal.glass"
+        },
+        {
+            "id": "trickal.leaf",
+            "label": "나뭇잎",
+            "description": "",
+			"aspects": {
+				"trickal.ingredient": 1,
+				"trickal.madness": 3
+            },
+            "icon": "trickal.glass"
+        },
+
+
+        {
+            "id": "trickal.food.cake",
+            "label": "딸기 케이크",
+            "description": "에슈르 빵집에서 가장 많이 팔리는 스테디셀러.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.pure": 4,
+				"trickal.worth": 2
+            },
+            "icon": "trickal.food.cake"
+        },
+        {
+            "id": "trickal.food.macaroon",
+            "label": "마시멜로 마카롱",
+            "description": "마카롱 위에 스프링클을 듬뿍 뿌린, 최고의 달달함을 자랑하는 과자.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.pure": 8
+            },
+            "icon": "trickal.food.macaroon"
+        },
+        {
+            "id": "trickal.food.melonboko",
+            "label": "멜론 보코치니",
+            "description": "간이 잘 배인 멜론과 치즈를 뒤섞어 만든 샐러드 정식.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.pure": 14
+            },
+            "icon": "trickal.food.melonboko"
+        },
+        {
+            "id": "trickal.food.can",
+            "label": "캔사료",
+            "description": "엘프 공장에서 대량생산된 사료. 어린 수인들이 이걸 좋아한다.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.active": 4,
+				"trickal.worth": 2
+            },
+            "icon": "trickal.food.can"
+        },
+        {
+            "id": "trickal.food.aircutlet",
+            "label": "공기 커틀릿",
+            "description": "겉으로 보면 아주 맛있는 돈까스 같지만 속이 비어있는 튀김 옷 덩어리다.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.active": 8,
+				"trickal.worth": 4
+            },
+            "icon": "trickal.food.aircutlet"
+        },
+        {
+            "id": "trickal.food.cartoonmeat",
+            "label": "만화 고기 구이",
+            "description": "꿈에 그리던 그 고기다.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.active": 14,
+				"trickal.worth": 7
+            },
+            "icon": "trickal.food.cartoonmeat"
+        },
+        {
+            "id": "trickal.food.cinnamoncandy",
+            "label": "계피맛 알사탕",
+            "description": "코를 찡하게 하는 알싸한 맛의 사탕.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.madness": 4,
+				"trickal.worth": 2
+            },
+            "icon": "trickal.food.cinnamoncandy"
+        },
+        {
+            "id": "trickal.food.ssam",
+            "label": "한입초 쌈",
+            "description": "한 입에 싸먹기 좋은 크기의, 보기만해도 건강해지는 채소 음식.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.madness": 8,
+				"trickal.worth": 4
+            },
+            "icon": "trickal.food.ssam"
+        },
+        {
+            "id": "trickal.food.pumpkinsoup",
+            "label": "호박 스프",
+            "description": "호박을 갈아 뜨끈하게 끓인 달달한 죽.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.madness": 14,
+				"trickal.worth": 7
+            },
+            "icon": "trickal.food.pumpkinsoup"
+        },
+        {
+            "id": "trickal.food.spacefood",
+            "label": "우주식량",
+            "description": "지우개같이 생겼고 지우개 같은 식감을 자랑하는, 악명높은 엘프들의 주식.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.cool": 4,
+				"trickal.worth": 2
+            },
+            "icon": "trickal.food.spacefood"
+        },
+        {
+            "id": "trickal.food.fireicecoffe",
+            "label": "따뜻한 아이스 아메리카노",
+            "description": "엘프 기술력의 응집체. 차가움과 뜨거움을 공존시켜 애매하게 만들었다.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.cool": 8,
+				"trickal.worth": 4
+            },
+            "icon": "trickal.food.fireicecoffe"
+        },
+        {
+            "id": "trickal.food.mintchocoice",
+            "label": "민트 초코 아이스크림",
+            "description": "분란을 조장하고 갈등을 일으키는 그 음식.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.cool": 14,
+				"trickal.worth": 7
+            },
+            "icon": "trickal.food.mintchocoice"
+        },
+        {
+            "id": "trickal.food.dragoncandy",
+            "label": "용족 사탕",
+            "description": "용족을 제외한 엘리아스 주민들은 그냥 보석이라고 부르는 '돌'이다.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.depression": 4,
+				"trickal.worth": 2
+            },
+            "icon": "trickal.food.dragoncandy"
+        },
+        {
+            "id": "trickal.food.tanghulu",
+            "label": "금 탕후루",
+            "description": "보석 같이 생긴 외형에 주민들이 자주 사먹는 스테디셀러 디저트",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.depression": 8,
+				"trickal.worth": 4
+            },
+            "icon": "trickal.food.tanghulu"
+        },
+        {
+            "id": "trickal.food.jeweltart",
+            "label": "보석 타르트",
+            "description": "보석들을 박아놓은 듯한 외형의 디저트.",
+			"aspects": {
+				"trickal.food": 1,
+				"trickal.depression": 14,
+				"trickal.worth": 7
+            },
+            "icon": "trickal.food.jeweltart"
+        }
+	]
+}
