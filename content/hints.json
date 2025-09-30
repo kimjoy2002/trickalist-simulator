@@ -5,7 +5,7 @@
             "actionid": "trickal.talk",
             "requirements": {
                 "society": 1,
-				"trickal.worshippure": -1,
+			"trickal.worshippure": -1,
 				"trickal.worshipmadness": -1,
 				"trickal.worshipcool": -1,
 				"trickal.worshipactive": -1,
@@ -84,8 +84,176 @@
 			"$priority": 1,
             "startdescription": "순수는 요리의 단 맛을 살려준다. 여기에 우울을 더해 달콤하고 푹신푹신한 무언가를 만들어볼 수 있다.",
             "craftable": false,
+                "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.pure_two",
+            "label": "연회장에서 요리를 해볼까? : 적당한 순수",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.pure": 8
+            },
+            "$priority": 2,
+            "startdescription": "순수는 요리의 단 맛을 살려준다. 이정도의 순수라면 활발을 약간 섞어서 한입에 먹을 수 있는 디저트를 만들어 볼 수 있다.",
+            "craftable": false,
             "hintonly": true
-		},
+        }, {
+            "id": "trickal.hint.cook.pure_three",
+            "label": "연회장에서 요리를 해볼까? : 넘치는 순수",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.pure": 12
+            },
+            "$priority": 3,
+            "startdescription": "순수는 요리의 단 맛을 살려준다. 순수의 힘을 한껏 모으고 광기를 약간 더해 최고로 호화스러운 재료를 이용한 샐러드를 만들어보자.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.active_one",
+            "label": "연회장에서 요리를 해볼까? : 약간의 활발",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.active": 4
+            },
+            "$priority": 1,
+            "startdescription": "활발은 요리의 포만감을 더한다. 약간의 냉정을 더해 엘프들의 공장에서 만들어진 가성품을 연회장에서 제공해볼까?",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.active_two",
+            "label": "연회장에서 요리를 해볼까? : 적당한 활발",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.active": 8
+            },
+            "$priority": 2,
+            "startdescription": "활발은 요리의 포만감을 더한다. 여기에 광기가 추가되면 요리의 주재료를 빼버리는 실험적인 도전을 가능하게 한다.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.active_three",
+            "label": "연회장에서 요리를 해볼까? : 넘치는 활발",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.active": 12
+            },
+            "$priority": 3,
+            "startdescription": "활발은 요리의 포만감을 더한다. 아주 조금의 우울만 더하면 만화에서나 보던 고기 요리를 만들어볼 수 있다.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.madness_one",
+            "label": "연회장에서 요리를 해볼까? : 약간의 광기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.madness": 4
+            },
+            "$priority": 1,
+            "startdescription": "광기는 약간의 씁쓸함을 더한다. 순수가 조금 들어가면 씁쓸하면서도 단 맛이 나는 무언가를 만들 수 있다.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.madness_two",
+            "label": "연회장에서 요리를 해볼까? : 적당한 광기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.madness": 8
+            },
+            "$priority": 2,
+            "startdescription": "광기는 약간의 씁쓸함을 더한다. 여기에 냉정함을 더해서 건강함을 강조한 채소 요리를 만들어보자.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.madness_three",
+            "label": "연회장에서 요리를 해볼까? : 넘치는 광기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.madness": 12
+            },
+            "$priority": 3,
+            "startdescription": "광기는 약간의 씁쓸함을 더한다. 활발을 조금 추가하면 어디선가 가져온 호박을 이용한 요리를 해볼 수 있다.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.cool_one",
+            "label": "연회장에서 요리를 해볼까? : 약간의 냉정",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.cool": 4
+            },
+            "$priority": 1,
+            "startdescription": "냉정은 요리의 효율을 추구한다. 활발을 조금 넣어서 오로지 효율만 추구한 간편식을 만들어볼까?",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.cool_two",
+            "label": "연회장에서 요리를 해볼까? : 적당한 냉정",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.cool": 8
+            },
+            "$priority": 2,
+            "startdescription": "냉정은 요리의 효율을 추구한다. 조금의 우울만 더하면 차갑고도 뜨거운 특이한 음료를 만들 수 있다.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.cool_three",
+            "label": "연회장에서 요리를 해볼까? : 넘치는 냉정",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.cool": 12
+            },
+            "$priority": 3,
+            "startdescription": "냉정은 요리의 효율을 추구한다. 여기서 순수를 더해서 달고 상쾌한 두 재료로 혼돈을 일으킬 것이다.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.depression_one",
+            "label": "연회장에서 요리를 해볼까? : 약간의 우울",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.depression": 4
+            },
+            "$priority": 1,
+            "startdescription": "우울은 요리의 보는 맛을 더한다. 광기를 더해서 반짝거리는 돌을 요리에 사용해볼 수 있다.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.depression_two",
+            "label": "연회장에서 요리를 해볼까? : 적당한 우울",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.depression": 8
+            },
+            "$priority": 2,
+            "startdescription": "우울은 요리의 보는 맛을 더한다. 약간의 순수를 더해 과일과 설탕을 활용한 보기좋은 디저트를 만들어보자.",
+            "craftable": false,
+            "hintonly": true
+        }, {
+            "id": "trickal.hint.cook.depression_three",
+            "label": "연회장에서 요리를 해볼까? : 넘치는 우울",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.depression": 12
+            },
+            "$priority": 3,
+            "startdescription": "우울은 요리의 보는 맛을 더한다. 약간의 냉정함이 있으면 마치 보석과도 같은 디저트가 가능할 것 같다.",
+            "craftable": false,
+            "hintonly": true
+        },
         {
             "id": "trickal.hint.witchkingdom",
             "label": "마녀왕국 도서관에서 책을 빌려볼까?",

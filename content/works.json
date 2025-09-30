@@ -7,7 +7,7 @@
             "requirements": {
                 "trickal.candy": 1,
                 "location": -1,
-				"society": -1
+			"society": -1
             },
 			"aspects": {
                 "employment": 1
@@ -79,12 +79,321 @@
             },
             "effects": {
                 "trickal.food.cake": 1
-            },
+                },
+            "$priority": 1,
             "startdescription": "요정들에게 호평인 단 맛을 최대한 살릴 수 있는 레시피를 준비한다.",
             "description": "달콤한 딸기 케이크가 준비되었다.",
             "warmup": 60,
             "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.macaroon",
+            "label": "한입에 먹을 수 있는 달콤한 과자를 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.pure": 8,
+                "trickal.active": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.macaroon": 1
+            },
+            "$priority": 2,
+            "startdescription": "엘리아스에서 가장 널리 쓰이는 한입 크기의 달콤한 쿠키 레시피를 준비한다.",
+            "description": "달콤한 마카롱이 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.melonboko",
+            "label": "최고로 호화스러운 샐러드 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.pure": 12,
+                "trickal.madness": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.melonboko": 1
+            },
+            "$priority": 3,
+            "startdescription": "엘리아스에서 고급 식재료로 취급받는 멜론과 치즈를 섞어서 샐러드를 만들어보자.",
+            "description": "멜론 보코치니가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.can",
+            "label": "각종 첨가제가 들어간 고기 가공식품을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.active": 4,
+                "trickal.cool": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.can": 1
+            },
+            "$priority": 1,
+            "startdescription": "어린 수인들이 좋아할 법한 가공식품을 준비해보자.",
+            "description": "캔사료가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.aircutlet",
+            "label": "장난을 담은 특이한 튀김을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.active": 8,
+                "trickal.madness": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.aircutlet": 1
+            },
+            "$priority": 2,
+            "startdescription": "만약 정상적인 음식에 내용물을 빼는 장난을 해보면 어떨까?",
+            "description": "공기 커틀릿이 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.cartoonmeat",
+            "label": "만화에서나 볼법한 거창한 음식을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.active": 12,
+                "trickal.depression": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.cartoonmeat": 1
+            },
+            "$priority": 3,
+            "startdescription": "나는 요리에 자신이 붙었다. 내가 전에 읽은 소년 만화에서 보았던 그 음식을 만들어보자.",
+            "description": "만화 고기 구이가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.cinnamoncandy",
+            "label": "알싸한 맛이 돋보이는 간식을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.madness": 4,
+                "trickal.pure": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.cinnamoncandy": 1
+            },
+            "$priority": 1,
+            "startdescription": "간단하게 들고다닐 수 있는 조그만 사탕을 만들어보자.",
+            "description": "계피맛 알사탕이 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.ssam",
+            "label": "건강을 생각한 채소 음식을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.madness": 8,
+                "trickal.cool": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.ssam": 1
+            },
+            "$priority": 2,
+            "startdescription": "연회장에 남아도는 채소를 활용해서 마녀들이 주문한 건강식을 만들어보자.",
+            "description": "한입초 쌈이 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.pumpkinsoup",
+            "label": "호박을 사용한 푸짐한 요리를 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.madness": 12,
+                "trickal.active": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.pumpkinsoup": 1
+            },
+            "$priority": 3,
+            "startdescription": "유령 늪에서 슬쩍해온, 거대한 호박을 사용해서 내가 만들 수 있는 최고의 음식을 만들어보자.",
+            "description": "호박 스프가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.spacefood",
+            "label": "지우개 맛이 나는 무언가를 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.cool": 4,
+                "trickal.active": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.spacefood": 1
+            },
+            "$priority": 1,
+            "startdescription": "엘프들의 악명 높은 주식을 따라해보자.",
+            "description": "우주식량이 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.fireicecoffe",
+            "label": "뜨거우면서 차가운 것을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.cool": 8,
+                "trickal.depression": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.fireicecoffe": 1
+            },
+            "$priority": 2,
+            "startdescription": "엘프들의 기술력을 이용해서 내가 평소에 시도해볼 수 없었던 특이한 음료를 만들어보자.",
+            "description": "따뜻한 아이스 아메리카노가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.mintchocoice",
+            "label": "분란을 조장하는 금단의 음식을 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.cool": 12,
+                "trickal.pure": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.mintchocoice": 1
+            },
+            "$priority": 3,
+            "startdescription": "이 음식은 엘리아스에 혼돈을 불러올 것이다. 하지만 나는 준비가 되었다.",
+            "description": "민트 초코 아이스크림이 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.dragoncandy",
+            "label": "단단한 돌덩어리를 준비하기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.depression": 4,
+                "trickal.madness": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.dragoncandy": 1
+            },
+            "$priority": 1,
+            "startdescription": "이건 음식이 아니다. 하지만 일부 용족들의 요청이 있었다.",
+            "description": "용족 사탕이 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.tanghulu",
+            "label": "과일과 설탕을 활용한 달달한 디저트를 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.depression": 8,
+                "trickal.pure": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.tanghulu": 1
+            },
+            "$priority": 2,
+            "startdescription": "엘리아스에서 유행하는 무난한 디저트의 레시피를 준비한다.",
+            "description": "금 탕후루가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.cook.jeweltart",
+            "label": "찬란하고 화려한 디저트를 만들기",
+            "actionid": "trickal.work",
+            "requirements": {
+                "hq": 1,
+                "trickal.candy": 1,
+                "trickal.depression": 12,
+                "trickal.cool": 2
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.food.jeweltart": 1
+            },
+            "$priority": 3,
+            "startdescription": "겉모습만 봐도 누구나 빠질만한 보석같이 화려한 디저트를 만들어보자.",
+            "description": "보석 타르트가 준비되었다.",
+            "warmup": 60,
+            "craftable": true
         }
-	]
+    ]
 
 }
