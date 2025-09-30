@@ -1,9 +1,9 @@
 {
     "elements": [
 		{
-            "id": "trickal.seasonsickness",
-            "label": "병약한 날들",
-            "description": "밤공기에 유해한 기운이 서려 있다. [곧 당신의 체력이 약화될 것입니다. 혹은 상처입은 추종자들이 죽게 될 것입니다.]",
+            "id": "trickal.seasonlucky",
+            "label": "행운의 날들",
+            "description": "내일은 운이 따를 것 같다.",
             "aspects": {
                 "season": 1
             },

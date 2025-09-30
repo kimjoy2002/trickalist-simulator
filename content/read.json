@@ -1,0 +1,259 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.book.uros",
+            "label": "'뱀의 준동, 마녀 왕국 도난 사건'를 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.uros": 1
+            },
+            "effects": {
+                "trickal.book.uros": -1
+            },
+            "startdescription": "정의로운 유리 도마뱀 슈로가 엘리아스의 지배자가 되기 위해 여섯 보물을 모으는 내용이 담겨있다. 이는 내가 아는 백사 우로스에 대한 내용과는 조금 다르다.",
+            "description": "'나의 이야기가, 마지막까지 남을 단 하나의 진실이 될 때까지. 그것이 언젠가 우리에게 돌아와, 결실을 맺으리라 믿는다. 훗날 숨을 곳이 없어진 너의 거짓을 지켜주기 위해.'\n뱀의 준동을 마치며. -뱀잡이, 마카샤",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.darkelement",
+            "label": "'어둠 정령의 상처'를 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.darkelement": 1
+            },
+            "effects": {
+                "trickal.book.darkelement": -1
+            },
+            "startdescription": "존재론적인 존재가 의미를 부여받고 엘리아스를 잠식하는 내용이다. 상당히 오글거리는 문체로 적혀있다.",
+            "description": "저자는 이를 유령을 고찰한 논문이라고 주장하고있지만, 책의 주인공이 엘리아스를 멸망시키는 내용을 담은 판타지 소설에 가깝다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.diary",
+            "label": "'제목 없는 일기장'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.diary": 1
+            },
+            "effects": {
+                "trickal.book.diary": -1
+            },
+            "startdescription": "이 책은 큼직한 글씨와 알아보기 힘든 삽화가 포함되어있다.",
+            "description": "이 케이크 머리의 삽화는 교주인 나를 형상화한걸로 보인다. 이 특이하게 생긴 교주가 책의 저자와 놀아주기를 바라는 희망을 담고 있다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.ninja",
+            "label": "'극의묵령참주혼원비급'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.ninja": 1
+            },
+            "effects": {
+                "trickal.book.ninja": -1
+            },
+            "startdescription": "이 책은 닌자간의 대화법에 대해 서술되어있다.",
+            "description": "닌자의 법도에서는 항상 서로 '아이사츠'를 나는 이후에만 전투가 허용된다. 이는 이 기묘한 사이버펑크 세계관을 가진 소설의 설정이다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.commi",
+            "label": "'더 코미니스트 매니페스토'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.commi": 1
+            },
+            "effects": {
+                "trickal.book.commi": -1
+            },
+            "startdescription": "이 책은 돈을 가진 자와 돈이 없는 자의 갈등에 대해 서술되어있다.",
+            "description": "'모든 역사는…' 뭐였더라? 아무튼 싸우는 얘기다. 누군가는 돈을 가지고 있고, 누군가는 돈이 없는데, 그게 문제인 듯하다. 책을 덮고 나면 갑자기 이상하게 회합을 열고 싶은 충동이 든다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.plato",
+            "label": "'국가론'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.commi": 1
+            },
+            "effects": {
+                "trickal.book.commi": -1
+            },
+            "startdescription": "플라톤의 대표적인 대화편으로, 정의란 무엇인가에 대한 질문에서 시작해 국가와 인간 영혼의 질서로까지 서술된다.",
+            "description": "정의가 뭔지 계속 묻다가, 결국 철학자가 나라를 다스려야 한다는 얘기까지 간다. 아마 코미가 제대로 이해하기엔 너무 어려운 내용인걸로 보인다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.ruler",
+            "label": "'지배자의 자격'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.ruler": 1
+            },
+            "effects": {
+                "trickal.book.ruler": -1
+            },
+            "startdescription": "이 책은 엘리아스의 정당한 지배자가 되기 위해 모아야 하는 여섯 보물과, 한 수인이 그것들을 모으며 남긴 기록들을 담고 있다.",
+            "description": "'애도하는 희망의 왕관, 낯선 자의 활, 영원한 불의 의지가 담긴 검, 주인될 자의 수의, 놔주지 않는 권리의 밧줄, 눈 감은 계몽의 지팡이, ... 모든 보물을 모은 나에게 작은 묘목 하나가 말했다. 엘리아스의 주인이 되기 위해서 제단 근처로 도전자가 하나 찾아올 것이라고'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.carrot",
+            "label": "'당근을 튀겼을 때의 비타민 변화'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.carrot": 1
+            },
+            "effects": {
+                "trickal.book.carrot": -1
+            },
+            "startdescription": "이 책은 당근을 쉽고 빠르게 튀기는 법에 대해 서술하고 있다.",
+            "description": "이 논문에는 당근 튀김에 대한 찬양만 늘어놓고 있다. 실제로 도움이 되는 내용은 없다시피 하다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.alchemy",
+            "label": "'광물의 변형, 연금의 마술'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.alchemy": 1
+            },
+            "effects": {
+                "trickal.book.alchemy": -1
+            },
+            "startdescription": "이 책은 다양한 광물에 대한 설명과 성질이 적혀있다. 맨 뒤에 부록에는 연금술에 대한 추가적인 설명이 붙어있다.",
+            "description": "'서로 다른 광물이 부딪힐 때... 새로운 무언가가 나오기도 한다'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.metal",
+            "label": "'금속의 배합'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.metal": 1
+            },
+            "effects": {
+                "trickal.book.metal": -1
+            },
+            "startdescription": "이 책은 합금에 대한 자세한 설명과 주조 방법에 대해 설명하고 있다.",
+            "description": "이 책에는 무기를 제작하는데 도움이 될만한 정보가 담겨있다. 대장장이라면 탐낼만한 책이다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.mercury",
+            "label": "'수은 중독의 위험성'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.mercury": 1
+            },
+            "effects": {
+                "trickal.book.mercury": -1
+            },
+            "startdescription": "이 책은 수은에 많이 노출되었을때 발생할 수 있는 질병과 그에 대한 치료법을 설명하고 있다.",
+            "description": "내가 아는 수은에 대한 위험성이 죽음이 없는 엘리아스에 맞게 수정되어있다. 본래라면 수은 중독으로 발생될 위험한 질병을 독감 수준으로 진단하고 있다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.spinks",
+            "label": "'정의의 사자 히어로 스핑크스'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.spinks": 1
+            },
+            "effects": {
+                "trickal.book.spinks": -1
+            },
+            "startdescription": "이 코믹스에는 특히 스핑크스의 전투 장면이 매우 사실적으료 묘사되어 있다.",
+            "description": "여기에는 모나티엄의 최고 자산가인 멜루나를 모델로 한 빌런이 다크 히어로로 묘사되는 스핑크스와 대적하는 에피소드가 쓰여있다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.spy",
+            "label": "'교주 관찰 일지'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.spy": 1
+            },
+            "effects": {
+                "trickal.book.spy": -1
+            },
+            "startdescription": "이 책에는 진짜 돈까스를 만들어달라는 말만 수십번 적혀있다.",
+            "description": "이 책의 내용을 봐서는 교단에 해가 될만한 내용은 적혀있지 않는 걸로 보인다. 다만 약간 부끄러운 내용들이 적혀있기에 압수하기로 했다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.prophet",
+            "label": "'밝은 미래의 예언서'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.prophet": 1
+            },
+            "effects": {
+                "trickal.book.prophet": -1
+            },
+            "startdescription": "마카샤는 엘리아스의 결말에 대해 희망적인 어조로 묘사하고 있다.",
+            "description": "이 책은 예언서라기보단 일종의 희망적인 소설에 가깝다. 그러나 이는 엘리아스 모두의 바람일것이다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.magic1",
+            "label": "'모든 마법의 기초와 심화 (1권)'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.magic1": 1
+            },
+            "effects": {
+                "trickal.book.magic1": -1
+            },
+            "startdescription": "이 책은 마법에 대한 기본적인 이론과 복잡한 수식에 대해 서술하고 있다.",
+            "description": "내 생각보다 더 상세하고 자세히 작성되어있다. 문제는 엘리아스에서 모든 요정은 기본적으로 마법을 쓸 줄 알기에 이런 이론적인 설명이 필요없다는 것이다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.magic2",
+            "label": "'모든 마법의 기초와 심화 (2권)'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.magic2": 1
+            },
+            "effects": {
+                "trickal.book.magic2": -1
+            },
+            "startdescription": "이번 권은 미래 예지 마법과 차원 마법에 대해 서술하고 있다.",
+            "description": "이번 권의 결미에서는 마법학교의 홍보가 주를 이루고 있으며, 마법학교의 존속 여부에 따라 후속 권을 결정한다는 슬픈 사실이 써있다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.baking",
+            "label": "'제빵의 기술'을 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.baking": 1
+            },
+            "effects": {
+                "trickal.book.baking": -1
+            },
+            "startdescription": "이 책은 다양한 재빵의 방법과 레시피가 적혀있다.",
+            "description": "많은 빵들의 레시피가 상세하게 적혀있다. 일부는 마법에 비유해서 설명되어있으며, 이는 오히려 책의 이해를 어렵게 한다.",
+            "warmup": 60,
+            "craftable": true
+        }
+	]
+}

@@ -39,7 +39,7 @@
             },
             "startdescription": "밀려있는 서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
             "description": "대충 서류들을 훑어본 후, 도장을 기계적으로 찍었다. 교단의 수고비를 받았다.",
-            "warmup": 45,
+            "warmup": 60,
             "craftable": true
         },
         {

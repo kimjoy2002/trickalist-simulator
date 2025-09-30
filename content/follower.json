@@ -296,7 +296,7 @@
 
         {
             "id": "trickal.elena4",
-            "label": "엘레나",
+            "label": "엘프의 참리더 엘레나",
             "description": "엘레나는 당신의 신뢰를 얻기위해 희생할 각오가 되어있다.",
             "aspects": {
 				"trickal.elena_": 1,
@@ -311,7 +311,7 @@
         },
         {
             "id": "trickal.elena3",
-            "label": "엘레나",
+            "label": "사도 엘레나",
             "description": "엘레나는 항상 일을 한다. 죽음이 없기에 멈출 수 없다.",
             "aspects": {
 				"trickal.elena_": 1,
@@ -328,7 +328,7 @@
         },
         {
             "id": "trickal.elena2",
-            "label": "엘레나",
+            "label": "신도 엘레나",
             "description": "엘프는 대부분 신뢰하기 어렵다. 엘레나는 더욱 더 그렇다.",
             "aspects": {
 				"trickal.elena_": 1,

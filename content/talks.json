@@ -89,6 +89,89 @@
             "warmup": 3
         },
         {
+            "id": "trickal.talktoacquaintance",
+            "label": "지인과 대화하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": -1,
+                "acquaintance": 1
+            },
+			"extantreqs": {
+				"trickal.prophecy": 1,
+				"trickal.worshipsomething": 1,
+			},
+            "slots": [
+                {
+                    "id": "Subject",
+                    "label": "대화 주제",
+                    "description": "교단으로 끌어들일려면 교단 카드를 올려야합니다.",
+                    "required": {
+                        "society": 1
+                    }
+                }
+            ],
+			"alt": [
+				{
+                    "id": "trickal.talktoacquaintance.and",
+                    "chance": 100
+                }
+			],
+			"warmup": 30,
+            "startdescription": "나는 새로운 사도가 될 소질이 있는 자와 대화를 나눈다. [교단 카드를 올리면 추종자로 영입을 시도할 수 있습니다.]",
+            "description": "딱히 할 말이 없어서 돌려보냈다.",
+            "craftable": true
+        },
+        {
+            "id": "trickal.talktoacquaintance.and",
+            "label": "이 사람을 추종자로 끌어들일까?",
+            "requirements": {
+                "society": 1,
+                "acquaintance": 1
+            },
+            "actionid": "trickal.talk",
+            "startdescription": "잘하면 이 자를 교단에 끌어들일 수 있을 것 같다...",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.talktoacquaintance.more",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.talktoacquaintance.more",
+            "label": "이 사람을 추종자로 끌어들일까?",
+            "actionid": "trickal.talk",
+            "slots": [
+                {
+                    "id": "Ceremony",
+                    "label": "미끼",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "description": "새 신도를 끌어들이는데는 달콤한 사탕으로 충분하다."
+                }
+            ],
+			"alt": [
+				{
+					"requirements": {
+						"trickal.sweet": 1
+					},
+					"aspects": {
+						"recruiting": 1
+					},
+					"startdescription": "이 자는 준비되었다.",
+                    "description": "세계수의 교단에 새로운 신도가 영입되었다."
+                }
+			],
+			"warmup": 30,
+            "startdescription": "나는 어쩌면 이 자를 끌어들일만한 행동력을 보여주거나, 이유를 설파할 수도 있다.",
+            "description": "나는 이 자를 끌어들일만한 행동력도, 열정도 보여주지 못했다.",
+            "craftable": false,
+            "burnimage": "freemasons"
+        },
+        {
             "id": "trickal.talktofollower",
             "label": "추종자에게 교단을 위한 일을 시키기",
             "actionid": "trickal.talk",
@@ -129,7 +212,7 @@
                     "chance": 100
                 }
             ],
-            "startdescription": "추종자를 교단의 방에 불러들였다. [교단 카드를 올리면 교단 업무를 시킬 수 있습니다. 그 외에도 다른 것들을 올릴 수 있습니다.]",
+            "startdescription": "추종자를 교단의 방에 불러들였다. [교단 카드를 올리면 교단 업무를 시킬 수 있습니다. 몇몇 추종자는 그 외의 일이 가능하기도 합니다.]",
             "description": "@#trickal.erpin_|아이씨, 용건이 있을때 부르라고!#trickal.ner_|알겠습니다. 또 부를 일이 있으면 말씀하세요.#trickal.ashur_|전 여왕님 먹을 빵 굽느라 바쁘다고요!#trickal.tig_|부를 일 없으면 부르지마! 시간만 낭비했잖아!#|딱히 할 말이 없어서 돌려보냈다.@",
             "warmup": 60,
             "craftable": true

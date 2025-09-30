@@ -21,7 +21,7 @@
             "requirements": {},
             "alt": [
 				{
-                    "id": "trickal.sickness",
+                    "id": "trickal.seasonluckyday",
                     "chance": 100,
                     "additional": true
                 },
@@ -79,18 +79,50 @@
             ]
         },
         {
-            "id": "trickal.sickness",
+            "id": "trickal.seasonluckyday",
             "label": "럭키!",
-            "actionid": "illhealth",
-            "startdescription": "돈을 주웠다!",
-            "description": "[이것은 디버깅용입니다.]",
             "requirements": {
-                "trickal.seasonsickness": 1
+                "trickal.seasonlucky": 1
             },
-            "warmup": 60,
-            "effects": {
-                 "trickal.gold": 5
-            }
+            "deckeffects": {
+                "trickal.luckydeck": 1
+            },
+            "actionid": "trickal.lucky",
+            "warmup": 0,
+            "linked": [
+                {
+                    "id": "trickal.seasonlucky.start",
+                    "chance": 100
+                }
+            ]
+		},
+        {
+            "id": "trickal.seasonlucky.start",
+            "label": "럭키!",
+            "actionid": "trickal.lucky",
+            "startdescription": "길을 가다가 반짝이는 것을 바닥에서 발견한다.",
+            "description": "럭키!",
+            "alt": [
+				{
+					"requirements": {
+						"trickal.lucky.gold": 1
+					},
+					"effects": {
+						"trickal.gold": 3,
+						"trickal.luckytype": -1
+					}
+                },
+				{
+					"requirements": {
+						"trickal.lucky.elif": 1
+					},
+					"effects": {
+						"trickal.elif": 1,
+						"trickal.luckytype": -1
+					}
+                }
+			],
+            "warmup": 30
         },
         {
             "id": "trickal.indigence",
@@ -210,6 +242,9 @@
         },{
             "id": "trickal.docutime.start",
             "label": "아직 못 다한 일이 있나?",
+            "requirements": {
+                "trickal.seasondocument": 1
+            },
             "actionid": "trickal.docu",
             "startdescription": "아직 처리 못한 일이 있다면, 새로운 서류를 감당하지 못할 것이다.",
             "description": "새로운 서류들이 나를 바라보고 있다.",

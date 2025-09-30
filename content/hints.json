@@ -85,6 +85,18 @@
             "startdescription": "순수는 요리의 단 맛을 살려준다. 여기에 우울을 더해 달콤하고 푹신푹신한 무언가를 만들어볼 수 있다.",
             "craftable": false,
             "hintonly": true
-		}
+		},
+        {
+            "id": "trickal.hint.witchkingdom",
+            "label": "마녀왕국 도서관에서 책을 빌려볼까?",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.witchkingdom": 1,
+                "trickal.gold": -1
+            },
+            "startdescription": "마녀 왕국 벨리티엔에는 많은 책들을 보관하고있는 도서관이 있다. 나는 책값을 지불하고 마음의 양식이 되는 책을 하나 빌려볼 수 있다.",
+            "craftable": false,
+            "hintonly": true
+        }
 	]
 }

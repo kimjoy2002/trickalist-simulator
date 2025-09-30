@@ -63,6 +63,23 @@
                 "season": -1
             },
             "warmup": 5
+        },
+        {
+            "id": "trickal.explore.witchkingdom",
+            "label": "마녀왕국 도서관에서 책을 빌리기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.witchkingdom": 1,
+                "trickal.gold": 1
+            },
+            "effects": {},
+            "deckeffects": {
+                "trickal.commonbook": 1
+            },
+            "startdescription": "마녀 왕국 벨리티엔에는 많은 책들을 보관하고있는 도서관이 있다. 나는 책값을 지불하고 마음의 양식이 되는 책을 하나 빌려볼 수 있다.",
+            "description": "나는 뭔가 읽을만한 걸 찾아냈다.",
+            "warmup": 30,
+            "craftable": true
         }
     ]
 }

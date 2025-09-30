@@ -9,7 +9,8 @@
             },
             "xtriggers": {
                 "fatiguing": "trickal.candyfatigue",
-                "employment": "trickal.candyfatigue"
+                "employment": "trickal.candyfatigue",
+				"recruiting": "trickal.candyfatigue"
 			},
             "icon": "trickal.candy"
         },
@@ -34,7 +35,8 @@
             },
             "xtriggers": {
                 "fatiguing": "trickal.starcandyfatigue",
-                "employment": "trickal.starcandyfatigue"
+                "employment": "trickal.starcandyfatigue",
+				"recruiting": "trickal.starcandyfatigue"
 			},
             "icon": "trickal.starcandy"
         },
@@ -81,6 +83,24 @@
             "label": "참! 잘했어요",
             "description": "이것은 당신이 엘리아스의 구원자로서 역할을 다했다는 증표다."
         },
+		{
+            "id": "trickal.lucky.gold",
+            "label": "행운의 동전",
+            "description": "반짝이는 보물.",
+            "aspects": {
+                "trickal.luckytype": 1
+            },
+            "lifetime": 1
+        },
+        {
+            "id": "trickal.lucky.elif",
+            "label": "일일 엘리프",
+            "description": "귀중한 일일 자원.",
+            "aspects": {
+                "trickal.luckytype": 1
+            },
+            "lifetime": 1
+        },
         {
             "id": "trickal.koko",
             "label": "코코",
@@ -116,6 +136,7 @@
                         "trickal.ingredient": 1,
                         "trickal.food": 1
                     },
+					"consumes": true,
                     "description": "음식을 만들기 위한 기본 재료. 또 다른 음식이 재료가 될 수 도 있다."
                 },
                 {
@@ -125,6 +146,7 @@
                     "required": {
                         "trickal.ingredient": 1
                     },
+					"consumes": true,
                     "description": "이 재료는 요리에 새로운 맛을 더할 것이다."
                 },
                 {
@@ -189,10 +211,21 @@
         {
             "id": "trickal.witchkingdom",
             "label": "마녀 왕국 벨리티엔",
-            "description": "세계수 뿌리 부근에 위치한 마녀들의 왕국.",
+            "description": "세계수 뿌리 부근에 위치한 마녀들의 왕국. 이 곳 마녀왕국 도서관에서 책을 빌릴 수 있다.",
             "aspects": {
                 "location": 1
-            }
+            },
+            "slots": [
+                {
+                    "id": "Cost",
+                    "label": "책값",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "consumes": true,
+                    "actionid": "trickal.explore"
+                }
+            ]
         },
         {
             "id": "trickal.culttree",

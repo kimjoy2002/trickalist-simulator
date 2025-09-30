@@ -90,16 +90,24 @@
             "label": "날들",
             "description": "시간이 흘러갈 때마다 예기치 못한 일이 일어날 것이다.",
             "spec": [
-                "trickal.seasonsickness",
+                "trickal.seasonlucky",
                 "trickal.seasondocument",
                 "trickal.seasontrouble",
                 "trickal.seasontrouble",
                 "trickal.seasonsilence",
-                "trickal.seasonsilence",
-                "trickal.seasonsilence",
                 "trickal.seasonsilence"
             ],
             "defaultcard": "contentment",
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.luckydeck",
+            "label": "바닥의 행운",
+            "description": "길을 돌아다니다 발견한 것...",
+            "spec": [
+                "trickal.lucky.gold",
+                "trickal.lucky.elif"
+            ],
             "resetonexhaustion": true
         },
         {
@@ -171,6 +179,32 @@
                 "trickal.sap"
             ],
             "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.commonbook",
+            "label": "도서관의 책들",
+            "description": "나는 도서관에서 쓸만해 보이는 책을 한권 집었다.",
+            "spec": [
+                "trickal.book.uros",
+                "trickal.book.darkelement",
+                "trickal.book.diary",
+                "trickal.book.ninja",
+                "trickal.book.commi",
+                "trickal.book.plato",
+                "trickal.book.ruler",
+                "trickal.book.carrot",
+                "trickal.book.metal",
+                "trickal.book.alchemy",
+                "trickal.book.spinks",
+                "trickal.book.spy",
+                "trickal.book.prophet",
+                "trickal.book.magic1",
+                "trickal.book.magic2",
+                "trickal.book.baking",
+                "trickal.book.treedream",
+                "trickal.book.thetrickal"
+            ],
+            "defaultcard": "genericrubbishbook"
         }
 	]
 }

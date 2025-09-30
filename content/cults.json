@@ -1,6 +1,266 @@
 {
     "recipes": [
         {
+            "id": "trickal.talktostartcult.pure",
+            "label": "첫 신도를 영입하여 순수를 교리로 삼는 교단을 설립할까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": -1,
+                "acquaintance": 1,
+                "trickal.pure": 1
+            },
+			"extantreqs": {
+                "society": 1,
+				"trickal.worshipsomething": -1
+			},
+            "slots": [
+                {
+                    "id": "Subject",
+                    "label": "교단",
+                    "required": {
+                        "society": 1
+                    }
+                }
+            ],
+			"alt": [
+				{
+					"requirements": {
+						"society": 1
+					},
+					"aspects": {
+						"recruiting": 1,
+						"startcult": 1
+					},
+					"mutations": [
+						{
+							"filter": "society",
+							"mutate": "trickal.worshippure",
+							"level": 1
+						},
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipsomething",
+							"level": 1
+						}
+					],
+					"description": "나는 세계수 교단의 교주가 되었다.",
+                }
+			],
+			"warmup": 30,
+            "startdescription": "세계수 교단의 첫 신도로 순수의 사도를 영입한다. 우리는 본연의 한결같은 마음을 추구할 것이다. ",
+            "description": "나는 다시 생각해보기로 했다.",
+            "craftable": true,
+            "burnimage": "freemasons"
+        },
+		{
+            "id": "trickal.talktostartcult.madness",
+            "label": "첫 신도를 영입하여 광기를 교리로 삼을까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": -1,
+                "acquaintance": 1,
+                "trickal.madness": 1
+            },
+			"extantreqs": {
+                "society": 1,
+				"trickal.worshipsomething": -1
+			},
+            "slots": [
+                {
+                    "id": "Subject",
+                    "label": "교단",
+                    "required": {
+                        "society": 1
+                    }
+                }
+            ],
+			"alt": [
+				{
+					"requirements": {
+						"society": 1
+					},
+					"aspects": {
+						"recruiting": 1,
+						"startcult": 1
+					},
+					"mutations": [
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipmadness",
+							"level": 1
+						},
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipsomething",
+							"level": 1
+						}
+					],
+					"description": "나는 세계수 교단의 교주가 되었다.",
+                }
+			],
+			"warmup": 30,
+            "startdescription": "세계수 교단의 첫 신도로 광기의 사도를 영입한다. 우리는 집착할 수 있는 특별한 목표를 추구할 것이다.",
+            "description": "나는 다시 생각해보기로 했다.",
+            "craftable": true,
+            "burnimage": "freemasons"
+        },
+		{
+            "id": "trickal.talktostartcult.cool",
+            "label": "첫 신도를 영입하여 냉정을 교리로 삼을까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": -1,
+                "acquaintance": 1,
+                "trickal.cool": 1
+            },
+			"extantreqs": {
+                "society": 1,
+				"trickal.worshipsomething": -1
+			},
+            "slots": [
+                {
+                    "id": "Subject",
+                    "label": "교단",
+                    "required": {
+                        "society": 1
+                    }
+                }
+            ],
+			"alt": [
+				{
+					"requirements": {
+						"society": 1
+					},
+					"aspects": {
+						"recruiting": 1,
+						"startcult": 1
+					},
+					"mutations": [
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipcool",
+							"level": 1
+						},
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipsomething",
+							"level": 1
+						}
+					],
+					"description": "나는 세계수 교단의 교주가 되었다.",
+                }
+			],
+			"warmup": 30,
+            "startdescription": "세계수 교단의 첫 신도로 냉정의 사도를 영입한다. 우리는 현상유지와 질서를 목표로 추구할 것이다.",
+            "description": "나는 다시 생각해보기로 했다.",
+            "craftable": true,
+            "burnimage": "freemasons"
+        },
+		{
+            "id": "trickal.talktostartcult.active",
+            "label": "첫 신도를 영입하여 활발을 교리로 삼을까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": -1,
+                "acquaintance": 1,
+                "trickal.active": 1
+            },
+			"extantreqs": {
+                "society": 1,
+				"trickal.worshipsomething": -1
+			},
+            "slots": [
+                {
+                    "id": "Subject",
+                    "label": "교단",
+                    "required": {
+                        "society": 1
+                    }
+                }
+            ],
+			"alt": [
+				{
+					"requirements": {
+						"society": 1
+					},
+					"aspects": {
+						"recruiting": 1,
+						"startcult": 1
+					},
+					"mutations": [
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipactive",
+							"level": 1
+						},
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipsomething",
+							"level": 1
+						}
+					],
+					"description": "나는 세계수 교단의 교주가 되었다.",
+                }
+			],
+			"warmup": 30,
+            "startdescription": "세계수 교단의 첫 신도로 활발의 사도를 영입한다. 우리는 현재의 만족과 성취를 추구할 것이다.",
+            "description": "나는 다시 생각해보기로 했다.",
+            "craftable": true,
+            "burnimage": "freemasons"
+        },
+		{
+            "id": "trickal.talktostartcult.depression",
+            "label": "첫 신도를 영입하여 우울을 교리로 삼을까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": -1,
+                "acquaintance": 1,
+                "trickal.depression": 1
+            },
+			"extantreqs": {
+                "society": 1,
+				"trickal.worshipsomething": -1
+			},
+            "slots": [
+                {
+                    "id": "Subject",
+                    "label": "교단",
+                    "required": {
+                        "society": 1
+                    }
+                }
+            ],
+			"alt": [
+				{
+					"requirements": {
+						"society": 1
+					},
+					"aspects": {
+						"recruiting": 1,
+						"startcult": 1
+					},
+					"mutations": [
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipdepression",
+							"level": 1
+						},
+						{
+							"filter": "society",
+							"mutate": "trickal.worshipsomething",
+							"level": 1
+						}
+					],
+					"description": "나는 세계수 교단의 교주가 되었다.",
+                }
+			],
+			"warmup": 30,
+            "startdescription": "세계수 교단의 첫 신도로 우울의 사도를 영입한다. 우리는 현실과의 괴리를 추구할 것이다.",
+            "description": "나는 다시 생각해보기로 했다.",
+            "craftable": true,
+            "burnimage": "freemasons"
+        },
+        {
             "id": "trickal.startcultpure",
             "label": "순수를 추구하는 세계수 교단의 교주로 취임하기",
             "actionid": "trickal.talk",
@@ -22,6 +282,11 @@
                 {
                     "filter": "society",
                     "mutate": "trickal.worshippure",
+                    "level": 1
+                },
+                {
+                    "filter": "society",
+                    "mutate": "trickal.worshipsomething",
                     "level": 1
                 }
             ],
@@ -54,6 +319,11 @@
                     "filter": "society",
                     "mutate": "trickal.worshipmadness",
                     "level": 1
+                },
+                {
+                    "filter": "society",
+                    "mutate": "trickal.worshipsomething",
+                    "level": 1
                 }
             ],
             "startdescription": "세계수 교단의 첫 신도로 광기의 사도를 영입한다. 우리는 집착할 수 있는 특별한 목표를 추구할 것이다.",
@@ -84,6 +354,11 @@
                 {
                     "filter": "society",
                     "mutate": "trickal.worshipcool",
+                    "level": 1
+                },
+                {
+                    "filter": "society",
+                    "mutate": "trickal.worshipsomething",
                     "level": 1
                 }
             ],
@@ -116,6 +391,11 @@
                     "filter": "society",
                     "mutate": "trickal.worshipactive",
                     "level": 1
+                },
+                {
+                    "filter": "society",
+                    "mutate": "trickal.worshipsomething",
+                    "level": 1
                 }
             ],
             "startdescription": "세계수 교단의 첫 신도로 활발의 사도를 영입한다. 우리는 현재의 만족과 성취를 추구할 것이다.",
@@ -147,6 +427,11 @@
                     "filter": "society",
                     "mutate": "trickal.worshipdepression",
                     "level": 1
+                },
+                {
+                    "filter": "society",
+                    "mutate": "trickal.worshipsomething",
+                    "level": 1
                 }
             ],
             "startdescription": "세계수 교단의 첫 신도로 우울의 사도를 영입한다. 우리는 현실과의 괴리를 추구할 것이다.",
@@ -174,7 +459,7 @@
             },
             "startdescription": "이 자는 준비되었다.",
             "description": "세계수의 교단에 새로운 신도가 영입되었다.",
-            "warmup": 30,
+            "warmup": 60,
             "craftable": true,
             "burnimage": "freemasons"
         },
@@ -188,6 +473,9 @@
                 "acquaintance": -1,
                 "trickal.apostle": -1,
                 "trickal.pure": 7
+            },
+            "effects": {
+                "trickal.food": -99
             },
             "aspects": {
                 "promote": 1
@@ -207,6 +495,9 @@
                 "trickal.apostle": 1,
                 "acquaintance": -1,
                 "trickal.pure": 15
+            },
+            "effects": {
+                "trickal.food": -99
             },
             "aspects": {
                 "promote": 1

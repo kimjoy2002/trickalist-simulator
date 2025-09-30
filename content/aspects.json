@@ -38,6 +38,18 @@
 			"isAspect": true,
             "icon": "job"
         },
+        {
+            "id": "trickal.luckytype",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+        {
+            "id": "trickal.worshipsomething",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
 		{
             "id": "trickal.ingredient",
             "label": "재료",
