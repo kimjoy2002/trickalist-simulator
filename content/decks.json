@@ -6,7 +6,8 @@
             "description": "요정 왕국 에르피엔의 누군가.",
             "spec": [
                 "trickal.ashur",
-				"trickal.mayo"
+				"trickal.mayo",
+				"trickal.marie"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -29,7 +30,9 @@
             "label": "모나티엄의 일원",
             "description": "엘프 도시 모나티엄의 누군가.",
             "spec": [
-				"trickal.elena"
+				"trickal.elena",
+				"trickal.rohne",
+				"trickal.canna"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -38,7 +41,9 @@
             "label": "정령산의 일원",
             "description": "정령산의 누군가.",
             "spec": [
-				"trickal.gabia"
+				"trickal.gabia",
+				"trickal.naia",
+				"trickal.meluna"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -47,7 +52,9 @@
             "label": "유령 늪의 일원",
             "description": "유령 늪의 누군가.",
             "spec": [
-				"trickal.speaki"
+				"trickal.speaki",
+				"trickal.espi",
+				"trickal.shady"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -56,7 +63,8 @@
             "label": "불길과 물길의 터의 일원",
             "description": "불길과 물길의 터의 누군가.",
             "spec": [
-				"trickal.sist"
+				"trickal.sist",
+				"trickal.silphir"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -65,7 +73,8 @@
             "label": "벨리티엔의 일원",
             "description": "마녀 왕국 벨리티엔의 누군가.",
             "spec": [
-				"trickal.levi"
+				"trickal.levi",
+				"trickal.velvet"
             ],
             "defaultcard": "mistakenidentity"
         },

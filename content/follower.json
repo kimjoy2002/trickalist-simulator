@@ -1082,6 +1082,657 @@
 			"isAspect": true,
             "isHidden": true,
 			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.rohne4",
+            "label": "친절한 이웃 스파이 로네",
+            "description": "로네는 이제 협박에 굴하지 않는다. 그것이 자신이 제일 좋아하는 돈까스일지라도",
+            "aspects": {
+				"trickal.rohne_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.rohne"
+        },
+        {
+            "id": "trickal.rohne3",
+            "label": "사도 로네",
+            "description": "로네는 거짓말을 할때 말을 더듬을 정도로 맹하지만, 다크넷에서만큼은 누구보다 호전적이다.",
+            "aspects": {
+				"trickal.rohne_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.rohne",
+			"xtriggers": {
+                "promote": "trickal.rohne4"
+			}
+        },
+        {
+            "id": "trickal.rohne2",
+            "label": "신도 로네",
+            "description": "로네가 스파이가 된 계기는 모나티엄 적성검사기에서 직업이 스파이로 나왔기 때문이다.",
+            "aspects": {
+				"trickal.rohne_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.rohne",
+			"xtriggers": {
+                "promote": "trickal.rohne3"
+			}
+        },
+        {
+            "id": "trickal.rohne",
+            "label": "로네",
+            "description": "맹하고 어리숙해 보이는 엘프 최고의? 스파이.",
+            "aspects": {
+				"trickal.rohne_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+				"acquaintance": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.rohne",
+			"xtriggers": {
+                "recruiting": "trickal.rohne2"
+			}
+        },
+        {
+            "id": "trickal.rohne_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.naia4",
+            "label": "사고뭉치 정령 나이아",
+            "description": "나이아의 눈은 어느때보다 빛나고 있으며 누구에게든 물을 뿌릴 준비가 되었다.",
+            "aspects": {
+				"trickal.naia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.naia"
+        },
+        {
+            "id": "trickal.naia3",
+            "label": "사도 나이아",
+            "description": "나이아는 정기적으로 호수를 청소한다. 이는 교단에서도 도움을 주고 있다.",
+            "aspects": {
+				"trickal.naia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.naia",
+			"xtriggers": {
+                "promote": "trickal.naia4"
+			}
+        },
+        {
+            "id": "trickal.naia2",
+            "label": "신도 나이아",
+            "description": "나이아는 잠시라도 가만히 있지않는다. 그것이 그녀의 애정표현이다.",
+            "aspects": {
+				"trickal.naia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.naia",
+			"xtriggers": {
+                "promote": "trickal.naia3"
+			}
+        },
+        {
+            "id": "trickal.naia",
+            "label": "나이아",
+            "description": "가벼운 장난으로 주변을 밝혀주는 분위기 메이커 물의 고위 정령.",
+            "aspects": {
+				"trickal.naia_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+				"acquaintance": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.naia",
+			"xtriggers": {
+                "recruiting": "trickal.naia2"
+			}
+        },
+        {
+            "id": "trickal.naia_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.silphir4",
+            "label": "자존심 높은 용족 실피르",
+            "description": "실피르는 이제 교단에서의 서열이 용족으로서의 서열보다 중요하다.",
+            "aspects": {
+				"trickal.silphir_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.silphir"
+        },
+        {
+            "id": "trickal.silphir3",
+            "label": "사도 실피르",
+            "description": "실피르는 항상 서열에 집착한다. 그것은 용족의 본능과도 같다.",
+            "aspects": {
+				"trickal.silphir_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.silphir",
+			"xtriggers": {
+                "promote": "trickal.silphir4"
+			}
+        },
+        {
+            "id": "trickal.silphir2",
+            "label": "신도 실피르",
+            "description": "실피르는 스스로 용족의 2인자를 칭하지만 실상은 3인자다.",
+            "aspects": {
+				"trickal.silphir_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.silphir",
+			"xtriggers": {
+                "promote": "trickal.silphir3"
+			}
+        },
+        {
+            "id": "trickal.silphir",
+            "label": "실피르",
+            "description": "최고의 자리를 노리고 언제나 서열 도전에 목을 매는 사피이어의 용족.",
+            "aspects": {
+				"trickal.silphir_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+				"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.silphir",
+			"xtriggers": {
+                "recruiting": "trickal.silphir2"
+			}
+        },
+        {
+            "id": "trickal.silphir_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.espi4",
+            "label": "꿈 엿보기 스페셜리스트 에스피",
+            "description": "에스피는 최근 기이한 꿈을 보았다. 꿈의 세계의 벽을 따라서 숲이 자라나있었다. 그리고 누구나 알고 있듯이, 그 곳엔 벽이 없다.",
+            "aspects": {
+				"trickal.espi_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.espi"
+        },
+        {
+            "id": "trickal.espi3",
+            "label": "사도 에스피",
+            "description": "에스피는 세계수의 꿈을 본 적이 있다. 하늘에는 금이 가있고, 나무에는 눈이 불어나 있었다.",
+            "aspects": {
+				"trickal.espi_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.espi",
+			"xtriggers": {
+                "promote": "trickal.espi4"
+			}
+        },
+        {
+            "id": "trickal.espi2",
+            "label": "신도 에스피",
+            "description": "에스피의 가면은 직접 만든 가면이며, 가면을 벗으면 공손해진다고 한다.",
+            "aspects": {
+				"trickal.espi_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.espi",
+			"xtriggers": {
+                "promote": "trickal.espi3"
+			}
+        },
+        {
+            "id": "trickal.espi",
+            "label": "에스피",
+            "description": "남의 꿈을 들여다보며 악몽을 보는 것이 취미인 꿈의 유령.",
+            "aspects": {
+				"trickal.espi_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+				"acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.espi",
+			"xtriggers": {
+                "recruiting": "trickal.espi2"
+			}
+        },
+        {
+            "id": "trickal.espi_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.velvet4",
+            "label": "근력 강화 마법 전문 벨벳",
+            "description": "벨벳은 언젠가 자신의 왕국을 세울 것이다. 그때까진 당신의 추종자로 있기로 했다.",
+            "aspects": {
+				"trickal.velvet_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+				"trickal.troublemaker": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.velvet"
+        },
+        {
+            "id": "trickal.velvet3",
+            "label": "사도 벨벳",
+            "description": "벨벳은 지금 교단의 사도로 있지만 원래 누군가에 따르는 성격은 아니다.",
+            "aspects": {
+				"trickal.velvet_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.troublemaker": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.velvet",
+			"xtriggers": {
+                "promote": "trickal.velvet4"
+			}
+        },
+        {
+            "id": "trickal.velvet2",
+            "label": "신도 벨벳",
+            "description": "벨벳의 마법은 마치 물리력처럼 보인다. 뛰어난 힘은 마치 마법과도 같다.",
+            "aspects": {
+				"trickal.velvet_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+				"trickal.troublemaker": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.velvet",
+			"xtriggers": {
+                "promote": "trickal.velvet3"
+			}
+        },
+        {
+            "id": "trickal.velvet",
+            "label": "벨벳",
+            "description": "엄청난 권력욕을 가진 벨리티엔의 고위 마녀.",
+            "aspects": {
+				"trickal.velvet_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+				"acquaintance": 1,
+				"trickal.troublemaker": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.velvet",
+			"xtriggers": {
+                "recruiting": "trickal.velvet2"
+			}
+        },
+        {
+            "id": "trickal.velvet_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.marie4",
+            "label": "폭발전문가 마리",
+            "description": "마리는 교단을 위해 어떤 것이든 터트릴 준비가 되어있다.",
+            "aspects": {
+				"trickal.marie_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.marie"
+        },
+        {
+            "id": "trickal.marie3",
+            "label": "사도 마리",
+            "description": "마리는 한때 은행털이를 했던 현상수배범이기도 했다. 폭탄의 제조 기술은 그때 배운 것이다.",
+            "aspects": {
+				"trickal.marie_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.marie",
+			"xtriggers": {
+                "promote": "trickal.marie4"
+			}
+        },
+        {
+            "id": "trickal.marie2",
+            "label": "신도 마리",
+            "description": "마리는 탐험가이지만 유적 보존에는 크게 관심이 없다.",
+            "aspects": {
+				"trickal.marie_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.marie",
+			"xtriggers": {
+                "promote": "trickal.marie3"
+			}
+        },
+        {
+            "id": "trickal.marie",
+            "label": "마리",
+            "description": "폭발물을 좋아하는 요정 왕국의 탐험가.",
+            "aspects": {
+				"trickal.marie_": 1,
+                "trickal.creature": 1,
+				"trickal.fairy": 1,
+				"acquaintance": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.marie",
+			"xtriggers": {
+                "recruiting": "trickal.marie2"
+			}
+        },
+        {
+            "id": "trickal.marie_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.canna4",
+            "label": "오락실 패왕 칸나",
+            "description": "칸나는 이제 교단이 일터이자 집이다. 더 이상 휴일은 필요없을 것이다.",
+            "aspects": {
+				"trickal.canna_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.canna"
+        },
+        {
+            "id": "trickal.canna3",
+            "label": "사도 칸나",
+            "description": "칸나는 집에 들어가지 못할때면 오락실에서 스트레스를 풀곤한다.",
+            "aspects": {
+				"trickal.canna_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.canna",
+			"xtriggers": {
+                "promote": "trickal.canna4"
+			}
+        },
+        {
+            "id": "trickal.canna2",
+            "label": "신도 칸나",
+            "description": "칸나는 성실하지만 불운을 달고 다닌다. 항상 사건에 휘말린다.",
+            "aspects": {
+				"trickal.canna_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.canna",
+			"xtriggers": {
+                "promote": "trickal.canna3"
+			}
+        },
+        {
+            "id": "trickal.canna",
+            "label": "칸나",
+            "description": "엘프 도시의 모든 보안과 안전을 담당하는 진압반장.",
+            "aspects": {
+				"trickal.canna_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+				"acquaintance": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.canna",
+			"xtriggers": {
+                "recruiting": "trickal.canna2"
+			}
+        },
+        {
+            "id": "trickal.canna_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.meluna4",
+            "label": "엘리아스 최고 재벌 멜루나",
+            "description": "멜루나의 꿈은 화성이라는 행성으로 가보는 것이다. 멜루나는 멜론이 불법 유통되지않는 세상을 꿈꾼다.",
+            "aspects": {
+				"trickal.meluna_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.meluna"
+        },
+        {
+            "id": "trickal.meluna3",
+            "label": "사도 멜루나",
+            "description": "멜루나의 정치력은 교단에서도 최고급이며, 이는 교단에서도 큰 도움이 된다.",
+            "aspects": {
+				"trickal.meluna_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.meluna",
+			"xtriggers": {
+                "promote": "trickal.meluna4"
+			}
+        },
+        {
+            "id": "trickal.meluna2",
+            "label": "신도 멜루나",
+            "description": "멜루나는 펫인 머스크와 함께 다닌다. 한때 펫의 이름을 딴 코인도 만든적이 있다.",
+            "aspects": {
+				"trickal.meluna_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.meluna",
+			"xtriggers": {
+                "promote": "trickal.meluna3"
+			}
+        },
+        {
+            "id": "trickal.meluna",
+            "label": "멜루나",
+            "description": "거대 기업 멜루 코퍼레이션의 회장이자 엘리아스에서 가장 돈 많은 재벌인 멜론의 정령.",
+            "aspects": {
+				"trickal.meluna_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+				"acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.meluna",
+			"xtriggers": {
+                "recruiting": "trickal.meluna2"
+			}
+        },
+        {
+            "id": "trickal.meluna_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.shady4",
+            "label": "최고 장난꾼 셰이디",
+            "description": "셰이디의 궁극적인 목표는 세상이 혼돈에 휩싸이는 것으로, 그것은 꼭 교단의 방향과 상충된다고 볼 순 없다.",
+            "aspects": {
+				"trickal.shady_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+				"trickal.troublemaker": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.shady"
+        },
+        {
+            "id": "trickal.shady3",
+            "label": "사도 셰이디",
+            "description": "유령에게서는 장난은 본능이며, 혼돈의 유령인 셰이디의 경우 더욱 위험하다.",
+            "aspects": {
+				"trickal.shady_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.troublemaker": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.shady",
+			"xtriggers": {
+                "promote": "trickal.shady4"
+			}
+        },
+        {
+            "id": "trickal.shady2",
+            "label": "신도 셰이디",
+            "description": "혼돈은 셰이디의 본질이며, 혼돈이 곧 그녀의 가치관이다.",
+            "aspects": {
+				"trickal.shady_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+				"trickal.troublemaker": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.shady",
+			"xtriggers": {
+                "promote": "trickal.shady3"
+			}
+        },
+        {
+            "id": "trickal.shady",
+            "label": "셰이디",
+            "description": "장난을 좋아하고 공간을 조작하는 능력을 지닌 혼돈의 유령.",
+            "aspects": {
+				"trickal.shady_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+				"acquaintance": 1,
+				"trickal.troublemaker": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.shady",
+			"xtriggers": {
+                "recruiting": "trickal.shady2"
+			}
+        },
+        {
+            "id": "trickal.shady_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
         }
     ]
 }
