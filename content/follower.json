@@ -1391,7 +1391,7 @@
         {
             "id": "trickal.velvet3",
             "label": "사도 벨벳",
-            "description": "벨벳은 지금 교단의 사도로 있지만 원래 누군가에 따르는 성격은 아니다.",
+            "description": "벨벳은 원래 누군가에 따르는 성격은 아니다. 하지만 지금 당장은 아니다.",
             "aspects": {
 				"trickal.velvet_": 1,
                 "trickal.creature": 1,
@@ -1730,6 +1730,503 @@
         },
         {
             "id": "trickal.shady_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.jade4",
+            "label": "지식의 컬렉션 제이드",
+            "description": "제이드는 자신이 찾을 수 있는 가장 밝은 길을 따라간다.",
+            "aspects": {
+				"trickal.jade_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.jade"
+        },
+        {
+            "id": "trickal.jade3",
+            "label": "사도 제이드",
+            "description": "제이드는 이 세상의 모든 지식을 탐구한다. 이 때문에 가끔 위험한 지식에도 접근한다.",
+            "aspects": {
+				"trickal.jade_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.jade",
+			"xtriggers": {
+                "promote": "trickal.jade4"
+			}
+        },
+        {
+            "id": "trickal.jade2",
+            "label": "신도 제이드",
+            "description": "제이드는 용족이지만 서열에는 관심 없이 자신의 도서관에서 혼자 지낸다.",
+            "aspects": {
+				"trickal.jade_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.jade",
+			"xtriggers": {
+                "promote": "trickal.jade3"
+			}
+        },
+        {
+            "id": "trickal.jade",
+            "label": "제이드",
+            "description": "지식을 보물처럼 여기는 비취옥의 용족.",
+            "aspects": {
+				"trickal.jade_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+				"acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.jade",
+			"xtriggers": {
+                "recruiting": "trickal.jade2"
+			}
+        },
+        {
+            "id": "trickal.jade_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.fricle4",
+            "label": "멸망의 전조 프리클",
+            "description": "프리클은 언젠가 교주의 자리도 노릴 생각이 있다. 하지만 지금은 아니다.",
+            "aspects": {
+				"trickal.fricle_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.fricle"
+        },
+        {
+            "id": "trickal.fricle3",
+            "label": "사도 프리클",
+            "description": "프리클은 교단의 책략가로서 활약하기도 한다. 자주 실패하긴해도 계획은 용의주도하다",
+            "aspects": {
+				"trickal.fricle_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.fricle",
+			"xtriggers": {
+                "promote": "trickal.fricle4"
+			}
+        },
+        {
+            "id": "trickal.fricle2",
+            "label": "신도 프리클",
+            "description": "프리클은 무언가 이루기위해서 작은 희생은 허용된다고 생각한다.",
+            "aspects": {
+				"trickal.fricle_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.fricle",
+			"xtriggers": {
+                "promote": "trickal.fricle3"
+			}
+        },
+        {
+            "id": "trickal.fricle",
+            "label": "프리클",
+            "description": "마녀 왕국을 보좌하는 마녀 왕국의 2인자 고위 마녀.",
+            "aspects": {
+				"trickal.fricle_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+				"acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.fricle",
+			"xtriggers": {
+                "recruiting": "trickal.fricle2"
+			}
+        },
+        {
+            "id": "trickal.fricle_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.maestro4",
+            "label": "최고 사양 로봇 마에스트로 2호",
+            "description": "로봇에는 의식이 없다. 세계수의 관심이 닿는다면 이야기가 다르다.",
+            "aspects": {
+				"trickal.maestro_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.maestro"
+        },
+        {
+            "id": "trickal.maestro3",
+            "label": "사도 마에스트로 2호",
+            "description": "마에스트로 2호의 ai는 엘레나의 의식을 베이스로 하여 만들어졌다.",
+            "aspects": {
+				"trickal.maestro_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.maestro",
+			"xtriggers": {
+                "promote": "trickal.maestro4"
+			}
+        },
+        {
+            "id": "trickal.maestro2",
+            "label": "신도 마에스트로 2호",
+            "description": "마에스트로 2호의 이전 모델인 마에스트로 1호는 자유의지를 지녔기때문에 폐기 처분 되었다.",
+            "aspects": {
+				"trickal.maestro_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.maestro",
+			"xtriggers": {
+                "promote": "trickal.maestro3"
+			}
+        },
+        {
+            "id": "trickal.maestro",
+            "label": "마에스트로 2호",
+            "description": "엘프의 기술력으로 만들어진 ai 로봇.",
+            "aspects": {
+				"trickal.maestro_": 1,
+                "trickal.creature": 1,
+				"trickal.elf": 1,
+				"acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.maestro",
+			"xtriggers": {
+                "recruiting": "trickal.maestro2"
+			}
+        },
+        {
+            "id": "trickal.maestro_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.rim4",
+            "label": "질서와 균형 림",
+            "description": "림은 질서와 균형을 맞추기위해 자기 자신을 바꿀 준비가 되었다.",
+            "aspects": {
+				"trickal.rim_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.rim"
+        },
+        {
+            "id": "trickal.rim3",
+            "label": "사도 림",
+            "description": "림은 혼란을 발견하면 그것을 막기위해 등장한다. 균형이 깨지면 림 자신의 정체성도 위험하다.",
+            "aspects": {
+				"trickal.rim_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.rim",
+			"xtriggers": {
+                "promote": "trickal.rim4"
+			}
+        },
+        {
+            "id": "trickal.rim2",
+            "label": "신도 림",
+            "description": "림은 시도때도 없이 썰렁 개그를 말한다. 이는 본능이기에 본인도 자제할 수 없다.",
+            "aspects": {
+				"trickal.rim_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.rim",
+			"xtriggers": {
+                "promote": "trickal.rim3"
+			}
+        },
+        {
+            "id": "trickal.rim",
+            "label": "림",
+            "description": "썰렁 개그를 좋아하는 질서와 균형의 유령.",
+            "aspects": {
+				"trickal.rim_": 1,
+                "trickal.creature": 1,
+				"trickal.ghost": 1,
+				"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.rim",
+			"xtriggers": {
+                "recruiting": "trickal.rim2"
+			}
+        },
+        {
+            "id": "trickal.rim_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.efreet4",
+            "label": "원칙주의자 이프리트",
+            "description": "이프리트는 자신이 인정한 자에게 자신의 보물을 내줄 것이다.",
+            "aspects": {
+				"trickal.efreet_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.efreet"
+        },
+        {
+            "id": "trickal.efreet3",
+            "label": "사도 이프리트",
+            "description": "이프리트가 들고 있는 검은 여섯 보물중 하나인 불의 검으로 이프리트는 이 보물을 지키고 있다.",
+            "aspects": {
+				"trickal.efreet_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.efreet",
+			"xtriggers": {
+                "promote": "trickal.efreet4"
+			}
+        },
+        {
+            "id": "trickal.efreet2",
+            "label": "신도 이프리트",
+            "description": "이프리트는 엘리아스 중에서도 최고령자에 속하며 불답게 화를 잘낸다.",
+            "aspects": {
+				"trickal.efreet_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.efreet",
+			"xtriggers": {
+                "promote": "trickal.efreet3"
+			}
+        },
+        {
+            "id": "trickal.efreet",
+            "label": "이프리트",
+            "description": "정령산 내부 발화지에 자리잡고있는 불의 고위 정령.",
+            "aspects": {
+				"trickal.efreet_": 1,
+                "trickal.creature": 1,
+				"trickal.element": 1,
+				"acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.efreet",
+			"xtriggers": {
+                "recruiting": "trickal.efreet2"
+			}
+        },
+        {
+            "id": "trickal.efreet_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.kidian4",
+            "label": "아웃사이더 키디언",
+            "description": "키디언은 이상을 이루지 못한다는것을 안다. 하지만 이상을 가지고있기에 빛난다.",
+            "aspects": {
+				"trickal.kidian_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.kidian"
+        },
+        {
+            "id": "trickal.kidian3",
+            "label": "사도 키디언",
+            "description": "키디언은 연회장에서 가끔 접시를 깨먹는다. 이는 키디언의 식습관이 특이하기때문이다.",
+            "aspects": {
+				"trickal.kidian_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.kidian",
+			"xtriggers": {
+                "promote": "trickal.kidian4"
+			}
+        },
+        {
+            "id": "trickal.kidian2",
+            "label": "신도 키디언",
+            "description": "키디언은 혼자 있는 것을 싫어하지않는다. 교단에서도 혼자가 익숙하다.",
+            "aspects": {
+				"trickal.kidian_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.kidian",
+			"xtriggers": {
+                "promote": "trickal.kidian3"
+			}
+        },
+        {
+            "id": "trickal.kidian",
+            "label": "키디언",
+            "description": "엘리아스의 지하에 혼자 생활하는 흑요석의 용족.",
+            "aspects": {
+				"trickal.kidian_": 1,
+                "trickal.creature": 1,
+				"trickal.dragon": 1,
+				"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.kidian",
+			"xtriggers": {
+                "recruiting": "trickal.kidian2"
+			}
+        },
+        {
+            "id": "trickal.kidian_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.posher4",
+            "label": "포션 제작 장인 포셔",
+            "description": "포셔는 최고의 배율을 가진 포션을 찾고있다. 여기서는 곧 찾을 수 있을 것이다.",
+            "aspects": {
+				"trickal.posher_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.posher"
+        },
+        {
+            "id": "trickal.posher3",
+            "label": "사도 포셔",
+            "description": "포셔는 임상 실험을 하는데 주저함이 없다. 교단에서도 이를 묵인하고 있다.",
+            "aspects": {
+				"trickal.posher_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.posher",
+			"xtriggers": {
+                "promote": "trickal.posher4"
+			}
+        },
+        {
+            "id": "trickal.posher2",
+            "label": "신도 포셔",
+            "description": "포셔가 만든 포션은 항상 부작용을 가지고 있다. 포셔는 이를 대수롭게 여기지않는다.",
+            "aspects": {
+				"trickal.posher_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.posher",
+			"xtriggers": {
+                "promote": "trickal.posher3"
+			}
+        },
+        {
+            "id": "trickal.posher",
+            "label": "포셔",
+            "description": "엘라아스의 포션 장인 고위 마녀.",
+            "aspects": {
+				"trickal.posher_": 1,
+                "trickal.creature": 1,
+				"trickal.witch": 1,
+				"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.posher",
+			"xtriggers": {
+                "recruiting": "trickal.posher2"
+			}
+        },
+        {
+            "id": "trickal.posher_",
 			"isAspect": true,
             "isHidden": true,
 			"noArtNeeded": true

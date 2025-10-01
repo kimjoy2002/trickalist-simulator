@@ -32,7 +32,8 @@
             "spec": [
 				"trickal.elena",
 				"trickal.rohne",
-				"trickal.canna"
+				"trickal.canna",
+				"trickal.maestro"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -43,7 +44,8 @@
             "spec": [
 				"trickal.gabia",
 				"trickal.naia",
-				"trickal.meluna"
+				"trickal.meluna",
+				"trickal.efreet"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -54,7 +56,8 @@
             "spec": [
 				"trickal.speaki",
 				"trickal.espi",
-				"trickal.shady"
+				"trickal.shady",
+				"trickal.rim"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -64,7 +67,9 @@
             "description": "불길과 물길의 터의 누군가.",
             "spec": [
 				"trickal.sist",
-				"trickal.silphir"
+				"trickal.silphir",
+				"trickal.jade",
+				"trickal.kidian"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -74,7 +79,9 @@
             "description": "마녀 왕국 벨리티엔의 누군가.",
             "spec": [
 				"trickal.levi",
-				"trickal.velvet"
+				"trickal.velvet",
+				"trickal.fricle",
+				"trickal.posher"
             ],
             "defaultcard": "mistakenidentity"
         },
