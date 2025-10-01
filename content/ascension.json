@@ -1,0 +1,182 @@
+{
+    "recipes": [
+		{
+            "id": "trickal.booktoasc2",
+            "actionid": "trickal.study",
+            "craftable": true,
+            "description": ".",
+            "label": "수양록의 두번째 챕터를 쓴다.",
+            "requirements": {
+                "trickal.book2": 1
+            },
+            "startdescription": "수양록은 첫 챕터를 제외하면 비어있다. 이어지는 내용은 교주인 내가 작성해야 한다. 처음은 가볍게 엘리아스에 와서 경험한 가벼운 일들을 적어보기로 하자.",
+            "warmup": 3,
+			"linked": [
+				{
+					"id": "trickal.booktoasc2.place",
+					"chance": 100
+				}
+			]
+        },
+		{
+            "id": "trickal.booktoasc2.place",
+            "label": "이 세계에서 모험한 장소",
+            "actionid": "trickal.study",
+            "slots": [
+                {
+                    "id": "Place",
+                    "label": "어딘가",
+                    "required": {
+						"location": 1
+                    },
+                    "description": "처음 가본 어딘가."
+                }
+            ],
+            "craftable": false,
+            "alt": [
+                {
+					"requirements": {
+						"hq": 1
+					},
+					"label": "여긴 부적합하다!",
+					"startdescription": "교단 본부에서 나간 적이 없다면 교주로서 창피한 일일 것이다. 좀 더 다른 곳을 적어보자.",
+                },
+                {
+					"requirements": {
+                        "location": 1,
+						"hq": -1
+					},
+					"label": "수양록을 쓰다: 새로 발견한 장소",
+					"startdescription": "'이 세계에 도착하고서 여러 곳을 돌아다녀보았다. 이 곳은 정말 이상한 곳이다. 내가 원래 살던 세계로는 보이지 않는다.'",
+					"linked": [
+						{
+							"id": "trickal.booktoasc2.people",
+							"chance": 100
+						}
+					]
+                }
+            ],
+            "startdescription": "나는 이 세계에서 가봤던 장소에 대한 이야기를 넣어보자.",
+            "description": "나는 어디를 적을지 결정하지 못했다. [아직 아무도 다녀본 적이 없다면 <b>탐험</b>에서 왕사탕이나 추종자를 사용해보세요.]",
+            "warmup": 30
+        },
+		{
+            "id": "trickal.booktoasc2.people",
+            "label": "이 세계에서 새로 만난 자들...",
+            "actionid": "trickal.study",
+            "slots": [
+                {
+                    "id": "People",
+                    "label": "누군가",
+                    "required": {
+						"trickal.creature": 1
+                    },
+                    "description": "처음 보는 누군가."
+                }
+            ],
+            "craftable": false,
+            "alt": [
+                {
+					"requirements": {
+						"trickal.erpin_": 1
+					},
+					"label": "이건 부적합하다!",
+					"startdescription": "교단에서 처음 만난 두명에 대해서는 굳이 쓸 필요가 없을 것이다. 다른 사람을 찾자.",
+                },
+                {
+					"requirements": {
+						"trickal.ner_": 1
+					},
+					"label": "이건 부적합하다!",
+					"startdescription": "교단에서 처음 만난 두명에 대해서는 굳이 쓸 필요가 없을 것이다. 다른 사람을 찾자.",
+                },
+                {
+					"requirements": {
+						"trickal.bloomy": 1
+					},
+					"label": "이건 부적합하다!",
+					"startdescription": "이 조그만 친구에 대해서는 비밀로 하자. 다른 사람을 찾자.",
+                },
+                {
+					"requirements": {
+                        "acquaintance": 1,
+						"trickal.bloomy": -1,
+						"trickal.erpin_": -1,
+						"trickal.ner_": -1
+					},
+					"label": "수양록을 쓰다: 새로 만난 지인",
+					"startdescription": "'나는 나보다 키가 작은 여러 종족들을 만나보았다. 그들은 나를 신기한듯이 바라보며 관심을 보였다.'",
+					"linked": [
+						{
+							"id": "trickal.booktoasc2.gun",
+							"chance": 100
+						}
+					]
+                },
+                {
+					"requirements": {
+                        "trickal.follower": 1,
+                        "acquaintance": -1,
+						"trickal.bloomy": -1,
+						"trickal.erpin_": -1,
+						"trickal.ner_": -1
+					},
+					"label": "수양록을 쓰다: 새로운 신도",
+					"startdescription": "'나는 나보다 키가 작은 여러 종족들을 만나보았다. 그들은 나를 교주라고 부르며 따르기 시작했다.'",
+					"linked": [
+						{
+							"id": "trickal.booktoasc2.gun",
+							"chance": 100
+						}
+					]
+                }
+            ],
+            "startdescription": "나는 이 세계에서 새롭게 만난 자들에 대한 이야기를 넣어보자.",
+            "description": "나는 누구를 적을지 결정하지 못했다. [아직 아무도 만난적이 없다면 <b>대화</b>에서 엘리프를 사용해보세요.]",
+            "warmup": 30
+        },
+		{
+            "id": "trickal.booktoasc2.gun",
+            "label": "내가 처음 이세계에 왔을때...",
+            "actionid": "trickal.study",
+            "slots": [
+                {
+                    "id": "Thing",
+                    "label": "물건",
+                    "required": {
+						"trickal.collectable": 1
+                    },
+                    "description": "내가 처음 주운 물건."
+                }
+            ],
+            "craftable": false,
+            "alt": [
+                {
+					"requirements": {
+						"trickal.koko": -1
+					},
+					"label": "이건 부적합하다!",
+					"startdescription": "내가 이 세계에서 처음 본 물건은 이것이 아니다. 분명 어딘가 떨어져있을텐데...",
+                },
+                {
+					"requirements": {
+						"trickal.koko": 1
+					},
+					"effects": {
+						"trickal.candy": 1,
+						"trickal.starcandy": 1
+					},
+					"aspects": {
+						"ascend": 1
+					},
+					"label": "수양록을 쓰다: 알 수 없는 권총",
+					"startdescription": "'나는 이 세계에 처음 도착해서 발견한 권총을 살펴보기로 한다. 이름은 코코라고 적혀있는 이상한 권총이다. 장난감 총인가? 발사는 되는걸까?'",
+					"description": "나는 내용을 정리하고 수양록을 덮는다. 아직 이세계에는 모르는 것이 많다. 교단의 교주로서 많은 일을 경험하게 된다면, 뒷 장을 적도록 하자."
+                }
+            ],
+            "startdescription": "나는 지금까지 신경쓰였던 것을 마저 쓰기로 한다. 내가 이 세계에 도착해서 가장 처음 본 물건에 대해서 써보자...",
+            "description": "그게 어디갔더라? [이 물건은 분명 아직 가지고 있을 겁니다. 찾아보세요.]",
+            "warmup": 30
+        }
+    ]
+}

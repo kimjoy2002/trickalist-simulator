@@ -328,12 +328,45 @@
             "aspects": {
                 "text": 1,
                 "trickal.prophecy": 2
+            },
+            "xtriggers": {
+                "ascend": "trickal.book3"
+            }
+        },
+        {
+            "id": "trickal.book3",
+            "label": "수양록",
+            "description": "세계수 교단의 예언서. 작성되어야할 일기. [수양록의 페이지를 채우는 것으로 결말에 다다를 수 있습니다.]",
+            "aspects": {
+                "text": 1,
+                "trickal.prophecy": 3
             }
         },
         {
             "id": "trickal.document",
             "label": "서류",
-            "description": "교단의 일거리다. [서류 카드를 일에 올려 놓으면 처리가 가능합니다. 제때 처리하지 않으면 사제장의 분노를 살 수도 있습니다.]",
+            "description": "교단의 일거리다. [서류 카드를 일에 올려 놓으면 처리가 가능합니다. 오래동안 처리 하지않으면 밀린 업무가 됩니다.]",
+            "aspects": {
+                "trickal.job": 1
+            },
+            "slots": [
+                {
+                    "id": "Concentration",
+                    "label": "집중력",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.starcandy": 1
+                    },
+                    "description": "나는 이 일에 집중해서 좀 더 빨리 끝낼 수도 있다."
+                }
+            ],
+            "lifetime": 180,
+            "decayTo": "trickal.document.late",
+        },
+        {
+            "id": "trickal.document.late",
+            "label": "밀린 서류",
+            "description": "내가 처리하는게 늦어서 생긴 오래된 서류. [서류 카드를 일에 올려 놓으면 처리가 가능합니다. 밀린 업무는 사제장의 분노를 살 수도 있습니다.]",
             "aspects": {
                 "trickal.job": 1
             },

@@ -252,7 +252,7 @@
                 "id": "Document",
                 "label": "아직 처리 못한 일들",
                 "required": {
-                    "trickal.document": 1
+                    "trickal.document.late": 1
                 },
                 "description": "미루기만 하면 해결할 수 없다.",
                 "greedy": true

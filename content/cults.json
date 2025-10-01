@@ -464,7 +464,7 @@
             "burnimage": "freemasons"
         },
         {
-            "id": "trickal.promotetoapostle",
+            "id": "trickal.promotetoapostlepure",
             "label": "순수의 힘을 불러일으켜 신도를 진급시키기",
             "actionid": "trickal.talk",
             "requirements": {
@@ -472,7 +472,9 @@
                 "trickal.follower": 1,
                 "acquaintance": -1,
                 "trickal.apostle": -1,
-                "trickal.pure": 7
+                "trickal.pure": 7,
+				"trickal.worshippure": 1,
+				"trickal.elif": 1
             },
             "effects": {
                 "trickal.food": -99
@@ -480,13 +482,13 @@
             "aspects": {
                 "promote": 1
             },
-            "startdescription": "나의 추종자는 견습생으로써 무릎 꿇고, 제자가 되어 일어날 것이다. 나는 적절한 선서를 시켜야 한다.",
-            "description": "우리는 고통 속에서 태어났으며, 배고픔을 품고, 쾌락을 경험했습니다. 이 세 가지는 육체의 관문이요, '세상에 태어난 모든 것이 부패하는 것은 아니다.' 이것이 그녀의 약속입니다. 그 약속을 기억하며, 우린 스스로를 연회에 바칠 겁니다.'",
+            "startdescription": "나의 추종자는 무릎 꿇고, 사도가 되어 일어날 것이다.",
+            "description": "'우리는 순수의 힘으로 뭉친다. 곧 세상에 순수의 시대가 올 것이다.'",
             "warmup": 60,
             "craftable": true
         },
         {
-            "id": "trickal.promotetoexalted",
+            "id": "trickal.promotetoexaltedpure",
             "label": "순수의 힘을 불러일으켜 사도를 진급시키기",
             "actionid": "trickal.talk",
             "requirements": {
@@ -494,7 +496,9 @@
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
                 "acquaintance": -1,
-                "trickal.pure": 15
+                "trickal.pure": 21,
+				"trickal.worshippure": 1,
+				"trickal.elif": 1
             },
             "effects": {
                 "trickal.food": -99
@@ -503,7 +507,199 @@
                 "promote": 1
             },
             "startdescription": "우리의 교리에 가장 적합한 소수만이 이 경지에 닿을 수 있다.",
-            "description": "'사자장인이 대령에게 무릎꿇었듯, 나도 무릎을 꿇습니다. 죽거나 당신과 싸워 이길 때까진 충성을 다하겠습니다.'",
+            "description": "'우리는 여기서 순수의 시대의 정점을 본다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoapostlecool",
+            "label": "냉정의 힘을 불러일으켜 신도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "acquaintance": -1,
+                "trickal.apostle": -1,
+                "trickal.cool": 7,
+				"trickal.worshipcool": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "나의 추종자는 무릎 꿇고, 사도가 되어 일어날 것이다.",
+            "description": "'우리는 냉정의 힘으로 질서를 추구하고 실익을 얻어낼 것이다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoexaltedcool",
+            "label": "냉정의 힘을 불러일으켜 사도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "acquaintance": -1,
+                "trickal.cool": 21,
+				"trickal.worshipcool": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "우리의 교리에 가장 적합한 소수만이 이 경지에 닿을 수 있다.",
+            "description": "'우리의 사도는 냉정의 정점을 보여줄 것이다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoapostlemadness",
+            "label": "광기의 힘을 불러일으켜 신도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "acquaintance": -1,
+                "trickal.apostle": -1,
+                "trickal.madness": 7,
+				"trickal.worshipmadness": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "나의 추종자는 무릎 꿇고, 사도가 되어 일어날 것이다.",
+            "description": "'우리는 목표를 위해 광기도 서슴없이 추구할 것이다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoexaltedmadness",
+            "label": "광기의 힘을 불러일으켜 사도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "acquaintance": -1,
+                "trickal.madness": 21,
+				"trickal.worshipmadness": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "우리의 교리에 가장 적합한 소수만이 이 경지에 닿을 수 있다.",
+            "description": "'지금 진정한 광기의 사도가 탄생했다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoapostleactive",
+            "label": "활발의 힘을 불러일으켜 신도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "acquaintance": -1,
+                "trickal.apostle": -1,
+                "trickal.active": 7,
+				"trickal.worshipactive": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "나의 추종자는 무릎 꿇고, 사도가 되어 일어날 것이다.",
+            "description": "'우리는 활발의 신도로서 지금 이 순간을 만끽할 것이다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoexaltedmadness",
+            "label": "활발의 힘을 불러일으켜 사도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "acquaintance": -1,
+                "trickal.active": 21,
+				"trickal.worshipactive": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "우리의 교리에 가장 적합한 소수만이 이 경지에 닿을 수 있다.",
+            "description": "'활발 최고의 사도가 지금 탄생하였다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoapostledepression",
+            "label": "우울의 힘을 불러일으켜 신도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "acquaintance": -1,
+                "trickal.apostle": -1,
+                "trickal.depression": 7,
+				"trickal.worshipdepression": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "나의 추종자는 무릎 꿇고, 사도가 되어 일어날 것이다.",
+            "description": "'우리는 지금 우울의 신도로서 교단이 무릎을 꿇는다.'",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.promotetoexaltedmadness",
+            "label": "우울의 힘을 불러일으켜 사도를 진급시키기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "acquaintance": -1,
+                "trickal.depression": 21,
+				"trickal.worshipdepression": 1,
+				"trickal.elif": 1
+            },
+            "effects": {
+                "trickal.food": -99
+            },
+            "aspects": {
+                "promote": 1
+            },
+            "startdescription": "우리의 교리에 가장 적합한 소수만이 이 경지에 닿을 수 있다.",
+            "description": "'우리의 사도가 우울의 힘을 전부 이어받았다.'",
             "warmup": 60,
             "craftable": true
         }

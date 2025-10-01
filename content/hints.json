@@ -15,13 +15,40 @@
             "hintonly": true,
             "craftable": false
         },{
+            "id": "trickal.promotetoapostlehintonelif",
+            "label": "신도를 사도로 진급시킬까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": -1,
+                "trickal.elif": -1
+            },
+            "startdescription": "신도를 사도로 만드려면 우선 엘리프가 필요하다. 그 후에 교리에 맞는 힘을 7단계까지 끌어올려야한다.",
+            "hintonly": true,
+            "craftable": false
+        }, {
+            "id": "trickal.promotetoexaltedhintelif",
+            "label": "사도를 관심 사도로 진급시킬까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.elif": -1
+            },
+            "startdescription": "사도를 관심 사도로 만드려면 우선 엘리프가 필요하다. 그 후에 교리에 맞는 힘을 최소한 21단계까지는 끌어올려야 한다.",
+            "hintonly": true,
+            "craftable": false
+        },{
             "id": "trickal.promotetoapostlehint",
             "label": "신도를 사도로 진급시킬까?",
             "actionid": "trickal.talk",
             "requirements": {
                 "society": 1,
                 "trickal.follower": 1,
-                "trickal.apostle": -1
+                "trickal.apostle": -1,
+                "trickal.elif": 1
             },
             "startdescription": "신도를 사도로 만드려면, 교리에 맞는 힘을 최소한 7단계까지는 끌어올려야 한다.",
             "hintonly": true,
@@ -33,7 +60,8 @@
             "requirements": {
                 "society": 1,
                 "trickal.follower": 1,
-                "trickal.apostle": 1
+                "trickal.apostle": 1,
+                "trickal.elif": 1
             },
             "startdescription": "사도를 관심 사도로 만드려면, 교리에 맞는 힘을 최소한 21단계까지는 끌어올려야 한다.",
             "hintonly": true,

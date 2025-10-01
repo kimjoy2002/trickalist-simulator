@@ -37,7 +37,7 @@
                 "trickal.gold": 1,
                 "trickal.document": -1
             },
-            "startdescription": "밀려있는 서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
+            "startdescription": "서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
             "description": "대충 서류들을 훑어본 후, 도장을 기계적으로 찍었다. 교단의 수고비를 받았다.",
             "warmup": 60,
             "craftable": true
@@ -58,6 +58,50 @@
             "effects": {
                 "trickal.gold": 1,
                 "trickal.document": -1
+            },
+            "startdescription": "서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
+            "description": "빠르게 집중하여 평소보다 빨리 서류의 정리가 끝났다. 교단의 수고비를 받았다.",
+            "warmup": 30,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.latedocument",
+            "label": "밀린 서류 처리",
+            "actionid": "trickal.work",
+            "requirements": {
+                "trickal.document.late": 1,
+				"trickal.starcandy": -1,
+                "location": -1,
+				"society": -1
+            },
+			"aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 1,
+                "trickal.document.late": -1
+            },
+            "startdescription": "밀려있는 서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
+            "description": "대충 서류들을 훑어본 후, 도장을 기계적으로 찍었다. 교단의 수고비를 받았다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.work.latedocument.starcandy",
+            "label": "밀린 서류 처리",
+            "actionid": "trickal.work",
+            "requirements": {
+                "trickal.document.late": 1,
+				"trickal.starcandy": 1,
+                "location": -1,
+				"society": -1
+            },
+			"aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 1,
+                "trickal.document.late": -1
             },
             "startdescription": "밀려있는 서류의 산더미. 단순히 도장만 찍으면 되는 일이다. 왜 교주의 허락이 필요하지?",
             "description": "빠르게 집중하여 평소보다 빨리 서류의 정리가 끝났다. 교단의 수고비를 받았다.",
@@ -93,7 +137,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.pure": 8,
+                "trickal.pure": 10,
                 "trickal.active": 2
             },
             "aspects": {
@@ -115,7 +159,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.pure": 12,
+                "trickal.pure": 16,
                 "trickal.madness": 2
             },
             "aspects": {
@@ -159,7 +203,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.active": 8,
+                "trickal.active": 10,
                 "trickal.madness": 2
             },
             "aspects": {
@@ -181,7 +225,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.active": 12,
+                "trickal.active": 16,
                 "trickal.depression": 2
             },
             "aspects": {
@@ -225,7 +269,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.madness": 8,
+                "trickal.madness": 10,
                 "trickal.cool": 2
             },
             "aspects": {
@@ -247,7 +291,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.madness": 12,
+                "trickal.madness": 16,
                 "trickal.active": 2
             },
             "aspects": {
@@ -291,7 +335,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.cool": 8,
+                "trickal.cool": 10,
                 "trickal.depression": 2
             },
             "aspects": {
@@ -313,7 +357,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.cool": 12,
+                "trickal.cool": 16,
                 "trickal.pure": 2
             },
             "aspects": {
@@ -357,7 +401,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.depression": 8,
+                "trickal.depression": 10,
                 "trickal.pure": 2
             },
             "aspects": {
@@ -379,7 +423,7 @@
             "requirements": {
                 "hq": 1,
                 "trickal.candy": 1,
-                "trickal.depression": 12,
+                "trickal.depression": 16,
                 "trickal.cool": 2
             },
             "aspects": {
