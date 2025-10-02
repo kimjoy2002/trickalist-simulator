@@ -7,7 +7,8 @@
             "spec": [
                 "trickal.ashur",
 				"trickal.mayo",
-				"trickal.marie"
+				"trickal.marie",
+				"trickal.shoupan"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -21,7 +22,8 @@
 				"trickal.tig",
 				"trickal.rufo",
 				"trickal.beni",
-				"trickal.diana"
+				"trickal.diana",
+				"trickal.mago"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -33,7 +35,8 @@
 				"trickal.elena",
 				"trickal.rohne",
 				"trickal.canna",
-				"trickal.maestro"
+				"trickal.maestro",
+				"trickal.festa"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -57,7 +60,8 @@
 				"trickal.speaki",
 				"trickal.espi",
 				"trickal.shady",
-				"trickal.rim"
+				"trickal.rim",
+				"trickal.alice"
             ],
             "defaultcard": "mistakenidentity"
         },
@@ -69,7 +73,8 @@
 				"trickal.sist",
 				"trickal.silphir",
 				"trickal.jade",
-				"trickal.kidian"
+				"trickal.kidian",
+				"trickal.rude"
             ],
             "defaultcard": "mistakenidentity"
         },

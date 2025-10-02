@@ -15,7 +15,7 @@
             "label": "요정 여왕 에르핀",
             "description": "에르핀은 아직 눈물이 많지만, 예전만큼 철부지는 아니다.",
             "aspects": {
-				"trickal.erpin_": 1,
+			"trickal.erpin_": 1,
                 "trickal.creature": 1,
 				"trickal.fairy": 1,
                 "trickal.follower": 1,
@@ -2229,7 +2229,362 @@
             "id": "trickal.posher_",
 			"isAspect": true,
             "isHidden": true,
-			"noArtNeeded": true
+................"noArtNeeded": true
+        },
+........
+........{
+            "id": "trickal.shoupan4",
+            "label": "스피드스터 슈팡",
+            "description": "슈팡은 지금보다 더 빠른 스피드를 갈구하고 있다.",
+            "aspects": {
+................"trickal.shoupan_": 1,
+                "trickal.creature": 1,
+................"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+................"trickal.exalted": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.shoupan"
+        },
+        {
+            "id": "trickal.shoupan3",
+            "label": "사도 슈팡",
+            "description": "슈팡은 엘리아스의 거의 모든 배달을 담당한다. 많은 경우 우편물이 안전하다는 보장을 하기 어렵다.",
+            "aspects": {
+................"trickal.shoupan_": 1,
+                "trickal.creature": 1,
+................"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.shoupan",
+............"xtriggers": {
+                "promote": "trickal.shoupan4"
+............}
+        },
+        {
+            "id": "trickal.shoupan2",
+            "label": "신도 슈팡",
+            "description": "슈팡이 타고 다니는 슈파볼트는 본래 엘프들이 만든 물건이지만 입맛에 맞게 개조했다.",
+            "aspects": {
+................"trickal.shoupan_": 1,
+                "trickal.creature": 1,
+................"trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.shoupan",
+............"xtriggers": {
+                "promote": "trickal.shoupan3"
+............}
+        },
+        {
+            "id": "trickal.shoupan",
+            "label": "슈팡",
+            "description": "엘리아스의 최고 스피드 배달부 요정.",
+            "aspects": {
+................"trickal.shoupan_": 1,
+                "trickal.creature": 1,
+................"trickal.fairy": 1,
+................"acquaintance": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.shoupan",
+............"xtriggers": {
+                "recruiting": "trickal.shoupan2"
+............}
+        },
+        {
+            "id": "trickal.shoupan_",
+............"isAspect": true,
+            "isHidden": true,
+............"noArtNeeded": true
+        },
+........
+........{
+            "id": "trickal.mago4",
+            "label": "양치기 소녀 마고",
+            "description": "마고는 다툼없는 평화로운 세계를 꿈꾼다. 적어도 지금은",
+            "aspects": {
+................"trickal.mago_": 1,
+                "trickal.creature": 1,
+................"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+................"trickal.exalted": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.mago"
+        },
+        {
+            "id": "trickal.mago3",
+            "label": "사도 마고",
+            "description": "마고는 가끔 만우절을 그리워하고는 한다.",
+            "aspects": {
+................"trickal.mago_": 1,
+                "trickal.creature": 1,
+................"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.mago",
+............"xtriggers": {
+                "promote": "trickal.mago4"
+............}
+        },
+        {
+            "id": "trickal.mago2",
+            "label": "신도 마고",
+            "description": "마고는 싸우는걸 좋아하지는 않는다. 그러나 그녀가 항상 지고 산다는 말을 뜻하진 않는다.",
+            "aspects": {
+................"trickal.mago_": 1,
+                "trickal.creature": 1,
+................"trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.mago",
+............"xtriggers": {
+                "promote": "trickal.mago3"
+............}
+        },
+        {
+            "id": "trickal.mago",
+            "label": "마고",
+            "description": "작은 동물 친구들을 보호하고, 돌보는걸 좋아하는 친절한 양 수인.",
+            "aspects": {
+................"trickal.mago_": 1,
+                "trickal.creature": 1,
+................"trickal.beast": 1,
+................"acquaintance": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.mago",
+............"xtriggers": {
+                "recruiting": "trickal.mago2"
+............}
+        },
+        {
+            "id": "trickal.mago_",
+............"isAspect": true,
+            "isHidden": true,
+............"noArtNeeded": true
+        },
+........
+........{
+            "id": "trickal.alice4",
+            "label": "예언가 앨리스",
+            "description": "앨리스는 예언을 하지 않는다. 그녀의 말이 곧 예언이다.",
+            "aspects": {
+................"trickal.alice_": 1,
+                "trickal.creature": 1,
+................"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+................"trickal.exalted": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.alice"
+        },
+        {
+            "id": "trickal.alice3",
+            "label": "사도 앨리스",
+            "description": "앨리스는 세계수에 대해 카드점을 친 적이 있다. 앨리스는 그 일을 후회한다.",
+            "aspects": {
+................"trickal.alice_": 1,
+                "trickal.creature": 1,
+................"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.alice",
+............"xtriggers": {
+                "promote": "trickal.alice4"
+............}
+        },
+        {
+            "id": "trickal.alice2",
+            "label": "신도 앨리스",
+            "description": "앨리스의 예언은 대부분 불행한 일을 예언한다. 대부분은 그녀의 못된 장난이다.",
+            "aspects": {
+................"trickal.alice_": 1,
+                "trickal.creature": 1,
+................"trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.alice",
+............"xtriggers": {
+                "promote": "trickal.alice3"
+............}
+        },
+        {
+            "id": "trickal.alice",
+            "label": "앨리스",
+            "description": "예지 능력이 담긴 타로점을 치는 운명의 유령.",
+            "aspects": {
+................"trickal.alice_": 1,
+                "trickal.creature": 1,
+................"trickal.ghost": 1,
+................"acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.alice",
+............"xtriggers": {
+                "recruiting": "trickal.alice2"
+............}
+        },
+        {
+            "id": "trickal.alice_",
+............"isAspect": true,
+            "isHidden": true,
+............"noArtNeeded": true
+        },
+........
+........{
+            "id": "trickal.rude4",
+            "label": "승부의 루드",
+            "description": "루드는 새로운 신도들에게 교리를 지키기 위해서 건강한 육체가 필요함을 알려준다.",
+            "aspects": {
+................"trickal.rude_": 1,
+                "trickal.creature": 1,
+................"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+................"trickal.exalted": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.rude"
+        },
+        {
+            "id": "trickal.rude3",
+            "label": "사도 루드",
+            "description": "루드는 만나는 사람마다 적극적으로 운동을 권한다. 교주라도 예외는 없다.",
+            "aspects": {
+................"trickal.rude_": 1,
+                "trickal.creature": 1,
+................"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.rude",
+............"xtriggers": {
+                "promote": "trickal.rude4"
+............}
+        },
+        {
+            "id": "trickal.rude2",
+            "label": "신도 루드",
+            "description": "루드는 자신의 헬스장을 가지고있으며 신체 단련의 중요성을 안다.",
+            "aspects": {
+................"trickal.rude_": 1,
+                "trickal.creature": 1,
+................"trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.rude",
+............"xtriggers": {
+                "promote": "trickal.rude3"
+............}
+        },
+        {
+            "id": "trickal.rude",
+            "label": "루드",
+            "description": "신체 단련을 멈추지않는 서열 2위 루비의 용족.",
+            "aspects": {
+................"trickal.rude_": 1,
+                "trickal.creature": 1,
+................"trickal.dragon": 1,
+................"acquaintance": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.rude",
+............"xtriggers": {
+                "recruiting": "trickal.rude2"
+............}
+        },
+        {
+            "id": "trickal.rude_",
+............"isAspect": true,
+            "isHidden": true,
+............"noArtNeeded": true
+        },
+........
+........{
+            "id": "trickal.festa4",
+            "label": "자유의 투사 페스타",
+            "description": "페스타는 교단에 자유가 구속된 것이 아니다. 자신이 원하기때문에 여기에 있다.",
+            "aspects": {
+................"trickal.festa_": 1,
+                "trickal.creature": 1,
+................"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+................"trickal.exalted": 1,
+                "trickal.depression": 10
+            },
+            "icon": "trickal.festa"
+        },
+        {
+            "id": "trickal.festa3",
+            "label": "사도 페스타",
+            "description": "페스타는 이상이 다른 이에게 이해받기 힘든 것을 안다. 그렇기에 대부분을 솔로로 지낸다.",
+            "aspects": {
+................"trickal.festa_": 1,
+                "trickal.creature": 1,
+................"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5
+            },
+            "icon": "trickal.festa",
+............"xtriggers": {
+                "promote": "trickal.festa4"
+............}
+        },
+        {
+            "id": "trickal.festa2",
+            "label": "신도 페스타",
+            "description": "페스타는 체제에 저항하기위해 일부러 노숙을 하기도 한다. 교단 활동 또한 저항의 일환이다.",
+            "aspects": {
+................"trickal.festa_": 1,
+                "trickal.creature": 1,
+................"trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2
+            },
+            "icon": "trickal.festa",
+............"xtriggers": {
+                "promote": "trickal.festa3"
+............}
+        },
+        {
+            "id": "trickal.festa",
+            "label": "페스타",
+            "description": "규칙과 통제를 거부하고 자유를 노래하는 아티스트 락커.",
+            "aspects": {
+................"trickal.festa_": 1,
+                "trickal.creature": 1,
+................"trickal.elf": 1,
+................"acquaintance": 1,
+                "trickal.depression": 1
+            },
+            "icon": "trickal.festa",
+............"xtriggers": {
+                "recruiting": "trickal.festa2"
+............}
+        },
+        {
+            "id": "trickal.festa_",
+............"isAspect": true,
+            "isHidden": true,
+............"noArtNeeded": true
         }
     ]
 }
