@@ -15,7 +15,7 @@
             "label": "요정 여왕 에르핀",
             "description": "에르핀은 아직 눈물이 많지만, 예전만큼 철부지는 아니다.",
             "aspects": {
-			"trickal.erpin_": 1,
+                "trickal.erpin_": 1,
                 "trickal.creature": 1,
 				"trickal.fairy": 1,
                 "trickal.follower": 1,

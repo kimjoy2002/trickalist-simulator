@@ -155,13 +155,12 @@
             "description": "세계수에 대한 독자적인 해석과 분석이 적혀있는 서적."
         },
         {
-            "id": "trickal.book.thetrickal",
-            "unique": true,
-            "label": "더 트릭컬 소설 1쇄본",
+            "id": "trickal.book.randombook",
+            "label": "이름없는 마법서",
             "aspects": {
                 "text": 1
             },
-            "description": "더 이상 인쇄되지않는다는 소문의 서적."
+            "description": "이 책은 오래되어서 제목이 잘 보이지않는다."
         }
 	]
 }

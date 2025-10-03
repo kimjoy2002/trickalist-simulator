@@ -42,7 +42,8 @@
                 "label": "공부",
                 "description": "읽을 것. 배울 것. 거울로 삼아야할 것.",
                 "required": {
-                    "text": 1
+                    "text": 1,
+                    "trickal.spell": 1
                 }
             },
 			"icon": "study"

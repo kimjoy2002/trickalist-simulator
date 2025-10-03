@@ -1,0 +1,597 @@
+{
+    "elements": [
+        {
+            "id": "trickal.spellcard.healthimprove",
+            "label": "체력 증진",
+            "description": "체력은 국력! 체력이 강해야 뭘 해도 성공할 수 있다. 몸에 좋은 드링크를 많이 먹어서라도! 우웁. 너무 맛없어...",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.cool": 2
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다.",
+                    "required": {
+                        "trickal.spellcard.healthimprove": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.training"
+            },
+            "icon": "trickal.spellcard.healthimprove"
+        },
+        {
+            "id": "trickal.spellcard.selfimprove",
+            "label": "자기 계발",
+            "description": "자기 계발은 중요하다. 열심히 노력하자. 딴짓을 하면 큰일난다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.madness": 2
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다.",
+                    "required": {
+                        "trickal.spellcard.selfimprove": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.gethim"
+            },
+            "icon": "trickal.spellcard.selfimprove"
+        },
+        {
+            "id": "trickal.spellcard.afterimage",
+            "label": "그건 내 잔상",
+            "description": "재빠른 몸놀림은 전투에서 몹시 중요하다. 후훗. 지금 네가 보고 있는 것은 내 잔상이다!",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.pure": 2
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다.",
+                    "required": {
+                        "trickal.spellcard.afterimage": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.scholar"
+            },
+            "icon": "trickal.spellcard.afterimage"
+        },
+        {
+            "id": "trickal.spellcard.wizard",
+            "label": "견습 마법사",
+            "description": "견습 마법사의 열의에 찬 어설픈 마법은 의외의 효과를 냈다. 주변이 불바다가 된 것 또한 의외의 결과다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.depression": 2
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다.",
+                    "required": {
+                        "trickal.spellcard.wizard": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.ignoreweak"
+            },
+            "icon": "trickal.spellcard.wizard"
+        },
+        {
+            "id": "trickal.spellcard.healthybody",
+            "label": "건강한 신체",
+            "description": "건강하면 오래 버틸 수 있다! 건강한 신체에 훌륭한 방어력이 깃든다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.active": 2
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다.",
+                    "required": {
+                        "trickal.spellcard.healthybody": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.critical"
+            },
+            "icon": "trickal.spellcard.healthybody"
+        },
+
+        {
+            "id": "trickal.spellcard.training",
+            "label": "개인 트레이닝",
+            "description": "개인 트레이닝은 중요하다. 체력 상승! 근육 상승! 스스로 하는 것이 어렵지만 그래도 열심히 하는 당신은 최고가 될 수 있다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.cool": 5
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.training": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.coolcard"
+            },
+            "icon": "trickal.spellcard.training"
+        },
+        {
+            "id": "trickal.spellcard.scholar",
+            "label": "학자",
+            "description": "훌륭한 마법사가 되려면 많은 공부가 필요하다. 특히나 독서는 지식의 양분이다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.pure": 5
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.scholar": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.purecard"
+            },
+            "icon": "trickal.spellcard.scholar"
+        },
+        {
+            "id": "trickal.spellcard.critical",
+            "label": "회심의 일격",
+            "description": "회심의 한방은 역시 큰 게 제일! 나의 아껴두었던 비장의 대포를 빵!",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.active": 5
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.critical": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.activecard"
+            },
+            "icon": "trickal.spellcard.critical"
+        },
+        {
+            "id": "trickal.spellcard.ignoreweak",
+            "label": "약자무시",
+            "description": "눈 앞의 약자는 그저 맛 좋은 먹잇감일 뿐이다. 후후. 감히 네가? 지금 이걸? 정말 할 수 있겠어?",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.depression": 5
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.ignoreweak": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.depressioncard"
+            },
+            "icon": "trickal.spellcard.ignoreweak"
+        },
+        {
+            "id": "trickal.spellcard.gethim",
+            "label": "저놈 잡아라!",
+            "description": "일목표를 정해줬더니 모두의 투쟁심이 상승한다. 모두가 힘을 모아 적을 쫓아간다. 혼자서 싸울 때 보다 함께 싸울 때 더 강해지는 법이다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.madness": 5
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.gethim": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.madnesscard"
+            },
+            "icon": "trickal.spellcard.gethim"
+        },
+
+        {
+            "id": "trickal.spellcard.coolcard",
+            "label": "성격의 카드[냉정]",
+            "description": "중요한 선택의 순간에서 냉정하지면, 아무도 나의 수를 읽을 수 없다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.cool": 8
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.coolcard": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.midgood"
+            },
+            "icon": "trickal.spellcard.coolcard"
+        },
+        {
+            "id": "trickal.spellcard.purecard",
+            "label": "성격의 카드[순수]",
+            "description": "순수한 것들은 많으면 많을수록 좋다. 더 있어도 좋을 것 같다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.pure": 8
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.purecard": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.warmheart"
+            },
+            "icon": "trickal.spellcard.purecard"
+        },
+        {
+            "id": "trickal.spellcard.activecard",
+            "label": "성격의 카드[활발]",
+            "description": "한명이 장난을 치면 모두들 같이 장난을 시작한다. 분위기가 좋아졌...나? 나도 모르겠다. 히히, 물총 발싸!",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.active": 8
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.activecard": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.lastspurt"
+            },
+            "icon": "trickal.spellcard.activecard"
+        },
+        {
+            "id": "trickal.spellcard.depressioncard",
+            "label": "성격의 카드[우울]",
+            "description": "우울함에 빠지면 모든 일에 지치기 마련이다. 그리고 우울은 또 다른 우울을 친구로 데려온다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.depression": 8
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.depressioncard": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.lateline"
+            },
+            "icon": "trickal.spellcard.depressioncard"
+        },
+        {
+            "id": "trickal.spellcard.madnesscard",
+            "label": "성격의 카드[광기]",
+            "description": "한 아이가 광기에 빠졌다. 그리고 그 광기는 또 다른 광기를 깨웠다. 광기는 전염되는 거야!",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.madness": 8
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.madnesscard": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.vanguard"
+            },
+            "icon": "trickal.spellcard.madnesscard"
+        },
+
+        {
+            "id": "trickal.spellcard.midgood",
+            "label": "중앙GOOD",
+            "description": "중앙의 자리는 언제나 옳다. 꿀빨기에 정말 좋다. 슬쩍 티가 안나게 적당히 요령을 부리면 편하다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.cool": 11
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.midgood": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.aromatherapy"
+            },
+            "icon": "trickal.spellcard.midgood"
+        },
+        {
+            "id": "trickal.spellcard.lateline",
+            "label": "후발대",
+            "description": "후발대도 선봉대 못지 않게 열심히 한다. 나 잊고 있는 것 아니지? 보고 있지?",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.depression": 11
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.lateline": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.suspiciouspotion"
+            },
+            "icon": "trickal.spellcard.lateline"
+        },
+        {
+            "id": "trickal.spellcard.lastspurt",
+            "label": "막판 스퍼트",
+            "description": "얼마 남지 않았어! 모두 달려!! 발이 안 보이도록 뛰어!",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.active": 11
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.lastspurt": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.deadlycharm"
+            },
+            "icon": "trickal.spellcard.lastspurt"
+        },
+        {
+            "id": "trickal.spellcard.warmheart",
+            "label": "따뜻한 마음씨",
+            "description": "부드러운 손길에서 따뜻한 마음씨가 느껴진다. 쓰다듬는 쪽도, 쓰다듬어지는 쪽도 모두 치유되는 기분이야...",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.pure": 11
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.warmheart": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.pastelpicnic"
+            },
+            "icon": "trickal.spellcard.warmheart"
+        },
+        {
+            "id": "trickal.spellcard.vanguard",
+            "label": "선봉대",
+            "description": "선두에 나선 모든 아군을 지켜보고 응원하자. 헤에~ 잘하고 있네. 옳지. 그렇게 싸우는 거야.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.madness": 11
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 스펠카드 / 별사탕",
+                    "description": "이걸 똑같은 스펠카드와 함께 공부하면 한 단계 높은 동일한 속성의 스펠카드를 얻을 수 있습니다. 아니면 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.spellcard.vanguard": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "xtriggers": {
+                "trickal.upgradespell": "trickal.spellcard.skipagrade"
+            },
+            "icon": "trickal.spellcard.vanguard"
+        },
+
+        {
+            "id": "trickal.spellcard.aromatherapy",
+            "label": "아로마 테라피",
+            "description": "좋은 향기를 맡으면 기분이 좋아지고 정신 건강에 도움이 된다. 머리가 맑아지는 느낌이다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.cool": 14
+            },
+            "icon": "trickal.spellcard.aromatherapy"
+        },
+        {
+            "id": "trickal.spellcard.suspiciouspotion",
+            "label": "수상한 물약",
+            "description": "포셔가 만든 수상한 물약이다. 색이 좀 그렇지만 효과 하나 만큼은 보장을 한다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.depression": 14
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 별사탕",
+                    "description": "이걸 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "icon": "trickal.spellcard.suspiciouspotion"
+        },
+        {
+            "id": "trickal.spellcard.deadlycharm",
+            "label": "치명적인 매력",
+            "description": "아찔한 모습에 눈을 뜰 수 없다. 범접한 수 없다는 건 이런 걸까? 옆에 서고 싶지 않다...",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.active": 14
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 별사탕",
+                    "description": "이걸 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "icon": "trickal.spellcard.deadlycharm"
+        },
+        {
+            "id": "trickal.spellcard.pastelpicnic",
+            "label": "파스텔빛 소풍",
+            "description": "함께 있어 더욱 행복한 소풍. 맛있는 간식과 함께라면 더욱 즐겁다.",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.pure": 14
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 별사탕",
+                    "description": "이걸 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "icon": "trickal.spellcard.pastelpicnic"
+        },
+        {
+            "id": "trickal.spellcard.skipagrade",
+            "label": "단체 월반",
+            "description": "월반 허가 도장을 몰래 찍으려다...혼자는 재미없다. 우리 다 같이 올라가자구!",
+			"aspects": {
+				"trickal.spell": 1,
+				"trickal.madness": 14
+            },
+            "slots": [
+                {
+                    "id": "with",
+                    "label": "다른 별사탕",
+                    "description": "이걸 별사탕과 함께 공부해 낮은 단계의 지식으로 쪼갤 수도 있습니다.",
+                    "required": {
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.study"
+                }
+            ],
+            "icon": "trickal.spellcard.skipagrade"
+        }
+	]
+}

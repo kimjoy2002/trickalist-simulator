@@ -1,13 +1,111 @@
 {
     "recipes": [
         {
+            "id": "trickal.spellcard.upgrade",
+            "label": "마법을 연구하기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.spell": 2
+            },
+            "effects": {"trickal.spell": -1},
+            "aspects": {
+                "trickal.upgradespell": 1
+            },
+            "startdescription": "나는 이 동일한 마법을 연구하여 더 고도화 시킬 수 있다. [두 개의 동일한 스펠을 연구하면 한단계 높은 마법이 됩니다.]",
+            "description": "새로운 마법이 탄생했다.",
+            "warmup": 90,
+            "craftable": true
+        },
+        {
+            "id": "trickal.spellcard.fragment",
+            "label": "마법을 분해하기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.spell": 1,
+                "trickal.starcandy": 1
+            },
+            "alt": [
+                {"requirements": {"trickal.spellcard.aromatherapy": 1},
+                    "effects": {"trickal.spellcard.aromatherapy": -1,"trickal.spellcard.midgood": 2}
+                },
+                {"requirements": {"trickal.spellcard.suspiciouspotion": 1},
+                    "effects": {"trickal.spellcard.suspiciouspotion": -1,"trickal.spellcard.lateline": 2}
+                },
+                {"requirements": {"trickal.spellcard.deadlycharm": 1},
+                    "effects": {"trickal.spellcard.deadlycharm": -1,"trickal.spellcard.lastspurt": 2}
+                },
+                {"requirements": {"trickal.spellcard.pastelpicnic": 1},
+                    "effects": {"trickal.spellcard.pastelpicnic": -1,"trickal.spellcard.warmheart": 2}
+                },
+                {"requirements": {"trickal.spellcard.skipagrade": 1},
+                    "effects": {"trickal.spellcard.skipagrade": -1,"trickal.spellcard.vanguard": 2}
+                },
+                {"requirements": {"trickal.spellcard.midgood": 1},
+                    "effects": {"trickal.spellcard.midgood": -1,"trickal.spellcard.coolcard": 2}
+                },
+                {"requirements": {"trickal.spellcard.lateline": 1},
+                    "effects": {"trickal.spellcard.lateline": -1,"trickal.spellcard.depressioncard": 2}
+                },
+                {"requirements": {"trickal.spellcard.lastspurt": 1},
+                    "effects": {"trickal.spellcard.lastspurt": -1,"trickal.spellcard.activecard": 2}
+                },
+                {"requirements": {"trickal.spellcard.warmheart": 1},
+                    "effects": {"trickal.spellcard.warmheart": -1,"trickal.spellcard.purecard": 2}
+                },
+                {"requirements": {"trickal.spellcard.vanguard": 1},
+                    "effects": {"trickal.spellcard.vanguard": -1,"trickal.spellcard.madnesscard": 2}
+                },
+                {"requirements": {"trickal.spellcard.coolcard": 1},
+                    "effects": {"trickal.spellcard.coolcard": -1,"trickal.spellcard.training": 2}
+                },
+                {"requirements": {"trickal.spellcard.depressioncard": 1},
+                    "effects": {"trickal.spellcard.depressioncard": -1,"trickal.spellcard.ignoreweak": 2}
+                },
+                {"requirements": {"trickal.spellcard.activecard": 1},
+                    "effects": {"trickal.spellcard.activecard": -1,"trickal.spellcard.critical": 2}
+                },
+                {"requirements": {"trickal.spellcard.purecard": 1},
+                    "effects": {"trickal.spellcard.purecard": -1,"trickal.spellcard.scholar": 2}
+                },
+                {"requirements": {"trickal.spellcard.madnesscard": 1},
+                    "effects": {"trickal.spellcard.madnesscard": -1,"trickal.spellcard.gethim": 2}
+                },
+                {"requirements": {"trickal.spellcard.training": 1},
+                    "effects": {"trickal.spellcard.training": -1,"trickal.spellcard.healthimprove": 2}
+                },
+                {"requirements": {"trickal.spellcard.ignoreweak": 1},
+                    "effects": {"trickal.spellcard.ignoreweak": -1,"trickal.spellcard.wizard": 2}
+                },
+                {"requirements": {"trickal.spellcard.critical": 1},
+                    "effects": {"trickal.spellcard.critical": -1,"trickal.spellcard.healthybody": 2}
+                },
+                {"requirements": {"trickal.spellcard.scholar": 1},
+                    "effects": {"trickal.spellcard.scholar": -1,"trickal.spellcard.afterimage": 2}
+                },
+                {"requirements": {"trickal.spellcard.gethim": 1},
+                    "effects": {"trickal.spellcard.gethim": -1,"trickal.spellcard.selfimprove": 2}
+                }
+            ],
+            "aspects": {
+                "fatiguing": 1
+            },
+            "startdescription": "나는 이 마법의 핵심요소를 분석해 분해해보기로 한다. [이렇게 하면 스펠카드를 한 단계 낮은 스펠카드 두 개로 쪼개개 됩니다.]",
+            "description": "마법이 기초로 돌아갔다.",
+            "warmup": 30,
+            "craftable": true
+        },
+
+
+
+        {
             "id": "trickal.book.uros",
-            "label": "'뱀의 준동, 마녀 왕국 도난 사건'를 읽기",
+            "label": "'뱀의 준동, 마녀 왕국 도난 사건'을 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.uros": 1
             },
             "effects": {
+				"trickal.spellcard.madnesscard": 1,
                 "trickal.book.uros": -1
             },
             "startdescription": "정의로운 유리 도마뱀 슈로가 엘리아스의 지배자가 되기 위해 여섯 보물을 모으는 내용이 담겨있다. 이는 내가 아는 백사 우로스에 대한 내용과는 조금 다르다.",
@@ -23,6 +121,7 @@
                 "trickal.book.darkelement": 1
             },
             "effects": {
+				"trickal.spellcard.activecard": 1,
                 "trickal.book.darkelement": -1
             },
             "startdescription": "존재론적인 존재가 의미를 부여받고 엘리아스를 잠식하는 내용이다. 상당히 오글거리는 문체로 적혀있다.",
@@ -38,6 +137,7 @@
                 "trickal.book.diary": 1
             },
             "effects": {
+				"trickal.spellcard.purecard": 1,
                 "trickal.book.diary": -1
             },
             "startdescription": "이 책은 큼직한 글씨와 알아보기 힘든 삽화가 포함되어있다.",
@@ -53,6 +153,7 @@
                 "trickal.book.ninja": 1
             },
             "effects": {
+                "trickal.spellcard.afterimage": 1,
                 "trickal.book.ninja": -1
             },
             "startdescription": "이 책은 닌자간의 대화법에 대해 서술되어있다.",
@@ -62,12 +163,13 @@
         },
         {
             "id": "trickal.book.commi",
-            "label": "'더 코미니스트 매니페스토'을 읽기",
+            "label": "'더 코미니스트 매니페스토'를 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.commi": 1
             },
             "effects": {
+                "trickal.spellcard.gethim": 1,
                 "trickal.book.commi": -1
             },
             "startdescription": "이 책은 돈을 가진 자와 돈이 없는 자의 갈등에 대해 서술되어있다.",
@@ -83,6 +185,7 @@
                 "trickal.book.commi": 1
             },
             "effects": {
+                "trickal.spellcard.training": 1,
                 "trickal.book.commi": -1
             },
             "startdescription": "플라톤의 대표적인 대화편으로, 정의란 무엇인가에 대한 질문에서 시작해 국가와 인간 영혼의 질서로까지 서술된다.",
@@ -98,6 +201,7 @@
                 "trickal.book.ruler": 1
             },
             "effects": {
+                "trickal.spellcard.depressioncard": 1,
                 "trickal.book.ruler": -1
             },
             "startdescription": "이 책은 엘리아스의 정당한 지배자가 되기 위해 모아야 하는 여섯 보물과, 한 수인이 그것들을 모으며 남긴 기록들을 담고 있다.",
@@ -107,12 +211,13 @@
         },
         {
             "id": "trickal.book.carrot",
-            "label": "'당근을 튀겼을 때의 비타민 변화'을 읽기",
+            "label": "'당근을 튀겼을 때의 비타민 변화'를 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.carrot": 1
             },
             "effects": {
+                "trickal.spellcard.healthimprove": 1,
                 "trickal.book.carrot": -1
             },
             "startdescription": "이 책은 당근을 쉽고 빠르게 튀기는 법에 대해 서술하고 있다.",
@@ -128,6 +233,7 @@
                 "trickal.book.alchemy": 1
             },
             "effects": {
+                "trickal.spellcard.wizard": 1,
                 "trickal.book.alchemy": -1
             },
             "startdescription": "이 책은 다양한 광물에 대한 설명과 성질이 적혀있다. 맨 뒤에 부록에는 연금술에 대한 추가적인 설명이 붙어있다.",
@@ -143,6 +249,7 @@
                 "trickal.book.metal": 1
             },
             "effects": {
+                "trickal.spellcard.critical": 1,
                 "trickal.book.metal": -1
             },
             "startdescription": "이 책은 합금에 대한 자세한 설명과 주조 방법에 대해 설명하고 있다.",
@@ -158,6 +265,7 @@
                 "trickal.book.mercury": 1
             },
             "effects": {
+                "trickal.spellcard.healthybody": 1,
                 "trickal.book.mercury": -1
             },
             "startdescription": "이 책은 수은에 많이 노출되었을때 발생할 수 있는 질병과 그에 대한 치료법을 설명하고 있다.",
@@ -167,12 +275,13 @@
         },
         {
             "id": "trickal.book.spinks",
-            "label": "'정의의 사자 히어로 스핑크스'을 읽기",
+            "label": "'정의의 사자 히어로 스핑크스'를 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.spinks": 1
             },
             "effects": {
+                "trickal.spellcard.selfimprove": 1,
                 "trickal.book.spinks": -1
             },
             "startdescription": "이 코믹스에는 특히 스핑크스의 전투 장면이 매우 사실적으료 묘사되어 있다.",
@@ -182,12 +291,13 @@
         },
         {
             "id": "trickal.book.spy",
-            "label": "'교주 관찰 일지'을 읽기",
+            "label": "'교주 관찰 일지'를 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.spy": 1
             },
             "effects": {
+                "trickal.spellcard.ignoreweak": 1,
                 "trickal.book.spy": -1
             },
             "startdescription": "이 책에는 진짜 돈까스를 만들어달라는 말만 수십번 적혀있다.",
@@ -197,12 +307,13 @@
         },
         {
             "id": "trickal.book.prophet",
-            "label": "'밝은 미래의 예언서'을 읽기",
+            "label": "'밝은 미래의 예언서'를 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.prophet": 1
             },
             "effects": {
+                "trickal.spellcard.healthybody": 1,
                 "trickal.book.prophet": -1
             },
             "startdescription": "마카샤는 엘리아스의 결말에 대해 희망적인 어조로 묘사하고 있다.",
@@ -212,12 +323,13 @@
         },
         {
             "id": "trickal.book.magic1",
-            "label": "'모든 마법의 기초와 심화 (1권)'을 읽기",
+            "label": "'모든 마법의 기초와 심화 (1권)'를 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.magic1": 1
             },
             "effects": {
+                "trickal.spellcard.wizard": 1,
                 "trickal.book.magic1": -1
             },
             "startdescription": "이 책은 마법에 대한 기본적인 이론과 복잡한 수식에 대해 서술하고 있다.",
@@ -227,12 +339,13 @@
         },
         {
             "id": "trickal.book.magic2",
-            "label": "'모든 마법의 기초와 심화 (2권)'을 읽기",
+            "label": "'모든 마법의 기초와 심화 (2권)'를 읽기",
             "actionid": "trickal.study",
             "requirements": {
                 "trickal.book.magic2": 1
             },
             "effects": {
+                "trickal.spellcard.scholar": 1,
                 "trickal.book.magic2": -1
             },
             "startdescription": "이번 권은 미래 예지 마법과 차원 마법에 대해 서술하고 있다.",
@@ -248,10 +361,29 @@
                 "trickal.book.baking": 1
             },
             "effects": {
+                "trickal.spellcard.healthimprove": 1,
                 "trickal.book.baking": -1
             },
             "startdescription": "이 책은 다양한 재빵의 방법과 레시피가 적혀있다.",
             "description": "많은 빵들의 레시피가 상세하게 적혀있다. 일부는 마법에 비유해서 설명되어있으며, 이는 오히려 책의 이해를 어렵게 한다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.book.randombook",
+            "label": "'이름없는 마법서'를 읽기",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.book.randombook": 1
+            },
+            "deckeffects": {
+                "trickal.randomspellcard": 1
+            },
+            "effects": {
+                "trickal.book.randombook": -1
+            },
+            "startdescription": "이 책은 제목이 적혀있지 않지만 무언가 배울 수 있을 것이다.",
+            "description": "이 책에는 흔한 마법이 적혀있었다.",
             "warmup": 60,
             "craftable": true
         }

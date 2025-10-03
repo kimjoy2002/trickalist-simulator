@@ -221,6 +221,13 @@
             "description": "요정들이 지하로 내려가 외형, 성격, 식습관이 환경에 맞게 변화한 요정의 친척과 같은 종족.",
 			"isAspect": true,
             "id": "trickal.witch"
+        },
+        {
+            "id": "trickal.upgradespell",
+            "label": "스펠카드 강화",
+			"description": "스펠카드를 강화시켰다.",
+            "isAspect": true,
+			"noartneeded": true
         }
     ]
 }

@@ -225,7 +225,20 @@
                 "trickal.book.treedream",
                 "trickal.book.thetrickal"
             ],
-            "defaultcard": "genericrubbishbook"
+            "defaultcard": "trickal.book.randombook"
+        },
+        {
+            "id": "trickal.randomspellcard",
+            "label": "이름없는 책의 숨겨진 마법",
+            "description": "여기엔 하급 마법이 숨어있다.",
+            "spec": [
+                "trickal.spellcard.healthimprove",
+                "trickal.spellcard.selfimprove",
+                "trickal.spellcard.afterimage",
+                "trickal.spellcard.wizard",
+                "trickal.spellcard.healthybody"
+            ],
+            "resetonexhaustion": true
         }
 	]
 }
