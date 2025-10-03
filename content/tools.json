@@ -1,0 +1,173 @@
+{
+    "elements": [
+        {
+            "id": "trickal.koko",
+            "label": "코코",
+            "description": "코코라는 이름이 쓰여진 의문의 권총.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.madness": 2
+            },
+            "unique": true
+        },
+        {
+            "id": "trickal.tool.woodsword",
+            "label": "급조한 목검",
+            "description": "훈련용으로 급조했지만 의외로 잘 만들어져 계속 쓰고 있는 목검.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.active": 3,
+				"trickal.worth": 1
+            }
+        },
+        {
+            "id": "trickal.tool.leafrobe",
+            "label": "잎사귀 로브",
+            "description": "세계수의 잎사귀 색으로 염색한 로브. 나쁜 일들로부터 몸을 지켜주는 힘이 있다고 전해진다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.pure": 3,
+				"trickal.worth": 1
+            }
+        },
+        {
+            "id": "trickal.tool.jewring",
+            "label": "보석 반지",
+            "description": "어느 요정은 이 반지와 사탕 반지를 종종 헷갈리곤 한다. 보석이라는 걸 기억할 때도 됐는데 꼭 한 번씩 깨물었다가 이를 다친다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.cool": 3,
+				"trickal.worth": 1
+            }
+        },
+        {
+            "id": "trickal.tool.awl",
+            "label": "송곳",
+            "description": "모험가 요정이 송곳을 보더니 예전엔 자기도 뭔가를 딸 때 자주 썼다고 중얼거렸다. 내가 빤히 보니 이제 그쪽 일은 손 털었다고 황급히 변명했다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.madness": 3,
+				"trickal.worth": 1
+            }
+        },
+        {
+            "id": "trickal.tool.fairyrobe",
+            "label": "요정 로브",
+            "description": "시원하고, 따뜻하고, 갓 구운 빵 냄새가 솔솔 풍기는 요정의 로브다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.depression": 3,
+				"trickal.worth": 1
+            }
+        },
+
+        {
+            "id": "trickal.tool.steelsword",
+            "label": "강철 대검",
+            "description": "날카로움보다는 무게로 승부하는 거대한 검. 어느 엘프는 매일 이걸 들고 다니느라 팔 근육이 단련되었다고 한다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.active": 8,
+				"trickal.worth": 3
+            }
+        },
+        {
+            "id": "trickal.tool.shiningtiara",
+            "label": "찬란한 티아라",
+            "description": "요정 왕국에서 여왕이 쓰는 티아라와 닮았다. 아마 모조품인 것 같다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.pure": 8,
+				"trickal.worth": 3
+            }
+        },
+        {
+            "id": "trickal.tool.diamondbracelet",
+            "label": "다이아몬드 팔찌",
+            "description": "다이아몬드를 다듬어서 박아 넣은 팔찌. 공업용 망치로 유리가 아닌 것을 확인했다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.cool": 8,
+				"trickal.worth": 3
+            }
+        },
+        {
+            "id": "trickal.tool.firewood",
+            "label": "불타는 가지",
+            "description": "불 정령의 힘이 깃든 가지. 꺼지지 않고 계속 타오른다. 마시멜로 구워 먹기에 좋겠다며 어느 요정이 탐내고 있다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.madness": 8,
+				"trickal.worth": 3
+            }
+        },
+        {
+            "id": "trickal.tool.greedring",
+            "label": "탐욕의 반지",
+            "description": "마녀들의 탐욕을 증명하는 반지. 누군가는 이 반지에 영험한 능력이 있다는 말에 속아서 덜컥 구입했다고 한다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.depression": 8,
+				"trickal.worth": 3
+            }
+        },
+
+
+
+        {
+            "id": "trickal.tool.buttersyellowcard",
+            "label": "버터의 옐로카드",
+            "description": "마음 속에 화가 쌓일 때마다 꺼내보는 노란 카드이다. 손때묻은 흔적이 있다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.active": 12,
+				"trickal.worth": 7
+            },
+            "unique": true
+        },
+        {
+            "id": "trickal.tool.roneguntlet",
+            "label": "로네의 건틀릿",
+            "description": "엘프 스파이가 사용하던 건틀릿. 닦고 문질러서 반질반질하게 광이 난다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.pure": 12,
+				"trickal.worth": 7
+            },
+            "unique": true
+        },
+        {
+            "id": "trickal.tool.syllasbow",
+            "label": "실라의 바람살",
+            "description": "정령의 힘이 깃든 바람살이다. 깎아놓은 촉을 타고 바람이 흐르는 듯 하다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.cool": 12,
+				"trickal.worth": 7
+            },
+            "unique": true
+        },
+        {
+            "id": "trickal.tool.nersflag",
+            "label": "네르의 엘드르 깃발",
+            "description": "세계수 교단의 중요한 행사를 할 때 마다 거는 깃발이다. 네르가 사제와 사도들을 응원할 때 그 잠재력이 발휘된다. 사실 깃발보다 도끼 때문일지도 모르겠다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.madness": 12,
+				"trickal.worth": 7
+            },
+            "unique": true
+        },
+        {
+            "id": "trickal.tool.komipillow",
+            "label": "코미의 베개",
+            "description": "책 읽기를 좋아하는 수인이 늘 가지고 다니는 베개와 똑같이 생겼다. 아마 여분인 것 같다.",
+            "aspects": {
+                "trickal.collectable": 1,
+                "trickal.depression": 12,
+				"trickal.worth": 7
+            },
+            "unique": true
+        }
+	]
+}

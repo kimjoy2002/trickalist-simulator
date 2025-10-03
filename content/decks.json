@@ -197,6 +197,24 @@
             "spec": [
                 "trickal.meat",
                 "trickal.leaf",
+                "trickal.egg"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.adventuredeck.cave",
+            "spec": [
+                "trickal.glass",
+                "trickal.cheese",
+                "trickal.meat"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.adventuredeck.leave",
+            "spec": [
+                "trickal.fruit",
+                "trickal.leaf",
                 "trickal.sap"
             ],
             "resetonexhaustion": true
@@ -237,6 +255,29 @@
                 "trickal.spellcard.afterimage",
                 "trickal.spellcard.wizard",
                 "trickal.spellcard.healthybody"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.monatium.goods",
+            "label": "모나티엄에서 발견한 것",
+            "description": "이 물건은 가치가 있어보인다.",
+            "spec": [
+                "trickal.tool.woodsword",
+                "trickal.tool.woodsword",
+                "trickal.tool.leafrobe",
+                "trickal.tool.leafrobe",
+                "trickal.tool.jewring",
+                "trickal.tool.jewring",
+                "trickal.tool.awl",
+                "trickal.tool.awl",
+                "trickal.tool.fairyrobe",
+                "trickal.tool.fairyrobe",
+                "trickal.tool.steelsword",
+                "trickal.tool.shiningtiara",
+                "trickal.tool.diamondbracelet",
+                "trickal.tool.firewood",
+                "trickal.tool.greedring"
             ],
             "resetonexhaustion": true
         }

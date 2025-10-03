@@ -80,6 +80,141 @@
             "description": "나는 뭔가 읽을만한 걸 찾아냈다.",
             "warmup": 30,
             "craftable": true
+        },
+        {
+            "id": "trickal.explore.monatium",
+            "label": "모나티엄 둘러보기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.monatium": 1,
+                "trickal.worth": -1,
+                "trickal.candy": -1
+            },
+            "deckeffects": {
+                "trickal.monatium.goods": 1
+            },
+            "startdescription": "모나티엄에 들어서면 도시를 순환하는 모노레일과 커다한 건물들이 눈에 들어온다. 나는 엘리아스에서 가장 발전한 도시에서 물건을 사기위해 돌아다닐 수도, 팔러 다닐 수도 있다. [물건을 둘러볼려면 그냥 Start 버튼을 누르고, 팔고자하려면 팔고자 하는 물건을 올린 뒤 Start 버튼을 누르세요.]",
+            "description": ".",
+            "warmup": 5,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore.monatium.buy",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore.monatium.buy",
+            "label": "이 물건을 살까?",
+            "actionid": "trickal.explore",
+            "slots": [
+                {
+                    "id": "Golds",
+                    "label": "구매가",
+                    "required": {
+                        "trickal.gold": 1
+                    }
+                }
+            ],
+            "startdescription": "가치에 비해선 조금 비싸보이지만 이 물건을 사볼까? [살 물건은 우측 하단에 표시됩니다. 표시된 가치보다 1 골드 더 내야하며, 모자란 골드는 자동으로 소모됩니다.]",
+            "description": ".",
+            "warmup": 60,
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore.monatium.consumegold",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore.monatium.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore.monatium.consumegold",
+            "label": "돈을 지불하는 중.",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.gold": 1
+            },
+            "effects": {
+                "trickal.gold": -1,
+                "bid": 1
+            },
+            "startdescription": ".",
+            "description": ".",
+            "warmup": 0,
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore.monatium.check",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore.monatium.success",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore.monatium.check",
+            "label": "돈을 더 지불해야한다.",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.worth": "bid"
+            },
+            "slots": [
+                {
+                    "id": "Golds",
+                    "label": "구매가",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "greedy": true
+                }
+            ],
+            "startdescription": "남는 돈이 있을까? 지갑을 열어본다.",
+            "description": ".",
+            "warmup": 5,
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore.monatium.consumegold",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore.monatium.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore.monatium.success",
+            "label": "구매 완료!.",
+            "actionid": "trickal.explore",
+            "effects": {
+                "bid" : -99
+            },
+            "startdescription": ".",
+            "description": "나는 제 값을 주고 물건을 구매하였다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.explore.monatium.fail",
+            "label": "구매를 하지않았다.",
+            "actionid": "trickal.explore",
+            "effects": {
+                "trickal.gold": "bid",
+                "trickal.collectable": -1,
+                "bid": -99
+            },
+            "startdescription": "나는 돈이 없다. 이 물건은 사지않았다.",
+            "description": ".",
+            "warmup": 0,
+            "craftable": false
         }
     ]
 }

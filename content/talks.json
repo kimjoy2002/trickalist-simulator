@@ -77,7 +77,7 @@
                 "trickal.culttree": 1,
                 "trickal.candy": 1,
                 "trickal.starcandy": 1,
-                "trickal.elif": 99
+                "trickal.elif": 5
             },
             "inductions": [{
                     "id": "trickal.drawseason",
@@ -452,6 +452,102 @@
 					"description": "대부분의 아르바이트는 사실 큰 의미가 없다. 일을 받은 추종자들은 단지 산책을 할 겸 땅에 떨어져있는 재료를 주워올 뿐이다.\n실패!",
 					"deckeffects": {
 						"trickal.adventuredeck.owl": 1
+					}
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.adventure.cave",
+            "label": "모험회: 크고 길다란 광맥 찾기 조사",
+            "actionid": "trickal.talk",
+            "startdescription": "내 신도를 시켜 교단을 위해 아르바이트를 시킬 수 있다.",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+				"trickal.dragon": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.adventure.cave.end",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.adventure.cave.end",
+            "label": "알바를 수행한 결과...",
+            "actionid": "trickal.talk",
+            "startdescription": "광석을 먹을 수 있는 용족들에게 광맥은 일종의 음식 창고와도 같다.",
+            "description": ".",
+			"alt": [
+				{
+                    "chance": 30,
+					"description": "광석을 먹을 수 있는 용족들에게 광맥은 일종의 음식 창고와도 같다.\n대성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.cave": 3
+					}
+                },
+				{
+                    "chance": 70,
+					"description": "광석을 먹을 수 있는 용족들에게 광맥은 일종의 음식 창고와도 같다.\n성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.cave": 2
+					}
+                },
+				{
+                    "chance": 100,
+					"description": "광석을 먹을 수 있는 용족들에게 광맥은 일종의 음식 창고와도 같다.\n실패!",
+					"deckeffects": {
+						"trickal.adventuredeck.cave": 1
+					}
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.adventure.leave",
+            "label": "모험회: 낙엽 위에 점프하기",
+            "actionid": "trickal.talk",
+            "startdescription": "내 신도를 시켜 교단을 위해 아르바이트를 시킬 수 있다.",
+            "requirements": {
+                "society": 1,
+                "trickal.follower": 1,
+				"trickal.element": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.adventure.cave.end",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.adventure.leave.end",
+            "label": "알바를 수행한 결과...",
+            "actionid": "trickal.talk",
+            "startdescription": "마치 놀고 있는 것처럼 보인다. 사실 놀고있는게 맞을지도 모른다.",
+            "description": ".",
+			"alt": [
+				{
+                    "chance": 30,
+					"description": "마치 놀고 있는 것처럼 보인다. 사실 놀고있는게 맞을지도 모른다.\n대성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.leave": 3
+					}
+                },
+				{
+                    "chance": 70,
+					"description": "마치 놀고 있는 것처럼 보인다. 사실 놀고있는게 맞을지도 모른다.\n성공!",
+					"deckeffects": {
+						"trickal.adventuredeck.leave": 2
+					}
+                },
+				{
+                    "chance": 100,
+					"description": "마치 놀고 있는 것처럼 보인다. 사실 놀고있는게 맞을지도 모른다.\n실패!",
+					"deckeffects": {
+						"trickal.adventuredeck.leave": 1
 					}
                 }
             ],

@@ -102,15 +102,6 @@
             "lifetime": 1
         },
         {
-            "id": "trickal.koko",
-            "label": "코코",
-            "description": "코코라는 이름이 쓰여진 의문의 권총.",
-            "aspects": {
-                "trickal.collectable": 1,
-                "trickal.madness": 2
-            }
-        },
-        {
             "id": "trickal.headquarters",
             "label": "교단 본부",
             "description": "엘리아스의 세계수를 모시는 세계수 교단의 거점.",
@@ -179,10 +170,22 @@
         {
             "id": "trickal.monatium",
             "label": "엘프 도시 모나티엄",
-            "description": "다른 차원에서 와서 엘라이스에 정착한 엘프들의 도시.",
+            "description": "다른 차원에서 와서 엘라이스에 정착한 엘프들의 도시. 이곳에서 잡다한 물건을 사고 팔 수 있다. 아니면 편의점 알바 자리를 구하던가.",
             "aspects": {
                 "location": 1
-            }
+            },
+            "slots": [
+                {
+                    "id": "other",
+                    "label": "팔 물건이나 알바 자리를 알아보기",
+                    "required": {
+                        "trickal.worth": 1,
+                        "trickal.candy": 1
+                    },
+                    "actionid": "trickal.explore",
+                    "description": "가치있는 물건을 가져와보자. 아니면 내 행동력을 보여주고 알바 자리를 하나 구할 수 있을지도..."
+                }
+            ]
         },
         {
             "id": "trickal.elementalmountain",
@@ -360,7 +363,7 @@
                     "description": "나는 이 일에 집중해서 좀 더 빨리 끝낼 수도 있다."
                 }
             ],
-            "lifetime": 180,
+            "lifetime": 240,
             "decayTo": "trickal.document.late",
         },
         {
