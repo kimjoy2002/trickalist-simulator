@@ -162,10 +162,23 @@
         {
             "id": "trickal.furvillage",
             "label": "수인 숲 털 부락",
-            "description": "사슴 수인이 촌장으로 있는 수인들의 촌락.",
+            "description": "사슴 수인이 촌장으로 있는 수인들의 촌락. 이 곳의 수인들은 모험하기 최적의 장소를 알고 있다.",
             "aspects": {
                 "location": 1
-            }
+            },
+            "slots": [
+                {
+                    "id": "Food",
+                    "label": "음식",
+                    "required": {
+                        "trickal.food": 1,
+                        "trickal.candy": 1,
+                        "trickal.starcandy": 1
+                    },
+                    "actionid": "trickal.explore",
+                    "description": "어린 수인들을 꼬드기는데는 음식만한게 없다. 없다면 사탕이라도..."
+                }
+            ]
         },
         {
             "id": "trickal.monatium",
@@ -177,7 +190,7 @@
             "slots": [
                 {
                     "id": "other",
-                    "label": "팔 물건이나 알바 자리를 알아보기",
+                    "label": "팔 물건 혹은 의욕",
                     "required": {
                         "trickal.worth": 1,
                         "trickal.candy": 1
@@ -384,6 +397,41 @@
                     "description": "나는 이 일에 집중해서 좀 더 빨리 끝낼 수도 있다."
                 }
             ]
+        },
+        {
+            "id": "trickal.work.convenience",
+            "label": "모나티엄25 아르바이트",
+            "description": "편의점 일은 고달프지만 막노동보다는 낫다. [직장에 꾸준히 나가지 않는다면 알바에 짤릴 것입니다.]",
+            "aspects": {
+                "trickal.job": 1
+            },
+            "slots": [
+                {
+                    "id": "Concentration",
+                    "label": "체력",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1
+                    },
+                    "description": "아르바이트에는 생각보다 체력이 소모된다."
+                }
+            ],
+            "xtriggers": {
+                "employment": "trickal.work.convenience"
+            },
+            "lifetime": 240,
+            "decayTo": "trickal.work.convenience.late",
+        },
+        {
+            "id": "trickal.work.convenience.late",
+            "label": "짤린 모나티엄25 아르바이트",
+            "description": "편의점에 무단 결근한 나는 결국 일자리에 짤렸다. 나 대신 땜방으로 들어간 알바생에게 분노의 문자를 받은건 덤이다. 사장님을 잘 설득해보면 다시 다닐 수 있을지도...",
+            "aspects": {
+                "trickal.job": 1
+            },
+            "xtriggers": {
+                "plead": "trickal.work.convenience"
+            }
         }
 
 	]

@@ -238,8 +238,6 @@
                 "trickal.book.spy",
                 "trickal.book.prophet",
                 "trickal.book.magic1",
-                "trickal.book.magic2",
-                "trickal.book.baking",
                 "trickal.book.treedream",
                 "trickal.book.thetrickal"
             ],
@@ -280,6 +278,15 @@
                 "trickal.tool.greedring"
             ],
             "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.explore.land",
+            "label": "가벼운 모험 장소",
+            "description": "아마 큰 위험없이 돌아다닐만한 곳.",
+            "spec": [
+                "trickal.location.baker"
+            ],
+            "defaultcard": "locationstreetsstrange"
         }
 	]
 }

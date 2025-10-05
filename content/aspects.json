@@ -10,7 +10,7 @@
             "label": "사탕",
             "description": "무언가 달콤한 것. 간편하게 먹기 좋은 이 과자는 의욕을 만든다.",
 			"isAspect": true,
-            "icon": "trickal.candy"
+            "isHidden": true
         },
         {
             "id": "trickal.worth",
@@ -46,6 +46,24 @@
         },
         {
             "id": "trickal.worshipsomething",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+        {
+            "id": "trickal.food1",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+        {
+            "id": "trickal.food2",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+        {
+            "id": "trickal.food3",
 			"isAspect": true,
             "isHidden": true,
 			"noArtNeeded": true

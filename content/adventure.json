@@ -1,0 +1,393 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.explore_baker",
+            "label": "탐험을 시작하다: 요정 왕국 베이커 골목",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.location.baker": 1,
+                "trickal.gold": 1,
+                "trickal.follower": 1
+            },
+            "effects": {
+                "trickal.magic_lock": 1
+            },
+            "startdescription": "@#trickal.ashur_|에슈르는 왜 자기 자신이 자신의 가게를 털어야하냐며 화를 내고 있다. 나는 이것도 경험이라 생각해야 한다고 달랬다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]#|에슈르에겐 안된 일이지만 우리는 멈출 수 없다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]@",
+            "description": ".",
+            "warmup": 30,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore_begun",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_baker.success",
+            "label": "에심당을 턴 결과...",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.location.baker": 1
+            },
+            "effects": {
+                "trickal.food.cake": 2,
+                "trickal.book.magic2": 1,
+                "trickal.book.baking": 1,
+                "trickal.location.baker": -1
+            },
+            "startdescription": "@#trickal.erpin_|한밤중 에심당의 자물쇠를 따고 가게안에 들어서자 아직 팔다 남은 빵들이 진열되어있다. 우리가 아직 괜찮은 빵들을 선별하고 있을때, 에르핀은 이미 한가득 입에 빵을 구겨넣고 있어서 꿀밤을 한대 박았다.#|한밤중 에심당의 자물쇠를 따고 가게안에 들어서자 아직 팔다 남은 빵들이 진열되어있다. 어차피 내일이 되면 폐기처분 되어야한다면, 우리가 좀 슬쩍해도 되지않을까?@",
+            "description": "우리는 몰래 에심당을 빠져나왔지만 다음날 에심당이 불에 타서 전소가 되었다는 소식을 들었다. 에슈르는 가게 앞에서 울고 있었으며, 에르핀은 요정 왕국에선 흔한 일이라며 대수롭지 않게 넘어갔다.",
+            "warmup": 30,
+            "craftable": false
+        },
+
+
+
+
+
+
+
+        {
+            "id": "trickal.explore_begun",
+            "label": "탐험이 시작되다",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "vault": 1,
+                "trickal.follower": 1,
+                "trickal.gold": 1
+            },
+            "startdescription": "나를 따르는 자들에게 날 위해 봉사할 기회를 주었다. 그들과 나 모두에게 이로운 결과가 있기를 바라자.",
+            "description": ".",
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "craftable": false
+        },
+        {
+            "id": "trickal.explore_tick",
+            "label": "탐험은 계속된다",
+            "actionid": "trickal.explore",
+            "slots": [
+                {
+                    "id": "Assistance",
+                    "label": "지원",
+                    "description": "자금은 탐험의 필수 요소고, 추종자들은 장애물을 돌파하는 데 도움이 될 것이다.",
+                    "required": {
+                        "trickal.follower": 1,
+                        "trickal.gold": 1
+                    }
+                }
+            ],
+            "craftable": false,
+            "startdescription": "다음 장애물을 넘어설 계획을 짜고 있다. 그러는 데 골드가 1개 소모될 것이다. 지금 나는 골드나 추종자를 보내줄 수 있다.",
+            "description": ".",
+            "warmup": 30,
+            "alt": [
+                {
+                    "id": "trickal.explore_successlink",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_fail_nogold",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_fail_nofollowers",
+                    "chance": 100
+                }
+            ],
+            "effects": {
+                "trickal.gold": -1
+            },
+            "linked": [
+                {
+                    "id": "trickal.explore_magic_lock_encounter",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_successlink",
+            "label": "보물이 눈앞에 있다",
+            "requirements": {
+                "trickal.trap": -1
+            },
+            "craftable": false,
+            "actionid": "trickal.explore",
+            "linked": [
+                {
+                    "id": "trickal.explore_success",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_fail_nogold",
+            "actionid": "trickal.explore",
+            "label": "물자 부족",
+            "startdescription": "물자가 부족하다. 골드를 더 지원해주지 않는다면 탐험을 포기해야 할 것이다.",
+            "description": "먼지가 가라앉으면, 다시 도전해 볼 수 있을 것이다.",
+            "requirements": {
+                "trickal.gold": -1
+            },
+            "craftable": false,
+            "effects": {
+                "trickal.trap": -10
+            },
+            "warmup": 10
+        },
+        {
+            "id": "trickal.explore_fail_nofollowers",
+            "actionid": "trickal.explore",
+            "label": "인원 부족",
+            "startdescription": "탐험을 진행할 사람이 없다. 누군가를 보내주지 않는다면 탐험을 포기해야 할 것이다.",
+            "description": "아무도 돌아오지 않았다. 그래도 다시 도전해 볼 수 있을 것이다. 물자들도 다시 사용할 수 있을 거고.",
+            "requirements": {
+                "trickal.follower": -1
+            },
+            "craftable": false,
+            "effects": {
+                "trickal.trap": -10
+            },
+            "warmup": 10
+        },
+        {
+            "id": "trickal.explore_success",
+            "label": "보물이 눈앞에 있다",
+            "actionid": "trickal.explore",
+            "startdescription": "성공했다! 자세한 내용을 곧 들을 수 있을 것이다...",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_baker.success",
+                    "chance": 100
+                }
+            ]
+        },
+
+
+
+
+
+        {
+            "id": "trickal.explore_magic_lock_encounter",
+            "actionid": "trickal.explore",
+            "label": "마법의 자물쇠",
+            "startdescription": "이 곳을 지나려면 이 자물쇠를 해제해야한다. 하지만 자물쇠는 마법으로 잠겨있다. 마법에 익숙한 요정이나 마녀는 이걸 해제할수도, 유령이라면 이를 뚫고 갈 수도 있다.",
+            "requirements": {
+                "trickal.magic_lock": 1
+            },
+            "warmup": 30,
+            "craftable": false,
+            "slots": [
+                {
+                    "id": "Assistance",
+                    "label": "지원",
+                    "description": "자금은 탐험의 필수 요소고, 추종자들은 장애물을 돌파하는 데 도움이 될 것이다.",
+                    "required": {
+                        "trickal.follower": 1,
+                        "trickal.gold": 1
+                    }
+                }
+            ],
+            "alt": [
+                {
+                    "id": "trickal.explore_magic_lock_encounter.ashur",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_magic_lock_encounter.witch",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_magic_lock_encounter.fairy",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_magic_lock_encounter.ghost",
+                    "chance": 100
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.explore_magic_lock_encounter.forced_success",
+                    "chance": 25
+                },
+                {
+                    "id": "trickal.explore_magic_lock_encounter.fail_hint",
+                    "chance": 75
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.ashur",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.ashur_": 1
+            },
+            "label": "마법의 자물쇠: 에슈르의 마법",
+            "startdescription": "'이건 그냥 제가 해결할게요. 이 자물쇠에 걸려 있는 마법에 대해서 설명하려면 우선 제가 쓴 이론서 2권의 230페이지를 참고하시면...'",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_magic_lock_encounter.magic_success",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.witch",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.witch": 1
+            },
+            "label": "마법의 자물쇠: 마녀의 마법",
+            "startdescription": "'마녀들은 태어나면서 마법을 항상 배우고 태어난다. 자물쇠 마법에 대한 논문을 도서관에 본적이 있다고 당당하게 말하는걸 믿고 맡겨본다.'",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_magic_lock_encounter.magic_success",
+                    "chance": 90
+                },
+                {
+                    "id": "trickal.explore_magic_lock_encounter.fail",
+                    "chance": 10
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.fairy",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.fairy": 1
+            },
+            "label": "마법의 자물쇠: 요정의 마법",
+            "startdescription": "'요정들은 태어나면서 마법을 항상 배우고 태어난다. 물론 마법을 배우려고 노력하지 않기때문에 이런 생소한 마법에는 약할지도 모른다.'",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_magic_lock_encounter.magic_success",
+                    "chance": 75
+                },
+                {
+                    "id": "trickal.explore_magic_lock_encounter.fail",
+                    "chance": 25
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.ghost",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.ghost": 1
+            },
+            "label": "마법의 자물쇠: 유령의 시도",
+            "startdescription": "'유령들은 평범한 벽은 통과할 수 있다. 여기에 있는 자물쇠가 마법으로 방해하지 않는다면 대체로 성공할 것이다.'",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_magic_lock_encounter.ghost_success",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.explore_magic_lock_encounter.fail",
+                    "chance": 30
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.magic_success",
+            "actionid": "trickal.explore",
+            "label": "자물쇠의 죽음",
+            "startdescription": "모든 자물쇠는 해제되기 위해 존재한다. 이 마법의 자물쇠도 예외는 없다.",
+            "description": ".",
+            "effects": {
+                "trickal.magic_lock": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.ghost_success",
+            "actionid": "trickal.explore",
+            "label": "간단한 통과",
+            "startdescription": "자물쇠는 밖에서 오는 모든 침입을 막지만, 안에서의 침입은 막을 수 없을 것이다.",
+            "description": ".",
+            "effects": {
+                "trickal.magic_lock": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.forced_success",
+            "actionid": "trickal.explore",
+            "label": "무리한 통과",
+            "startdescription": "무식하게 자물쇠를 때리다가 어느샌가 부러지고 말았다. 이 방법은 올바른 방법이 아니었던 것 같지만. 어쨌든 성공했다.",
+            "description": ".",
+            "effects": {
+                "trickal.magic_lock": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.fail",
+            "actionid": "trickal.explore",
+            "label": "굳게 잠긴 자물쇠",
+            "startdescription": "마법의 자물쇠는 모든걸 튕겨낸다. 아마 당신의 의지조차",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_magic_lock_encounter.fail_hint",
+            "actionid": "trickal.explore",
+            "label": "굳게 잠긴 자물쇠",
+            "startdescription": "이 자물쇠는 평범한 자물쇠가 아니다. 무식한 방식으론 아마 그다지 높은 성공률을 기대하기 힘들 것이다. 좀 더 상황에 맞는 추종자를 데려와보자.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        }
+    ]
+
+}

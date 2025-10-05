@@ -293,6 +293,32 @@
             "startdescription": "마녀 왕국 벨리티엔에는 많은 책들을 보관하고있는 도서관이 있다. 나는 책값을 지불하고 마음의 양식이 되는 책을 하나 빌려볼 수 있다.",
             "craftable": false,
             "hintonly": true
+        },
+        {
+            "id": "trickal.hint.convenience.work",
+            "label": "모나티엄 25에서 일해볼까?",
+            "requirements": {
+                "trickal.work.convenience": 1,
+                "trickal.candy": -1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "모나티엄 25에서 일하기위해선 체력이 필요하다. 내 왕사탕이 나를 일자리로 이끌 힘을 줄 것이다.",
+            "craftable": false,
+            "hintonly": true
+        },
+        {
+            "id": "trickal.hint.explore.furvillage",
+            "label": "털 부락에서 정보를 얻어볼까?",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.furvillage": 1,
+                "trickal.candy": -1,
+                "trickal.starcandy": -1,
+                "trickal.food": -1
+            },
+            "startdescription": "털 부락의 수인들은 아직 어린 수인들이 많다. 모험을 좋아하는 어린 수인들에게 먹을 것으로 꼬드겨서 소문의 장소를 찾아보자.",
+            "craftable": false,
+            "hintonly": true
         }
 	]
 }

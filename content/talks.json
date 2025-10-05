@@ -185,8 +185,7 @@
                     "label": "대화 주제",
                     "description": "교단 업무를 시키려면 교단에 대해, 아니면 다른 주제를 꺼내야 한다.",
                     "required": {
-                        "society": 1,
-                        "location": 1
+                        "society": 1
                     }
                 }
             ],
@@ -209,6 +208,14 @@
                 },
 				{
                     "id": "trickal.adventure.owl",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.adventure.cave",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.adventure.leave",
                     "chance": 100
                 }
             ],
@@ -467,6 +474,7 @@
                 "trickal.follower": 1,
 				"trickal.dragon": 1
             },
+            "craftable": true,
             "linked": [
                 {
                     "id": "trickal.adventure.cave.end",
@@ -517,7 +525,7 @@
             },
             "linked": [
                 {
-                    "id": "trickal.adventure.cave.end",
+                    "id": "trickal.adventure.leave.end",
                     "chance": 100
                 }
             ]

@@ -1,0 +1,73 @@
+{
+    "elements": [
+        {
+            "id": "trickal.trap",
+            "label": "방해물",
+            "description": "무언가 나아가는걸 방해하는 것. 함정일 수도 있고 닫힌 문일 수도 있다.",
+			"isAspect": true
+        },
+        {
+            "id": "trickal.magic_lock",
+            "label": "마법의 자물쇠",
+            "aspects": {
+                "trickal.trap": 1
+            },
+            "description": "여기엔 마법으로 봉인된 자물쇠가 있다. 마법에 익숙한 자라면 이걸 해제할수도, 아니면 뚫고갈 수 있을까?"
+        },
+
+
+
+
+
+
+
+        {
+            "id": "trickal.location.baker",
+            "label": "요정 왕국 베이커 골목",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                }
+            ],
+            "description": "이 골목에는 에슈르가 운영하는 빵집 '에심당'이 있다. 에슈르는 이를 마법학교라 부르곤 하지만 누가봐도 빵집으로만 보인다. 우리는 여기서 추종자를 이용해서 몰래 빵을 약탈해볼 수 있다.",
+            "unique": true
+        }
+	]
+}

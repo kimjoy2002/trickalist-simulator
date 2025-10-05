@@ -5,9 +5,10 @@
             "label": "막노동",
             "actionid": "trickal.work",
             "requirements": {
+                "trickal.work.convenience": -1,
                 "trickal.candy": 1,
                 "location": -1,
-			"society": -1
+                "society": -1
             },
 			"aspects": {
                 "employment": 1
@@ -25,6 +26,7 @@
             "label": "서류 처리",
             "actionid": "trickal.work",
             "requirements": {
+                "trickal.work.convenience": -1,
                 "trickal.document": 1,
 				"trickal.starcandy": -1,
                 "location": -1,
@@ -47,6 +49,7 @@
             "label": "서류 처리",
             "actionid": "trickal.work",
             "requirements": {
+                "trickal.work.convenience": -1,
                 "trickal.document": 1,
 				"trickal.starcandy": 1,
                 "location": -1,
@@ -437,7 +440,126 @@
             "description": "보석 타르트가 준비되었다.",
             "warmup": 60,
             "craftable": true
-        }
+        },
+        {
+            "id": "trickal.work.convenience.work",
+            "label": "모나티엄 25에서 일하기",
+            "requirements": {
+                "trickal.work.convenience": 1,
+                "trickal.candy": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "모나티엄 25는 항상 불이 켜져있다. 이곳에 먼저 일하고 있던 편의점 알바생이 나에게 많은 것을 가르쳐준다.",
+            "description": ".",
+            "warmup": 60,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.convenience.work.success",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.work.convenience.work.enemy",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.convenience.work.success",
+            "label": "모나티엄 25에서 일하기",
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 2
+            },
+            "actionid": "trickal.work",
+            "startdescription": ".",
+            "description": "오늘은 별다른 사건 없이 평화롭게 끝났다. 같이 일하던 알바생은 오늘 같은 날만 계속되면 좋겠다며 핸드폰을 만지작 거리고 있다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.work.convenience.work.enemy",
+            "label": "모나티엄 25에서 일하기",
+            "actionid": "trickal.work",
+            "slots": [
+                {
+                    "id": "Diligence",
+                    "label": "지혜",
+                    "required": {
+                        "trickal.starcandy": 1
+                    },
+                    "forbidden": {},
+                    "description": "이런 일은 항상 있는 일이다. 하지만 내 정신력이 버텨주어야 할 것이다."
+                }
+            ],
+            "startdescription": "오늘은 갑자기 진상이 시비를 걸고 있다. 같이 일하던 알바생은 투덜거리면서 핸드폰으로 무언가를 쓰고 있는 것처럼 보인다.",
+            "description": ".",
+            "warmup": 30,
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.work.convenience.work.enemy.success",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.work.convenience.work.enemy.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.convenience.work.enemy.success",
+            "label": "모나티엄 25에서 일하기",
+            "requirements": {
+                "trickal.starcandy": 1
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 3
+            },
+            "actionid": "trickal.work",
+            "startdescription": "",
+            "description": "나는 현명하게 진상을 접대했다. 오늘 아주 피곤해졌지만 사장님은 고생했다면서 추가 보수를 챙겨주었다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.work.convenience.work.enemy.fail",
+            "label": "모나티엄 25에서 일하기",
+            "requirements": {
+                "trickal.starcandy": -1
+            },
+            "aspects": {
+                "employment": 1
+            },
+            "effects": {
+                "trickal.gold": 2
+            },
+            "actionid": "trickal.work",
+            "startdescription": "",
+            "description": "진상에 대응하느라 내 퇴근시간을 한참 넘겨서 퇴근하게 되었다. 돈은 받았지만 나는 너무나도 피곤하다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.work.convenience.reemploy",
+            "label": "모나티엄 25 재취업",
+            "requirements": {
+                "trickal.work.convenience.late": 1
+            },
+            "aspects": {
+                "plead": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "나는 사장님에게 손을 비비면서 다시 알바 자리를 요청했다. 사장님은 뚱한 표정이지만 워낙 일손이 바쁜 곳이라 받아줄지도 모른다.",
+            "description": "나는 성실할 것을 약속하고 다시 아르바이트 자리를 얻었다.",
+            "warmup": 60,
+            "craftable": true
+        },
     ]
 
 }

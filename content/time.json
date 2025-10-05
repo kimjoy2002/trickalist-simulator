@@ -206,9 +206,10 @@
                     "id": "Thoughts",
                     "label": "제물",
                     "required": {
-                        "trickal.sweet": 1
-                    },
-                    "greedy": true
+                        "trickal.food.cake": 1,
+                        "trickal.food.macaroon": 1,
+                        "trickal.food.melonboko": 1
+                    }
                 }
             ],
             "effects": {},
@@ -230,10 +231,10 @@
             "label": "분노가 사그라들다",
             "actionid": "despair",
             "requirements": {
-                "trickal.sweet": 1
+                "trickal.food": 1
             },
             "effects": {
-                "trickal.sweet": -1
+                "trickal.food": -1
             },
             "startdescription": "달달한 음식이 사신의 분노를 중화시킨다. [제물 하나는 네르의 분노를 하나 없앨 수 있습니다.]",
             "description": "사제장은 달콤함에 물러났다. 지금은 안전하다.",

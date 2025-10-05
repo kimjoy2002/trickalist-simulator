@@ -215,6 +215,61 @@
             "description": ".",
             "warmup": 0,
             "craftable": false
+        },
+        {
+            "id": "trickal.explore.monatium.sell",
+            "label": "가치 있는 물건을 팔기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.monatium": 1,
+                "trickal.worth": 1,
+                "trickal.candy": -1
+            },
+            "effects": {
+                "trickal.gold": "trickal.worth",
+                "trickal.worth": -1
+            },
+            "startdescription": "내가 가진 물건을 팔아서 골드로 바꿔보자.",
+            "description": "물건을 팔아서 돈으로 바꿨다.",
+            "warmup": 30,
+            "craftable": true
+        },
+        {
+            "id": "trickal.explore.monatium.findwork",
+            "label": "편의점 아르바이트 자리를 알아보기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.monatium": 1,
+                "trickal.candy": 1
+            },
+            "effects": {
+                "trickal.work.convenience": 1
+            },
+            "startdescription": "모나티엄 편의점의 아르바이트 자리를 알아보자.",
+            "description": "모나티엄 편의점에서 나를 채용했다! 나는 이 곳에서 정기적으로 출근할 필요가 있다.",
+            "warmup": 10,
+            "craftable": true,
+            "maxexecutions": 1,
+            "burnimage": "office"
+        },
+        {
+            "id": "trickal.explore.furvillage",
+            "label": "어린 수인들에게 군것질 거리를 주기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.furvillage": 1,
+                "trickal.candy": 1
+            },
+            "deckeffects": {
+                "trickal.explore.land": 1
+            },
+            "aspects": {
+                "fatiguing": 1
+            },
+            "startdescription": "나는 어린 수인들에게 가지고 있는 사탕을 건네주면서 자연스럽게 대화를 튼다. 잘하면 가벼운 놀이 장소를 알려줄지도 모른다.",
+            "description": "어린 수인들은 평소 숨바꼭질을 하면서 논다. 수인들은 나중에 같이 놀자며 숨바꼭질 장소를 나에게 알려준다. 이러한 장소는 보물찾기 놀이에 어울리진 않아도 위험하진 않다.",
+            "warmup": 60,
+            "craftable": true
         }
     ]
 }

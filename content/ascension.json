@@ -153,6 +153,7 @@
             "alt": [
                 {
 					"requirements": {
+						"trickal.collectable": 1,
 						"trickal.koko": -1
 					},
 					"label": "이건 부적합하다!",

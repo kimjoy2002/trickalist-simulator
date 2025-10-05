@@ -20,7 +20,7 @@
         {
             "id": "trickal.explore",
             "label": "탐사",
-            "description": "엘리아스 탐험. 탐사는 종종 예상치 모한 결과를 가져온다.",
+            "description": "엘리아스 탐험. 탐사는 종종 예상치 못한 결과를 가져온다.",
             "slot": {
                 "id": "location",
                 "label": "탐사",

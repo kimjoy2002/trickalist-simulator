@@ -10,7 +10,8 @@
             "availableWithoutEndingMatch": true,
             "newstart": true,
             "effects": {
-                "trickal.candy": 1
+                "trickal.candy": 1,
+                "trickal.furvillage": 1
             },
             "statusbarelements": [
                 "trickal.candy",
