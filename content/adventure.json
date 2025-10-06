@@ -42,6 +42,89 @@
             "craftable": false
         },
 
+        {
+            "id": "trickal.explore_lake",
+            "label": "탐험을 시작하다: 정령 호수",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.location.lake": 1,
+                "trickal.gold": 1,
+                "trickal.follower": 1
+            },
+            "effects": {
+                "trickal.water_element": 1
+            },
+            "startdescription": "@#trickal.naia_|나이아는 자신이 사는 곳에 대해 자랑스럽게 설명을 한다. 그렇게 위험한 곳은 아니라고 설명하면서 우리에게 물총을 뿌리고 있다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]#|정령의 산의 입구에는 물의 정령들이 사는 호수가 있다. 이 곳은 그렇게 위험한 곳은 아니라 뛰어놀기엔 최적의 장소로 보인다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]@",
+            "description": ".",
+            "warmup": 30,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore_begun",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_lake.success",
+            "label": "정령 호수에 갔다 온 결과...",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.location.lake": 1
+            },
+            "effects": {
+                "trickal.tool.jewring": 1,
+                "trickal.food.spacefood": 1,
+                "trickal.elif": 1,
+                "trickal.location.lake": -1
+            },
+            "startdescription": "@#trickal.naia_|나이아는 호수에 온 김에 쓰레기를 줍고 가자고 제안했다. 우리는 나이아와 같이 쓰레기를 줍기로 했다.#|호수에는 엘프들과 요정들이 버린듯한 여러 고물들이 떨어져 있었다. 아마 호수의 정령들은 이 쓰레기들에 화난것이겠지. 우리는 물의 정령들에게 미안해져서 쓰레기를 줍고가기로 했다.@",
+            "description": "우리는 쓰레기를 주우면서 쓸만해보이는 것들을 같이 주워왔다.",
+            "warmup": 30,
+            "craftable": false
+        },
+
+        {
+            "id": "trickal.explore_beast_forest",
+            "label": "탐험을 시작하다: 수인 숲",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.location.beast_forest": 1,
+                "trickal.gold": 1,
+                "trickal.follower": 1
+            },
+            "effects": {
+                "trickal.maze_forest": 1
+            },
+            "startdescription": "이방인에게 수인 숲은 여행하기 쉬우면서도 어렵다. 항상 따듯하고 좋은 날씨라 다니기 쉽지만, 나무가 가득 우거져 헤매기 일쑤니 어렵다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]",
+            "description": ".",
+            "warmup": 30,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore_begun",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_beast_forest.success",
+            "label": "수인 숲에 갔다 온 결과...",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.location.beast_forest": 1
+            },
+            "effects": {
+                "trickal.food.can": 1,
+                "trickal.book.commi": 1,
+                "trickal.tool.leafrobe": 1,
+                "trickal.location.beast_forest": -1
+            },
+            "startdescription": "수인 숲에는 수렵과 채집을 하기 딱 좋은 장소다. 길만 익숙해진다면 평소에도 피크닉 삼아 올만한 좋은 자연장소이기도 하다.",
+            "description": "수인 숲에는 숲과 안 어울리는 몇몇 물건들이 떨어져있다. 이 캔사료는 아마 엘프 도시에서 만든 가공품인걸로 보이고, 이 빨간책은 대체 뭐지?",
+            "warmup": 30,
+            "craftable": false
+        },
 
 
 
@@ -107,6 +190,14 @@
                 {
                     "id": "trickal.explore_magic_lock_encounter",
                     "chance": 100
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter",
+                    "chance": 100
                 }
             ]
         },
@@ -114,7 +205,9 @@
             "id": "trickal.explore_successlink",
             "label": "보물이 눈앞에 있다",
             "requirements": {
-                "trickal.trap": -1
+                "trickal.trap": -1,
+                "trickal.monster": -1,
+                "trickal.peril": -1
             },
             "craftable": false,
             "actionid": "trickal.explore",
@@ -136,7 +229,9 @@
             },
             "craftable": false,
             "effects": {
-                "trickal.trap": -10
+                "trickal.trap": -10,
+                "trickal.monster": -10,
+                "trickal.peril": -10
             },
             "warmup": 10
         },
@@ -151,7 +246,9 @@
             },
             "craftable": false,
             "effects": {
-                "trickal.trap": -10
+                "trickal.trap": -10,
+                "trickal.monster": -10,
+                "trickal.peril": -10
             },
             "warmup": 10
         },
@@ -165,6 +262,14 @@
             "linked": [
                 {
                     "id": "trickal.explore_baker.success",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_lake.success",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_beast_forest.success",
                     "chance": 100
                 }
             ]
@@ -216,11 +321,11 @@
             "linked": [
                 {
                     "id": "trickal.explore_magic_lock_encounter.forced_success",
-                    "chance": 25
+                    "chance": 10
                 },
                 {
                     "id": "trickal.explore_magic_lock_encounter.fail_hint",
-                    "chance": 75
+                    "chance": 100
                 }
             ]
         },
@@ -248,17 +353,17 @@
                 "trickal.witch": 1
             },
             "label": "마법의 자물쇠: 마녀의 마법",
-            "startdescription": "'마녀들은 태어나면서 마법을 항상 배우고 태어난다. 자물쇠 마법에 대한 논문을 도서관에 본적이 있다고 당당하게 말하는걸 믿고 맡겨본다.'",
+            "startdescription": "마녀들은 태어나면서 마법을 항상 배우고 태어난다. 자물쇠 마법에 대한 논문을 도서관에 본적이 있다고 당당하게 말하는걸 믿고 맡겨본다.",
             "description": ".",
             "craftable": false,
             "linked": [
                 {
                     "id": "trickal.explore_magic_lock_encounter.magic_success",
-                    "chance": 90
+                    "chance": 95
                 },
                 {
                     "id": "trickal.explore_magic_lock_encounter.fail",
-                    "chance": 10
+                    "chance": 100
                 }
             ]
         },
@@ -269,17 +374,17 @@
                 "trickal.fairy": 1
             },
             "label": "마법의 자물쇠: 요정의 마법",
-            "startdescription": "'요정들은 태어나면서 마법을 항상 배우고 태어난다. 물론 마법을 배우려고 노력하지 않기때문에 이런 생소한 마법에는 약할지도 모른다.'",
+            "startdescription": "요정들은 태어나면서 마법을 항상 배우고 태어난다. 물론 마법을 배우려고 노력하지 않기때문에 이런 생소한 마법에는 약할지도 모른다.",
             "description": ".",
             "craftable": false,
             "linked": [
                 {
                     "id": "trickal.explore_magic_lock_encounter.magic_success",
-                    "chance": 75
+                    "chance": 80
                 },
                 {
                     "id": "trickal.explore_magic_lock_encounter.fail",
-                    "chance": 25
+                    "chance": 100
                 }
             ]
         },
@@ -290,17 +395,17 @@
                 "trickal.ghost": 1
             },
             "label": "마법의 자물쇠: 유령의 시도",
-            "startdescription": "'유령들은 평범한 벽은 통과할 수 있다. 여기에 있는 자물쇠가 마법으로 방해하지 않는다면 대체로 성공할 것이다.'",
+            "startdescription": "유령들은 평범한 벽은 통과할 수 있다. 여기에 있는 자물쇠가 마법으로 방해하지 않는다면 대체로 성공할 것이다.",
             "description": ".",
             "craftable": false,
             "linked": [
                 {
                     "id": "trickal.explore_magic_lock_encounter.ghost_success",
-                    "chance": 70
+                    "chance": 75
                 },
                 {
                     "id": "trickal.explore_magic_lock_encounter.fail",
-                    "chance": 30
+                    "chance": 100
                 }
             ]
         },
@@ -378,6 +483,436 @@
             "actionid": "trickal.explore",
             "label": "굳게 잠긴 자물쇠",
             "startdescription": "이 자물쇠는 평범한 자물쇠가 아니다. 무식한 방식으론 아마 그다지 높은 성공률을 기대하기 힘들 것이다. 좀 더 상황에 맞는 추종자를 데려와보자.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        
+        
+        
+        {
+            "id": "trickal.explore_water_element_encounter",
+            "actionid": "trickal.explore",
+            "label": "물의 정령들",
+            "startdescription": "이 곳을 지나려면 화가난 물의 정령들을 진정시켜야한다. 순수의 힘은 물의 정령들을 물리칠 수 있다. 아니면 활발의 힘으로 물의 정령과 놀아주고 친해지는 방법도 있다.",
+            "requirements": {
+                "trickal.water_element": 1
+            },
+            "warmup": 30,
+            "craftable": false,
+            "slots": [
+                {
+                    "id": "Assistance",
+                    "label": "지원",
+                    "description": "자금은 탐험의 필수 요소고, 추종자들은 장애물을 돌파하는 데 도움이 될 것이다.",
+                    "required": {
+                        "trickal.follower": 1,
+                        "trickal.gold": 1
+                    }
+                }
+            ],
+            "alt": [
+                {
+                    "id": "trickal.explore_water_element_encounter.naia",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.pure_high",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.active_high",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.pure_middle",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.active_middle",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.pure_low",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.active_low",
+                    "chance": 100
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.naia",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.naia_": 1
+            },
+            "label": "물의 정령들: 나이아의 설득",
+            "startdescription": "'호수의 쓰레기때문에 정령들이 화가 났나봐! 내가 잘 이야기할테니까 거기서 기다리고 있어! 퓨퓨~'",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.comedown_success",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.pure_high",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.pure": 10
+            },
+            "label": "물의 정령들: 가득찬 순수",
+            "startdescription": "물의 정령들이 가진 냉정의 힘은 순수로서 정화할 수 있다. 이정도의 순수라면 우리는 아마 확실하게 이길 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.defeat_success",
+                    "chance": 95
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.pure_middle",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.pure": 5
+            },
+            "label": "물의 정령들: 상당한 순수",
+            "startdescription": "물의 정령들이 가진 냉정의 힘은 순수로서 정화할 수 있다. 물의 정령은 위협적으로 물을 뿌리고 있지만 아마 괜찮을 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.defeat_success",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.pure_low",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.pure": 1
+            },
+            "label": "물의 정령들: 미미한 순수",
+            "startdescription": "물의 정령들이 가진 냉정의 힘은 순수로서 정화할 수 있다. 이 정도의 순수로는 아마 모자라겠지만 운이 좋다면 이길 수도 있다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.defeat_success",
+                    "chance": 30
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.active_high",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.active": 10
+            },
+            "label": "물의 정령들: 가득찬 활발",
+            "startdescription": "물의 정령들의 장난을 좋아하는 성격을 이용해보자. 이정도의 활발이라면 우리는 물의 정령들의 장난에 맞춰줄 수 있을 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.comedown_success",
+                    "chance": 95
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.active_middle",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.active": 5
+            },
+            "label": "물의 정령들: 상당한 활발",
+            "startdescription": "물의 정령들의 장난을 좋아하는 성격을 이용해보자. 우리가 가진 활발은 물의 정령의 장난에 어느정도 맞춰줄지도 모른다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.comedown_success",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.active_low",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.active": 1
+            },
+            "label": "물의 정령들: 미미한 활발",
+            "startdescription": "물의 정령들의 장난을 좋아하는 성격을 이용해보자. 물의 정령의 장난은 꽤나 짖궂다. 이렇게 약한 활발로 맞춰줄 수 있을진 모르지만 시도는 해볼법하다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_water_element_encounter.comedown_success",
+                    "chance": 30
+                },
+                {
+                    "id": "trickal.explore_water_element_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.comedown_success",
+            "actionid": "trickal.explore",
+            "label": "진정된 물의 정령들",
+            "startdescription": "물의 정령들은 이제 우리에게 적의대신 물을 뿌리면서 물장난을 치고 있다. 아마 지나가도 좋을 것 같다.",
+            "description": ".",
+            "effects": {
+                "trickal.water_element": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.defeat_success",
+            "actionid": "trickal.explore",
+            "label": "기절한 물의 정령들",
+            "startdescription": "우리는 물의 정령들을 순수의 힘으로 쓰러트렸다. 기절하긴했지만 아마 내일이면 다시 일어날 것이다.",
+            "description": ".",
+            "effects": {
+                "trickal.water_element": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_water_element_encounter.fail",
+            "actionid": "trickal.explore",
+            "label": "화가 난 물의 정령들",
+            "startdescription": "물의 정령들은 길을 비켜주지않는다. 옷이 젖기 싫으니 지금은 물러나야할 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        
+        
+        
+        
+        
+        
+        
+        
+        {
+            "id": "trickal.explore_maze_forest_encounter",
+            "actionid": "trickal.explore",
+            "label": "미로같은 숲",
+            "startdescription": "이 생각보다 복잡한 숲은 무작정 탐험하려면 운이 아주 좋아야 길을 찾을 수 있다. 수인들은 이러한 장소에서도 익숙하게 다닐 수 있으며, 우울의 힘은 길을 찾는데 도움이 될 수도 있다.",
+            "requirements": {
+                "trickal.maze_forest": 1
+            },
+            "warmup": 30,
+            "craftable": false,
+            "slots": [
+                {
+                    "id": "Assistance",
+                    "label": "지원",
+                    "description": "자금은 탐험의 필수 요소고, 추종자들은 장애물을 돌파하는 데 도움이 될 것이다.",
+                    "required": {
+                        "trickal.follower": 1,
+                        "trickal.gold": 1
+                    }
+                }
+            ],
+            "alt": [
+                {
+                    "id": "trickal.explore_maze_forest_encounter.beast",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.depression_high",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.depression_middle",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.depression_low",
+                    "chance": 100
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.explore_maze_forest_encounter.forced_success",
+                    "chance": 15
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.fail_hint",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_maze_forest_encounter.beast",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.beast": 1
+            },
+            "label": "미로같은 숲: 수인들의 놀이터",
+            "startdescription": "이 곳은 수인들에겐 항상 다니는 산책길같은 곳이다. 물론 산책길이 항상 일직선이란 보장은 없지만",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_maze_forest_encounter.success",
+                    "chance": 95
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_maze_forest_encounter.depression_high",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.depression": 10
+            },
+            "label": "미로같은 숲: 가득찬 우울",
+            "startdescription": "우리는 가끔씩은 멈춰서 생각을 정리해야한다. 이정도 우울의 힘이라면 아마 확실하게 길이 보이게 될 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_maze_forest_encounter.success",
+                    "chance": 95
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_maze_forest_encounter.depression_middle",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.pure": 5
+            },
+            "label": "미로같은 숲: 상당한 우울",
+            "startdescription": "우리는 가끔씩은 멈춰서 생각을 정리해야한다. 우울은 이런 사색을 하는데 도움이 될것이며, 나아가야할 길이 어느정도는 보일 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_maze_forest_encounter.success",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_maze_forest_encounter.depression_low",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.pure": 1
+            },
+            "label": "미로같은 숲: 미미한 우울",
+            "startdescription": "우리는 가끔씩은 멈춰서 길을 기다려야한다. 미약한 우울의 힘으론 길이 잘 보이지 않겠지만, 잠깐 숨을 돌릴 순 있다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_maze_forest_encounter.success",
+                    "chance": 30
+                },
+                {
+                    "id": "trickal.explore_maze_forest_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_maze_forest_encounter.success",
+            "actionid": "trickal.explore",
+            "label": "미로를 해결하다",
+            "startdescription": "우리는 숲이 내주는 문제를 풀었다.",
+            "description": ".",
+            "effects": {
+                "trickal.maze_forest": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_maze_forest_encounter.fail",
+            "actionid": "trickal.explore",
+            "label": "우리는 아직 여기에 있다",
+            "startdescription": "'저 나무는 우리가 아까 표시한 나무인거같은데?'",
             "description": ".",
             "craftable": false,
             "linked": [

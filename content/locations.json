@@ -7,12 +7,40 @@
 			"isAspect": true
         },
         {
+            "id": "trickal.monster",
+            "label": "몬스터",
+            "description": "엘리아스의 호전적인 생물들. 말이 통하기도 하며 안 통하면 무력을 사용해야한다.",
+			"isAspect": true
+        },
+        {
+            "id": "trickal.peril",
+            "label": "고난",
+			"description": "장애물, 위험, 성급한 결론.",
+			"isAspect": true
+        },
+        {
             "id": "trickal.magic_lock",
             "label": "마법의 자물쇠",
             "aspects": {
                 "trickal.trap": 1
             },
             "description": "여기엔 마법으로 봉인된 자물쇠가 있다. 마법에 익숙한 자라면 이걸 해제할수도, 아니면 뚫고갈 수 있을까?"
+        },
+        {
+            "id": "trickal.water_element",
+            "label": "물의 정령들",
+            "aspects": {
+                "trickal.monster": 1
+            },
+            "description": "장난을 좋아하는 작은 물의 정령들이나 무언가의 이유로 화나있다. 그들을 처치하거나 반대로 놀아줄 수 있다면 괜찮을 것이다."
+        },
+        {
+            "id": "trickal.maze_forest",
+            "label": "미로같은 숲",
+            "aspects": {
+                "trickal.peril": 1
+            },
+            "description": "이 미궁 같은 숲은 익숙한 자들이 아니면 길을 잃기 좋은 곳이다."
         },
 
 
@@ -67,6 +95,102 @@
                 }
             ],
             "description": "이 골목에는 에슈르가 운영하는 빵집 '에심당'이 있다. 에슈르는 이를 마법학교라 부르곤 하지만 누가봐도 빵집으로만 보인다. 우리는 여기서 추종자를 이용해서 몰래 빵을 약탈해볼 수 있다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.lake",
+            "label": "정령 호수",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                }
+            ],
+            "description": "정령 산의 입구에는 꽤 커다란 호수가 있다. 이 곳에는 장난을 좋아하는 물 정령들이 살고 있는데 재미삼아 놀러가볼 수 있을 것이다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.beast_forest",
+            "label": "수인 숲",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                }
+            ],
+            "description": "이 곳은 수인 부락의 근처에 있는 숲이다. 익숙한 자들이 아니면 생각보다 길을 잃기 좋은 곳이다.",
             "unique": true
         }
 	]
