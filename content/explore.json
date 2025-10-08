@@ -289,6 +289,72 @@
             "description": "어린 수인들은 평소 숨바꼭질을 하면서 논다. 수인들은 나중에 같이 놀자며 숨바꼭질 장소를 나에게 알려준다. 이러한 장소는 보물찾기 놀이에 어울리진 않아도 위험하진 않다.",
             "warmup": 60,
             "craftable": true
+        },
+        {
+            "id": "trickal.explore.furvillage.food1",
+            "label": "수인들에게 가벼운 간식을 주기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.furvillage": 1,
+                "trickal.food1": 1
+            },
+            "deckeffects": {
+                "trickal.explore.land2": 1
+            },
+            "effects": {
+                "trickal.work.food1": -1
+            },
+            "aspects": {
+                "fatiguing": 1
+            },
+            "startdescription": "나는 수인들의 마을에 가벼운 간식을 들고 방문한다. 이정도 선물이면 적당히 모험 할만한 장소를 물어볼 수 있을 것이다.",
+            "description": "가벼운 간식을 먹으면서 대화하면서 소화겸 적당한 산책 장소를 추천받는다.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.explore.furvillage.food2",
+            "label": "수인들에게 식사를 대접하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.furvillage": 1,
+                "trickal.food2": 1
+            },
+            "deckeffects": {
+                "trickal.explore.land3": 1
+            },
+            "effects": {
+                "trickal.work.food2": -1
+            },
+            "aspects": {
+                "fatiguing": 1
+            },
+            "startdescription": "수인들에게 식사를 대접하기.",
+            "description": "수인들에게 식사를 대접하기.",
+            "warmup": 60,
+            "craftable": true
+        },
+        {
+            "id": "trickal.explore.furvillage.food3",
+            "label": "수인들에게 호화로운 식사를 대접하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.furvillage": 1,
+                "trickal.food3": 1
+            },
+            "deckeffects": {
+                "trickal.explore.land4": 1
+            },
+            "effects": {
+                "trickal.work.food3": -1
+            },
+            "aspects": {
+                "fatiguing": 1
+            },
+            "startdescription": "수인들에게 호화로운 식사를 대접하기.",
+            "description": "수인들에게 호화로운 식사를 대접하기.",
+            "warmup": 60,
+            "craftable": true
         }
     ]
 }

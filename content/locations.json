@@ -24,7 +24,7 @@
             "aspects": {
                 "trickal.trap": 1
             },
-            "description": "여기엔 마법으로 봉인된 자물쇠가 있다. 마법에 익숙한 자라면 이걸 해제할수도, 아니면 뚫고갈 수 있을까?"
+            "description": "여기엔 마법으로 봉인된 자물쇠가 있다. 마법에 익숙한 종족이라면 이걸 해제할수도, 아니면 유령처럼 뚫고갈 수 있을까?"
         },
         {
             "id": "trickal.water_element",
@@ -32,7 +32,7 @@
             "aspects": {
                 "trickal.monster": 1
             },
-            "description": "장난을 좋아하는 작은 물의 정령들이나 무언가의 이유로 화나있다. 그들을 처치하거나 반대로 놀아줄 수 있다면 괜찮을 것이다."
+            "description": "장난을 좋아하는 작은 물의 정령들이나 무언가의 이유로 화나있다. 그들을 순수의 힘으로 처치하거나 반대로 활발의 힘으로 놀아줄 수 있다면 괜찮을 것이다."
         },
         {
             "id": "trickal.maze_forest",
@@ -40,12 +40,72 @@
             "aspects": {
                 "trickal.peril": 1
             },
-            "description": "이 미궁 같은 숲은 익숙한 자들이 아니면 길을 잃기 좋은 곳이다."
+            "description": "이 미궁 같은 숲은 수인처럼 익숙한 자들이 아니면 길을 잃기 좋은 곳이다. 아니면 우울의 힘을 가진 자라면 차분히 길을 찾을 지도 모른다."
         },
-
-
-
-
+        {
+            "id": "trickal.drone",
+            "label": "드론",
+            "aspects": {
+                "trickal.monster": 1
+            },
+            "description": "엘프들의 기술력으로 만든 강력한 화기를 가진 로봇. 우울의 힘으로 조용히 지나가거나 엘프들의 도움이 필요할 것이다."
+        },
+        {
+            "id": "trickal.wind_element",
+            "label": "바람의 정령",
+            "aspects": {
+                "trickal.monster": 1
+            },
+            "description": "바람을 다루는 바람의 정령. 바람을 멎게하기위해서 순수의 힘이나 광기의 힘이 필요하다."
+        },
+        {
+            "id": "trickal.fire_element",
+            "label": "불의 정령",
+            "aspects": {
+                "trickal.monster": 1
+            },
+            "description": "뜨거운 곳에서 사는 불의 정령. 불 같은 성격에는 맞서는것이 아닌 진정시키는 냉정이나 우울의 힘이 필요하다."
+        },
+        {
+            "id": "trickal.guardian",
+            "label": "파수꾼",
+            "aspects": {
+                "trickal.monster": 1
+            },
+            "description": "무언가를 지키는 경비병. 대부분의 파수꾼은 실력행사로 때려 눕히면 된다. 이는 광기의 힘이나 용족이 흔히 가진 특기다."
+        },
+        {
+            "id": "trickal.rough_field",
+            "label": "험난한 지형",
+            "aspects": {
+                "trickal.peril": 1
+            },
+            "description": "평범한 자는 똑바로 걷는것조차 힘든 절벽, 산길. 아마 등산에 익숙한 정령, 용족이나, 활발한 자의 힘이 필요하다."
+        },
+        {
+            "id": "trickal.security",
+            "label": "보안 장치",
+            "aspects": {
+                "trickal.trap": 1
+            },
+            "description": "이 보안 장치는 지나가려는 자를 놓치지않는다. 상식을 뒤집는 유령이나 그들의 기술에 익숙한 엘프라면 다르겠지만"
+        },
+        {
+            "id": "trickal.pitfall",
+            "label": "함정",
+            "aspects": {
+                "trickal.trap": 1
+            },
+            "description": "구덩이, 낭떠러지, 의도적으로 설치된 덫. 냉정의 힘이라면 침착하게 함정을 지나갈 수 있다. 수인이라면 직감과 후각이 도움이 될 것이다."
+        },
+        {
+            "id": "trickal.temptation",
+            "label": "유혹",
+            "aspects": {
+                "trickal.peril": 1
+            },
+            "description": "먹을 것, 혹은 반짝이는 것들, 환각에 의한 꾐. 냉정한 자들이나 유혹을 뛰어넘는 집착을 가진 광기의 신도라면 이를 뛰어넘을 것이다. "
+        },
 
 
 
@@ -190,7 +250,487 @@
                     "actionid": "trickal.explore"
                 }
             ],
-            "description": "이 곳은 수인 부락의 근처에 있는 숲이다. 익숙한 자들이 아니면 생각보다 길을 잃기 좋은 곳이다.",
+            "description": "이 곳은 수인 부락의 근처에 있는 숲이다. 익숙한 자들이 아니면 생각보다 길을 잃기 좋은 곳이다. [이 장소는 여러 번 탐험할 수 있습니다.]",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.furrybeach",
+            "label": "퍼리 비이치 리조토",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "코미가 만든 놀이터로 수인 마을 근처 호숫가다. 평범한 호숫가지만 코미의 말솜씨에 넘어간 고객들이 무급으로 일하고 있다는 소문이 있다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.eisiacompany",
+            "label": "프로스트 노바 본사",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "모나티엄 2등 기업 아이시아 회장의 회사 건물로 멜루 코퍼레이션의 라이벌 기업이다. 회사는 엄중한 경비와 드론이 지키고 있으며 무언가 숨기고 있음이 분명하다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.eisiacompany",
+            "label": "프로스트 노바 본사",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "모나티엄 2등 기업 아이시아 회장의 회사 건물로 멜루 코퍼레이션의 라이벌 기업이다. 회사는 엄중한 경비와 드론이 지키고 있으며 무언가 숨기고 있음이 분명하다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.volcano",
+            "label": "정령산 내부 화산 발화지",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "정령산에는 용암이 흐르는 위험한 지역이 있다. 그 곳은 불의 정령의 서식지라고 한다. [이 장소는 여러 번 탐험할 수 있습니다.]",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.storage",
+            "label": "벨리타의 왕국 비밀 창고",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "벨리티엔 마녀왕국의 궁전에는 여왕만이 아는 숨겨진 비밀 창고가 있다고 한다. 분명 어마어마한 보물이 있을 것이 틀림없다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.jadelibrary",
+            "label": "제이드의 서고",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "제이드가 자신이 모은 지식을 저장한 도서관이다. 산 속에 숨어있어서 찾기가 어렵지만, 찾을만한 가치가 있을 것이다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.monatiumpowerstation",
+            "label": "모나티엄 발전소",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "엘프들이 만든 정령을 활용한 발전소로 모든 모나티엄의 전기를 생산하고 있다. [이 장소는 여러 번 탐험할 수 있습니다.]",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.worldtreecellar",
+            "label": "세계수 교단 지하실",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "교단이 지하에 있다는 교주도 함부로 출입할 수 없는 세계수 지하실. 등잔 밑이 어둡다고, 교주가 되고선 한번도 가본적이 없다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.elementmountainpeak",
+            "label": "정령산 정상",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "정령산의 꼭대기. 평소와는 달리 거센 눈보라가 정상에 접근하는 것을 막고 있다. 대체 무엇을 막고 있는 것일까?",
+            "unique": true
+        },
+        {
+            "id": "trickal.location.ghostdeeperswamp",
+            "label": "유령 늪 깊은 곳",
+            "aspects": {
+                "vault": 1,
+                "location": 1
+            },
+            "slots": [
+                {
+                    "id": "expeditionmember",
+                    "label": "리더",
+                    "description": "모험을 시작하려면 적어도 한 명의 추종자를 보내야 한다. 추종자는 탐험 중에도 보낼 수 있다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionmember2",
+                    "label": "조수",
+                    "description": "추가적으로, 지금 바로 추종자 한 명을 더 보낼 수 있다. 그들이 유용할 거라 생각된다면 말이다.",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds",
+                    "label": "골드",
+                    "description": "모험을 시작하려면 적어도 골드 하나는 사용해야 한다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "trickal.explore"
+                },
+                {
+                    "id": "expeditionfunds2",
+                    "label": "더 많은 골드",
+                    "description": "추가적으로, 지금 바로 골드 하나를 더 사용할 수 있다. 탐험 중 골드가 다 떨어지는 게 걱정된다면 말이다.",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "actionid": "tickal.explore"
+                }
+            ],
+            "description": "유령 늪은 아주 넓고 위험한 곳이기때문에 내 추종자의 집이 아니라면 함부로 가지 않는다. 하지만 그것이 모험심을 자극하기도 한다. [이 장소는 여러 번 탐험할 수 있습니다.]",
             "unique": true
         }
 	]
