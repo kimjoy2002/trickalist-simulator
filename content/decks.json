@@ -295,7 +295,7 @@
             "description": "어느정도 모험심을 이끌어내는 곳.",
             "spec": [
                 "trickal.location.furrybeach",
-                "trickal.location.eisiacompany"
+                "trickal.location.jadelibrary"
             ],
             "defaultcard": "trickal.location.volcano"
         },
@@ -305,7 +305,7 @@
             "description": "이 곳은 만만한 장소가 아니다.",
             "spec": [
                 "trickal.location.storage",
-                "trickal.location.jadelibrary"
+                "trickal.location.eisiacompany"
             ],
             "defaultcard": "trickal.location.monatiumpowerstation"
         },

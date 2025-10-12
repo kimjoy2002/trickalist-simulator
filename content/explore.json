@@ -329,8 +329,8 @@
             "aspects": {
                 "fatiguing": 1
             },
-            "startdescription": "수인들에게 식사를 대접하기.",
-            "description": "수인들에게 식사를 대접하기.",
+            "startdescription": "나는 수인들의 마을에 식사를 들고 방문한다. 수인들과 같이 식사를 하면서 괜찮은 모험 장소를 알아낼 수 있을 것이다.",
+            "description": "수인들에게 식사를 대접한 후, 나는 보물의 소문이 있는 어느 한 장소에 대한 정보를 얻었다.",
             "warmup": 60,
             "craftable": true
         },
@@ -351,8 +351,8 @@
             "aspects": {
                 "fatiguing": 1
             },
-            "startdescription": "수인들에게 호화로운 식사를 대접하기.",
-            "description": "수인들에게 호화로운 식사를 대접하기.",
+            "startdescription": "아주 호화로운 음식을 들고 수인들의 마을에 방문한다. 이정도 음식이면 희귀한 보물이 있는 모험 장소도 말해줄 것이다.",
+            "description": "수인들이 호화로운 음식을 먹고난 후에 희귀한 보물이 숨겨져있는 특별한 장소를 귀띔해주었다. 이 곳은 아주 철저한 준비후에 방문해야할 것이다.",
             "warmup": 60,
             "craftable": true
         }
