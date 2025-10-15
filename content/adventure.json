@@ -374,7 +374,7 @@
             },
             "effects": {
                 "trickal.tool.steelsword": 1,
-                "trickal.tool.syllasbow": 1,
+                "trickal.spellcard.lastspurt": 1,
                 "trickal.tool.greedring": 1,
                 "trickal.gold": 2
             },
@@ -397,7 +397,7 @@
                 "trickal.guardian": 1,
                 "trickal.magic_lock": 1
             },
-            "startdescription": "이방인에게 수인 숲은 여행하기 쉬우면서도 어렵다. 항상 따듯하고 좋은 날씨라 다니기 쉽지만, 나무가 가득 우거져 헤매기 일쑤니 어렵다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]",
+            "startdescription": "@#trickal.ner_|세계수 교단의 지하실에는 다양한 방들이 있고 교주도 알지 못하는 방들이 많이 있다. 네르는 멋대로 지하실을 다니지 못하도록 옆에서 감시하겠다고 말한다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]#|세계수 교단의 지하실에는 다양한 방들이 있고 교주도 알지 못하는 방들이 많이 있다. 어느 방에는 교단조차 모르는 보물이 숨겨져있을지도 모르는 법이다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]@",
             "description": ".",
             "warmup": 30,
             "craftable": true,
@@ -410,19 +410,19 @@
         },
         {
             "id": "trickal.explore_worldtreecellar.success",
-            "label": "세계수 교단 지하실에 갔다 온 결과...",
+            "label": "세계수 교단 지하실에 내려간 결과...",
             "actionid": "trickal.explore",
             "requirements": {
                 "trickal.location.worldtreecellar": 1
             },
             "effects": {
-                "trickal.food.can": 1,
-                "trickal.tool.leafrobe": 1,
-                "trickal.gold": 2,
+                "trickal.spellcard.skipagrade": 1,
+                "trickal.tool.nersflag": 1,
+                "trickal.elif": 5,
                 "trickal.location.worldtreecellar": -1
             },
-            "startdescription": "수인 숲에는 수렵과 채집을 하기 딱 좋은 장소다. 길만 익숙해진다면 평소에도 피크닉 삼아 올만한 좋은 자연장소이기도 하다.",
-            "description": "수인 숲에는 다양한 물건들이 떨어져있다. 엘프들이 만든 가공품 캔이라던가, 이상한 책들도 발견했다. 이러한 물건들이 수인들에게 악영향을 주고 있는 것 같다.",
+            "startdescription": "세계수의 지하에는 다양한 방들이 있었다. 마대자루를 보관하는 방은 네르의 체벌용 도구인걸로 보이고, 출입금지 팻말이 붙은 방을 스쳐지나치고 요정들이 단체로 자고 있던 방에 조심스럽게 들어간다.",
+            "description": "세계수 교단의 신도들은 꿈을 통해 세계수와 교감하고 기도한다. 이 방의 사제들은 100년이 넘는 시간동안 꿈을 꾸고 있다. 사제들이 잠에서 깨지않도록 조심이 걸어가보니 구석에 낡은 나무 상자가 보인다. 우리는 그것을 들고 가져나오기로 한다.",
             "warmup": 30,
             "craftable": false
         },
@@ -440,7 +440,7 @@
                 "trickal.rough_field": 1,
                 "trickal.wind_element": 1
             },
-            "startdescription": "이방인에게 수인 숲은 여행하기 쉬우면서도 어렵다. 항상 따듯하고 좋은 날씨라 다니기 쉽지만, 나무가 가득 우거져 헤매기 일쑤니 어렵다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]",
+            "startdescription": "정령산에는 숨겨진 보물이 있다는 소문이 있지만 꼭대기에 올라가기위해서 우리는 눈보라와 바람의 정령을 뚫고 나아가야한다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]",
             "description": ".",
             "warmup": 30,
             "craftable": true,
@@ -459,13 +459,13 @@
                 "trickal.location.elementmountainpeak": 1
             },
             "effects": {
-                "trickal.food.can": 1,
-                "trickal.tool.leafrobe": 1,
-                "trickal.gold": 2,
+                "trickal.tool.diamondbracelet": 1,
+                "trickal.spellcard.pastelpicnic": 1,
+                "trickal.tool.syllasbow": 1,
                 "trickal.location.elementmountainpeak": -1
             },
-            "startdescription": "수인 숲에는 수렵과 채집을 하기 딱 좋은 장소다. 길만 익숙해진다면 평소에도 피크닉 삼아 올만한 좋은 자연장소이기도 하다.",
-            "description": "수인 숲에는 다양한 물건들이 떨어져있다. 엘프들이 만든 가공품 캔이라던가, 이상한 책들도 발견했다. 이러한 물건들이 수인들에게 악영향을 주고 있는 것 같다.",
+            "startdescription": "거친 눈보라를 지나니 산 정상에 바람이 그치고 눈이 쌓여 있는 평화로운 장소에 도착한다. 그 곳에서 새하얀 작은 집을 발견한다. 우리는 가볍게 노크해본다.",
+            "description": "하얀 집에 노크를 해보니 하얀 옷과 머리를 지닌 마녀와 만난다. 만년설의 현자로 불리며 자신을 아야라 부르는 하얀 마녀는 우리를 반갑게 집에 초대한다. 가볍게 티타임을 가지고 되돌아가려고하니 오랫만의 방문객이라며 우리에게 선물을 잔뜩 안겨준다.",
             "warmup": 30,
             "craftable": false
         },
@@ -483,7 +483,7 @@
                 "trickal.trap": 1,
                 "trickal.temptation": 1
             },
-            "startdescription": "이방인에게 수인 숲은 여행하기 쉬우면서도 어렵다. 항상 따듯하고 좋은 날씨라 다니기 쉽지만, 나무가 가득 우거져 헤매기 일쑤니 어렵다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]",
+            "startdescription": "유령 늪은 유령이 아니면 너무나도 위험한 곳이다. 방향을 알기도 힘들고, 과하게 넓으면서 표식도 찾기가 힘들다. 특히 낫을 든 유령을 만난다면 더욱 위험하다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]",
             "description": ".",
             "warmup": 30,
             "craftable": true,
@@ -502,12 +502,12 @@
                 "trickal.location.ghostdeeperswamp": 1
             },
             "effects": {
-                "trickal.food.can": 1,
-                "trickal.tool.leafrobe": 1,
-                "trickal.gold": 2
+                "trickal.spellcard.deadlycharm": 1,
+                "trickal.tool.buttersyellowcard": 1,
+                "trickal.gold": 5
             },
-            "startdescription": "수인 숲에는 수렵과 채집을 하기 딱 좋은 장소다. 길만 익숙해진다면 평소에도 피크닉 삼아 올만한 좋은 자연장소이기도 하다.",
-            "description": "수인 숲에는 다양한 물건들이 떨어져있다. 엘프들이 만든 가공품 캔이라던가, 이상한 책들도 발견했다. 이러한 물건들이 수인들에게 악영향을 주고 있는 것 같다.",
+            "startdescription": "유령 늪은 습하고 축축하며 유령들의 마을은 따로 없기에 길을 찾기 더 힘들다. 지나가던 유령들의 가이드는 괴상해서 장난인지 진짜인지 알수가 없다. 정처없이 늪을 지나가다보니 낡은 폐가같은 집을 발견한다.",
+            "description": "이 집에는 아직 주인이 돌아오지 않은듯 하다. 주인에게는 미안하지만 몰래 들어가서 비싸보이는 물건을 훔쳐오기로 했다. 그렇게 정리하고 집에서 나오다가 우연히 뒤를 돌아보니 아까 들어갔던 집이 사라져있었다. 우리가 여태까지 꿈을 꾼걸까?",
             "warmup": 30,
             "craftable": false
         },
