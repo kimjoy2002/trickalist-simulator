@@ -2585,6 +2585,290 @@
             "isAspect": true,
             "isHidden": true,
             "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.amelia4",
+            "label": "최고의 비서 아멜리아",
+            "description": "아멜리아는 이제 교단의 우선순위를 0.3 엘레나 정도로 평가한다.",
+            "aspects": {
+                "trickal.amelia_": 1,
+                "trickal.creature": 1,
+                "trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.festa"
+        },
+        {
+            "id": "trickal.amelia3",
+            "label": "사도 아멜리아",
+            "description": "아멜리아는 한때 엘레나의 카피캣 발명가로 활동했었다. 지금은 엘레나의 제자가 되어 엘레나의 발명품을 보완하고 있다.",
+            "aspects": {
+                "trickal.amelia_": 1,
+                "trickal.creature": 1,
+                "trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.amelia",
+            "xtriggers": {
+                "promote": "trickal.amelia4"
+            }
+        },
+        {
+            "id": "trickal.amelia2",
+            "label": "신도 아멜리아",
+            "description": "아멜리아는 교단에 들어와서도 항상 엘레나의 비서로서 행동한다.",
+            "aspects": {
+                "trickal.amelia_": 1,
+                "trickal.creature": 1,
+                "trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.amelia",
+            "xtriggers": {
+                "promote": "trickal.festa3"
+            }
+        },
+        {
+            "id": "trickal.amelia",
+            "label": "아멜리아",
+            "description": "엘프 도시 모나티엄의 시장 비서.",
+            "aspects": {
+                "trickal.amelia_": 1,
+                "trickal.creature": 1,
+                "trickal.elf": 1,
+                "acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.amelia",
+            "xtriggers": {
+                "recruiting": "trickal.amelia2"
+            }
+        },
+        {
+            "id": "trickal.amelia_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.sylla4",
+            "label": "최고 명사수 실라",
+            "description": "실라는 명실상부 교단의 최고 명사수다. 그녀의 화살로 맞출 수 없는 것은 없다.",
+            "aspects": {
+                "trickal.sylla_": 1,
+                "trickal.creature": 1,
+                "trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.festa"
+        },
+        {
+            "id": "trickal.sylla3",
+            "label": "사도 실라",
+            "description": "실라의 화살은 바람을 타기때문에 항상 타겟에 명중한다. 또한 차원도 찢을 수 있다.",
+            "aspects": {
+                "trickal.sylla_": 1,
+                "trickal.creature": 1,
+                "trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.sylla",
+            "xtriggers": {
+                "promote": "trickal.sylla4"
+            }
+        },
+        {
+            "id": "trickal.sylla2",
+            "label": "신도 실라",
+            "description": "실라는 정령의 우두머리로, 고위 정령 사이에서도 가장 지위가 높다.",
+            "aspects": {
+                "trickal.sylla_": 1,
+                "trickal.creature": 1,
+                "trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.sylla",
+            "xtriggers": {
+                "promote": "trickal.festa3"
+            }
+        },
+        {
+            "id": "trickal.sylla",
+            "label": "실라",
+            "description": "엘리아스에서 가장 쿨하게 행동하는 바람의 고위 정령.",
+            "aspects": {
+                "trickal.sylla_": 1,
+                "trickal.creature": 1,
+                "trickal.element": 1,
+                "acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.sylla",
+            "xtriggers": {
+                "recruiting": "trickal.sylla2"
+            }
+        },
+        {
+            "id": "trickal.sylla_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.barong4",
+            "label": "허언 허세 허클베리 바롱",
+            "description": "바롱은 여전히 세상에 착각을 뿌린다. 완벽한 착각은 가끔 진짜가 되기도 한다.",
+            "aspects": {
+                "trickal.festa_": 1,
+                "trickal.creature": 1,
+                "trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.festa"
+        },
+        {
+            "id": "trickal.barong3",
+            "label": "사도 바롱",
+            "description": "바롱은 프로스트 노바와 멜루 코퍼레이션의 대주주이며 주식 투자에 일가견이 있다.",
+            "aspects": {
+                "trickal.barong_": 1,
+                "trickal.creature": 1,
+                "trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.barong",
+            "xtriggers": {
+                "promote": "trickal.barong4"
+            }
+        },
+        {
+            "id": "trickal.barong2",
+            "label": "신도 바롱",
+            "description": "바롱의 모든 목적은 딱 하나, 재미와 재미의 신을 위해 행동한다.",
+            "aspects": {
+                "trickal.barong_": 1,
+                "trickal.creature": 1,
+                "trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.barong",
+            "xtriggers": {
+                "promote": "trickal.festa3"
+            }
+        },
+        {
+            "id": "trickal.barong",
+            "label": "바롱",
+            "description": "재미만을 위해 모은 거금을 사용하는 착각의 유령.",
+            "aspects": {
+                "trickal.barong_": 1,
+                "trickal.creature": 1,
+                "trickal.ghost": 1,
+                "acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.barong",
+            "xtriggers": {
+                "recruiting": "trickal.barong2"
+            }
+        },
+        {
+            "id": "trickal.barong_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.daya4",
+            "label": "용족의 수장 다야",
+            "description": "다야는 이제 무엇보다도 찬란하게 빛난다.",
+            "aspects": {
+                "trickal.festa_": 1,
+                "trickal.creature": 1,
+                "trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.festa"
+        },
+        {
+            "id": "trickal.daya3",
+            "label": "사도 다야",
+            "description": "다야는 뛰어난 신체능력과 실력을 가졌지만 그 순수한 본질때문에 사기와 기만에 쉽게 당하기도 한다.",
+            "aspects": {
+                "trickal.daya_": 1,
+                "trickal.creature": 1,
+                "trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.daya",
+            "xtriggers": {
+                "promote": "trickal.daya4"
+            }
+        },
+        {
+            "id": "trickal.daya2",
+            "label": "신도 다야",
+            "description": "다야는 1인자이면서도 자신을 꾸미고 가꾸는걸 소홀히 하지않는다.",
+            "aspects": {
+                "trickal.daya_": 1,
+                "trickal.creature": 1,
+                "trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.daya",
+            "xtriggers": {
+                "promote": "trickal.festa3"
+            }
+        },
+        {
+            "id": "trickal.daya",
+            "label": "다야",
+            "description": "엘리아스 용족들의 우두머리인 다이아몬드의 용족.",
+            "aspects": {
+                "trickal.daya_": 1,
+                "trickal.creature": 1,
+                "trickal.dragon": 1,
+                "acquaintance": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.daya",
+            "xtriggers": {
+                "recruiting": "trickal.daya2"
+            }
+        },
+        {
+            "id": "trickal.daya_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
         }
     ]
 }
