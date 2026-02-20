@@ -106,6 +106,30 @@
             },
             "description": "먹을 것, 혹은 반짝이는 것들, 환각에 의한 꾐. 냉정한 자들이나 유혹을 뛰어넘는 집착을 가진 광기의 신도라면 이를 뛰어넘을 것이다. "
         },
+        {
+            "id": "trickal.worldtreeseal",
+            "label": "세계수의 힘",
+            "aspects": {
+                "trickal.peril": 1
+            },
+            "description": "세계수의 힘은 우리의 의지를 삼키고 그들의 종으로 만든다. 활발의 힘이라면 거대한 의지로부터 반항해볼 수 있다."
+        },
+        {
+            "id": "trickal.blizard",
+            "label": "눈보라",
+            "aspects": {
+                "trickal.peril": 1
+            },
+            "description": "정령 산의 눈보라는 평범한 눈보라가 아니다. 같은 냉정의 힘만이 눈보라를 잠재울 수 있다."
+        },
+        {
+            "id": "trickal.ghostswamp",
+            "label": "유령 늪의 지형",
+            "aspects": {
+                "trickal.peril": 1
+            },
+            "description": "유령 늪은 그 자체만으로도 미궁과도 같은 지역이다. 우울의 힘이라면 유령 늪에서 길을 잃진 않을것이다."
+        }
 
 
 

@@ -395,7 +395,8 @@
             },
             "effects": {
                 "trickal.guardian": 1,
-                "trickal.magic_lock": 1
+                "trickal.magic_lock": 1,
+                "trickal.worldtreeseal": 1
             },
             "startdescription": "@#trickal.ner_|세계수 교단의 지하실에는 다양한 방들이 있고 교주도 알지 못하는 방들이 많이 있다. 네르는 멋대로 지하실을 다니지 못하도록 옆에서 감시하겠다고 말한다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]#|세계수 교단의 지하실에는 다양한 방들이 있고 교주도 알지 못하는 방들이 많이 있다. 어느 방에는 교단조차 모르는 보물이 숨겨져있을지도 모르는 법이다. [탐험엔 장애물 하나당 최소 1개씩의 자금이 필요합니다. 추종자들은 장애물을 물리칠 것입니다. 만약 자금이 다 떨어지거나 추종자들이 남아있지 않으면, 탐험은 실패합니다.]@",
             "description": ".",
@@ -616,6 +617,14 @@
                 },
                 {
                     "id": "trickal.explore_temptation_encounter",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_blizard_encounter",
                     "chance": 100
                 }
             ]
@@ -2983,6 +2992,313 @@
             "startdescription": "우리의 추종자들은 얕은 유혹에 넘어갔다. 아마 돌아오면 훈계가 필요할지도 모른다.",
             "description": ".",
             "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        
+        
+        
+        
+        {
+            "id": "trickal.explore_worldtreeseal_encounter",
+            "actionid": "trickal.explore",
+            "label": "세계수의 힘",
+            "startdescription": "이 곳은 세계수의 불가사의한 힘이 퍼져있다. 높은 활발의 힘이 없으면 세계수의 의지가 우리를 집어 삼킬 것이다.",
+            "requirements": {
+                "trickal.worldtreeseal": 1
+            },
+            "warmup": 30,
+            "craftable": false,
+            "slots": [
+                {
+                    "id": "Assistance",
+                    "label": "지원",
+                    "description": "자금은 탐험의 필수 요소고, 추종자들은 장애물을 돌파하는 데 도움이 될 것이다.",
+                    "required": {
+                        "trickal.follower": 1,
+                        "trickal.gold": 1
+                    }
+                }
+            ],
+            "alt": [
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.active_high",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.active_middle",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.active_low",
+                    "chance": 100
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_worldtreeseal_encounter.active_high",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.active": 10
+            },
+            "label": "세계수의 힘: 가득찬 활발",
+            "startdescription": "세계수의 의지는 우리의 마음을 조종하려고 한다. 허나 우리는 우리의 의지를 가졌다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.success",
+                    "chance": 95
+                },
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_worldtreeseal_encounter.active_middle",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.active": 5
+            },
+            "label": "세계수의 힘: 상당한 활발",
+            "startdescription": "세계수의 의지는 우리의 마음을 잠식하려고 하고 있다. 하지만 활발의 힘은 어느정도 의지에 반항할 수 있을 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.success",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_worldtreeseal_encounter.active_low",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.active": 1
+            },
+            "label": "세계수의 힘: 미미한 활발",
+            "startdescription": "작은 활발의 힘으로 세계수의 의지에 조금이나마 반항해볼 수 있을 것이다. 그러나 대부분의 시도는 무의미하다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.success",
+                    "chance": 30
+                },
+                {
+                    "id": "trickal.explore_worldtreeseal_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        }
+        {
+            "id": "trickal.explore_worldtreeseal_encounter.success",
+            "actionid": "trickal.explore",
+            "label": "세계수의 힘을 이겨냈다",
+            "startdescription": "우리는 우리가 누군지 기억하고 있다.",
+            "description": ".",
+            "effects": {
+                "trickal.worldtreeseal": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_worldtreeseal_encounter.fail",
+            "actionid": "trickal.explore",
+            "label": "세계수의 의지가 우리를 압도한다",
+            "startdescription": "세계수의 의지는 우리 얼마 지나지 않아 우리의 하수인이 세계수의 의지에 휘둘릴 것이다.",
+            "description": ".",
+            "craftable": false,
+            "effects": {
+                "trickal.worldtreeseal": -1
+            },
+            "alt": [
+                {
+                    "id": "trickal.danger.worldrage",
+                    "chance": 100,
+                    "additional": true
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        
+        
+        
+        
+        {
+            "id": "trickal.explore_blizzard_encounter",
+            "actionid": "trickal.explore",
+            "label": "눈보라",
+            "startdescription": "뼈 속까지 차가워지는 강한 바람과 눈이 우리를 덮친다. 냉정의 힘이 눈보라를 잠재울 수 있다.",
+            "requirements": {
+                "trickal.blizzard": 1
+            },
+            "warmup": 30,
+            "craftable": false,
+            "slots": [
+                {
+                    "id": "Assistance",
+                    "label": "지원",
+                    "description": "자금은 탐험의 필수 요소고, 추종자들은 장애물을 돌파하는 데 도움이 될 것이다.",
+                    "required": {
+                        "trickal.follower": 1,
+                        "trickal.gold": 1
+                    }
+                }
+            ],
+            "alt": [
+                {
+                    "id": "trickal.explore_blizzard_encounter.cool_high",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_blizzard_encounter.cool_middle",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore_blizzard_encounter.cool_low",
+                    "chance": 100
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.explore_blizzard_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_blizzard_encounter.cool_high",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.cool": 10
+            },
+            "label": "눈보라: 가득찬 냉정",
+            "startdescription": "가득차있는 냉정의 힘이 눈보라를 점차 진정시킨다. 눈보라는 곧 그칠 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_blizzard_encounter.success",
+                    "chance": 95
+                },
+                {
+                    "id": "trickal.explore_blizzard_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_blizzard_encounter.cool_middle",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.cool": 5
+            },
+            "label": "눈보라: 상당한 냉정",
+            "startdescription": "우리는 냉정의 힘으로 눈보라를 진정시키려고 시도한다. 아마 높은 확률로 눈보라는 그칠 것이다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_blizzard_encounter.success",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.explore_blizzard_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore_blizzard_encounter.cool_low",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.cool": 1
+            },
+            "label": "눈보라: 미미한 냉정",
+            "startdescription": "우리는 미미한 힘으로 눈보라에 대항한다. 대부분은 실패하겠지만 작은 확률에 걸어볼 수 있다.",
+            "description": ".",
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_blizzard_encounter.success",
+                    "chance": 30
+                },
+                {
+                    "id": "trickal.explore_blizzard_encounter.fail",
+                    "chance": 100
+                }
+            ]
+        }
+        {
+            "id": "trickal.explore_blizzard_encounter.success",
+            "actionid": "trickal.explore",
+            "label": "눈보라을 이겨냈다",
+            "startdescription": "산에 내리던 눈발이 점점 잦아든다. 우리는 자연의 분노를 이겨냈다.",
+            "description": ".",
+            "effects": {
+                "trickal.blizzard": -1
+            },
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.explore_tick",
+                    "chance": 100
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.explore_blizzard_encounter.fail",
+            "actionid": "trickal.explore",
+            "label": "눈보라에 휩쓸리다",
+            "startdescription": "우리는 거친 바람에 휘둘리고 눈에 파묻혔다. 몇몇 추종자들은 당분간 모험을 지속하기 힘들것이다.",
+            "description": ".",
+            "craftable": false,
+            "alt": [
+                {
+                    "id": "trickal.danger.cold",
+                    "chance": 100,
+                    "additional": true,
+                    "expulsion": {
+                        "limit": 1,
+                        "filter": {
+                            "trickal.follower": 1
+                        }
+                    }
+                }
+            ],
             "linked": [
                 {
                     "id": "trickal.explore_tick",
