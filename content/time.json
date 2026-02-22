@@ -198,6 +198,7 @@
             "id": "trickal.indigence.ner.fury",
             "label": "네르의 분노가 폭발한다!",
             "actionid": "trickal.nerfury",
+            "burnimage": "nerfury",
             "requirements": {
                 "trickal.nerfury": 3
             },
@@ -277,7 +278,7 @@
             "description": ".",
             "warmup": 3,
             "effects": {
-                 "trickal.document": 3
+                 "trickal.document": 2
             }
         },
         {
@@ -285,7 +286,7 @@
             "label": "업무 과다",
             "actionid": "trickal.docu",
             "requirements": {
-                "trickal.document": 1
+                "trickal.document.late": 1
             },
             "description": "지금은 서류가 중요한게 아니다!",
             "startdescription": "쌓인 서류를 내 힘만으론 처리할 수 없다! 도움이 필요하다! [네르의 분노가 3개 넘게 쌓인채로 들키면 미래는 없을 것입니다.]",
@@ -325,7 +326,7 @@
             },
             "actionid": "trickal.docu",
             "effects": {
-                "trickal.document": -99
+                "trickal.document.late": -99
             },
             "alt": [
                 {
@@ -352,7 +353,7 @@
                 "trickal.ner_": -1
             },
             "effects": {
-                 "trickal.document": 3
+                 "trickal.document": 2
             },
             "actionid": "trickal.docu",
             "startdescription": ".",

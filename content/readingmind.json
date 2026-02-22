@@ -1,0 +1,23 @@
+{
+    "recipes": [{
+            "id": "trickal.mindreading.bloomy",
+            "actionid": "trickal.mindreading",
+            "craftable": true,
+            "description": "\"도움이 필요해? 여기야!\"",
+            "label": "영춘이에게 도움을 받는다.",
+            "requirements": {
+                "trickal.bloomy": 1
+            },
+            "effects": {
+                "trickal.gold": 10,
+                "trickal.food.dragoncandy":2,
+                "trickal.food.can":2,
+                "trickal.food.cake":2,
+                "trickal.food.cinnamoncandy":2,
+                "trickal.food.spacefood":2
+            },
+            "startdescription": "영춘이에게 도움(치트)를 받자.",
+            "warmup": 10
+        }
+    ]
+}

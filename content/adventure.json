@@ -3108,7 +3108,7 @@
                     "chance": 100
                 }
             ]
-        }
+        },
         {
             "id": "trickal.explore_worldtreeseal_encounter.success",
             "actionid": "trickal.explore",
@@ -3260,7 +3260,7 @@
                     "chance": 100
                 }
             ]
-        }
+        },
         {
             "id": "trickal.explore_blizzard_encounter.success",
             "actionid": "trickal.explore",

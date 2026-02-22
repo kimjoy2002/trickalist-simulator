@@ -13,7 +13,7 @@
         {
             "id": "trickal.erpin4",
             "label": "요정 여왕 에르핀",
-            "description": "에르핀은 아직 눈물이 많지만, 예전만큼 철부지는 아니다.",
+            "description": "에르핀은 여전히 눈물이 많지만, 예전만큼 철부지는 아니다.",
             "aspects": {
                 "trickal.erpin_": 1,
                 "trickal.creature": 1,
@@ -28,7 +28,7 @@
         {
             "id": "trickal.erpin3",
             "label": "사도 에르핀",
-            "description": "에르핀의 왕관에는 놀라운 힘이 숨어있다. 그것이 그녀를 속박하고있더라도",
+            "description": "에르핀의 왕관에는 저주와 함께 놀라운 힘이 들어있다.",
             "aspects": {
 				"trickal.erpin_": 1,
                 "trickal.creature": 1,

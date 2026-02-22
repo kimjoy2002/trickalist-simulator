@@ -178,6 +178,375 @@
             "startdescription": "나는 지금까지 신경쓰였던 것을 마저 쓰기로 한다. 내가 이 세계에 도착해서 가장 처음 본 물건에 대해서 써보자...",
             "description": "그게 어디갔더라? [이 물건은 분명 아직 가지고 있을 겁니다. 찾아보세요.]",
             "warmup": 30
+        },
+        
+        
+        
+        
+		{
+            "id": "trickal.booktoasc3",
+            "actionid": "trickal.study",
+            "craftable": true,
+            "description": ".",
+            "label": "수양록의 세번째 챕터를 쓴다.",
+            "requirements": {
+                "trickal.book3": 1
+            },
+            "startdescription": "나는 슬슬 엘리아스에 익숙해져왔다. 교단의 성장에 대해 적어두는 편이 좋을 것이다.",
+            "warmup": 3,
+			"linked": [
+				{
+					"id": "trickal.booktoasc3.people",
+					"chance": 100
+				}
+			]
+        },
+		{
+            "id": "trickal.booktoasc3.people",
+            "label": "수양록을 쓰다: 교단의 독실한 사도",
+            "actionid": "trickal.study",
+            "slots": [
+                {
+                    "id": "People",
+                    "label": "사도",
+                    "required": {
+						"trickal.apostle": 1
+                    },
+                    "description": "교단의 성장을 증명하는 자."
+                }
+            ],
+            "craftable": false,
+            "alt": [
+                {
+					"requirements": {
+                        "trickal.apostle": 1
+					},
+					"label": "수양록을 쓰다: 교단의 독실한 사도",
+					"startdescription": "'우리의 교단이 점차 성장해가면서 독실한 사도도 증가했다.'",
+					"linked": [
+						{
+							"id": "trickal.booktoasc3.food_prepare",
+							"chance": 100
+						},
+						{
+							"id": "trickal.booktoasc3.food_already",
+							"chance": 100
+						}
+					]
+                }
+            ],
+            "startdescription": "우리 교단을 믿고 맡길 사도에 대해 설명하자.",
+            "description": "아직 우리 교단에는 독실한 신도가 부족하다. [<b>대화</b>에서 교단을 올리고 사도로 진급할 신도를 올리세요.]",
+            "warmup": 30
+        },
+        {
+            "id": "trickal.booktoasc3.food_prepare",
+            "label": "수양록을 쓰다: 교단을 위해 무언가를 만들다",
+            "actionid": "trickal.study",
+            "maxexecutions": 1,
+            "requirements": {
+                "trickal.apostle": 1
+			},
+            "startdescription": "교단에는 쓸만한 주방이 있다. 에르핀은 항상 옆에서 무언가를 만들어달라고 칭얼댔는데, 그게 뭐였더라...",
+            "description": "안되겠다. 음식의 이름이 생각나질않는다. [하단의 카드에서 음식의 힌트를 볼 수 있습니다. 또는 에르핀을 불러서 음식에 대해 물어볼 수 도 있습니다.]",
+            "deckeffects": {
+                "trickal.foodpuzzle.deck": 1
+            },
+            "warmup": 0,
+			"linked": [
+                {
+                    "id": "trickal.booktoasc3.food",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.booktoasc3.food_already",
+            "label": "수양록을 쓰다: 교단을 위해 무언가를 만들다",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.apostle": 1
+			},
+            "slots": [
+                {
+                    "id": "Puzzle",
+                    "label": "내가 해결한적이 있던가?",
+                    "required": {
+                        "trickal.puzzle": 1
+                    },
+                    "greedy": true
+                }
+            ],
+            "startdescription": "교단에는 쓸만한 주방이 있다. 에르핀은 항상 옆에서 무언가를 만들어달라고 칭얼댔는데, 그게 뭐였더라...",
+            "description": "안되겠다. 음식의 이름이 생각나질않는다. [하단의 카드에서 음식의 힌트를 볼 수 있습니다. 또는 에르핀을 불러서 음식에 대해 물어볼 수 도 있습니다.]",
+            "warmup": 3,
+			"linked": [
+                {
+                    "id": "trickal.booktoasc3.food_alreadysucess",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_continue",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.booktoasc3.food",
+            "label": "수양록을 쓰다: 교단을 위해 무언가를 만들다",
+            "actionid": "trickal.study",
+            "startdescription": "교단에는 쓸만한 주방이 있다. 에르핀은 항상 옆에서 무언가를 만들어달라고 칭얼댔는데, 그게 뭐였더라...",
+            "description": "안되겠다. 음식의 이름이 생각나질않는다. [하단의 카드에서 음식의 힌트를 볼 수 있습니다. 또는 에르핀을 불러서 음식에 대해 물어볼 수 도 있습니다.]",
+            "slots": [
+                {
+                    "id": "Food",
+                    "label": "에르핀이 말하는 음식은?",
+                    "required": {
+                        "trickal.food": 1
+                    }
+                }
+            ],
+            "warmup": 30,
+            "alt": [
+                {
+                    "id": "trickal.booktoasc3.food_answer_1",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_2",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_3",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_4",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_5",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_wrong",
+                    "chance": 100
+                }
+            ]
+       },
+       {
+            "id": "trickal.booktoasc3.food_continue",
+            "label": "수양록을 쓰다: 교단을 위해 무언가를 만들다",
+            "actionid": "trickal.study",
+            "startdescription": "교단의 주방에서 사도들이 원하는 음식을 만들 수 있다. 에르핀이 말했던 그 음식을 다시 생각해보자...",
+            "description": "안되겠다. 음식의 이름이 생각나질않는다. [하단의 카드에서 음식의 힌트를 볼 수 있습니다. 또는 에르핀을 불러서 음식에 대해 물어볼 수 도 있습니다.]",
+            "slots": [
+                {
+                    "id": "Food",
+                    "label": "에르핀이 말하는 음식은?",
+                    "required": {
+                        "trickal.food": 1
+                    }
+                }
+            ],
+            "warmup": 30,
+            "alt": [
+                {
+                    "id": "trickal.booktoasc3.food_answer_1",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_2",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_3",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_4",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_5",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc3.food_answer_wrong",
+                    "chance": 100
+                }
+            ]
+       },
+       {
+            "id": "trickal.booktoasc3.food_alreadysucess",
+            "label": "수양록을 쓰다: 교단을 위해 무언가를 만들다",
+            "actionid": "trickal.study",
+            "extantreqs": {
+                "trickal.foodpuzzle_1": -1,
+                "trickal.foodpuzzle_2": -1,
+                "trickal.foodpuzzle_3": -1,
+                "trickal.foodpuzzle_4": -1,
+                "trickal.foodpuzzle_5": -1
+            },
+            "startdescription": "교단에는 쓸만한 주방이 있고, 사도들의 요구에 맞춰서 나는 음식을 해주곤 했다.",
+            "description": ".",
+            "warmup": 30,
+			"linked": [
+                {
+                    "id": "trickal.booktoasc3.spell",
+                    "chance": 100
+                }
+            ]
+       },
+       
+       {
+            "id": "trickal.booktoasc3.food_answer_1",
+            "label": "수양록을 쓰다: 단순한 것이 제일이다.",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.foodpuzzle_1": 1,
+                "trickal.food.cake": 1
+            },
+            "startdescription": "'에르핀은 항상 나에게 딸기 케이크를 만들어 달라고 졸랐다. 에심당에서 먹는 양으론 부족했던 모양이다.'",
+            "description": ".",
+            "effects": {
+                "trickal.foodpuzzle_1": -1
+            },
+            "linked": [
+                {
+                    "id": "trickal.booktoasc3.spell",
+                    "chance": 100
+                }
+            ]
+        },
+       
+        {
+            "id": "trickal.booktoasc3.food_answer_2",
+            "label": "수양록을 쓰다: 머리가 나빠지는 가공품의 맛.",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.foodpuzzle_2": 1,
+                "trickal.food.can": 1
+            },
+            "startdescription": "'수인들의 숲에는 엘프들이 뿌린 캔사료들이 널려있다. 에르핀은 산책갈때 주워먹은 그 맛에 중독된 모양이다.'",
+            "description": ".",
+            "effects": {
+                "trickal.foodpuzzle_2": -1
+            },
+            "linked": [
+                {
+                    "id": "trickal.booktoasc3.spell",
+                    "chance": 100
+                }
+            ]
+        },
+       
+        {
+            "id": "trickal.booktoasc3.food_answer_3",
+            "label": "수양록을 쓰다: 코가 찡해지는 사탕.",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.foodpuzzle_3": 1,
+                "trickal.food.cinnamoncandy": 1
+            },
+            "startdescription": "'나는 교단에서 계피맛이 강한 사탕을 만들었다. 에르핀은 표정을 찡그리면서 사탕을 집어 먹곤 했다.'",
+            "description": ".",
+            "effects": {
+                "trickal.foodpuzzle_3": -1
+            },
+            "linked": [
+                {
+                    "id": "trickal.booktoasc3.spell",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.booktoasc3.food_answer_4",
+            "label": "수양록을 쓰다: 지우개 맛이 나는 엘프들의 주식량.",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.foodpuzzle_4": 1,
+                "trickal.food.spacefood": 1
+            },
+            "startdescription": "'에르핀은 엘프들이 자주 먹고있는 지우개맛의 우주식량을 보고선 나에게도 달라며 조른적이 있다. 물론 한번 먹은 후엔 입도 대지 않는다.'",
+            "description": ".",
+            "effects": {
+                "trickal.foodpuzzle_4": -1
+            },
+            "linked": [
+                {
+                    "id": "trickal.booktoasc3.spell",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.booktoasc3.food_answer_5",
+            "label": "수양록을 쓰다: 용들이 먹는 보석.",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.foodpuzzle_5": 1,
+                "trickal.food.dragoncandy": 1
+            },
+            "startdescription": "'에르핀은 용족들이 먹는다는 보석에 도전한 적이 있다. 누가봐도 단순한 돌인데 기어코 씹어먹는 모습을 보고 나는 공포를 느꼈다.'",
+            "description": ".",
+            "effects": {
+                "trickal.foodpuzzle_5": -1
+            },
+            "linked": [
+                {
+                    "id": "trickal.booktoasc3.spell",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.booktoasc3.food_answer_wrong",
+            "label": "수양록을 쓰다: 이 음식이 아니다!",
+            "actionid": "trickal.study",
+            "requirements": {
+                "trickal.food": 1
+            },
+            "startdescription": "이 음식은 에르핀이 말한 음식이 아닌 것 같다. 다른 음식을 찾아보자."
+        },
+       
+       
+		{
+            "id": "trickal.booktoasc3.spell",
+            "label": "교단에서 마법을 쓰다",
+            "actionid": "trickal.study",
+            "slots": [
+                {
+                    "id": "Spell",
+                    "label": "물건",
+                    "required": {
+						"trickal.spell": 1
+                    },
+                    "description": "아무 마법."
+                }
+            ],
+            "craftable": false,
+            "alt": [
+                {
+					"requirements": {
+						"trickal.spell": 1
+					},
+					"effects": {
+						"trickal.candy": 1,
+						"trickal.starcandy": 1
+					},
+					"aspects": {
+						"ascend": 1
+					},
+					"label": "수양록을 쓰다: 교단에서 마법을 쓰다",
+					"startdescription": "'내가 살던 세계와는 다르게 엘리아스는 마법도 존재한다. 이 마법들은 교단을 성장시키는데 큰 도움이 된다.'",
+					"description": "나는 내용을 정리하고 수양록을 덮는다. 엘리아스에서 교주로서 활동하면서 더 많은 일들을 겪게되면, 뒷 장을 적도록 하자."
+                }
+            ],
+            "startdescription": "엘리아스에서 보았던 가장 신비스러운 힘을 적어보자...",
+            "description": "분명히 작은 요정들은 자유자재로 쓰던 것 같던데...  [많은 마법들은 책을 통해 익힐 수 있습니다.]",
+            "warmup": 30
         }
     ]
 }

@@ -29,7 +29,7 @@
 					},
 					"aspects": {
 						"recruiting": 1,
-						"startcult": 1
+						"startcult_pure": 1
 					},
 					"mutations": [
 						{
@@ -81,7 +81,7 @@
 					},
 					"aspects": {
 						"recruiting": 1,
-						"startcult": 1
+						"startcult_madness": 1
 					},
 					"mutations": [
 						{
@@ -133,7 +133,7 @@
 					},
 					"aspects": {
 						"recruiting": 1,
-						"startcult": 1
+						"startcult_cool": 1
 					},
 					"mutations": [
 						{
@@ -185,7 +185,7 @@
 					},
 					"aspects": {
 						"recruiting": 1,
-						"startcult": 1
+						"startcult_active": 1
 					},
 					"mutations": [
 						{
@@ -237,7 +237,7 @@
 					},
 					"aspects": {
 						"recruiting": 1,
-						"startcult": 1
+						"startcult_depression": 1
 					},
 					"mutations": [
 						{
@@ -276,7 +276,7 @@
             },
             "aspects": {
                 "recruiting": 1,
-				"startcult": 1
+				"startcult_pure": 1
             },
             "mutations": [
                 {
@@ -312,7 +312,7 @@
             },
             "aspects": {
                 "recruiting": 1,
-				"startcult": 1
+				"startcult_madness": 1
             },
             "mutations": [
                 {
@@ -348,7 +348,7 @@
             },
             "aspects": {
                 "recruiting": 1,
-				"startcult": 1
+				"startcult_cool": 1
             },
             "mutations": [
                 {
@@ -384,7 +384,7 @@
             },
             "aspects": {
                 "recruiting": 1,
-				"startcult": 1
+				"startcult_active": 1
             },
             "mutations": [
                 {
@@ -420,7 +420,7 @@
             },
             "aspects": {
                 "recruiting": 1,
-				"startcult": 1
+				"startcult_depression": 1
             },
             "mutations": [
                 {

@@ -322,6 +322,19 @@
                 "trickal.location.elementmountainpeak"
             ],
             "defaultcard": "trickal.location.ghostdeeperswamp"
+        },
+        
+        {
+            "id": "trickal.foodpuzzle.deck",
+            "spec":[
+               "trickal.foodpuzzle_1",
+               "trickal.foodpuzzle_2",
+               "trickal.foodpuzzle_3",
+               "trickal.foodpuzzle_4",
+               "trickal.foodpuzzle_5"
+            ],
+            "defaultcard": "fleeting",
+            "resetonexhaustion":false
         }
 	]
 }

@@ -90,6 +90,7 @@
             "aspects": {
                 "trickal.luckytype": 1
             },
+            "icon": "trickal.gold",
             "lifetime": 1
         },
         {
@@ -250,7 +251,11 @@
                 "society": 1
             },
 			"xtriggers": {
-                "startcult": "trickal.culttree2"
+                "startcult_pure": "trickal.culttree_pure",
+                "startcult_cool": "trickal.culttree_cool",
+                "startcult_madness": "trickal.culttree_madness",
+                "startcult_depression": "trickal.culttree_depression",
+                "startcult_active": "trickal.culttree_active"
 			},
             "slots": [
                 {
@@ -270,7 +275,231 @@
             "unique": true
         },
         {
-            "id": "trickal.culttree2",
+            "id": "trickal.culttree_pure",
+            "label": "세계수 교단",
+            "aspects": {
+                "society": 1
+            },
+            "slots": [
+                {
+                    "id": "Associate",
+                    "label": "신도",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.creature": 1
+                    },
+                    "forbidden": {
+						"trickal.bloomy": 1
+                    },
+                    "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
+                },
+                {
+                    "id": "Ceremony",
+                    "label": "미끼",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.starcandy": 1,
+                        "trickal.elif": 1
+                    },
+                    "description": "새 신도를 끌어들이는데는 달콤한 사탕으로 충분하다. 하지만 신도의 힘을 끌어내는데는 세계수의 기운을 담은 엘리프가 소모되어야 할 것이다."
+                },
+                {
+                    "id": "Trappings1",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                },
+                {
+                    "id": "Trappings2",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                }
+            ],
+            "description": "요정 왕국에 자리잡은 거대한 나무를 섬기는 교단. [교단 카드를 대화에 올려놓으면 신도를 모으거나 진급시킬 수 있습니다. 아니면 추종자에게 대화 주제로 교단을 제시할 경우 특수한 활동을 시킬 수 있습니다. 신도는 사도로 진급시킬 수 있으며, 몇몇 재능있는 제자는 더 특별한 사도로 진급할 수 있습니다.]",
+            "unique": true
+        },
+        {
+            "id": "trickal.culttree_cool",
+            "label": "세계수 교단",
+            "aspects": {
+                "society": 1
+            },
+            "slots": [
+                {
+                    "id": "Associate",
+                    "label": "신도",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.creature": 1
+                    },
+                    "forbidden": {
+						"trickal.bloomy": 1
+                    },
+                    "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
+                },
+                {
+                    "id": "Ceremony",
+                    "label": "미끼",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.starcandy": 1,
+                        "trickal.elif": 1
+                    },
+                    "description": "새 신도를 끌어들이는데는 달콤한 사탕으로 충분하다. 하지만 신도의 힘을 끌어내는데는 세계수의 기운을 담은 엘리프가 소모되어야 할 것이다."
+                },
+                {
+                    "id": "Trappings1",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                },
+                {
+                    "id": "Trappings2",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                }
+            ],
+            "description": "요정 왕국에 자리잡은 거대한 나무를 섬기는 교단. [교단 카드를 대화에 올려놓으면 신도를 모으거나 진급시킬 수 있습니다. 아니면 추종자에게 대화 주제로 교단을 제시할 경우 특수한 활동을 시킬 수 있습니다. 신도는 사도로 진급시킬 수 있으며, 몇몇 재능있는 제자는 더 특별한 사도로 진급할 수 있습니다.]",
+            "unique": true
+        },
+        {
+            "id": "trickal.culttree_madness",
+            "label": "세계수 교단",
+            "aspects": {
+                "society": 1
+            },
+            "slots": [
+                {
+                    "id": "Associate",
+                    "label": "신도",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.creature": 1
+                    },
+                    "forbidden": {
+						"trickal.bloomy": 1
+                    },
+                    "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
+                },
+                {
+                    "id": "Ceremony",
+                    "label": "미끼",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.starcandy": 1,
+                        "trickal.elif": 1
+                    },
+                    "description": "새 신도를 끌어들이는데는 달콤한 사탕으로 충분하다. 하지만 신도의 힘을 끌어내는데는 세계수의 기운을 담은 엘리프가 소모되어야 할 것이다."
+                },
+                {
+                    "id": "Trappings1",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                },
+                {
+                    "id": "Trappings2",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                }
+            ],
+            "description": "요정 왕국에 자리잡은 거대한 나무를 섬기는 교단. [교단 카드를 대화에 올려놓으면 신도를 모으거나 진급시킬 수 있습니다. 아니면 추종자에게 대화 주제로 교단을 제시할 경우 특수한 활동을 시킬 수 있습니다. 신도는 사도로 진급시킬 수 있으며, 몇몇 재능있는 제자는 더 특별한 사도로 진급할 수 있습니다.]",
+            "unique": true
+        },
+        {
+            "id": "trickal.culttree_depression",
+            "label": "세계수 교단",
+            "aspects": {
+                "society": 1
+            },
+            "slots": [
+                {
+                    "id": "Associate",
+                    "label": "신도",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.creature": 1
+                    },
+                    "forbidden": {
+						"trickal.bloomy": 1
+                    },
+                    "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
+                },
+                {
+                    "id": "Ceremony",
+                    "label": "미끼",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.starcandy": 1,
+                        "trickal.elif": 1
+                    },
+                    "description": "새 신도를 끌어들이는데는 달콤한 사탕으로 충분하다. 하지만 신도의 힘을 끌어내는데는 세계수의 기운을 담은 엘리프가 소모되어야 할 것이다."
+                },
+                {
+                    "id": "Trappings1",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                },
+                {
+                    "id": "Trappings2",
+                    "label": "의식의 요소",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.collectable": 1
+                    },
+                    "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
+                }
+            ],
+            "description": "요정 왕국에 자리잡은 거대한 나무를 섬기는 교단. [교단 카드를 대화에 올려놓으면 신도를 모으거나 진급시킬 수 있습니다. 아니면 추종자에게 대화 주제로 교단을 제시할 경우 특수한 활동을 시킬 수 있습니다. 신도는 사도로 진급시킬 수 있으며, 몇몇 재능있는 제자는 더 특별한 사도로 진급할 수 있습니다.]",
+            "unique": true
+        },
+        {
+            "id": "trickal.culttree_active",
             "label": "세계수 교단",
             "aspects": {
                 "society": 1
@@ -335,7 +564,8 @@
             },
             "xtriggers": {
                 "ascend": "trickal.book2"
-            }
+            },
+            "icon": "trickal.book"
         },
         {
             "id": "trickal.book2",
@@ -347,7 +577,8 @@
             },
             "xtriggers": {
                 "ascend": "trickal.book3"
-            }
+            },
+            "icon": "trickal.book"
         },
         {
             "id": "trickal.book3",
@@ -356,7 +587,21 @@
             "aspects": {
                 "text": 1,
                 "trickal.prophecy": 3
-            }
+            },
+            "xtriggers": {
+                "ascend": "trickal.book4"
+            },
+            "icon": "trickal.book"
+        },
+        {
+            "id": "trickal.book4",
+            "label": "수양록",
+            "description": "세계수 교단의 예언서. 작성되어야할 일기. [수양록의 페이지를 채우는 것으로 결말에 다다를 수 있습니다.]",
+            "aspects": {
+                "text": 1,
+                "trickal.prophecy": 4
+            },
+            "icon": "trickal.book"
         },
         {
             "id": "trickal.document",
@@ -432,7 +677,51 @@
             "xtriggers": {
                 "plead": "trickal.work.convenience"
             }
+        },
+        {
+            "id": "trickal.foodpuzzle_1",
+            "label": "에르핀이 원하는 것",
+            "aspects": {
+                "trickal.puzzle": 1
+            },
+            "description": "'단순하지만 내가 가장 좋아하는 것' 분명히 에르핀은 그렇게 말했던 것 같다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.foodpuzzle_2",
+            "label": "에르핀이 원하는 것",
+            "aspects": {
+                "trickal.puzzle": 1
+            },
+            "description": "'수인의 숲에서 널려있던 가공품' 분명히 에르핀은 그렇게 말했던 것 같다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.foodpuzzle_3",
+            "label": "에르핀이 원하는 것",
+            "aspects": {
+                "trickal.puzzle": 1
+            },
+            "description": "'먹으면 코가 찡해지는 것' 분명히 에르핀은 그렇게 말했던 것 같다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.foodpuzzle_4",
+            "label": "에르핀이 원하는 것",
+            "aspects": {
+                "trickal.puzzle": 1
+            },
+            "description": "'엘프들이 먹는 이상한 막대기' 분명히 에르핀은 그렇게 말했던 것 같다.",
+            "unique": true
+        },
+        {
+            "id": "trickal.foodpuzzle_5",
+            "label": "에르핀이 원하는 것",
+            "aspects": {
+                "trickal.puzzle": 1
+            },
+            "description": "'용족들이 심심풀이로 먹는 돌' 분명히 에르핀은 그렇게 말했던 것 같다.",
+            "unique": true
         }
-
 	]
 }
