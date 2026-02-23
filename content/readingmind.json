@@ -14,7 +14,8 @@
                 "trickal.food.can":2,
                 "trickal.food.cake":2,
                 "trickal.food.cinnamoncandy":2,
-                "trickal.food.spacefood":2
+                "trickal.food.spacefood":2,
+                "trickal.elif":2
             },
             "startdescription": "영춘이에게 도움(치트)를 받자.",
             "warmup": 10

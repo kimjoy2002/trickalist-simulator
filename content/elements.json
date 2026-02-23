@@ -110,6 +110,9 @@
                 "hq": 1,
                 "location": 1
             },
+            "xtriggers": {
+                "onfire": "trickal.headquarters.fire"
+			},
             "slots": [
                 {
                     "id": "health",
@@ -149,6 +152,29 @@
                         "trickal.follower": 1
                     },
                     "description": "나를 도와줄 추종자."
+                }
+			]
+        },
+        {
+            "id": "trickal.headquarters.fire",
+            "label": "불에 타고 있는 교단 본부",
+            "description": "거센 불길이 교단 본부를 덮치고 있다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "hq": 1,
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
                 }
 			]
         },

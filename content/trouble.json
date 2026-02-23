@@ -32,7 +32,7 @@
                     "chance": 100
                 },
                 {
-                    "id": "trickal.troubletime.error",
+                    "id": "trickal.troubletime.common",
                     "chance": 100
                 }
             ]
@@ -308,6 +308,70 @@
             "actionid": "trickal.troubletime",
             "startdescription": ".",
             "description": "기분 탓이었나, 엘리아스는 여전히 평화롭다."
+        },
+		{
+            "id": "trickal.troubletime.common",
+            "label": "문제 발생!",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.troublemaker": 1
+            },
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "해결사",
+                    "required": {
+                        "trickal.creature": 1
+                    },
+                    "description": "누가 이 문제아를 막을 수 있을 것인가."
+                }
+            ],
+            "startdescription": "문제아들의 위험한 장난이 시작되었다. 가만히 냅두면 골치아픈 일이 생길 것이다.",
+            "description": ".",
+            "warmup": 30,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.common_fire.end",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.common_fire.end",
+            "alt": [
+				{
+                    "id": "trickal.troubletime.create_fire",
+                    "chance": 100,
+                    "additional": true
+                }
+			],
+            "label": "불장난!",
+            "actionid": "trickal.troubletime",
+            "startdescription": "사도의 장난으로 불이 났다.",
+            "description": "사도의 장난으로 불이 났다.",
+            "warmup": 3
+		},
+		{
+            "id": "trickal.troubletime.create_fire",
+            "label": "불이야!",
+            "actionid": "trickal.troubletime.verbs.fire",
+            "slots": [
+                {
+                    "id": "Place",
+                    "label": "이번 희생양",
+                    "required": {
+                        "trickal.headquarters": 1
+                    },
+                    "description": "불이 번질 곳이 있나?.",
+                    "greedy": true
+                }
+            ],
+			"aspects": {
+				"onfire": 1
+			},
+            "startdescription": "불이 번지고 있다... [더 이상 불이 번질 곳이 없다면 교단이 위험해집니다.]",
+            "description": "불이 번지고 있다...",
+            "warmup": 10
         }
 	]
 }

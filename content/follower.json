@@ -1167,6 +1167,7 @@
                 "trickal.apostle": 1,
 				"trickal.exalted": 1,
 				"trickal.troublemaker": 1,
+				"trickal.firefighter": 1,
                 "trickal.pure": 10
             },
             "icon": "trickal.naia"
@@ -1182,6 +1183,7 @@
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
 				"trickal.troublemaker": 1,
+				"trickal.firefighter": 1,
                 "trickal.pure": 5
             },
             "icon": "trickal.naia",
@@ -1199,6 +1201,7 @@
 				"trickal.element": 1,
                 "trickal.follower": 1,
 				"trickal.troublemaker": 1,
+				"trickal.firefighter": 1,
                 "trickal.pure": 2
             },
             "icon": "trickal.naia",
@@ -1216,6 +1219,7 @@
 				"trickal.element": 1,
 				"acquaintance": 1,
 				"trickal.troublemaker": 1,
+				"trickal.firefighter": 1,
                 "trickal.pure": 1
             },
             "icon": "trickal.naia",

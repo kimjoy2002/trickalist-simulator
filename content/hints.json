@@ -281,7 +281,30 @@
             "startdescription": "우울은 요리의 보는 맛을 더한다. 약간의 냉정함이 있으면 마치 보석과도 같은 디저트가 가능할 것 같다.",
             "craftable": false,
             "hintonly": true
-        },
+        }, {
+            "id": "trickal.hint.fire.cantexplore",
+            "label": "불을 꺼야한다!",
+            "actionid": "trickal.explore",
+            "requirements": {
+				"location": 1,
+				"trickal.fire": 1
+            },
+			"$priority": 1,
+            "startdescription": "이 곳엔 거센 불이 솟아 오르고 있다. 불을 끄기전엔 아마 접근할 수 없다. [불이 난 장소를 일에 올려놓아서 불길을 진화할 수 있습니다.]",
+            "craftable": false,
+            "hintonly": true
+		}, {
+            "id": "trickal.hint.fire",
+            "label": "불을 꺼야한다!",
+            "actionid": "trickal.work",
+            "requirements": {
+				"trickal.fire": 1
+            },
+			"$priority": 1,
+            "startdescription": "불을 끄기위해선 다칠 위험을 감수하고 생명력을 쓰거나, 힘을 8이상 가진 마법을 소모해야한다. 만약 물을 끄는데 도움이 되는 사도가 있다면 더욱 안전하게 진화할 수 있을 것이다.",
+            "craftable": false,
+            "hintonly": true
+		},
         {
             "id": "trickal.hint.witchkingdom",
             "label": "마녀왕국 도서관에서 책을 빌려볼까?",

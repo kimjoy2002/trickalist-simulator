@@ -120,6 +120,18 @@
 			"description": "이 자는 가끔씩 말썽을 일으킬 것이다.",
             "isAspect": true
         },
+		{
+            "id": "trickal.firefighter",
+            "label": "소방수",
+			"description": "어떤 사도는 불을 끄는데 특출난 재능을 보이기도 한다.",
+            "isAspect": true
+        },
+		{
+            "id": "trickal.fire",
+            "label": "불에 타고있다!",
+			"description": "불이야.",
+            "isAspect": true
+        },
         {
             "id": "trickal.prophecy",
             "label": "예언",
