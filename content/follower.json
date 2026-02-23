@@ -1135,7 +1135,7 @@
         {
             "id": "trickal.rohne",
             "label": "로네",
-            "description": "맹하고 어리숙해 보이는 엘프 최고의? 스파이.",
+            "description": "맹하고 어리숙해 보이는 엘프 최고의? 스파이. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.rohne_": 1,
                 "trickal.creature": 1,
@@ -1209,7 +1209,7 @@
         {
             "id": "trickal.naia",
             "label": "나이아",
-            "description": "가벼운 장난으로 주변을 밝혀주는 분위기 메이커 물의 고위 정령.",
+            "description": "가벼운 장난으로 주변을 밝혀주는 분위기 메이커 물의 고위 정령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.naia_": 1,
                 "trickal.creature": 1,
@@ -1281,7 +1281,7 @@
         {
             "id": "trickal.silphir",
             "label": "실피르",
-            "description": "최고의 자리를 노리고 언제나 서열 도전에 목을 매는 사피이어의 용족.",
+            "description": "최고의 자리를 노리고 언제나 서열 도전에 목을 매는 사피이어의 용족. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.silphir_": 1,
                 "trickal.creature": 1,
@@ -1352,7 +1352,7 @@
         {
             "id": "trickal.espi",
             "label": "에스피",
-            "description": "남의 꿈을 들여다보며 악몽을 보는 것이 취미인 꿈의 유령.",
+            "description": "남의 꿈을 들여다보며 악몽을 보는 것이 취미인 꿈의 유령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.espi_": 1,
                 "trickal.creature": 1,
@@ -1426,7 +1426,7 @@
         {
             "id": "trickal.velvet",
             "label": "벨벳",
-            "description": "엄청난 권력욕을 가진 벨리티엔의 고위 마녀.",
+            "description": "엄청난 권력욕을 가진 벨리티엔의 고위 마녀. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.velvet_": 1,
                 "trickal.creature": 1,
@@ -1498,7 +1498,7 @@
         {
             "id": "trickal.marie",
             "label": "마리",
-            "description": "폭발물을 좋아하는 요정 왕국의 탐험가.",
+            "description": "폭발물을 좋아하는 요정 왕국의 탐험가. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.marie_": 1,
                 "trickal.creature": 1,
@@ -1569,7 +1569,7 @@
         {
             "id": "trickal.canna",
             "label": "칸나",
-            "description": "엘프 도시의 모든 보안과 안전을 담당하는 진압반장.",
+            "description": "엘프 도시의 모든 보안과 안전을 담당하는 진압반장. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.canna_": 1,
                 "trickal.creature": 1,
@@ -1640,7 +1640,7 @@
         {
             "id": "trickal.meluna",
             "label": "멜루나",
-            "description": "거대 기업 멜루 코퍼레이션의 회장이자 엘리아스에서 가장 돈 많은 재벌인 멜론의 정령.",
+            "description": "거대 기업 멜루 코퍼레이션의 회장이자 엘리아스에서 가장 돈 많은 재벌인 멜론의 정령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.meluna_": 1,
                 "trickal.creature": 1,
@@ -1714,7 +1714,7 @@
         {
             "id": "trickal.shady",
             "label": "셰이디",
-            "description": "장난을 좋아하고 공간을 조작하는 능력을 지닌 혼돈의 유령.",
+            "description": "장난을 좋아하고 공간을 조작하는 능력을 지닌 혼돈의 유령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.shady_": 1,
                 "trickal.creature": 1,
@@ -1786,7 +1786,7 @@
         {
             "id": "trickal.jade",
             "label": "제이드",
-            "description": "지식을 보물처럼 여기는 비취옥의 용족.",
+            "description": "지식을 보물처럼 여기는 비취옥의 용족. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.jade_": 1,
                 "trickal.creature": 1,
@@ -1857,7 +1857,7 @@
         {
             "id": "trickal.fricle",
             "label": "프리클",
-            "description": "마녀 왕국을 보좌하는 마녀 왕국의 2인자 고위 마녀.",
+            "description": "마녀 왕국을 보좌하는 마녀 왕국의 2인자 고위 마녀. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.fricle_": 1,
                 "trickal.creature": 1,
@@ -1928,7 +1928,7 @@
         {
             "id": "trickal.maestro",
             "label": "마에스트로 2호",
-            "description": "엘프의 기술력으로 만들어진 ai 로봇.",
+            "description": "엘프의 기술력으로 만들어진 ai 로봇. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.maestro_": 1,
                 "trickal.creature": 1,
@@ -1999,7 +1999,7 @@
         {
             "id": "trickal.rim",
             "label": "림",
-            "description": "썰렁 개그를 좋아하는 질서와 균형의 유령.",
+            "description": "썰렁 개그를 좋아하는 질서와 균형의 유령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.rim_": 1,
                 "trickal.creature": 1,
@@ -2070,7 +2070,7 @@
         {
             "id": "trickal.efreet",
             "label": "이프리트",
-            "description": "정령산 내부 발화지에 자리잡고있는 불의 고위 정령.",
+            "description": "정령산 내부 발화지에 자리잡고있는 불의 고위 정령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.efreet_": 1,
                 "trickal.creature": 1,
@@ -2141,7 +2141,7 @@
         {
             "id": "trickal.kidian",
             "label": "키디언",
-            "description": "엘리아스의 지하에 혼자 생활하는 흑요석의 용족.",
+            "description": "엘리아스의 지하에 혼자 생활하는 흑요석의 용족. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.kidian_": 1,
                 "trickal.creature": 1,
@@ -2212,7 +2212,7 @@
         {
             "id": "trickal.posher",
             "label": "포셔",
-            "description": "엘라아스의 포션 장인 고위 마녀.",
+            "description": "엘라아스의 포션 장인 고위 마녀. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
 				"trickal.posher_": 1,
                 "trickal.creature": 1,
@@ -2283,7 +2283,7 @@
         {
             "id": "trickal.shoupan",
             "label": "슈팡",
-            "description": "엘리아스의 최고 스피드 배달부 요정.",
+            "description": "엘리아스의 최고 스피드 배달부 요정. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.shoupan_": 1,
                 "trickal.creature": 1,
@@ -2354,7 +2354,7 @@
         {
             "id": "trickal.mago",
             "label": "마고",
-            "description": "작은 동물 친구들을 보호하고, 돌보는걸 좋아하는 친절한 양 수인.",
+            "description": "작은 동물 친구들을 보호하고, 돌보는걸 좋아하는 친절한 양 수인. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.mago_": 1,
                 "trickal.creature": 1,
@@ -2377,7 +2377,7 @@
         {
             "id": "trickal.alice4",
             "label": "예언가 앨리스",
-            "description": "앨리스는 예언을 하지 않는다. 그녀의 말이 곧 예언이다.",
+            "description": "앨리스는 예언을 하지 않는다. 그녀의 말이 곧 진실이다.",
             "aspects": {
                 "trickal.alice_": 1,
                 "trickal.creature": 1,
@@ -2425,7 +2425,7 @@
         {
             "id": "trickal.alice",
             "label": "앨리스",
-            "description": "예지 능력이 담긴 타로점을 치는 운명의 유령.",
+            "description": "예지 능력이 담긴 타로점을 치는 운명의 유령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.alice_": 1,
                 "trickal.creature": 1,
@@ -2496,7 +2496,7 @@
         {
             "id": "trickal.rude",
             "label": "루드",
-            "description": "신체 단련을 멈추지않는 서열 2위 루비의 용족.",
+            "description": "신체 단련을 멈추지않는 서열 2위 루비의 용족. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.rude_": 1,
                 "trickal.creature": 1,
@@ -2567,7 +2567,7 @@
         {
             "id": "trickal.festa",
             "label": "페스타",
-            "description": "규칙과 통제를 거부하고 자유를 노래하는 아티스트 락커.",
+            "description": "규칙과 통제를 거부하고 자유를 노래하는 아티스트 락커. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.festa_": 1,
                 "trickal.creature": 1,
@@ -2600,7 +2600,7 @@
                 "trickal.exalted": 1,
                 "trickal.cool": 10
             },
-            "icon": "trickal.festa"
+            "icon": "trickal.amelia"
         },
         {
             "id": "trickal.amelia3",
@@ -2632,13 +2632,13 @@
             },
             "icon": "trickal.amelia",
             "xtriggers": {
-                "promote": "trickal.festa3"
+                "promote": "trickal.amelia3"
             }
         },
         {
             "id": "trickal.amelia",
             "label": "아멜리아",
-            "description": "엘프 도시 모나티엄의 시장 비서.",
+            "description": "엘프 도시 모나티엄의 시장 비서. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.amelia_": 1,
                 "trickal.creature": 1,
@@ -2671,7 +2671,7 @@
                 "trickal.exalted": 1,
                 "trickal.cool": 10
             },
-            "icon": "trickal.festa"
+            "icon": "trickal.sylla"
         },
         {
             "id": "trickal.sylla3",
@@ -2703,13 +2703,13 @@
             },
             "icon": "trickal.sylla",
             "xtriggers": {
-                "promote": "trickal.festa3"
+                "promote": "trickal.sylla3"
             }
         },
         {
             "id": "trickal.sylla",
             "label": "실라",
-            "description": "엘리아스에서 가장 쿨하게 행동하는 바람의 고위 정령.",
+            "description": "엘리아스에서 가장 쿨하게 행동하는 바람의 고위 정령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.sylla_": 1,
                 "trickal.creature": 1,
@@ -2734,7 +2734,7 @@
             "label": "허언 허세 허클베리 바롱",
             "description": "바롱은 여전히 세상에 착각을 뿌린다. 완벽한 착각은 가끔 진짜가 되기도 한다.",
             "aspects": {
-                "trickal.festa_": 1,
+                "trickal.barong_": 1,
                 "trickal.creature": 1,
                 "trickal.ghost": 1,
                 "trickal.follower": 1,
@@ -2742,7 +2742,7 @@
                 "trickal.exalted": 1,
                 "trickal.cool": 10
             },
-            "icon": "trickal.festa"
+            "icon": "trickal.barong"
         },
         {
             "id": "trickal.barong3",
@@ -2774,13 +2774,13 @@
             },
             "icon": "trickal.barong",
             "xtriggers": {
-                "promote": "trickal.festa3"
+                "promote": "trickal.barong3"
             }
         },
         {
             "id": "trickal.barong",
             "label": "바롱",
-            "description": "재미만을 위해 모은 거금을 사용하는 착각의 유령.",
+            "description": "재미만을 위해 모은 거금을 사용하는 착각의 유령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.barong_": 1,
                 "trickal.creature": 1,
@@ -2805,7 +2805,7 @@
             "label": "용족의 수장 다야",
             "description": "다야는 이제 무엇보다도 찬란하게 빛난다.",
             "aspects": {
-                "trickal.festa_": 1,
+                "trickal.daya_": 1,
                 "trickal.creature": 1,
                 "trickal.dragon": 1,
                 "trickal.follower": 1,
@@ -2813,7 +2813,7 @@
                 "trickal.exalted": 1,
                 "trickal.pure": 10
             },
-            "icon": "trickal.festa"
+            "icon": "trickal.daya"
         },
         {
             "id": "trickal.daya3",
@@ -2845,13 +2845,13 @@
             },
             "icon": "trickal.daya",
             "xtriggers": {
-                "promote": "trickal.festa3"
+                "promote": "trickal.daya3"
             }
         },
         {
             "id": "trickal.daya",
             "label": "다야",
-            "description": "엘리아스 용족들의 우두머리인 다이아몬드의 용족.",
+            "description": "엘리아스 용족들의 우두머리인 다이아몬드의 용족. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
             "aspects": {
                 "trickal.daya_": 1,
                 "trickal.creature": 1,
@@ -2866,6 +2866,164 @@
         },
         {
             "id": "trickal.daya_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.vivi4",
+            "label": "용족 성골 귀족 비비",
+            "description": "그녀를 움직이는 것은 오로지 하나, 증오다. 그 반동 또한 크지만, 지금은 아니다.",
+            "aspects": {
+                "trickal.vivi_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 10
+            },
+            "icon": "trickal.vivi"
+        },
+        {
+            "id": "trickal.vivi3",
+            "label": "사도 비비",
+            "description": "비비는 사실 은의 용족이 아니다. 수은은 형태를 바꾸고 모습을 숨긴다.",
+            "aspects": {
+                "trickal.vivi_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.dragon": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 5
+            },
+            "icon": "trickal.vivi",
+            "xtriggers": {
+                "promote": "trickal.vivi4"
+            }
+        },
+        {
+            "id": "trickal.vivi2",
+            "label": "신도 비비",
+            "description": "비비는 교단에 몸을 담고 있지만 마치 다른 목적이 있는 것 같다.",
+            "aspects": {
+                "trickal.vivi_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.dragon": 1,
+                "trickal.follower": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 2
+            },
+            "icon": "trickal.vivi",
+            "xtriggers": {
+                "promote": "trickal.vivi3"
+            }
+        },
+        {
+            "id": "trickal.vivi",
+            "label": "비비",
+            "description": "한때 다야 다음으로 서열이 높았던 은의 용족. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+                "trickal.vivi_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.dragon": 1,
+                "acquaintance": 1,
+				"trickal.troublemaker": 1,
+                "trickal.pure": 1
+            },
+            "icon": "trickal.vivi",
+            "xtriggers": {
+                "recruiting": "trickal.vivi2"
+            }
+        },
+        {
+            "id": "trickal.vivi_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.epica4",
+            "label": "엘리아스의 음유시인 에피카",
+            "description": "에피카는 교단이 나아갈 빛을 노래한다. 그녀가 그렇게 이끌 것이다.",
+            "aspects": {
+                "trickal.epica_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 10
+            },
+            "icon": "trickal.epica"
+        },
+        {
+            "id": "trickal.epica3",
+            "label": "사도 에피카",
+            "description": "에피카는 과거를 기억하지 못한다. 하지만 어렴풋이 노래로써 기억한다.",
+            "aspects": {
+                "trickal.epica_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.beast": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 5
+            },
+            "icon": "trickal.epica",
+            "xtriggers": {
+                "promote": "trickal.epica4"
+            }
+        },
+        {
+            "id": "trickal.epica2",
+            "label": "신도 에피카",
+            "description": "에피카는 항상 교단에서 자신이 알고 있는 이야기를 노래한다. 그녀의 주위엔 항상 많은 신도들이 모인다.",
+            "aspects": {
+                "trickal.epica_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.beast": 1,
+                "trickal.follower": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 2
+            },
+            "icon": "trickal.epica",
+            "xtriggers": {
+                "promote": "trickal.epica3"
+            }
+        },
+        {
+            "id": "trickal.epica",
+            "label": "에피카",
+            "description": "엘리아스의 수인 방랑자이자, 음유시인. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+                "trickal.epica_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.beast": 1,
+                "acquaintance": 1,
+				"trickal.troublemaker": 1,
+                "trickal.active": 1
+            },
+            "icon": "trickal.epica",
+            "xtriggers": {
+                "recruiting": "trickal.epica2"
+            }
+        },
+        {
+            "id": "trickal.epica_",
             "isAspect": true,
             "isHidden": true,
             "noArtNeeded": true

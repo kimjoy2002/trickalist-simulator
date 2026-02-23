@@ -8,6 +8,11 @@
             "icon": "trickal.creature"
         },
         {
+            "id": "trickal.eternal",
+            "label": "영원살이",
+            "description": "'하루에 태어나, 하루에 잠든 하루살이들이 되었소. 영원에 잠들어, 영원에 새긴 영원살이들이 되었소.' - 에피카"
+        },
+        {
             "id": "trickal.sweet",
             "label": "사탕",
             "description": "무언가 달콤한 것. 간편하게 먹기 좋은 이 과자는 의욕을 만든다.",
