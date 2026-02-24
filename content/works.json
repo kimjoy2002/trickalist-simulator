@@ -119,7 +119,8 @@
                 "hq": 1,
 				"trickal.candy": 1,
 				"trickal.pure": 4,
-				"trickal.depression": 2
+				"trickal.depression": 2,
+                "trickal.fire": -1
             },
 			"aspects": {
                 "employment": 1
@@ -141,7 +142,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.pure": 10,
-                "trickal.active": 2
+                "trickal.active": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -163,7 +165,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.pure": 16,
-                "trickal.madness": 2
+                "trickal.madness": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -185,7 +188,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.active": 4,
-                "trickal.cool": 2
+                "trickal.cool": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -207,7 +211,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.active": 10,
-                "trickal.madness": 2
+                "trickal.madness": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -229,7 +234,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.active": 16,
-                "trickal.depression": 2
+                "trickal.depression": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -251,7 +257,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.madness": 4,
-                "trickal.pure": 2
+                "trickal.pure": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -273,7 +280,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.madness": 10,
-                "trickal.cool": 2
+                "trickal.cool": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -295,7 +303,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.madness": 16,
-                "trickal.active": 2
+                "trickal.active": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -317,7 +326,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.cool": 4,
-                "trickal.active": 2
+                "trickal.active": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -339,7 +349,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.cool": 10,
-                "trickal.depression": 2
+                "trickal.depression": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -361,7 +372,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.cool": 16,
-                "trickal.pure": 2
+                "trickal.pure": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -383,7 +395,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.depression": 4,
-                "trickal.madness": 2
+                "trickal.madness": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -405,7 +418,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.depression": 10,
-                "trickal.pure": 2
+                "trickal.pure": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1
@@ -427,7 +441,8 @@
                 "hq": 1,
                 "trickal.candy": 1,
                 "trickal.depression": 16,
-                "trickal.cool": 2
+                "trickal.cool": 2,
+                "trickal.fire": -1
             },
             "aspects": {
                 "employment": 1

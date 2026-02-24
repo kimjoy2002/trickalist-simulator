@@ -15,7 +15,7 @@
                 "description": "희생할 체력.",
                 "greedy": true
             },
-            "warmup": 120,
+            "warmup": 70,
             "alt": [
                 {
                     "id": "trickal.sick.candy.end",
@@ -37,7 +37,6 @@
 			},
             "startdescription": "이 세계에서는 죽음이 없다. 당신은 아픔을 털고 다시 일어선다. [이 과정은 체력(왕사탕)에 반영구적인 변화를 줍니다. 더 이상 변환할 체력이 없다면 게임이 끝납니다.]",
             "description": "하지만 더 이상 몸을 움직일 수 없게된다면 어떻게 되는걸까...?",
-            "warmup": 10,
             "craftable": false
         },
 		{
@@ -55,7 +54,7 @@
                 "description": "희생할 정신.",
                 "greedy": true
             },
-            "warmup": 120,
+            "warmup": 70,
             "alt": [
                 {
                     "id": "trickal.sick.starcandy.end",
@@ -77,7 +76,6 @@
 			},
             "startdescription": "신도들에게서 수상한 소문이 퍼진다. 교주가 허공에 대화를 하고 이상한 소리를 듣는다는... [이 과정은 정신(별사탕)에 반영구적인 변화를 줍니다. 더 이상 변환할 정신이 없다면 게임이 끝납니다.]",
             "description": "나는 분명 정상이다. 영춘이와 대화하고 독심술을 쓰는 모습이 잘못 퍼진걸테지-",
-            "warmup": 10,
             "craftable": false
         }
 	]

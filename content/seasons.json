@@ -19,6 +19,15 @@
             "lifetime": 1
         },
         {
+            "id": "trickal.seasonfatigue",
+            "label": "피로의 날들",
+            "description": "최근에 잠을 제대로 잔 적이 없다.",
+            "aspects": {
+                "season": 1
+            },
+            "lifetime": 1
+        },
+        {
             "id": "trickal.seasondocument",
             "label": "서류의 날들",
             "description": "일하지 않는 자 먹지도 말라.",
