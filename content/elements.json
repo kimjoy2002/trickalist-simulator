@@ -10,7 +10,8 @@
             "xtriggers": {
                 "fatiguing": "trickal.candyfatigue",
                 "employment": "trickal.candyfatigue",
-				"recruiting": "trickal.candyfatigue"
+				"recruiting": "trickal.candyfatigue",
+				"onsick": "trickal.candysick"
 			},
             "icon": "trickal.candy"
         },
@@ -27,6 +28,15 @@
             "resaturate": true
         },
         {
+            "id": "trickal.candysick",
+            "label": "왕사탕 (이상)",
+            "description": "당신의 몸에 새겨진 상처. [이 카드를 원상태로 회복하기위해선 쉽지 않은 방법을 써야합니다.]",
+            "xtriggers": {
+                "restoresick": "trickal.candy"
+            },
+            "icon": "trickal.candy"
+        },
+        {
             "id": "trickal.starcandy",
             "label": "별사탕",
             "description": "이 특별한 맛은 당신에게 번뜩임을 준다. [별사탕은 당신의 순간적인 기지, 생각을 의미합니다.]",
@@ -36,7 +46,8 @@
             "xtriggers": {
                 "fatiguing": "trickal.starcandyfatigue",
                 "employment": "trickal.starcandyfatigue",
-				"recruiting": "trickal.starcandyfatigue"
+				"recruiting": "trickal.starcandyfatigue",
+				"onsick": "trickal.starcandysick"
 			},
             "icon": "trickal.starcandy"
         },
@@ -51,6 +62,15 @@
             "decayTo": "trickal.starcandy",
             "icon": "trickal.starcandy",
             "resaturate": true
+        },
+        {
+            "id": "trickal.starcandysick",
+            "label": "별사탕 (이상)",
+            "description": "무언가 보이기 시작한다. [이 카드를 원상태로 회복하기위해선 쉽지 않은 방법을 써야합니다.]",
+            "xtriggers": {
+                "restoresick": "trickal.starcandy"
+            },
+            "icon": "trickal.starcandy"
         },
         {
             "id": "trickal.elif",
@@ -82,6 +102,27 @@
             "id": "trickal.niceticket",
             "label": "참! 잘했어요",
             "description": "이것은 당신이 엘리아스의 구원자로서 역할을 다했다는 증표다."
+        },
+        {
+            "id": "trickal.suspicion",
+            "label": "의심",
+            "description": "나는 교주로 잘 해내고있는가? 사실 나조차도 의문이 들기도 한다.",
+            "lifetime": 360,
+            "icon": "suspicion"
+        },
+        {
+            "id": "trickal.fatigue",
+            "label": "피로",
+            "description": "피곤하다. 그저 침대에서 자고 싶다는 생각 뿐이다.",
+            "lifetime": 360,
+            "icon": "trickal.fatigue"
+        },
+        {
+            "id": "trickal.rage",
+            "label": "분노",
+            "description": "한순간의 격정. 모든 것이 일그러져보인다.",
+            "lifetime": 360,
+            "icon": "trickal.rage"
         },
 		{
             "id": "trickal.lucky.gold",

@@ -127,6 +127,12 @@
             "isAspect": true
         },
 		{
+            "id": "trickal.doctor",
+            "label": "의사",
+			"description": "의사 혹은 그에 준하는 레지던트. 죽음이 없는 세계라도 질병은 존재한다.",
+            "isAspect": true
+        },
+		{
             "id": "trickal.fire",
             "label": "불에 타고있다!",
 			"description": "불이야.",

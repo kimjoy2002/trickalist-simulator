@@ -331,13 +331,32 @@
             "warmup": 30,
             "linked": [
                 {
-                    "id": "trickal.troubletime.common_fire.end",
+                    "id": "trickal.troubletime.common.madness_fire",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.common.cool_document",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.common.pure_bother",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.common.active_rage",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.common.depression_suspicion",
                     "chance": 100
                 }
             ]
         },
 		{
-            "id": "trickal.troubletime.common_fire.end",
+            "id": "trickal.troubletime.common.madness_fire",
+            "requirements": {
+                "trickal.madness": 1
+            },
             "alt": [
 				{
                     "id": "trickal.troubletime.create_fire",
@@ -345,7 +364,7 @@
                     "additional": true
                 }
 			],
-            "label": "불장난!",
+            "label": "불장난",
             "actionid": "trickal.troubletime",
             "startdescription": "사도의 장난으로 불이 났다.",
             "description": "사도의 장난으로 불이 났다.",
@@ -362,7 +381,7 @@
                     "required": {
                         "trickal.headquarters": 1
                     },
-                    "description": "불이 번질 곳이 있나?.",
+                    "description": "불이 번질 곳이 있나?",
                     "greedy": true
                 }
             ],
@@ -372,6 +391,62 @@
             "startdescription": "불이 번지고 있다... [더 이상 불이 번질 곳이 없다면 교단이 위험해집니다.]",
             "description": "불이 번지고 있다...",
             "warmup": 10
-        }
+        },
+		{
+            "id": "trickal.troubletime.common.pure_bother",
+            "requirements": {
+                "trickal.pure": 1
+            },
+            "label": "놀아주다",
+            "actionid": "trickal.troubletime",
+			"effects": {
+				"trickal.fatigue": 1
+			},
+            "startdescription": "사도가 하루종일 놀아달라며 하루종일 나를 귀찮게군다. 이는 정말로 피곤한 일이다.",
+            "description": "사도가 하루종일 놀아달라며 하루종일 나를 귀찮게군다. 이는 정말로 피곤한 일이다.",
+            "warmup": 10
+		},
+		{
+            "id": "trickal.troubletime.common.cool_document",
+            "requirements": {
+                "trickal.cool": 1
+            },
+            "label": "일을 늘리다",
+            "actionid": "trickal.troubletime",
+			"effects": {
+				"trickal.document": 2
+			},
+            "startdescription": "사도가 교묘한 말로 자신의 일을 나에게 떠맡겼다.",
+            "description": "사도가 교묘한 말로 자신의 일을 나에게 떠맡겼다.",
+            "warmup": 10
+		},
+		{
+            "id": "trickal.troubletime.common.active_rage",
+            "requirements": {
+                "trickal.active": 1
+            },
+            "label": "교단을 뛰놀다",
+            "actionid": "trickal.troubletime",
+			"effects": {
+				"trickal.rage": 1
+			},
+            "startdescription": "하루종일 교단을 뛰어다니던 사도는 결국 내가 아끼는 그릇을 깨버렸다.",
+            "description": "하루종일 교단을 뛰어다니던 사도는 결국 내가 아끼는 그릇을 깨버렸다.",
+            "warmup": 10
+		},
+		{
+            "id": "trickal.troubletime.common.depression_suspicion",
+            "requirements": {
+                "trickal.depression": 1
+            },
+            "label": "의심받다",
+            "actionid": "trickal.troubletime",
+			"effects": {
+				"trickal.suspicion": 1
+			},
+            "startdescription": "사도가 나의 교주로서의 자질을 의심하고 있다.",
+            "description": "사도가 나의 교주로서의 자질을 의심하고 있다.",
+            "warmup": 10
+		}
 	]
 }

@@ -1,0 +1,84 @@
+{
+    "recipes": [
+		{
+            "id": "trickal.sick.candy",
+            "label": "몸이 움직이지 않는다",
+            "actionid": "trickal.sick",
+            "startdescription": "나는 깨달았다. 영원히 죽을 수 없다는 것은 저주라는 사실을- [죽음이 없더라도 당신의 체력엔 한계가 있습니다. 희생할 왕사탕이 없다면 모든 게 끝날 것입니다.]",
+            "description": "주말농장이 다가온다-",
+            "slots": {
+                "id": "Candy",
+                "label": "체력",
+                "required": {
+                    "trickal.candy": 1
+                },
+                "description": "희생할 체력.",
+                "greedy": true
+            },
+            "warmup": 120,
+            "alt": [
+                {
+                    "id": "trickal.sick.candy.end",
+                    "chance": 100
+                }
+            ],
+            "ending": "despairending",
+            "signalEndingFlavour": "Melancholy"
+        },
+		{
+            "id": "trickal.sick.candy.end",
+            "label": "크게 다치다",
+            "actionid": "trickal.sick",
+            "requirements": {
+                "trickal.candy": 1
+            },
+			"aspects": {
+				"onsick": 1
+			},
+            "startdescription": "이 세계에서는 죽음이 없다. 당신은 아픔을 털고 다시 일어선다. [이 과정은 체력(왕사탕)에 반영구적인 변화를 줍니다. 더 이상 변환할 체력이 없다면 게임이 끝납니다.]",
+            "description": "하지만 더 이상 몸을 움직일 수 없게된다면 어떻게 되는걸까...?",
+            "warmup": 10,
+            "craftable": false
+        },
+		{
+            "id": "trickal.sick.starcandy",
+            "label": "정신병에 걸리다",
+            "actionid": "trickal.sick",
+            "startdescription": "드디어 모든게 명확해졌다. 나는 드디어 깨달았다. [죽음이 없더라도 당신의 정신엔 한계가 있습니다. 희생할 별사탕이 없다면 모든 게 끝날 것입니다.]",
+            "description": "어쩌면 새로운 시작일지도 몰라-",
+            "slots": {
+                "id": "StarCandy",
+                "label": "정신",
+                "required": {
+                    "trickal.starcandy": 1
+                },
+                "description": "희생할 정신.",
+                "greedy": true
+            },
+            "warmup": 120,
+            "alt": [
+                {
+                    "id": "trickal.sick.starcandy.end",
+                    "chance": 100
+                }
+            ],
+            "ending": "despairending",
+            "signalEndingFlavour": "Melancholy"
+        },
+		{
+            "id": "trickal.sick.starcandy.end",
+            "label": "환각이 보인다",
+            "actionid": "trickal.sick",
+            "requirements": {
+                "trickal.starcandy": 1
+            },
+			"aspects": {
+				"onsick": 1
+			},
+            "startdescription": "신도들에게서 수상한 소문이 퍼진다. 교주가 허공에 대화를 하고 이상한 소리를 듣는다는... [이 과정은 정신(별사탕)에 반영구적인 변화를 줍니다. 더 이상 변환할 정신이 없다면 게임이 끝납니다.]",
+            "description": "나는 분명 정상이다. 영춘이와 대화하고 독심술을 쓰는 모습이 잘못 퍼진걸테지-",
+            "warmup": 10,
+            "craftable": false
+        }
+	]
+}

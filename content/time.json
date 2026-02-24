@@ -26,6 +26,11 @@
                     "additional": true
                 },
 				{
+                    "id": "trickal.seasonfatigueday",
+                    "chance": 100,
+                    "additional": true
+                },
+				{
                     "id": "trickal.docutime.start",
                     "chance": 100,
                     "additional": true
@@ -123,6 +128,168 @@
                 }
 			],
             "warmup": 30
+        },
+        {
+            "id": "trickal.seasonfatigueday",
+            "label": "피로의 나날",
+            "requirements": {
+                "trickal.seasonfatigue": 1
+            },
+            "startdescription": "엘리아스에서는 몸을 혹사해도 죽지않기에 휴식을 소홀히 하기 쉽다. 하지만 별로 현명한 방법은 아니다. [엘리아스에서는 피로가 쌓인다고 곧바로 게임오버로 이어지지는 않습니다. 다만 체력(왕사탕)에 반영구적인 피해를 줄 수 있습니다.]",
+            "actionid": "trickal.action.fatigue",
+            "warmup": 30,
+            "slots": [
+                {
+                    "id": "fatigue",
+                    "label": "쌓인 피로",
+                    "required": {
+                        "trickal.fatigue": 1
+                    },
+                    "description": "내 몸을 짓누르는 무언가.",
+                    "greedy": true
+                },
+                {
+                    "id": "docter",
+                    "label": "의사",
+                    "required": {
+                        "trickal.doctor": 1
+                    },
+                    "description": "엘리아스에서도 의사는 존재한다."
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.seasonfatigueday.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonfatigueday.cure",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonfatigueday.hard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonfatigueday",
+                    "chance": 100
+                }
+            ]
+		},
+        {
+            "id": "trickal.seasonfatigueday.hard",
+            "label": "눈 앞이 어지럽다!",
+            "requirements": {
+                "trickal.fatigue": 3
+            },
+            "startdescription": "바닥이 꺼진다. 눈 앞이 깜깜하다. 나는 지금 정신을 잃고있다. [당장 의사를 부르세요. 아니라면 반영구적인 후유증을 감수해야합니다.]",
+            "actionid": "trickal.action.fatigue",
+            "warmup": 30,
+            "slots": [
+                {
+                    "id": "docter",
+                    "label": "의사",
+                    "required": {
+                        "trickal.doctor": 1
+                    },
+                    "description": "엘리아스에서도 의사는 존재한다."
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.seasonfatigueday.cure",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonfatigueday.overwork",
+                    "chance": 100
+                }
+            ]
+		},
+        {
+            "id": "trickal.seasonfatigueday.overwork",
+            "label": "기절하다",
+            "startdescription": "나는 그 자리에서 기절했다. 물론 엘리아스이기에 죽진않겠지만 큰 후유증을 남길 것이다.",
+            "actionid": "trickal.action.fatigue",
+            "warmup": 30,
+            "effects": {
+                "trickal.fatigue": -1
+            },
+            "alt": [
+				{
+                    "id": "trickal.sick.candy",
+                    "chance": 100,
+                    "additional": true
+                }
+			],
+            "linked": [
+                {
+                    "id": "trickal.seasonfatigueday",
+                    "chance": 100
+                }
+            ]
+		},
+        {
+            "id": "trickal.seasonfatigueday.cure",
+            "label": "안정을 취하다",
+            "requirements": {
+                "trickal.fatigue": 1,
+				"trickal.doctor": 1
+            },
+            "effects": {
+                "trickal.fatigue": -1
+            },
+            "alt": [
+				{
+                    "id": "trickal.seasonfatigueday.docter",
+					"requirements": {
+						"trickal.fatigue": 2
+					},
+                    "chance": 100,
+                    "additional": true,
+                    "expulsion": {
+                        "limit": 1,
+                        "filter": {
+                            "trickal.doctor": 1
+                        }
+                    }
+                }
+			],
+            "startdescription": "나는 한동안 병원 침대에 누워있기로 했다.",
+            "actionid": "trickal.action.fatigue",
+            "warmup": 30,
+            "linked": [
+                {
+                    "id": "trickal.seasonfatigueday.end",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.seasonfatigueday",
+                    "chance": 100
+                }
+            ]
+		},
+		{
+            "id": "trickal.seasonfatigueday.docter",
+            "requirements": {
+                "trickal.doctor": 1
+            },
+            "label": "의사가 돌아가다",
+            "actionid": "trickal.seasonfatigueday.docterout",
+            "startdescription": "\"필요하면 언제든 병원으로 와주세요. 꾀병이라도 좋으니까요.\"",
+            "description": ".",
+            "warmup": 3
+		},
+        {
+            "id": "trickal.seasonfatigueday.end",
+            "label": "지금은 괜찮다",
+            "requirements": {
+                "trickal.fatigue": -1
+            },
+            "actionid": "trickal.action.fatigue",
+            "startdescription": "나는 집무실의 의자에서 일어나 기지개를 편다. 지금은 몸이 가볍다.",
+            "description": ".",
+            "warmup": 0
         },
         {
             "id": "trickal.indigence",
@@ -230,7 +397,7 @@
         {
             "id": "trickal.indigence.ner.furyend",
             "label": "분노가 사그라들다",
-            "actionid": "despair",
+            "actionid": "trickal.nerfury",
             "requirements": {
                 "trickal.food": 1
             },
