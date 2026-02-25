@@ -397,7 +397,6 @@
                     "required": {
                         "trickal.rage": 1
                     },
-                    "consumes": true,
                     "description": "털어내야 할 것"
                 }
             ],
@@ -423,6 +422,9 @@
             "actionid": "trickal.explore",
             "requirements": {
                 "trickal.rage": 1
+            },
+            "effects": {
+                "trickal.rage": -1
             },
             "aspects": {
                 "fatiguing": 1

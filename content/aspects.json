@@ -93,8 +93,7 @@
             "id": "trickal.spell",
             "label": "스펠 카드",
             "description": "'후후, 똑같은 카드더라도 결과는 내가 그때그때 해석하기 나름이지!' - 앨리스",
-			"isAspect": true,
-            "icon": "jumble"
+			"isAspect": true
         },
         {
             "id": "trickal.follower",

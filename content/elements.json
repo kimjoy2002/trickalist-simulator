@@ -34,7 +34,7 @@
             "xtriggers": {
                 "restoresick": "trickal.candy"
             },
-            "icon": "trickal.candy"
+            "icon": "trickal.candy_abnormal"
         },
         {
             "id": "trickal.starcandy",
@@ -70,7 +70,7 @@
             "xtriggers": {
                 "restoresick": "trickal.starcandy"
             },
-            "icon": "trickal.starcandy"
+            "icon": "trickal.starcandy_abnormal"
         },
         {
             "id": "trickal.elif",
@@ -120,7 +120,7 @@
         {
             "id": "trickal.rage",
             "label": "분노",
-            "description": "한순간의 격정. 모든 것이 일그러져보인다.",
+            "description": "'인내심 많은 자의 분노를 주의하라.' - 드라이든, '압살롬과 아히도벨'에서 발췌.",
             "lifetime": 360,
             "icon": "trickal.rage"
         },

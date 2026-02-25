@@ -169,6 +169,14 @@
             "craftable": false,
             "linked": [
                 {
+                    "id": "trickal.seasonfatigueday.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonfatigueday.hard",
+                    "chance": 100
+                },
+                {
                     "id": "trickal.seasonfatigueday",
                     "chance": 100
                 }
@@ -328,7 +336,7 @@
             "id": "trickal.seasonstressday.link",
             "actionid": "trickal.action.stress",
             "requirements": {
-                "trickal.seasonfatigue": 1
+                "trickal.seasonstress": 1
             },
             "warmup": 0,
             "craftable": false,
@@ -358,6 +366,14 @@
             ],
             "craftable": false,
             "linked": [
+                {
+                    "id": "trickal.seasonstressday.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonstressday.hard",
+                    "chance": 100
+                },
                 {
                     "id": "trickal.seasonstressday",
                     "chance": 100
