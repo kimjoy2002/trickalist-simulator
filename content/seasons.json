@@ -28,6 +28,15 @@
             "lifetime": 1
         },
         {
+            "id": "trickal.seasonstress",
+            "label": "스트레스의 날들",
+            "description": "오늘따라 머리가 돌아가지 않는다.",
+            "aspects": {
+                "season": 1
+            },
+            "lifetime": 1
+        },
+        {
             "id": "trickal.seasondocument",
             "label": "서류의 날들",
             "description": "일하지 않는 자 먹지도 말라.",

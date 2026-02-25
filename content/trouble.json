@@ -397,27 +397,27 @@
             "requirements": {
                 "trickal.pure": 1
             },
-            "label": "놀아주다",
+            "label": "귀찮게굴다",
             "actionid": "trickal.troubletime",
 			"effects": {
-				"trickal.fatigue": 1
+				"trickal.rage": 1
 			},
-            "startdescription": "사도가 하루종일 놀아달라며 하루종일 나를 귀찮게군다. 이는 정말로 피곤한 일이다.",
-            "description": "사도가 하루종일 놀아달라며 하루종일 나를 귀찮게군다. 이는 정말로 피곤한 일이다.",
+            "startdescription": "일을 하고있는도중 사도가 내 옆에서와서 하루종일 귀찮게군다. 내 인내심에도 한계가 있다.",
+            "description": "일을 하고있는도중 사도가 내 옆에서와서 하루종일 귀찮게군다. 내 인내심에도 한계가 있다.",
             "warmup": 10
 		},
 		{
             "id": "trickal.troubletime.common.cool_document",
             "requirements": {
                 "trickal.cool": 1
-            },
+            }, 
             "label": "일을 늘리다",
             "actionid": "trickal.troubletime",
 			"effects": {
 				"trickal.document": 2
 			},
-            "startdescription": "사도가 교묘한 말로 자신의 일을 나에게 떠맡겼다.",
-            "description": "사도가 교묘한 말로 자신의 일을 나에게 떠맡겼다.",
+            "startdescription": "사도가 교묘한 말로 자신의 일을 나에게 떠맡겼다. 일을 처리하지못하면 네르가 화낼텐데...",
+            "description": "사도가 교묘한 말로 자신의 일을 나에게 떠맡겼다. 일을 처리하지못하면 네르가 화낼텐데...",
             "warmup": 10
 		},
 		{
@@ -425,13 +425,13 @@
             "requirements": {
                 "trickal.active": 1
             },
-            "label": "교단을 뛰놀다",
+            "label": "사도와 놀아주다",
             "actionid": "trickal.troubletime",
 			"effects": {
-				"trickal.rage": 1
+				"trickal.fatigue": 1
 			},
-            "startdescription": "하루종일 교단을 뛰어다니던 사도는 결국 내가 아끼는 그릇을 깨버렸다.",
-            "description": "하루종일 교단을 뛰어다니던 사도는 결국 내가 아끼는 그릇을 깨버렸다.",
+            "startdescription": "사도가 놀아달라며 지치지도 않고 뛰어다닌다. 이는 정말로 피곤한 일이다.",
+            "description": "사도가 놀아달라며 지치지도 않고 뛰어다닌다. 이는 정말로 피곤한 일이다.",
             "warmup": 10
 		},
 		{
@@ -444,8 +444,8 @@
 			"effects": {
 				"trickal.suspicion": 1
 			},
-            "startdescription": "사도가 나의 교주로서의 자질을 의심하고 있다.",
-            "description": "사도가 나의 교주로서의 자질을 의심하고 있다.",
+            "startdescription": "사도가 내 교주로서의 자질을 의심하고 있다. 언젠가 이를 증명해야할지도 모른다.",
+            "description": "사도가 내 교주로서의 자질을 의심하고 있다. 언젠가 이를 증명해야할지도 모른다.",
             "warmup": 10
 		}
 	]

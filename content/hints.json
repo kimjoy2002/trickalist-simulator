@@ -343,6 +343,18 @@
             "startdescription": "털 부락의 수인들은 아직 어린 수인들이 많다. 모험을 좋아하는 어린 수인들에게 먹을 것으로 꼬드겨서 소문의 장소를 찾아보자.",
             "craftable": false,
             "hintonly": true
+        },
+        {
+            "id": "trickal.hint.elementalmountain",
+            "label": "정령산 근처에서 산책을 해볼까?",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.elementalmountain": 1,
+                "trickal.candy": -1
+            },
+            "startdescription": "정령산 근처에는 휴식을 취할만한 호수가 있다. 적당히 숨돌리는 기분으로 산책을 가볼 수 있다. 내 안의 분노를 가라앉히기에도 좋고, 잘하면 무언가 주을지도 모른다.",
+            "craftable": false,
+            "hintonly": true
         }
 	]
 }

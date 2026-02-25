@@ -271,10 +271,21 @@
         {
             "id": "trickal.elementalmountain",
             "label": "정령산",
-            "description": "정령들이 살고 있는 마력의 흐름을 방해하는 신비한 땅.",
+            "description": "정령들이 살고 있는 마력의 흐름을 방해하는 신비한 땅. 기분 전환삼아 가볍게 산책을 하고 오는 것도 괜찮을 것 같다.",
             "aspects": {
                 "location": 1
-            }
+            },
+            "slots": [
+                {
+                    "id": "other",
+                    "label": "행동력",
+                    "required": {
+                        "trickal.candy": 1
+                    },
+                    "actionid": "trickal.explore",
+                    "description": "무거운 몸을 이끌 행동력이 필요하다."
+                }
+            ]
         },
         {
             "id": "trickal.phantommarsh",

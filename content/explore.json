@@ -363,6 +363,98 @@
             "description": "수인들이 호화로운 음식을 먹고난 후에 희귀한 보물이 숨겨져있는 특별한 장소를 귀띔해주었다. 이 곳은 아주 철저한 준비후에 방문해야할 것이다.",
             "warmup": 60,
             "craftable": true
+        },
+        {
+            "id": "trickal.explore.elementalmountain.start",
+            "label": "정령산 호수 근처를 산책하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.elementalmountain": 1,
+                "trickal.candy": 1,
+                "trickal.fire": -1
+            },
+            "startdescription": "정령산 호수에 잠깐 숨을 돌리러 산책을 가보자. 기분 전환이 될 것이다.",
+            "description": ".",
+            "warmup": 3,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore.elementalmountain.addrage",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore.elementalmountain.addrage",
+            "label": "정령산 호수 근처를 산책하기",
+            "actionid": "trickal.explore",
+            "startdescription": "나는 정령산 호수를 한 바퀴 돌고 오기로 하고 준비물을 챙긴다. 만약 나의 마음 속에 화가 남아있으면 이 기회에 털어버리자.",
+            "description": ".",
+            "slots": [
+                {
+                    "id": "Rage",
+                    "label": "분노",
+                    "required": {
+                        "trickal.rage": 1
+                    },
+                    "consumes": true,
+                    "description": "털어내야 할 것"
+                }
+            ],
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.explore.elementalmountain.result_rage",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore.elementalmountain.result_oddments",
+                    "chance": 70
+                },
+                {
+                    "id": "trickal.explore.elementalmountain.result_nothing",
+                    "chance": 30
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore.elementalmountain.result_rage",
+            "label": "정령산 호수 근처를 산책하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.rage": 1
+            },
+            "aspects": {
+                "fatiguing": 1
+            },
+            "startdescription": "이 세계에서는 호수에 물고기가 있기는 한걸까? 혹시 나무에서 자라는건 아닐까?",
+            "description": "별 의미없는 생각을 하면서 걷다보니 내 분노 또한 의미없는 일임을 깨닫는다. 나는 산책을 마치고 교단으로 돌아왔다.",
+            "warmup": 60
+        },
+        {
+            "id": "trickal.explore.elementalmountain.result_oddments",
+            "label": "정령산 호수 근처를 산책하기",
+            "actionid": "trickal.explore",
+            "aspects": {
+                "fatiguing": 1
+            },
+            "deckeffects": {
+                "trickal.lake.pikcup": 2
+            },
+            "startdescription": "호수를 산책하다보니 호수에 많은 쓰레기들이 떨어져있었다. 나는 자원봉사를 할 겸 쓰레기들을 주워가기로 했다.",
+            "description": ".",
+            "warmup": 60
+        },
+        {
+            "id": "trickal.explore.elementalmountain.result_nothing",
+            "label": "정령산 호수 근처를 산책하기",
+            "actionid": "trickal.explore",
+            "aspects": {
+                "fatiguing": 1
+            },
+            "startdescription": "호수에는 물의 정령들이 놀고 있다. 큰 수확은 없었지만 나도 적당한 기분전환이 되었다.",
+            "description": ".",
+            "warmup": 60
         }
     ]
 }

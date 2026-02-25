@@ -26,7 +26,12 @@
                     "additional": true
                 },
 				{
-                    "id": "trickal.seasonfatigueday",
+                    "id": "trickal.seasonfatigueday.link",
+                    "chance": 100,
+                    "additional": true
+                },
+				{
+                    "id": "trickal.seasonstressday.link",
                     "chance": 100,
                     "additional": true
                 },
@@ -139,6 +144,31 @@
             "craftable": false,
             "linked": [
                 {
+                    "id": "trickal.seasonfatigueday.drain",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.seasonfatigueday.drain",
+            "actionid": "trickal.action.fatigue",
+            "label": "피로의 나날",
+            "startdescription": "엘리아스에서는 몸을 혹사해도 죽지않기에 휴식을 소홀히 하기 쉽다. 하지만 별로 현명한 방법은 아니다. [엘리아스에서는 피로가 쌓인다고 곧바로 게임오버로 이어지지는 않습니다. 다만 체력(왕사탕)에 반영구적인 피해를 줄 수 있습니다.]",
+            "warmup": 10,
+            "slots": [
+                {
+                    "id": "fatigue",
+                    "label": "쌓인 피로",
+                    "required": {
+                        "trickal.fatigue": 1
+                    },
+                    "description": "내 몸을 짓누르는 무언가.",
+                    "greedy": true
+                }
+            ],
+            "craftable": false,
+            "linked": [
+                {
                     "id": "trickal.seasonfatigueday",
                     "chance": 100
                 }
@@ -149,16 +179,15 @@
             "label": "피로의 나날",
             "startdescription": "엘리아스에서는 몸을 혹사해도 죽지않기에 휴식을 소홀히 하기 쉽다. 하지만 별로 현명한 방법은 아니다. [엘리아스에서는 피로가 쌓인다고 곧바로 게임오버로 이어지지는 않습니다. 다만 체력(왕사탕)에 반영구적인 피해를 줄 수 있습니다.]",
             "actionid": "trickal.action.fatigue",
-            "warmup": 30,
+            "warmup": 20,
             "slots": [
                 {
-                    "id": "fatigue",
-                    "label": "쌓인 피로",
+                    "id": "docter",
+                    "label": "의사",
                     "required": {
-                        "trickal.fatigue": 1
+                        "trickal.doctor": 1
                     },
-                    "description": "내 몸을 짓누르는 무언가.",
-                    "greedy": true
+                    "description": "엘리아스에서도 의사는 존재한다."
                 }
             ],
             "linked": [
@@ -175,7 +204,7 @@
                     "chance": 100
                 },
                 {
-                    "id": "trickal.seasonfatigueday",
+                    "id": "trickal.seasonfatigueday.drain",
                     "chance": 100
                 }
             ]
@@ -217,7 +246,7 @@
             "actionid": "trickal.action.fatigue",
             "warmup": 30,
             "effects": {
-                "trickal.fatigue": -1
+                "trickal.fatigue": -3
             },
             "alt": [
 				{
@@ -228,7 +257,7 @@
 			],
             "linked": [
                 {
-                    "id": "trickal.seasonfatigueday",
+                    "id": "trickal.seasonfatigueday.drain",
                     "chance": 100
                 }
             ]
@@ -247,7 +276,7 @@
 				{
                     "id": "trickal.seasonfatigueday.docter",
 					"requirements": {
-						"trickal.fatigue": 2
+						"trickal.fatigue": -1
 					},
                     "chance": 100,
                     "additional": true,
@@ -268,7 +297,7 @@
                     "chance": 100
                 },
 				{
-                    "id": "trickal.seasonfatigueday",
+                    "id": "trickal.seasonfatigueday.drain",
                     "chance": 100
                 }
             ]
@@ -292,6 +321,196 @@
             },
             "actionid": "trickal.action.fatigue",
             "startdescription": "나는 집무실의 의자에서 일어나 기지개를 편다. 지금은 몸이 가볍다.",
+            "description": ".",
+            "warmup": 0
+        },
+        {
+            "id": "trickal.seasonstressday.link",
+            "actionid": "trickal.action.stress",
+            "requirements": {
+                "trickal.seasonfatigue": 1
+            },
+            "warmup": 0,
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.seasonstressday.drain",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.seasonstressday.drain",
+            "actionid": "trickal.action.stress",
+            "label": "스트레스의 나날",
+            "startdescription": "최근 사소한 일에 짜증을 내기 시작한다. 무언가 스트레스를 해소할 방법이 없을까... [엘리아스에서는 스트레스가 쌓인다고 곧바로 게임오버로 이어지지는 않습니다. 다만 정신(별사탕)에 반영구적인 피해를 줄 수 있습니다.]",
+            "warmup": 10,
+            "slots": [
+                {
+                    "id": "stress",
+                    "label": "분노 혹은 광기",
+                    "required": {
+                        "trickal.rage": 1
+                    },
+                    "description": "날 미치게 하는 것들.",
+                    "greedy": true
+                }
+            ],
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.seasonstressday",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.seasonstressday",
+            "label": "스트레스의 나날",
+            "startdescription": "최근 사소한 일에 짜증을 내기 시작한다. 무언가 스트레스를 해소할 방법이 없을까... [엘리아스에서는 스트레스가 쌓인다고 곧바로 게임오버로 이어지지는 않습니다. 다만 정신(별사탕)에 반영구적인 피해를 줄 수 있습니다.]",
+            "actionid": "trickal.action.stress",
+            "warmup": 20,
+            "slots": [
+                {
+                    "id": "docter",
+                    "label": "의사",
+                    "required": {
+                        "trickal.doctor": 1
+                    },
+                    "description": "엘리아스에서도 의사는 존재한다."
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.seasonstressday.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonstressday.cure",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonstressday.hard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonstressday.drain",
+                    "chance": 100
+                }
+            ]
+		},
+        {
+            "id": "trickal.seasonstressday.hard",
+            "label": "화를 참을 수 없다!",
+            "requirements": {
+                "trickal.rage": 3
+            },
+            "startdescription": "나는 속에서 올라오는 화산같은 불길을 느낀다. 나는 당장 분출해야한다! [당장 의사를 부르세요. 아니라면 반영구적인 후유증을 감수해야합니다.]",
+            "actionid": "trickal.action.stress",
+            "warmup": 30,
+            "slots": [
+                {
+                    "id": "docter",
+                    "label": "의사",
+                    "required": {
+                        "trickal.doctor": 1
+                    },
+                    "description": "엘리아스에서도 의사는 존재한다."
+                }
+            ],
+            "linked": [
+                {
+                    "id": "trickal.seasonstressday.cure",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.seasonstressday.overwork",
+                    "chance": 100
+                }
+            ]
+		},
+        {
+            "id": "trickal.seasonstressday.overwork",
+            "label": "폭발하다",
+            "startdescription": "\"내가 그러고 싶어서 그런 게 아니잖아! 너도 알잖아! 내가 원해서 이렇게 됐냐? 세상이 그렇게 돌아가는 걸 나보고 어쩌라는 거냐고!\"",
+            "actionid": "trickal.action.stress",
+            "warmup": 30,
+            "effects": {
+                "trickal.rage": -3
+            },
+            "alt": [
+				{
+                    "id": "trickal.sick.starcandy",
+                    "chance": 100,
+                    "additional": true
+                }
+			],
+            "linked": [
+                {
+                    "id": "trickal.seasonstressday.drain",
+                    "chance": 100
+                }
+            ]
+		},
+        {
+            "id": "trickal.seasonstressday.cure",
+            "label": "심호흡을 하다",
+            "requirements": {
+                "trickal.rage": 1,
+				"trickal.doctor": 1
+            },
+            "effects": {
+                "trickal.rage": -1
+            },
+            "alt": [
+				{
+                    "id": "trickal.seasonstressday.docter",
+					"requirements": {
+						"trickal.rage": 1
+					},
+                    "chance": 100,
+                    "additional": true,
+                    "expulsion": {
+                        "limit": 1,
+                        "filter": {
+                            "trickal.doctor": 1
+                        }
+                    }
+                }
+			],
+            "startdescription": "나는 한동안 병원 침대에 누워있기로 했다.",
+            "actionid": "trickal.action.stress",
+            "warmup": 30,
+            "linked": [
+                {
+                    "id": "trickal.seasonstressday.end",
+                    "chance": 100
+                },
+				{
+                    "id": "trickal.seasonstressday.drain",
+                    "chance": 100
+                }
+            ]
+		},
+		{
+            "id": "trickal.seasonstressday.docter",
+            "requirements": {
+                "trickal.doctor": 1
+            },
+            "label": "의사가 돌아가다",
+            "actionid": "trickal.seasonstressday.docterout",
+            "startdescription": "\"필요하면 언제든 병원으로 와주세요. 꾀병이라도 좋으니까요.\"",
+            "description": ".",
+            "warmup": 3
+		},
+        {
+            "id": "trickal.seasonstressday.end",
+            "label": "심호흡을 하다",
+            "requirements": {
+                "trickal.rage": -1
+            },
+            "actionid": "trickal.action.stress",
+            "startdescription": "나는 차분히 앉아서 심호흡을 했다. 다시금 짧은 회상을 해보면 별일이 아닌 일이었다.",
             "description": ".",
             "warmup": 0
         },

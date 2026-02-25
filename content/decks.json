@@ -120,6 +120,7 @@
                 "trickal.seasontrouble",
                 "trickal.seasontrouble",
                 "trickal.seasonfatigue",
+                "trickal.seasonstress",
                 "trickal.seasonsilence"
             ],
             "defaultcard": "contentment",
@@ -220,6 +221,22 @@
                 "trickal.fruit",
                 "trickal.leaf",
                 "trickal.sap"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.lake.pikcup",
+            "spec": [
+                "trickal.meat",
+                "trickal.milk",
+                "trickal.cheese"
+                "trickal.sap",
+                "trickal.honey",
+                "trickal.glass"
+                "trickal.flour",
+                "trickal.egg",
+                "trickal.fruit",
+                "trickal.leaf"
             ],
             "resetonexhaustion": true
         },
