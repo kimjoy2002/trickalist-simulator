@@ -2966,7 +2966,6 @@
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
                 "trickal.exalted": 1,
-				"trickal.troublemaker": 1,
                 "trickal.active": 10
             },
             "icon": "trickal.epica"
@@ -2982,7 +2981,6 @@
                 "trickal.beast": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
-				"trickal.troublemaker": 1,
                 "trickal.active": 5
             },
             "icon": "trickal.epica",
@@ -3000,7 +2998,6 @@
                 "trickal.eldain": 1,
                 "trickal.beast": 1,
                 "trickal.follower": 1,
-				"trickal.troublemaker": 1,
                 "trickal.active": 2
             },
             "icon": "trickal.epica",
@@ -3018,7 +3015,6 @@
                 "trickal.eldain": 1,
                 "trickal.beast": 1,
                 "acquaintance": 1,
-				"trickal.troublemaker": 1,
                 "trickal.active": 1
             },
             "icon": "trickal.epica",
@@ -3028,6 +3024,156 @@
         },
         {
             "id": "trickal.epica_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.aya4",
+            "label": "만년설의 현자 아야",
+            "description": "그녀는 이제 자신을 두려워 하지않는다. 그녀에겐 이제 소중한 자매들이 있다.",
+            "aspects": {
+                "trickal.aya_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.cool": 10
+            },
+            "icon": "trickal.aya"
+        },
+        {
+            "id": "trickal.aya3",
+            "label": "사도 아야",
+            "description": "아야는 가끔 자신의 힘을 제어할 수 없다. 그녀는 그런 자신을 두려워한다.",
+            "aspects": {
+                "trickal.aya_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5
+            },
+            "icon": "trickal.aya",
+            "xtriggers": {
+                "promote": "trickal.aya4"
+            }
+        },
+        {
+            "id": "trickal.aya2",
+            "label": "신도 아야",
+            "description": "아야의 말투는 항상 주변을 오해하기 만든다. 그런 아야에게 자각은 없다.",
+            "aspects": {
+                "trickal.aya_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.witch": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2
+            },
+            "icon": "trickal.aya",
+            "xtriggers": {
+                "promote": "trickal.aya3"
+            }
+        },
+        {
+            "id": "trickal.aya",
+            "label": "아야",
+            "description": "만년설의 현자라고 불리는 마녀. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+                "trickal.aya_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.witch": 1,
+                "acquaintance": 1,
+                "trickal.cool": 1
+            },
+            "icon": "trickal.aya",
+            "xtriggers": {
+                "recruiting": "trickal.aya2"
+            }
+        },
+        {
+            "id": "trickal.aya_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+        
+        {
+            "id": "trickal.chloe4",
+            "label": "인형 샌드백 권위자 클로에",
+            "description": "이제 그녀가 재단하는 것은 단순한 옷이 아니다.",
+            "aspects": {
+                "trickal.chloe_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.madness": 10
+            },
+            "icon": "trickal.chloe"
+        },
+        {
+            "id": "trickal.chloe3",
+            "label": "사도 클로에",
+            "description": "그녀가 머리에 이고다니는건 새바스티안으로 단순한 인형이 아니며 자아를 가지고 있다.",
+            "aspects": {
+                "trickal.chloe_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.madness": 5
+            },
+            "icon": "trickal.chloe",
+            "xtriggers": {
+                "promote": "trickal.chloe4"
+            }
+        },
+        {
+            "id": "trickal.chloe2",
+            "label": "신도 클로에",
+            "description": "그녀의 가게는 요정 왕국에 개점중이며, 많은 단골 손님을 만들고 있다.",
+            "aspects": {
+                "trickal.chloe_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.fairy": 1,
+                "trickal.follower": 1,
+                "trickal.madness": 2
+            },
+            "icon": "trickal.chloe",
+            "xtriggers": {
+                "promote": "trickal.chloe3"
+            }
+        },
+        {
+            "id": "trickal.chloe",
+            "label": "클로에",
+            "description": "패션이라면 누구에게도 지지않는 재단사 요정. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+                "trickal.chloe_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.fairy": 1,
+                "acquaintance": 1,
+                "trickal.madness": 1
+            },
+            "icon": "trickal.chloe",
+            "xtriggers": {
+                "recruiting": "trickal.chloe2"
+            }
+        },
+        {
+            "id": "trickal.chloe_",
             "isAspect": true,
             "isHidden": true,
             "noArtNeeded": true
