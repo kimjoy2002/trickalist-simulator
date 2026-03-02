@@ -28,11 +28,27 @@
                     "chance": 100
                 },
                 {
-                    "id": "trickal.troubletime.end",
+                    "id": "trickal.troubletime.common_pure",
                     "chance": 100
                 },
                 {
-                    "id": "trickal.troubletime.common",
+                    "id": "trickal.troubletime.common_madness",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.common_cool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.common_active",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.common_depression",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.end",
                     "chance": 100
                 }
             ]
@@ -154,7 +170,10 @@
                     "id": "Problemsolver",
                     "label": "해결사",
                     "required": {
-                        "trickal.creature": 1
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.troublemaker": -1
                     },
                     "description": "누가 이 문제아를 막을 수 있을 것인가."
                 }
@@ -310,42 +329,254 @@
             "description": "기분 탓이었나, 엘리아스는 여전히 평화롭다."
         },
 		{
-            "id": "trickal.troubletime.common",
+            "id": "trickal.troubletime.common_pure",
             "label": "문제 발생!",
             "actionid": "trickal.troubletime",
             "requirements": {
-                "trickal.troublemaker": 1
+                "trickal.troublemaker": 1,
+                "trickal.pure_": 1
             },
             "slots": [
                 {
                     "id": "Problemsolver",
                     "label": "해결사",
                     "required": {
-                        "trickal.creature": 1
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.troublemaker": -1
                     },
                     "description": "누가 이 문제아를 막을 수 있을 것인가."
                 }
             ],
-            "startdescription": "문제아들의 위험한 장난이 시작되었다. 가만히 냅두면 골치아픈 일이 생길 것이다.",
+            "startdescription": "문제아들의 위험한 장난이 시작되었다. 가만히 냅두면 골치아픈 일이 생길 것이다. [유리한 상성을 가진 신도를 이용해서 장난을 억제할 수 있습니다.]",
             "description": ".",
             "warmup": 30,
+            "alt": [
+				{
+					"requirements": {
+						"trickal.madness": 7
+					},
+					"startdescription": "순수의 힘은 광기로서 제압할 수 있다. 이 사도라면 충분히 문제아를 제압할 수 있을 것이다. 한번 맡겨보자",
+                    "linked": [
+                        {
+                            "id": "trickal.troubletime.common.solve",
+                            "chance": 100
+                        }
+                    ]
+				},
+				{
+					"requirements": {
+						"trickal.madness": 1
+					},
+					"startdescription": "순수의 힘은 광기로서 제압할 수 있다. 하지만 이 사도의 힘으론 역부족이다."
+				}
+            ],
+            "linked": [
+                {
+                    "id": "trickal.troubletime.common.pure_bother",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.common_madness",
+            "label": "문제 발생!",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.troublemaker": 1,
+                "trickal.madness_": 1
+            },
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "해결사",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.troublemaker": -1
+                    },
+                    "description": "누가 이 문제아를 막을 수 있을 것인가."
+                }
+            ],
+            "startdescription": "문제아들의 위험한 장난이 시작되었다. 가만히 냅두면 골치아픈 일이 생길 것이다. [유리한 상성을 가진 신도를 이용해서 장난을 억제할 수 있습니다.]",
+            "description": ".",
+            "warmup": 30,
+            "alt": [
+				{
+					"requirements": {
+						"trickal.cool": 7
+					},
+					"startdescription": "광기의 힘은 냉정으로서 진정시킬 수 있다. 이 사도라면 충분히 문제아를 제압할 수 있을 것이다. 한번 맡겨보자",
+                    "linked": [
+                        {
+                            "id": "trickal.troubletime.common.solve",
+                            "chance": 100
+                        }
+                    ]
+				},
+				{
+					"requirements": {
+						"trickal.cool": 1
+					},
+					"startdescription": "광기의 힘은 냉정으로서 진정시킬 수 있다. 하지만 이 사도의 힘으론 역부족이다."
+				}
+            ],
             "linked": [
                 {
                     "id": "trickal.troubletime.common.madness_fire",
                     "chance": 100
-                },
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.common_cool",
+            "label": "문제 발생!",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.troublemaker": 1,
+                "trickal.cool_": 1
+            },
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "해결사",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.troublemaker": -1
+                    },
+                    "description": "누가 이 문제아를 막을 수 있을 것인가."
+                }
+            ],
+            "startdescription": "문제아들의 위험한 장난이 시작되었다. 가만히 냅두면 골치아픈 일이 생길 것이다. [유리한 상성을 가진 신도를 이용해서 장난을 억제할 수 있습니다.]",
+            "description": ".",
+            "warmup": 30,
+            "alt": [
+				{
+					"requirements": {
+						"trickal.pure": 7
+					},
+					"startdescription": "냉정의 힘은 순수로서 감화할 수 있다. 이 사도라면 충분히 문제아를 제압할 수 있을 것이다. 한번 맡겨보자",
+                    "linked": [
+                        {
+                            "id": "trickal.troubletime.common.solve",
+                            "chance": 100
+                        }
+                    ]
+				},
+				{
+					"requirements": {
+						"trickal.pure": 1
+					},
+					"startdescription": "냉정의 힘은 순수로서 감화할 수 있다. 하지만 이 사도의 힘으론 역부족이다."
+				}
+            ],
+            "linked": [
                 {
                     "id": "trickal.troubletime.common.cool_document",
                     "chance": 100
-                },
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.common_active",
+            "label": "문제 발생!",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.troublemaker": 1,
+                "trickal.active_": 1
+            },
+            "slots": [
                 {
-                    "id": "trickal.troubletime.common.pure_bother",
-                    "chance": 100
-                },
+                    "id": "Problemsolver",
+                    "label": "해결사",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.troublemaker": -1
+                    },
+                    "description": "누가 이 문제아를 막을 수 있을 것인가."
+                }
+            ],
+            "startdescription": "문제아들의 위험한 장난이 시작되었다. 가만히 냅두면 골치아픈 일이 생길 것이다. [유리한 상성을 가진 신도를 이용해서 장난을 억제할 수 있습니다.]",
+            "description": ".",
+            "warmup": 30,
+            "alt": [
+				{
+					"requirements": {
+						"trickal.depression": 7
+					},
+					"startdescription": "활발의 힘은 우울로서 붙잡아둘 수 있다. 이 사도라면 충분히 문제아를 제압할 수 있을 것이다. 한번 맡겨보자",
+                    "linked": [
+                        {
+                            "id": "trickal.troubletime.common.solve",
+                            "chance": 100
+                        }
+                    ]
+				},
+				{
+					"requirements": {
+						"trickal.depression": 1
+					},
+					"startdescription": "활발의 힘은 우울로서 붙잡아둘 수 있다. 하지만 이 사도의 힘으론 역부족이다."
+				}
+            ],
+            "linked": [
                 {
                     "id": "trickal.troubletime.common.active_rage",
                     "chance": 100
-                },
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.common_depression",
+            "label": "문제 발생!",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.troublemaker": 1,
+                "trickal.depression_": 1
+            },
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "해결사",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.troublemaker": -1
+                    },
+                    "description": "누가 이 문제아를 막을 수 있을 것인가."
+                }
+            ],
+            "startdescription": "문제아들의 위험한 장난이 시작되었다. 가만히 냅두면 골치아픈 일이 생길 것이다. [유리한 상성을 가진 신도를 이용해서 장난을 억제할 수 있습니다.]",
+            "description": ".",
+            "warmup": 30,
+            "alt": [
+				{
+					"requirements": {
+						"trickal.active": 7
+					},
+					"startdescription": "우울의 힘은 활발로서 환기시킬 수 있다. 이 사도라면 충분히 문제아를 제압할 수 있을 것이다. 한번 맡겨보자",
+                    "linked": [
+                        {
+                            "id": "trickal.troubletime.common.solve",
+                            "chance": 100
+                        }
+                    ]
+				},
+				{
+					"requirements": {
+						"trickal.active": 1
+					},
+					"startdescription": "우울의 힘은 활발로서 환기시킬 수 있다. 하지만 이 사도의 힘으론 역부족이다."
+				}
+            ],
+            "linked": [
                 {
                     "id": "trickal.troubletime.common.depression_suspicion",
                     "chance": 100
@@ -390,7 +621,54 @@
 			},
             "startdescription": "불이 번지고 있다... [더 이상 불이 번질 곳이 없다면 교단이 위험해집니다.]",
             "description": "불이 번지고 있다...",
-            "warmup": 10
+            "warmup": 10,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.critical_fire",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.troubletime.critical_fire",
+            "label": "불길이 코앞까지 왔다",
+            "requirements": {
+                "location": -1
+            },
+            "actionid": "trickal.troubletime.verbs.fire",
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.firefighter": 1
+                    },
+                    "description": "어떤 사도는 물을 다루는데 능숙하다."
+                }
+			],
+            "startdescription": "불길은 결국 내가 사는 집 앞까지 번지고 말았다. 누가 이 불을 잡을 수 있겠는가. [이 불길을 잡을 수 있는 마지막 방법을 찾지 못한다면 게임이 끝납니다.]",
+            "description": "모든 것이 불길에 삼켜진다...",
+            "warmup": 60,
+            "alt": [
+                {
+                    "id": "trickal.troubletime.fire_end",
+                    "chance": 100
+                }
+            ],
+            "ending": "trickal.ending.weekendfarm",
+            "signalEndingFlavour": "Melancholy"
+        },
+		{
+            "id": "trickal.troubletime.fire_end",
+            "label": "불길을 잡다",
+            "requirements": {
+                "trickal.firefighter": 1
+            },
+            "actionid": "trickal.troubletime.verbs.fire",
+            "startdescription": "긴급하게 연락을 받은 사도의 도움 덕분에 당장의 불을 끌 수 있었다.",
+            "description": "지금은 안전하다...",
+            "warmup": 30
         },
 		{
             "id": "trickal.troubletime.common.pure_bother",
@@ -447,6 +725,25 @@
             "startdescription": "사도가 내 교주로서의 자질을 의심하고 있다. 언젠가 이를 증명해야할지도 모른다.",
             "description": "사도가 내 교주로서의 자질을 의심하고 있다. 언젠가 이를 증명해야할지도 모른다.",
             "warmup": 10
-		}
+		},
+		{
+            "id": "trickal.troubletime.common.solve",
+            "effects": {
+                "trickal.niceticket": 1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.troublemaker",
+                    "mutate": "trickal.troublemaker",
+                    "level": -1,
+					"additive": true
+                }
+            ],
+            "label": "장난꾸러기의 결말",
+            "actionid": "trickal.troubletime",
+            "startdescription": "나는 문제아를 조용히 불러 교육을 시켰다. 이걸로 이 장난꾸러기가 말썽 피우는 일은 줄어들 것이다.",
+            "description": ".",
+            "warmup": 30
+        }
 	]
 }

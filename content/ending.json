@@ -1,0 +1,36 @@
+{
+    "endings": [
+        {
+            "id": "trickal.ending.ner.fury",
+            "image": "trickal.ending.ner.fury",
+            "label": "한 순간의 실수",
+            "description": "순간의 분노는 잘못된 선택으로 이어진다. 세계수조차 벌목을 할 수 있는 도끼는 가호로도 막을 수 없었다. 반으로 갈라진 것은 이제 다시 붙일 수 없다. [나는 네르의 분노가 3개 쌓이도록 허용하고 말았다.]",
+            "flavour": "Melancholy",
+            "anim": "DramaticLightEvil"
+        },
+        {
+            "id": "trickal.ending.weekendfarm",
+            "image": "trickal.ending.weekendfarm",
+            "label": "주말 농장",
+            "description": "한때 번성했던 요정 왕국은 불길에 휩싸인다. 나는 교단을 지키기 못한 죄로 교주의 자리에서 물러났다. 또 새로운 누군가가 이 엘리아스를 구하러 오겠지. [나는 엘리아스에 번진 불길을 잡지 못했다.]",
+            "flavour": "Melancholy",
+            "anim": "DramaticLightEvil"
+        },
+        {
+            "id": "trickal.ending.eternal",
+            "image": "trickal.ending.common",
+            "label": "영원한 저주",
+            "description": "죽음이 없는 세계에서 움직이지 못한다면 어떻게 될까? 나는 상상으로만 생각했던 최악의 결말을 맞이했다. 세계수는 평온한 안식조차 허용하지않는다. 영원히. [나는 모든 체력을 소진했다.]",
+            "flavour": "Melancholy",
+            "anim": "DramaticLightEvil"
+        },
+        {
+            "id": "trickal.ending.paranoia",
+            "image": "trickal.ending.common",
+            "label": "피해망상",
+            "description": "그들이 날 도청하고 있다. 여기는 안전하지 않다. 나는 도망쳐야 한다. 아무도 없는 곳으로, 아무도 알지 못하는 곳으로- [나는 모든 정신을 소진했다.]",
+            "flavour": "Melancholy",
+            "anim": "DramaticLightEvil"
+        }
+    ]
+}

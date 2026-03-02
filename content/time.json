@@ -630,7 +630,7 @@
                     "chance": 100
                 }
             ],
-            "ending": "despairending",
+            "ending": "trickal.ending.ner.fury",
             "signalEndingFlavour": "Melancholy"
         },
         {

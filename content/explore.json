@@ -457,6 +457,78 @@
             "startdescription": "호수에는 물의 정령들이 놀고 있다. 큰 수확은 없었지만 나도 적당한 기분전환이 되었다.",
             "description": ".",
             "warmup": 60
+        },
+        {
+            "id": "trickal.explore.phantommarsh.walk",
+            "label": "유령 늪에 산책을 하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.phantommarsh": 1,
+                "trickal.candy": 1,
+                "trickal.ghost": -1,
+                "trickal.fire": -1
+            },
+            "effects": {},
+            "startdescription": "유령 늪에 혼자 가더라도 좋은 일은 없다. 가이드를 해줄 유령을 데려오지않는다면 아마 후회할 것이다.",
+            "description": ".",
+            "warmup": 30,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore.phantommarsh.walk_fatigue",
+                    "chance": 45
+                },
+                {
+                    "id": "trickal.explore.phantommarsh.walk_rage",
+                    "chance": 82
+                },
+                {
+                    "id": "trickal.explore.phantommarsh.walk_lucky",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.explore.phantommarsh.walk_fatigue",
+            "label": "유령 늪에 산책을 하기",
+            "actionid": "trickal.explore",
+            "aspects": {
+                "fatiguing": 1
+            },
+            "effects": {
+                "trickal.fatigue": 1
+            },
+            "startdescription": "나는 넓은 유령 늪에서 길을 잃었다... 여기에 써있는 표지판은 도움이 되지않는다.",
+            "description": "수 시간이 지나서야 겨우 돌아올 수 있었다. 돌아온 것만으로 기적이라 해야할 것이다.",
+            "warmup": 60
+        },
+        {
+            "id": "trickal.explore.phantommarsh.walk_rage",
+            "label": "유령 늪에 산책을 하기",
+            "actionid": "trickal.explore",
+            "aspects": {
+                "fatiguing": 1
+            },
+            "effects": {
+                "trickal.rage": 1
+            },
+            "startdescription": "유령들의 본질은 장난이다. 유령들에겐 가벼운 장난도 나같은 평범한 사람에겐 치명적일 수 있다.",
+            "description": "유령들의 장난에 고생하고나서 유령들을 쫓아내고 집으로 돌아올 수 있었다. 언젠간 꿀밤을 때려줄 것이다.",
+            "warmup": 60
+        },
+        {
+            "id": "trickal.explore.phantommarsh.walk_lucky",
+            "label": "유령 늪에 산책을 하기",
+            "actionid": "trickal.explore",
+            "aspects": {
+                "fatiguing": 1
+            },
+            "deckeffects": {
+                "trickal.lake.pikcup": 4
+            },
+            "startdescription": "유령 늪에서 쓸만한 것을 주울 수 있었다. 이제 돌아가기만 한다면...",
+            "description": "오늘은 운이 좋다. 유령 늪에서 딱히 길을 잃지않고 곧장 돌아올 수 있었다.",
+            "warmup": 60
         }
     ]
 }

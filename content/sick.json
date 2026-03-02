@@ -22,7 +22,7 @@
                     "chance": 100
                 }
             ],
-            "ending": "despairending",
+            "ending": "trickal.ending.eternal",
             "signalEndingFlavour": "Melancholy"
         },
 		{
@@ -43,8 +43,8 @@
             "id": "trickal.sick.starcandy",
             "label": "정신병에 걸리다",
             "actionid": "trickal.sick",
-            "startdescription": "드디어 모든게 명확해졌다. 나는 드디어 깨달았다. [죽음이 없더라도 당신의 정신엔 한계가 있습니다. 희생할 별사탕이 없다면 모든 게 끝날 것입니다.]",
-            "description": "어쩌면 새로운 시작일지도 몰라-",
+            "startdescription": "드디어 모든게 명확해졌다. 이 녀석들이 날 속이고 있는거야. [죽음이 없더라도 당신의 정신엔 한계가 있습니다. 희생할 별사탕이 없다면 모든 게 끝날 것입니다.]",
+            "description": "늦기 전에 행동을 해야해-",
             "slots": {
                 "id": "StarCandy",
                 "label": "정신",
@@ -61,7 +61,7 @@
                     "chance": 100
                 }
             ],
-            "ending": "despairending",
+            "ending": "trickal.ending.paranoia",
             "signalEndingFlavour": "Melancholy"
         },
 		{

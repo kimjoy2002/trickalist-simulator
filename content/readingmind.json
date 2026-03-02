@@ -15,9 +15,38 @@
                 "trickal.food.cake":2,
                 "trickal.food.cinnamoncandy":2,
                 "trickal.food.spacefood":2,
+                "trickal.spellcard.selfimprove": 1,
+                "trickal.spellcard.afterimage": 1,
+                "trickal.spellcard.wizard": 1,
+                "trickal.spellcard.scholar": 1,
+                "trickal.spellcard.critical": 1,
+                "trickal.spellcard.coolcard": 1,
+                "trickal.spellcard.activecard": 1,
+                "trickal.spellcard.depressioncard": 1,
+                "trickal.spellcard.lastspurt": 1,
+                "trickal.spellcard.warmheart": 1,
+                "trickal.ner4": 1,
                 "trickal.elif":2
             },
-            "startdescription": "영춘이에게 도움(치트)를 받자.",
+            "startdescription": "영춘이에게 도움(치트)을 받자.",
+            "warmup": 10
+        },{
+            "id": "trickal.mindreading.test",
+            "actionid": "trickal.mindreading",
+            "craftable": true,
+            "description": "\"불을 낼게요.\"",
+            "label": "네르의 디버깅.",
+            "requirements": {
+                "trickal.ner": 1
+            },
+            "alt": [
+				{
+                    "id": "trickal.troubletime.create_fire",
+                    "chance": 100,
+                    "additional": true
+                }
+			],
+            "startdescription": "네르에게 도움(디버깅)을 받자.",
             "warmup": 10
         }
     ]

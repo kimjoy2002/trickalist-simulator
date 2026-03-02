@@ -575,6 +575,255 @@
             "warmup": 60,
             "craftable": true
         },
+        {
+            "id": "trickal.work.firefight.candy",
+            "label": "생명력을 사용해서 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.candy": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "직접 나서서 불을 진압해본다. 확실한 방법이지만 오래걸리고 위험한 방법이기도 하다. [왕사탕을 사용하여 불을 진압하면 낮은 확률로 반영구적인 부상을 입습니다.]",
+            "description": ".",
+            "warmup": 120,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 90
+                },
+                {
+                    "id": "trickal.work.firefight.candy.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.firefight.success",
+            "label": "불길이 잦아들다",
+            "aspects": {
+                "fatiguing": 1,
+                "offfire": 1,
+                "trickal.magicdelay": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "",
+            "description": "점차 불길이 잦아들고 조용해진다. 아직 남아있는 열기와 잿더미만이 과거를 보여줄 뿐이다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.work.firefight.candy.fail",
+            "label": "앗 뜨거!",
+            "aspects": {
+                "onsick": 1,
+                "offfire": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "",
+            "description": "자연현상은 가끔씩 제어할 수 없는 괴물이 된다. 비록 괴물은 잡았지만 나는 끔찍한 상처를 얻었다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.work.firefight.magic_low",
+            "label": "미약한 마법을 사용해서 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.spell": 1
+            },
+            "forbidden": {
+				"trickal.delay": 1
+            },
+            "grandreqs": {
+                "max([trickal.madness], max([trickal.active],max([trickal.pure],[trickal.depression])))": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "마법의 힘은 예측하기 힘들다. 아마 내가 생각한대로의 효과가 나오지않을 수 있다. 하지만 시도해볼만은 하다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 높은 힘을 가진 마법은 확률이 올라가고, 냉정의 힘은 불에 상성이 좋습니다.]",
+            "description": ".",
+            "warmup": 60,
+            "$priority": 1,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 30
+                },
+                {
+                    "id": "trickal.work.firefight.magic.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.firefight.magic_mid",
+            "label": "적당한 마법을 사용해서 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.spell": 1
+            },
+            "forbidden": {
+				"trickal.delay": 1
+            },
+            "grandreqs": {
+                "max([trickal.madness], max([trickal.active],max([trickal.pure],[trickal.depression])))": 5
+            },
+            "actionid": "trickal.work",
+            "startdescription": "마법의 힘은 예측하기 힘들다. 반반 정도의 확률이겠지만 시도해볼만은 하다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 높은 힘을 가진 마법은 확률이 올라가고, 냉정의 힘은 불에 상성이 좋습니다.]",
+            "description": ".",
+            "warmup": 60,
+            "$priority": 2,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 60
+                },
+                {
+                    "id": "trickal.work.firefight.magic.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.firefight.magic_high",
+            "label": "상당한 마법을 사용해서 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.spell": 1
+            },
+            "forbidden": {
+				"trickal.delay": 1
+            },
+            "grandreqs": {
+                "max([trickal.madness], max([trickal.active],max([trickal.pure],[trickal.depression])))": 8
+            },
+            "$priority": 3,
+            "actionid": "trickal.work",
+            "startdescription": "강력한 마법의 힘은 불길을 끄는데 도움이 될 수 있다. 아마 이 정도라면 높은 확률로 불을 끌 수 있다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 높은 힘을 가진 마법은 확률이 올라가고, 냉정의 힘은 불에 상성이 좋습니다.]",
+            "description": ".",
+            "warmup": 60,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 90
+                },
+                {
+                    "id": "trickal.work.firefight.magic.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.firefight.magic_low_cool",
+            "label": "미약한 냉정의 마법을 사용해서 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.spell": 1,
+                "trickal.cool": 1
+            },
+            "forbidden": {
+				"trickal.delay": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "냉정의 힘은 차가움과 진정의 힘을 담고 있다. 미약한 힘이라도 이와같이 뜨거운 열기를 진정시키는데는 쓸만할 것이다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 높은 힘을 가진 마법은 확률이 올라가고, 냉정의 힘은 불에 상성이 좋습니다.]",
+            "description": ".",
+            "warmup": 60,
+            "$priority": 1,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 60
+                },
+                {
+                    "id": "trickal.work.firefight.magic.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.firefight.magic_mid_cool",
+            "label": "적당한 냉정의 마법을 사용해서 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.spell": 1,
+                "trickal.cool": 5
+            },
+            "forbidden": {
+				"trickal.delay": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "냉정의 힘은 차가움과 진정의 힘을 담고 있다. 이정도의 냉정의 힘이라면 높은 확률로 불을 끌 수 있다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 높은 힘을 가진 마법은 확률이 올라가고, 냉정의 힘은 불에 상성이 좋습니다.]",
+            "warmup": 60,
+            "$priority": 2,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 90
+                },
+                {
+                    "id": "trickal.work.firefight.magic.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.firefight.magic_high_cool",
+            "label": "상당한 냉정의 마법을 사용해서 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.spell": 1,
+                "trickal.cool": 8
+            },
+            "forbidden": {
+				"trickal.delay": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "냉정의 힘은 차가움과 진정의 힘을 담고 있다. 아마 이정도의 냉정이라면 확실하게 불을 끌 것이다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 그렇지만 이정도의 냉정의 힘이라면 불확실함조차 뛰어넘을 것입니다.]",
+            "warmup": 60,
+            "$priority": 3,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.work.firefight.magic.fail",
+            "label": "잘못된 마법",
+            "aspects": {
+                "trickal.magicdelay": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "",
+            "description": "마법은 내가 의도한대로 동작한다는 보장은 없다. 오늘은 날이 아니었다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.work.firefight.follower",
+            "label": "전문가를 통해 불을 끄기",
+            "requirements": {
+                "trickal.fire": 1,
+                "trickal.firefighter": 1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "내가 아는 자가 이 방면에선 스페셜리스트다. 나는 도움을 요청할 수 있다. [이 방법은 불을 끄는데 가장 확실하고 안전한 방법입니다.]",
+            "warmup": 60,
+            "$priority": 10,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.work.firefight.success",
+                    "chance": 100
+                }
+            ]
+        }
     ]
 
 }

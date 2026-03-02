@@ -96,6 +96,12 @@
 			"isAspect": true
         },
         {
+            "id": "trickal.delay",
+            "label": "방전됨",
+            "description": "지금은 사용할 수 없다.",
+			"isAspect": true
+        },
+        {
             "id": "trickal.follower",
             "label": "추종자",
             "description": "교단에 입교한 신도.",
@@ -195,11 +201,23 @@
             "icon": "trickal.pure"
         },
         {
+            "id": "trickal.pure_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+        {
             "id": "trickal.madness",
             "label": "광기",
             "description": "확고한 소신과 신념. 목표에 대한 집착.",
 			"isAspect": true,
             "icon": "trickal.madness"
+        },
+        {
+            "id": "trickal.madness_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
         },
         {
             "id": "trickal.cool",
@@ -209,6 +227,12 @@
             "icon": "trickal.cool"
         },
         {
+            "id": "trickal.cool_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+        {
             "id": "trickal.active",
             "label": "활발",
             "description": "집요한 열정과 넘치는 활동력. 현재와 성취.",
@@ -216,11 +240,23 @@
             "icon": "trickal.active"
         },
         {
+            "id": "trickal.active_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
+        },
+        {
             "id": "trickal.depression",
             "label": "우울",
             "description": "이상과 현실의 괴리. 깊은 사색과 생존력.",
 			"isAspect": true,
             "icon": "trickal.depression"
+        },
+        {
+            "id": "trickal.depression_",
+			"isAspect": true,
+            "isHidden": true,
+			"noArtNeeded": true
         },
 
         {

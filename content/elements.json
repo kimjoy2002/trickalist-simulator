@@ -141,6 +141,7 @@
             "aspects": {
                 "trickal.luckytype": 1
             },
+            "icon": "trickal.elif",
             "lifetime": 1
         },
         {
@@ -205,6 +206,9 @@
                 "location": 1,
                 "trickal.fire": 1
             },
+            "xtriggers": {
+                "offfire": "trickal.headquarters"
+			},
             "slots": [
                 {
                     "id": "health",
@@ -215,17 +219,48 @@
                         "trickal.spell": 1,
                         "trickal.firefighter": 1
                     },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
                     "description": "불길을 잡을 수 있는 무언가."
                 }
 			]
         },
         {
-            "id": "trickal.erpien",
-            "label": "요정 왕국 에르피엔",
+            "id": "trickal.erpien.fire",
+            "label": "왕국 에르피엔",
             "description": "세계수를 중심으로 세워진 요정들의 왕국.",
             "aspects": {
                 "location": 1
             }
+        },
+        {
+            "id": "trickal.erpien.fire",
+            "label": "불에 타고 있는 요정 왕국 에르피엔",
+            "description": "에르피엔이 불길에 휩싸이는 것은 일상이다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "xtriggers": {
+                "offfire": "trickal.erpien"
+			},
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
+                }
+			]
         },
         {
             "id": "trickal.furvillage",
@@ -249,6 +284,34 @@
             ]
         },
         {
+            "id": "trickal.furvillage.fire",
+            "label": "불에 타고 있는 수인 숲 털 부락",
+            "description": "숲은 특히나 불에 취약하다. 어린 수인들은 대피한 상태지만 불을 끌 사람이 필요하다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "xtriggers": {
+                "offfire": "trickal.furvillage"
+			},
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
+                }
+			]
+        },
+        {
             "id": "trickal.monatium",
             "label": "엘프 도시 모나티엄",
             "description": "다른 차원에서 와서 엘라이스에 정착한 엘프들의 도시. 이곳에서 잡다한 물건을 사고 팔 수 있다. 아니면 편의점 알바 자리를 구하던가.",
@@ -269,6 +332,34 @@
             ]
         },
         {
+            "id": "trickal.monatium.fire",
+            "label": "불에 타고 있는 엘프 도시 모나티엄",
+            "description": "엘프의 도시에는 재난 경보 시스템이 있다고 한다. 아마 다시 구축할 필요가 있어보인다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "xtriggers": {
+                "offfire": "trickal.monatium"
+			},
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
+                }
+			]
+        },
+        {
             "id": "trickal.elementalmountain",
             "label": "정령산",
             "description": "정령들이 살고 있는 마력의 흐름을 방해하는 신비한 땅. 기분 전환삼아 가볍게 산책을 하고 오는 것도 괜찮을 것 같다.",
@@ -283,17 +374,93 @@
                         "trickal.candy": 1
                     },
                     "actionid": "trickal.explore",
-                    "description": "무거운 몸을 이끌 행동력이 필요하다."
+                    "description": "내 무거운 몸을 이끄는 힘."
                 }
             ]
         },
         {
+            "id": "trickal.elementalmountain.fire",
+            "label": "불에 타고 있는 정령산",
+            "description": "정령산에서 불이 나는건 일반적으로 불의 정령과 다른 정령간의 싸움이 원인이다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "xtriggers": {
+                "offfire": "trickal.elementalmountain"
+			},
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
+                }
+			]
+        },
+        {
             "id": "trickal.phantommarsh",
             "label": "유령 늪",
-            "description": "유령들이 간간히 살고 있는 위험한 늪지대.",
+            "description": "유령들이 간간히 살고 있는 위험한 늪지대. 이런 장소에 가는건 그리 좋은 선택이 아니다.",
             "aspects": {
                 "location": 1
-            }
+            },
+            "slots": [
+                {
+                    "id": "other",
+                    "label": "행동력",
+                    "required": {
+                        "trickal.candy": 1
+                    },
+                    "actionid": "trickal.explore",
+                    "description": "내 무거운 몸을 이끄는 힘."
+                },
+                {
+                    "id": "guide",
+                    "label": "가이드",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "actionid": "trickal.explore",
+                    "description": "이 곳의 안내를 해줄 신도."
+                }
+            ]
+        },
+        {
+            "id": "trickal.phantommarsh.fire",
+            "label": "불에 타고 있는 유령 늪",
+            "description": "유령 늪에 불이 나더라도 유령들은 재밌는 장난이라고 여기는 것처럼 보인다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "xtriggers": {
+                "offfire": "trickal.phantommarsh"
+			},
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
+                }
+			]
         },
         {
             "id": "trickal.dragoncave",
@@ -302,6 +469,34 @@
             "aspects": {
                 "location": 1
             }
+        },
+        {
+            "id": "trickal.dragoncave.fire",
+            "label": "불에 타고 있는 불길과 물길의 터",
+            "description": "동굴은 매캐한 연기로 가득차있다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "xtriggers": {
+                "offfire": "trickal.dragoncave"
+			},
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
+                }
+			]
         },
         {
             "id": "trickal.witchkingdom",
@@ -321,6 +516,34 @@
                     "actionid": "trickal.explore"
                 }
             ]
+        },
+        {
+            "id": "trickal.witchkingdom.fire",
+            "label": "불에 타고 있는 마녀 왕국 벨리티엔",
+            "description": "불이 번지기전에 도서관의 책을 나르고 있는 사서들의 모습이 보인다. [위험이 따르지만 이 카드를 일에 올려놓아서 불길을 잡을 수 있습니다.]",
+            "aspects": {
+                "location": 1,
+                "trickal.fire": 1
+            },
+            "xtriggers": {
+                "offfire": "trickal.witchkingdom"
+			},
+            "slots": [
+                {
+                    "id": "health",
+                    "label": "불길을 잡을 방법",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.firefighter": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "description": "불길을 잡을 수 있는 무언가."
+                }
+			]
         },
         {
             "id": "trickal.culttree",
@@ -391,6 +614,9 @@
                         "trickal.food": 1,
                         "trickal.collectable": 1
                     },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 },
                 {
@@ -401,6 +627,9 @@
                         "trickal.spell": 1,
                         "trickal.food": 1,
                         "trickal.collectable": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
                     },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 }
@@ -447,6 +676,12 @@
                         "trickal.food": 1,
                         "trickal.collectable": 1
                     },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 },
                 {
@@ -457,6 +692,9 @@
                         "trickal.spell": 1,
                         "trickal.food": 1,
                         "trickal.collectable": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
                     },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 }
@@ -503,6 +741,9 @@
                         "trickal.food": 1,
                         "trickal.collectable": 1
                     },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 },
                 {
@@ -513,6 +754,9 @@
                         "trickal.spell": 1,
                         "trickal.food": 1,
                         "trickal.collectable": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
                     },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 }
@@ -559,6 +803,9 @@
                         "trickal.food": 1,
                         "trickal.collectable": 1
                     },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 },
                 {
@@ -569,6 +816,9 @@
                         "trickal.spell": 1,
                         "trickal.food": 1,
                         "trickal.collectable": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
                     },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 }
@@ -615,6 +865,9 @@
                         "trickal.food": 1,
                         "trickal.collectable": 1
                     },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 },
                 {
@@ -625,6 +878,9 @@
                         "trickal.spell": 1,
                         "trickal.food": 1,
                         "trickal.collectable": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
                     },
                     "description": "적절한 감정을 이끌어내기 위해 사용할 수 있는 것. 음식은 소모되며, 스펠 카드는 일정시간 사용할 수 없게되고, 수집품은 소모되지 않는다."
                 }

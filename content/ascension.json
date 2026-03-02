@@ -523,6 +523,9 @@
                     "required": {
 						"trickal.spell": 1
                     },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
                     "description": "아무 마법."
                 }
             ],

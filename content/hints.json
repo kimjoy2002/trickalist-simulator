@@ -290,7 +290,7 @@
 				"trickal.fire": 1
             },
 			"$priority": 9,
-            "startdescription": "이 곳엔 거센 불이 솟아 오르고 있다. 불을 끄기전엔 아마 접근할 수 없다. [불이 난 장소를 일에 올려놓아서 불길을 진화할 수 있습니다.]",
+            "startdescription": "이 곳엔 거센 불이 솟아 오르고 있다. 불을 끄기전엔 아마 접근할 수 없다. [불이 난 장소를 일 토큰에 올려놓아서 불길을 진화할 수 있습니다.]",
             "craftable": false,
             "hintonly": true
 		}, {
@@ -302,7 +302,7 @@
 				"trickal.fire": 1
             },
 			"$priority": 9,
-            "startdescription": "불을 끄기위해선 다칠 위험을 감수하고 생명력을 쓰거나, 힘을 8이상 가진 마법을 소모해야한다. 만약 물을 끄는데 도움이 되는 사도가 있다면 더욱 안전하게 진화할 수 있을 것이다.",
+            "startdescription": "불을 끄기위해선 다칠 위험을 감수하고 생명력을 쓰거나, 마법을 사용해야한다. 만약 불을 끄는데 도움이 되는 사도가 있다면 더욱 안전하게 진화할 수 있을 것이다.",
             "craftable": false,
             "hintonly": true
 		},
@@ -353,6 +353,18 @@
                 "trickal.candy": -1
             },
             "startdescription": "정령산 근처에는 휴식을 취할만한 호수가 있다. 적당히 숨돌리는 기분으로 산책을 가볼 수 있다. 내 안의 분노를 가라앉히기에도 좋고, 잘하면 무언가 주을지도 모른다.",
+            "craftable": false,
+            "hintonly": true
+        },
+        {
+            "id": "trickal.hint.phantommarsh",
+            "label": "유령 늪에 산책을 해볼까?",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.phantommarsh": 1,
+                "trickal.candy": -1
+            },
+            "startdescription": "유령 늪에 산책하는 것은 그다지 좋은 생각이 아니다. 그 넓은 들판은 길을 잃기 쉽고 가끔 만나는 유령들의 장난도 위험하다. 하다 못해 길을 안내해주는 신도 유령이 있다면...",
             "craftable": false,
             "hintonly": true
         }
