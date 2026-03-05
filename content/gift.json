@@ -1,0 +1,148 @@
+{
+    "recipes": [
+        {
+            "id": "trickal.talk.cant_givetool",
+            "label": "현명하지 못한 일일까, 아니면 불가능한 일일까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.follower": 1,
+                "trickal.collectable": 1,
+                "follower_honoured": 1
+            },
+            "startdescription": "나는 이 자에게 이미 선물을 준 적 있다. [추종자에게는 선물을 하나만 줄 수 있습니다.]"
+        },
+        {
+            "id": "trickal.talk.danger_givetool",
+            "label": "이건 현명한 행동이 아니다",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.follower": 1,
+                "trickal.collectable": 1,
+                "trickal.koko": 1
+            },
+            "startdescription": "사도들은 이 물건의 위험성을 모른다. 이걸 선물하는건 좋은 생각이 아니다."
+        },{
+            "id": "trickal.talk.givetool",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.follower": 1,
+                "trickal.collectable": 1,
+                "trickal.koko": -1,
+                "follower_honoured": -1
+            },
+            "description": ".",
+            "label": "추종자에게 도구를 하사하기",
+            "startdescription": "힘은 내 손을 떠나 이 자에게 갈 것이다. [이렇게 하면 추종자의 불만이 줄어들고, 추종자는 도구와 관련된 힘을 얻게 됩니다. 하지만 도구를 돌려받을 방법은 없으며, 추종자에게 다른 선물을 줄 수도 없습니다.]",
+            "linked": [
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_purea"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_pureb"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_purec"
+                }
+            ]
+        }
+        
+        
+        ,{
+            "id": "trickal.give.tool_purea",
+            "label": "약한 순수의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "의식의 날에 몸에 걸치고 다니거라.",
+            "requirements": {
+                "trickal.tool.leafrobe": 1
+            },
+            "effects": {
+                "trickal.tool.leafrobe": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.pure",
+                    "level": 1,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 1,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_pureb",
+            "label": "강한 순수의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "진품과 헷갈리지 않도록 구별할 수 있는 곳에 두거라.",
+            "requirements": {
+                "trickal.tool.shiningtiara": 1
+            },
+            "effects": {
+                "trickal.tool.shiningtiara": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.pure",
+                    "level": 2,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 2,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_purec",
+            "label": "엄청난 순수의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "녹이 쓸지 않도록 한달에 한번씩 광택제를 바르고 햇빛에 말리거라.",
+            "requirements": {
+                "trickal.tool.roneguntlet": 1
+            },
+            "effects": {
+                "trickal.tool.roneguntlet": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.pure",
+                    "level": 3,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 3,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        }
+	]
+}

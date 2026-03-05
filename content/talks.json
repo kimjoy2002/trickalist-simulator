@@ -183,9 +183,10 @@
                 {
                     "id": "Subject",
                     "label": "대화 주제",
-                    "description": "교단 업무를 시키려면 교단에 대해, 아니면 다른 주제를 꺼내야 한다.",
+                    "description": "교단 업무를 시키려면 교단에 대해, 선물할게 있다면 물건에 대해 논의해야 한다. 아니면 다른 주제를 꺼내던가.",
                     "required": {
-                        "society": 1
+                        "society": 1,
+                        "trickal.collectable": 1
                     }
                 }
             ],
@@ -216,6 +217,20 @@
                 },
 				{
                     "id": "trickal.adventure.leave",
+                    "chance": 100
+                },
+                
+                
+                {
+                    "id": "trickal.talk.cant_givetool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.talk.danger_givetool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.talk.givetool",
                     "chance": 100
                 }
             ],
