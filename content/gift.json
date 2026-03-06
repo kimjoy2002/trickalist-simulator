@@ -36,6 +36,18 @@
             "linked": [
                 {
                     "chance": 100,
+                    "id": "trickal.give.tool_activea"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_activeb"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_activec"
+                },
+                {
+                    "chance": 100,
                     "id": "trickal.give.tool_purea"
                 },
                 {
@@ -45,10 +57,146 @@
                 {
                     "chance": 100,
                     "id": "trickal.give.tool_purec"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_coola"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_coolb"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_coolc"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_purec"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_madnessa"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_madnessb"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_madnessc"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_depressiona"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_depressionb"
+                },
+                {
+                    "chance": 100,
+                    "id": "trickal.give.tool_depressionc"
                 }
             ]
         }
         
+		,{
+            "id": "trickal.give.tool_activea",
+            "label": "약한 활발의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "연습용으로 쓰되 외출할때는 집에 보관하거라.",
+            "requirements": {
+                "trickal.tool.woodsword": 1
+            },
+            "effects": {
+                "trickal.tool.woodsword": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.active",
+                    "level": 1,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 1,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_activeb",
+            "label": "강한 활발의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "사용하려면 무게에 먼저 익숙해지거라.",
+            "requirements": {
+                "trickal.tool.steelsword": 1
+            },
+            "effects": {
+                "trickal.tool.steelsword": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.active",
+                    "level": 2,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 2,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_activec",
+            "label": "엄청난 활발의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "@#trickal.butter_|너를 괴롭히는 사도가 있다면 카드를 찢어서 안에 넣어둔 탄환을 사용하거라.#|품속에 두고 무슨 일이 있을때마다 마음속으로 100번까지 세도록 하여라.@",
+            "requirements": {
+                "trickal.tool.buttersyellowcard": 1
+            },
+            "effects": {
+                "trickal.tool.buttersyellowcard": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.active",
+                    "level": 3,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 3,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        }
+		
+		
         
         ,{
             "id": "trickal.give.tool_purea",
@@ -116,7 +264,7 @@
             "id": "trickal.give.tool_purec",
             "label": "엄청난 순수의 힘이 담긴 선물",
             "actionid": "trickal.talk",
-            "description": "녹이 쓸지 않도록 한달에 한번씩 광택제를 바르고 햇빛에 말리거라.",
+            "description": "@#trickal.rone_|이 새 갑옷을 갑옷 콜렉션에 추가하도록 하거라.#|녹이 쓸지 않도록 한달에 한번씩 광택제를 바르고 햇빛에 말리거라.@",
             "requirements": {
                 "trickal.tool.roneguntlet": 1
             },
@@ -127,6 +275,298 @@
                 {
                     "filter": "trickal.follower",
                     "mutate": "trickal.pure",
+                    "level": 3,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 3,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        }
+		
+		
+        
+		,{
+            "id": "trickal.give.tool_coola",
+            "label": "약한 냉정의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "햇빛이 비추는 곳에 보관하고 먹을 수 없음을 기억해두어라.",
+            "requirements": {
+                "trickal.tool.jewring": 1
+            },
+            "effects": {
+                "trickal.tool.jewring": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.cool",
+                    "level": 1,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 1,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_coolb",
+            "label": "강한 냉정의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "기스가 가지않게 주의해서 보관하고 그 빛에 매료되면 안된다.",
+            "requirements": {
+                "trickal.tool.diamondbracelet": 1
+            },
+            "effects": {
+                "trickal.tool.diamondbracelet": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.cool",
+                    "level": 2,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 2,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_coolc",
+            "label": "엄청난 냉정의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "@#trickal.sylla_|다음 모험에서 이 화살촉을 사용하도록 하거라.#|통풍이 잘 되는 곳에 보관하고 절대로 화기에 가까워지지 않도록 하거라.@",
+            "requirements": {
+                "trickal.tool.syllasbow": 1
+            },
+            "effects": {
+                "trickal.tool.syllasbow": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.cool",
+                    "level": 3,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 3,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        }
+		
+		
+		,{
+            "id": "trickal.give.tool_madnessa",
+            "label": "약한 광기의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "날카로운 부분이 삐져나오지않게 보관하거라.",
+            "requirements": {
+                "trickal.tool.awl": 1
+            },
+            "effects": {
+                "trickal.tool.awl": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.madness",
+                    "level": 1,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 1,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_madnessb",
+            "label": "강한 광기의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "건조한 곳에 보관해야하며 절대로 바람이 부는 곳에 보관하면 안된다.",
+            "requirements": {
+                "trickal.tool.firewood": 1
+            },
+            "effects": {
+                "trickal.tool.firewood": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.madness",
+                    "level": 2,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 2,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_madnessc",
+            "label": "엄청난 광기의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "@#trickal.ner_|절대로 내가 이 깃발을 빼돌렸... 어... 사제장 보고있었어? 아니 훔친게 아니라 돌려주고 한거지.#|절대로 내가 이 깃발을 빼돌렸다고 사제장에게 말해선 안된다.@",
+            "requirements": {
+                "trickal.tool.nersflag": 1
+            },
+            "effects": {
+                "trickal.tool.nersflag": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.madness",
+                    "level": 3,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 3,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        }
+		
+		
+		
+		
+		
+		,{
+            "id": "trickal.give.tool_depressiona",
+            "label": "약한 우울의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "곰팡이가 피지않도록 습한 곳에 보관하지 말거라.",
+            "requirements": {
+                "trickal.tool.fairyrobe": 1
+            },
+            "effects": {
+                "trickal.tool.fairyrobe": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.depression",
+                    "level": 1,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 1,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_depressionb",
+            "label": "강한 우울의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "이는 보는 마녀의 질투를 유발하니 보이는 곳에 보관하지 말거라.",
+            "requirements": {
+                "trickal.tool.greedring": 1
+            },
+            "effects": {
+                "trickal.tool.greedring": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.depression",
+                    "level": 2,
+                    "additive": true
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "follower_honoured",
+                    "level": 2,
+                    "additive": false
+                },
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "resentment",
+                    "level": -1,
+                    "additive": true
+                }
+            ]
+        },{
+            "id": "trickal.give.tool_depressionc",
+            "label": "엄청난 우울의 힘이 담긴 선물",
+            "actionid": "trickal.talk",
+            "description": "@#trickal.komi_|들고다니던 헌 배게 대신에 새 배게를 쓰거라.#|배게 뒤에 이 부적을 숨겨두어 꿈의 유령이 자신을 들여보지 못하게 하거라.@",
+            "requirements": {
+                "trickal.tool.komipillow": 1
+            },
+            "effects": {
+                "trickal.tool.komipillow": -1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.follower",
+                    "mutate": "trickal.depression",
                     "level": 3,
                     "additive": true
                 },
