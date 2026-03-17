@@ -367,6 +367,20 @@
             "startdescription": "유령 늪에 산책하는 것은 그다지 좋은 생각이 아니다. 그 넓은 들판은 길을 잃기 쉽고 가끔 만나는 유령들의 장난도 위험하다. 하다 못해 길을 안내해주는 신도 유령이 있다면...",
             "craftable": false,
             "hintonly": true
+        },
+        {
+            "id": "trickal.hint.erpien",
+            "label": "에르피엔에 돌아다녀볼까?",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.erpien": 1,
+                "trickal.candy": -1,
+                "trickal.spell": -1,
+                "trickal.gold": -1
+            },
+            "startdescription": "교단이 있는 에르피엔은 나에게 가장 익숙한 도시다. 거리를 걸어다닐 체력은 새로운 만남을 도와주고, 넉넉한 돈은 에심당에서 빵을 살 수 있다. 다들 자주 잊는 사실이지만, 마법 사용에 대한 조언을 듣기엔 에심당이 제격이다.",
+            "craftable": false,
+            "hintonly": true
         }
 	]
 }

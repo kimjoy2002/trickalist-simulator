@@ -229,10 +229,26 @@
         {
             "id": "trickal.erpien.fire",
             "label": "왕국 에르피엔",
-            "description": "세계수를 중심으로 세워진 요정들의 왕국.",
+            "description": "세계수를 중심으로 세워진 요정들의 왕국. 근처를 산책하거나, 에르핀이 자주간다는 에심당에 들러볼 수 있다.",
             "aspects": {
                 "location": 1
-            }
+            },
+            "slots": [
+                {
+                    "id": "etc",
+                    "label": "",
+                    "required": {
+                        "trickal.candy": 1,
+                        "trickal.spell": 1,
+                        "trickal.gold": 1
+                    },
+                    "forbidden": {
+						"trickal.delay": 1
+                    },
+                    "actionid": "trickal.explore",
+                    "description": "의욕, 돈, 그리고 마법."
+                }
+            ]
         },
         {
             "id": "trickal.erpien.fire",

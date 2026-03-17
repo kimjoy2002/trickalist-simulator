@@ -95,6 +95,26 @@
             "defaultcard": "mistakenidentity"
         },
         {
+            "id": "trickal.decknpc",
+            "label": "에르피엔의 협력자",
+            "description": "신도가 될 자는 아니지만 믿음직한 누군가를 만났다.",
+            "spec": [
+                "trickal.renewa",
+				"trickal.goldy",
+				"trickal.crepe"
+            ],
+            "defaultcard": "mistakenidentity"
+        },
+        {
+            "id": "trickal.bakery.deck",
+            "label": "빵굽는 냄새",
+            "description": "맡기만해도 행복해지는 냄새다.",
+            "spec": [
+                "trickal.food.cake"
+            ],
+            "resetonexhaustion": true
+        },
+        {
             "id": "trickal.gacha",
             "label": "가챠",
             "description": "이건 실제로 가챠다!",

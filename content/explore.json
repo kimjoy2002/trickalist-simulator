@@ -529,6 +529,158 @@
             "startdescription": "유령 늪에서 쓸만한 것을 주울 수 있었다. 이제 돌아가기만 한다면...",
             "description": "오늘은 운이 좋다. 유령 늪에서 딱히 길을 잃지않고 곧장 돌아올 수 있었다.",
             "warmup": 60
-        }
+        },
+        {
+            "id": "trickal.explore.erpien.start",
+            "label": "에르피엔 근처를 돌아다니기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.erpien": 1,
+                "trickal.candy": 1,
+                "trickal.fire": -1
+            },
+            "startdescription": "요정의 왕국인 에르피엔은 엘리아스에서도 꽤나 인구가 많은 곳이다. 교단에 입교하려는 신도는 아니겠지만 협력관계를 가질 다양한 자들을 만날 수 도 있다.",
+            "description": ".",
+            "warmup": 3,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore.erpien.meeting",
+                    "chance": 50
+                },
+                {
+                    "id": "trickal.explore.erpien.walk",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.explore.erpien.meeting",
+            "label": "협력관계를 가질 누군가",
+            "actionid": "trickal.talk",
+            "startdescription": "나는 교단에 도움을 줄 자를 만났다.",
+			"deckeffects": {
+				"trickal.decknpc": 1
+			},
+            "aspects": {
+                "fatiguing": 1
+            },
+			"description": "",
+            "warmup": 60
+		},
+		{
+            "id": "trickal.explore.erpien.walk",
+            "label": "기분좋은 산책",
+            "actionid": "trickal.talk",
+            "startdescription": "누군가를 만나진 못했지만 적당한 운동이 되었다.",
+            "aspects": {
+                "fatiguing": 1
+            },
+			"description": "",
+            "warmup": 60
+		},
+        {
+            "id": "trickal.explore.erpien.bakery",
+            "label": "에심당에서 빵을 사기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.erpien": 1,
+                "trickal.gold": 1,
+                "trickal.fire": -1
+            },
+            "startdescription": "에르피엔에는 유명한 빵집이 있다. 여기서 파는 케이크나 빵의 맛은 최고지만, 주기적으로 재고를 털어가는 누군가에 의해 항상 재고가 남아있다는 보장은 없다.",
+            "description": ".",
+            "warmup": 3,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "trickal.explore.erpien.bakery.cheep",
+                    "chance": 33
+                },
+                {
+                    "id": "trickal.explore.erpien.bakery.expensive",
+                    "chance": 50
+                },
+                {
+                    "id": "trickal.explore.erpien.bakery.fail",
+                    "chance": 100
+                }
+            ]
+        },
+		{
+            "id": "trickal.explore.erpien.bakery.cheep",
+            "label": "운이 좋은 날",
+            "actionid": "trickal.talk",
+            "startdescription": "\"그러니까 빵집이 아니라니까요! 아, 거기 상품은 이번 신상품이에요.\"",
+			"deckeffects": {
+				"trickal.bakery.deck": 1
+			},
+            "effects": {
+                "trickal.gold": -1
+            },
+			"description": "오늘은 상품이 남아있었다. 이런 날은 흔치 않다.",
+            "warmup": 60
+		},
+		{
+            "id": "trickal.explore.erpien.bakery.expensive",
+            "label": "운이 좋은 날",
+            "actionid": "trickal.talk",
+            "startdescription": "\"오늘은 여왕님의 예약을 맞추느라 남는 재료가 없다구요! 정말로 급하시면 재료 값도 내주셔야해요!\"",
+            "slots": [
+                {
+                    "id": "gold",
+                    "label": "추가 가격",
+                    "required": {
+                        "trickal.gold": 1
+                    },
+                    "forbidden": {},
+                    "description": "이 정도면 양심적인 가격."
+                }
+            ],
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.explore.erpien.bakery.expensive.buy",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.explore.erpien.bakery.expensive.fail",
+                    "chance": 100
+                }
+            ]
+		},
+		{
+            "id": "trickal.explore.erpien.bakery.expensive.buy",
+            "label": "지갑을 열다",
+            "actionid": "trickal.talk"
+            "requirements": {
+                "trickal.gold": 2
+            },
+            "startdescription": "나는 방금 구운 이 냄새를 지나칠 순 없었다.",
+			"deckeffects": {
+				"trickal.bakery.deck": 1
+			},
+            "effects": {
+                "trickal.gold": -2
+            },
+			"description": "생각지 못한 추가 지출이 사제장에 들키지않기를.",
+            "warmup": 60
+		},
+		{
+            "id": "trickal.explore.erpien.bakery.expensive.fail",
+            "label": "발길을 돌리다",
+            "actionid": "trickal.talk",
+            "startdescription": "",
+            "description": "재료가 없다면 어쩔 수 없다. 다음에 오자",
+            "warmup": 0
+		},
+		{
+            "id": "trickal.explore.erpien.bakery.fail",
+            "label": "헛걸음",
+            "actionid": "trickal.talk",
+            "startdescription": "\"아... 방금 직전에 여왕님이 오셨거든요. 오늘 빵 장사는 접었어요.\"",
+            "description": "교단으로 돌아가면 한마디를 해야겠다.",
+            "warmup": 60
+		}
     ]
 }
