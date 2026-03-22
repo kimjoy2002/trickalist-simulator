@@ -381,6 +381,18 @@
             "startdescription": "교단이 있는 에르피엔은 나에게 가장 익숙한 도시다. 거리를 걸어다닐 체력은 새로운 만남을 도와주고, 넉넉한 돈은 에심당에서 빵을 살 수 있다. 다들 자주 잊는 사실이지만, 마법 사용에 대한 조언을 듣기엔 에심당이 제격이다.",
             "craftable": false,
             "hintonly": true
+        },
+        {
+            "id": "trickal.hint.ashurbakery.work",
+            "label": "에심당에서 일해볼까?",
+            "requirements": {
+                "trickal.work.ashurbakery": 1,
+                "trickal.candy": -1
+            },
+            "actionid": "trickal.work",
+            "startdescription": "나는 마법 학교 제자라는 명목으로 에심당에 방문한다. 돈이 필요하다고 말하니 에슈르는 잡무를 하나 건네준다고 한다. 벽 구석에 '도망쳐'라는 글자가 새겨진 것이 보인다...",
+            "craftable": false,
+            "hintonly": true
         }
 	]
 }

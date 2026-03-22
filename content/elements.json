@@ -227,7 +227,7 @@
 			]
         },
         {
-            "id": "trickal.erpien.fire",
+            "id": "trickal.erpien",
             "label": "왕국 에르피엔",
             "description": "세계수를 중심으로 세워진 요정들의 왕국. 근처를 산책하거나, 에르핀이 자주간다는 에심당에 들러볼 수 있다.",
             "aspects": {
@@ -1027,6 +1027,25 @@
             "xtriggers": {
                 "plead": "trickal.work.convenience"
             }
+        },
+        {
+            "id": "trickal.work.ashurbakery",
+            "label": "에심당 아르바이트",
+            "description": "마법 학교의 제자이자 빵집 아르바이트생으로 에심당에 출근한다. 수습기간이라는 에슈르의 말이 있었지만 제대로 돈은 받을 수 있을까?",
+            "aspects": {
+                "trickal.job": 1
+            },
+            "slots": [
+                {
+                    "id": "Concentration",
+                    "label": "체력",
+                    "actionid": "trickal.work",
+                    "required": {
+                        "trickal.candy": 1
+                    },
+                    "description": "아르바이트에는 생각보다 체력이 소모된다."
+                }
+            ]
         },
         {
             "id": "trickal.foodpuzzle_1",

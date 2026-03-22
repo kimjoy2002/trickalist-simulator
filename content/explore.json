@@ -250,7 +250,7 @@
             },
             "startdescription": "모나티엄 편의점의 아르바이트 자리를 알아보자.",
             "description": "모나티엄 편의점에서 나를 채용했다! 나는 이 곳에서 정기적으로 출근할 필요가 있다.",
-            "warmup": 10,
+            "warmup": 60,
             "craftable": true,
             "maxexecutions": 1,
             "burnimage": "office"
@@ -652,7 +652,7 @@
 		{
             "id": "trickal.explore.erpien.bakery.expensive.buy",
             "label": "지갑을 열다",
-            "actionid": "trickal.talk"
+            "actionid": "trickal.talk",
             "requirements": {
                 "trickal.gold": 2
             },
@@ -681,6 +681,24 @@
             "startdescription": "\"아... 방금 직전에 여왕님이 오셨거든요. 오늘 빵 장사는 접었어요.\"",
             "description": "교단으로 돌아가면 한마디를 해야겠다.",
             "warmup": 60
-		}
+		},
+        {
+            "id": "trickal.explore.erpien.bakery.work",
+            "label": "마법에 대해 질문하기",
+            "actionid": "trickal.explore",
+            "requirements": {
+                "trickal.erpien": 1,
+                "trickal.spell": 1,
+                "trickal.fire": -1
+            },
+            "effects": {
+                "trickal.work.ashurbakery": 1
+            },
+            "startdescription": "나는 에르피엔에서 가장 마법을 잘 아는 에슈르에게 찾아가 스펠카드에 대해서 물어보기로 한다.",
+            "description": "에슈르는 눈을 반짝이며 얼른 마법 학교로 안내한다. 그러면서 내가 마법 학교 제자가 되었다고 말하면서 어마어마한 양의 전단지를 건내준다. 아마 잘못된 선택일지도 모른다...",
+            "warmup": 60,
+            "craftable": true,
+            "maxexecutions": 1
+        }
     ]
 }
