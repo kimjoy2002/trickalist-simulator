@@ -372,6 +372,34 @@
             ],
             "defaultcard": "fleeting",
             "resetonexhaustion":false
+        },
+        {
+            "id": "trickal.deck.dimensioncrash",
+            "label": "차원 대충돌!",
+            "description": "차원 너머의 불청객들",
+            "spec": [
+				"trickal.monster.li1lly",
+				"trickal.monster.cerberus",
+				"trickal.monster.crayonhero",
+				"trickal.monster.darkbroomy",
+				"trickal.monster.nyanmantower"
+            ],
+            "defaultcard": "mistakenidentity",
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.deck.attack.way",
+            "label": "공격 수단",
+            "description": "우리는 이러한 수단을 사용해볼 수 있다.",
+            "spec": [
+				"trickal.attack.follower",
+				"trickal.attack.spellcard",
+				"trickal.attack.food",
+				"trickal.attack.tool",
+				"trickal.attack.lucky"
+            ],
+            "defaultcard": "mistakenidentity",
+            "resetonexhaustion": true
         }
 	]
 }

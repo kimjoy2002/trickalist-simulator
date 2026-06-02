@@ -1,0 +1,141 @@
+{
+    "elements": [
+        {
+                "id": "trickal.monster.li1lly",
+                "label": "릴1리",
+                "description": "차원의 문을 넘어온 다른 세상의 존재? 출신이나 배경이 불분명하지만, 적당히 엘리아스를 공격하다가 돌아가는 일을 반복한다.",
+                "aspects": {
+                    "trickal.creature": 1,
+                    "trickal.monster": 1,
+                    "trickal.dimension": 1,
+                    "trickal.pure": 9,
+                    "trickal.madness.need": 12,
+                    "trickal.troublemaker": 1
+                },
+                "icon": "trickal.monster.li1lly"
+        },
+        {
+                "id": "trickal.monster.cerberus",
+                "label": "크르브르스",
+                "description": "길을 잃고 헤매던 강아지가 다중 차원의 힘에 뒤틀려 욕망을 표출하는 몬스터가 되어버렸다.",
+                "aspects": {
+                    "trickal.creature": 1,
+                    "trickal.monster": 1,
+                    "trickal.dimension": 1,
+                    "trickal.active": 9,
+                    "trickal.depression.need": 12,
+                    "trickal.troublemaker": 1
+                },
+                "icon": "trickal.monster.cerberus"
+         },
+         {
+                "id": "trickal.monster.crayonhero",
+                "label": "크레용사용",
+                "description": "이세계에서 넘어온 것 같은 느낌을 주는 크레용 용사. 주변의 신임이 두터워 용사로 추앙받는 듯 하다.",
+                "aspects": {
+                    "trickal.creature": 1,
+                    "trickal.monster": 1,
+                    "trickal.dimension": 1,
+                    "trickal.depression": 9,
+                    "trickal.active.need": 12,
+                    "trickal.troublemaker": 1
+                },
+                "icon": "trickal.monster.crayonhero"
+         },
+         {
+                "id": "trickal.monster.darkbroomy",
+                "label": "흑화 영춘",
+                "description": "어째서인지 영춘이의 모습을 하고 있는 정체불명의 생명체.",
+                "aspects": {
+                    "trickal.creature": 1,
+                    "trickal.monster": 1,
+                    "trickal.dimension": 1,
+                    "trickal.cool": 9,
+                    "trickal.pure.need": 12,
+                    "trickal.troublemaker": 1
+                },
+                "icon": "trickal.monster.darkbroomy"
+         },
+         {
+                "id": "trickal.monster.nyanmantower",
+                "label": "냥만 타워",
+                "description": "최첨단 캣타워가 연상되는 정체불명의 로봇. 왠지 익숙한 외모의 고양이 파일럿들이 탑승해있는데, 알 수 없는 불길한 느낌을 준다.",
+                "aspects": {
+                    "trickal.creature": 1,
+                    "trickal.monster": 1,
+                    "trickal.dimension": 1,
+                    "trickal.madness": 9,
+                    "trickal.cool.need": 12,
+                    "trickal.troublemaker": 1
+                },
+                "icon": "trickal.monster.nyanmantower"
+         },
+         
+         
+         
+         {
+             "id": "trickal.attack.follower",
+             "label": "물량으로 밀어붙인다.",
+             "description": "더 많은 사도들이 우리를 도울 것이다.",
+             "aspects": {
+                 "trickal.way": 1
+             },
+             "lifetime": 1
+         },
+         
+         {
+             "id": "trickal.attack.spellcard",
+             "label": "물리력을 행사한다.",
+             "description": "어쩌면 더 많은 마법이 도움이 될 것이다.",
+             "aspects": {
+                 "trickal.way": 1
+             },
+             "lifetime": 1
+         },
+         
+         {
+             "id": "trickal.attack.food",
+             "label": "혀를 사로잡다.",
+             "description": "어쩌면 음식으로 회유할 수 있을 것이다.",
+             "aspects": {
+                 "trickal.way": 1
+             },
+             "lifetime": 1
+         },
+         
+         {
+             "id": "trickal.attack.tool",
+             "label": "기술을 발휘하다.",
+             "description": "어쩌면 이 도구가 도움이 될 것이다.",
+             "aspects": {
+                 "trickal.way": 1 
+             },
+             "lifetime": 1
+         },
+         
+         {
+             "id": "trickal.attack.lucky",
+             "label": "기적을 바란다.",
+             "description": "어쩌면 하늘이 도울지도 모른다.",
+             "aspects": {
+                 "trickal.way": 1
+             },
+             "lifetime": 1
+         },
+         
+         {
+             "id": "trickal.attack.lucky.bonus",
+             "label": "도움의 손길",
+             "description": "하늘이 날 도왔다.",
+             "aspects": {
+                 "trickal.pure": 5,
+                 "trickal.madness": 5,
+                 "trickal.cool": 5,
+                 "trickal.active": 5,
+                 "trickal.depression": 5
+             },
+             "lifetime": 1,
+             "icon": "trickal.attack.lucky"
+         }
+     ]
+}

@@ -112,19 +112,22 @@
             "id": "trickal.follower",
             "label": "추종자",
             "description": "교단에 입교한 신도.",
-			"isAspect": true
+			"isAspect": true,
+            "icon": "disciple"
         },
         {
             "id": "trickal.apostle",
             "label": "사도",
             "description": "교단의 뜻을 따르는 자.",
-			"isAspect": true
+			"isAspect": true,
+            "icon": "devotee"
         },
 		{
             "id": "trickal.exalted",
             "label": "성자",
 			"description": "이 자는 더 이상 강해질 수 없는 경지에 다다랐다... 최소한 내 통제 하에 있는 동안에는 더 강해질 수 없을 것이다.",
-            "isAspect": true
+            "isAspect": true,
+            "icon": "exalted"
         },
 		{
             "id": "trickal.troublemaker",
@@ -321,6 +324,64 @@
 			"description": "스펠카드를 강화시켰다.",
             "isAspect": true,
 			"noartneeded": true
+        },
+        {
+            "id": "trickal.way",
+            "label": "방법",
+			"description": "우리의 무기이자 유효한 수단.",
+            "isAspect": true,
+			"noartneeded": true
+        },
+        
+        {
+            "id": "trickal.monster",
+            "label": "몬스터",
+            "description": "신앙을 가지기엔 너무 공격적이거나 무지한 존재들.",
+			"isAspect": true,
+            "icon": "trickal.monster"
+        },
+        {
+            "id": "trickal.dimension",
+            "label": "차원의 불청객",
+            "description": "초대받지 못한 자들. 원래 있어야할 곳으로 돌려보내야 한다.",
+			"isAspect": true,
+            "icon": "trickal.dimension"
+        },
+        
+        {
+            "id": "trickal.pure.need",
+            "label": "필요: 순수",
+            "description": "냉철함은 어린아이같은 순수함에 이길 수 없다.",
+			"isAspect": true,
+            "icon": "trickal.pure.need"
+        },
+        {
+            "id": "trickal.madness.need",
+            "label": "필요: 광기",
+            "description": "순수하면 순수할수록 광기에 사로잡히기 마련이다.",
+			"isAspect": true,
+            "icon": "trickal.madness.need"
+        },
+        {
+            "id": "trickal.cool.need",
+            "label": "필요: 냉정",
+            "description": "광기를 억누르는 것은 확고한 소신 그리고 냉정한 판단이다.",
+			"isAspect": true,
+            "icon": "trickal.cool.need"
+        },
+        {
+            "id": "trickal.active.need",
+            "label": "필요: 활발",
+            "description": "우울함은 더 큰 활발함으로 억제가 된다.",
+			"isAspect": true,
+            "icon": "trickal.active.need"
+        },
+        {
+            "id": "trickal.depression.need",
+            "label": "필요: 우울",
+            "description": "활발함은 더 큰 우울함으로 억제가 된다.",
+			"isAspect": true,
+            "icon": "trickal.depression.need"
         }
     ]
 }

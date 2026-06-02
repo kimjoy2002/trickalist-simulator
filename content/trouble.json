@@ -28,6 +28,14 @@
                     "chance": 100
                 },
                 {
+                    "id": "trickal.troubletime.shady",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.start",
+                    "chance": 100
+                },
+                {
                     "id": "trickal.troubletime.common_pure",
                     "chance": 100
                 },
@@ -744,6 +752,482 @@
             "startdescription": "나는 문제아를 조용히 불러 교육을 시켰다. 이걸로 이 장난꾸러기가 말썽 피우는 일은 줄어들 것이다.",
             "description": ".",
             "warmup": 30
+        },
+        {
+            "id": "trickal.troubletime.shady",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime",
+            "requirements": {
+                "trickal.shady_": 1
+            },
+            "slots": [
+                {
+                    "id": "dimension",
+                    "label": "괴수",
+                    "required": {
+                        "trickal.dimension": 1
+                    },
+                    "description": "이미 풀려난 괴수.",
+                    "greedy": true
+                }
+            ],
+            "startdescription": "셰이디가 준비한 역대 최고의 장난이 시작된다...",
+            "description": "셰이디는 마지막에 마음을 바꿨다. 아마...",
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension.start",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.shady2",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.shady2",
+            "requirements": {
+                "trickal.troublemaker": 1
+            },
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime",
+            "deckeffects": {
+                "trickal.deck.dimensioncrash": 1
+            },
+            "mutations": [
+                {
+                    "filter": "trickal.shady",
+                    "mutate": "trickal.troublemaker",
+                    "level": -1,
+					"additive": true
+                }
+            ],
+            "warmup": 0,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.shady.summon",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.shady.summon",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime",
+            "startdescription": "우리는 주머니 차원으로부터 새로운 방문객을 맞이할 준비를 해야 한다. 아마 친절하진 않을 것이다.",
+            "description": "새로운 차원이 열렸습니다. 무시무시!",
+            "alt": [
+                {
+                    "requirements": {
+                        "trickal.troublemaker": -2
+                    },
+                    "effects": {
+                        "trickal.niceticket": 1
+                    },
+                    "description": "셰이디는 이제 이 장난엔 질렸다고 말했다. 이 불청객만 처리한다면 당분간은 안전할 것이다."
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.start",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "requirements": {
+                "trickal.dimension": 1
+            },
+            "deckeffects": {
+                "trickal.deck.attack.way": 2
+            },
+            "alt": [
+				{
+                    "id": "trickal.troubletime.battle_dimension.exit_shady",
+                    "chance": 100,
+                    "additional": true,
+                    "expulsion": {
+                        "limit": 1,
+                        "filter": {
+                            "trickal.shady_": 1
+                        }
+                    }
+                },
+            ],
+            "startdescription": "멸망, 붕괴, 소멸, 그리고 장난. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다. 2번의 기회가 더 있습니다.]",
+            "description": ".",
+            "warmup": 10,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "해결사",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.shady": 1,
+                        "trickal.shady_": 1
+                    },
+                    "description": "누가 이 불청객을 막을 수 있을 것인가."
+                }
+            ],
+            "startdescription": "멸망, 붕괴, 소멸, 그리고 장난. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다. 2번의 기회가 더 있습니다.]",
+            "description": ".",
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension.follower",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.spellcard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.food",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.tool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.lucky",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.follower",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "requirements": {
+                "trickal.attack.follower": 1
+            },
+            "effects": {
+				"trickal.attack.follower": -1
+			},
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "조력자",
+                    "required": {
+                        "trickal.follower": 1
+                    },
+                    "forbidden": {
+                        "trickal.shady": 1,
+                        "trickal.shady_": 1
+                    },
+                    "description": "때론 질보단 양이다."
+                }
+            ],
+            "startdescription": "괴수를 막기위해 더 많은 사도를 투입해보자. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다.]",
+            "description": ".",
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension.follower",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.spellcard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.food",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.tool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.lucky",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.spellcard",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "requirements": {
+                "trickal.attack.spellcard": 1
+            },
+            "effects": {
+				"trickal.attack.spellcard": -1
+			},
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "마법",
+                    "required": {
+                        "trickal.spell": 1
+                    },
+                    "forbidden": {
+                        "trickal.delay": 1
+                    },
+                    "description": "적을 압도할 수 있는 마법."
+                }
+            ],
+            "startdescription": "괴수를 막기위해 놀라운 마법을 사용해보자. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다.]",
+            "description": ".",
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension.follower",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.spellcard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.food",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.tool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.lucky",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.food",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "requirements": {
+                "trickal.attack.food": 1
+            },
+            "effects": {
+				"trickal.attack.food": -1
+			},
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "음식",
+                    "required": {
+                        "trickal.food": 1
+                    },
+                    "description": "적을 사로잡을 음식."
+                }
+            ],
+            "startdescription": "괴수를 막기위해 먹을 것으로 회유해보자. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다.]",
+            "description": ".",
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension.follower",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.spellcard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.food",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.tool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.lucky",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.tool",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "requirements": {
+                "trickal.attack.tool": 1
+            },
+            "effects": {
+				"trickal.attack.tool": -1
+			},
+            "slots": [
+                {
+                    "id": "Problemsolver",
+                    "label": "무기",
+                    "required": {
+                        "trickal.collectable": 1
+                    },
+                    "description": "적을 무찌를 무기."
+                }
+            ],
+            "startdescription": "괴수를 막기위해 강력한 무기를 지원해보자. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다.]",
+            "description": ".",
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension.follower",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.spellcard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.food",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.tool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.lucky",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.lucky",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "requirements": {
+                "trickal.attack.lucky": 1
+            },
+            "effects": {
+				"trickal.attack.lucky.bonus": 1,
+				"trickal.attack.lucky": -1
+			},
+            "startdescription": "괴수는 마을을 날뛰다가 혼자 고꾸라졌다. 아마 이 기회를 살릴 수 있을 것이다. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다.]",
+            "description": ".",
+            "warmup": 60,
+            "linked": [
+                {
+                    "id": "trickal.troubletime.battle_dimension.follower",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.spellcard",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.food",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.tool",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.lucky",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.end",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.troubletime.battle_dimension.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.end",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "requirements": {
+                "trickal.pure": "trickal.pure.need",
+                "trickal.madness": "trickal.madness.need",
+                "trickal.cool": "trickal.cool.need",
+                "trickal.active": "trickal.active.need",
+                "trickal.depression": "trickal.depression.need"
+            },
+            "effects": {
+				"trickal.food": -99,
+				"trickal.attack.lucky.bonus": -1,
+				"trickal.dimension": -1,
+                "trickal.elif": 3
+			},
+            "aspects": {
+                "trickal.magicdelay": 1
+            },
+            "startdescription": "우리는 결국 거대한 괴수를 다루는데 성공했다. 이제 괴수는 원래 차원으로 돌아갈 시간이다.",
+            "description": ".",
+            "warmup": 60
+        },
+        {
+            "id": "trickal.troubletime.battle_dimension.fail",
+            "label": "차원 대충돌!",
+            "actionid": "trickal.troubletime.dimension",
+            "effects": {
+				"trickal.food": -99,
+				"trickal.attack.lucky.bonus": -1
+			},
+            "aspects": {
+                "trickal.magicdelay": 1
+            },
+            "alt": [
+				{
+                    "id": "trickal.troubletime.create_fire",
+                    "chance": 100,
+                    "additional": true
+                }
+			],
+            "startdescription": "괴수는 마을 하나를 부수고 잠을 자기 시작했다. 다음 깨어날때를 준비해야한다... [우리는 괴수를 잠재울만한 힘을 모으는데 실패했습니다. 다음 습격을 준비하세요.]",
+            "description": ".",
+            "warmup": 60
         }
-	]
-}
+	]          
+}              
