@@ -3261,10 +3261,11 @@
             "isHidden": true,
             "noArtNeeded": true
         },
+		
         {
             "id": "trickal.chloe4",
             "label": "인형 샌드백 권위자 클로에",
-            "description": "이제 그녀가 재단하는 것은 단순한 옷이 아니다.",
+            "description": "그녀가 재단하는 옷은 단순한 옷이 아니다. 옷은 사도들의 새로운 힘을 이끌어 낸다.",
             "aspects": {
                 "trickal.chloe_": 1,
                 "trickal.creature": 1,
@@ -3335,6 +3336,243 @@
         },
         {
             "id": "trickal.chloe_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.ui4",
+            "label": "긍정의 힘 우이",
+            "description": "과거에 우이는 슬픔을 알지 못했다. 우이는 슬픔을 이해하고자 노력한다.",
+            "aspects": {
+                "trickal.ui_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.active": 10,
+                "trickal.active_": 1
+            },
+            "icon": "trickal.ui"
+        },
+        {
+            "id": "trickal.ui3",
+            "label": "사도 우이",
+            "description": "우이는 자신이 바라는 것을 현실로 만들어낼 수 있다. 무의식이라도",
+            "aspects": {
+                "trickal.ui_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.active": 5,
+                "trickal.active_": 1
+            },
+            "icon": "trickal.ui",
+            "xtriggers": {
+                "promote": "trickal.ui4"
+            }
+        },
+        {
+            "id": "trickal.ui2",
+            "label": "신도 우이",
+            "description": "우이가 타고 있는 개구리의 이름은 에루이며, 교단에 입단하기 전에는 유일한 친구였다.",
+            "aspects": {
+                "trickal.ui_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.element": 1,
+                "trickal.follower": 1,
+                "trickal.active": 2,
+                "trickal.active_": 1
+            },
+            "icon": "trickal.ui",
+            "xtriggers": {
+                "promote": "trickal.ui3"
+            }
+        },
+        {
+            "id": "trickal.ui",
+            "label": "우이",
+            "description": "절친한 개구리 친구 에루와 함께하는 이슬비 정령. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+                "trickal.ui_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.element": 1,
+                "acquaintance": 1,
+                "trickal.active": 1,
+                "trickal.active_": 1
+            },
+            "icon": "trickal.ui",
+            "xtriggers": {
+                "recruiting": "trickal.ui2"
+            }
+        },
+        {
+            "id": "trickal.ui_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+		
+		{
+            "id": "trickal.ed4",
+            "label": "이터널 드리머 이드",
+            "description": "꿈의 세계에 찾아온 겨울이 잦아든다. 이드는 이제 깨어있다.",
+            "aspects": {
+                "trickal.ed_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.cool": 10,
+                "trickal.cool_": 1
+            },
+            "icon": "trickal.ed"
+        },
+        {
+            "id": "trickal.ed3",
+            "label": "사도 이드",
+            "description": "이드는 쉽게 포기하고 체념한다. 그녀에게 지금 모든 것은 꿈이기에.",
+            "aspects": {
+                "trickal.ed_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.cool": 5,
+                "trickal.cool_": 1
+            },
+            "icon": "trickal.ed",
+            "xtriggers": {
+                "promote": "trickal.ed4"
+            }
+        },
+        {
+            "id": "trickal.ed2",
+            "label": "신도 이드",
+            "description": "이드가 타고 있는 기계는 생명 유지 장치인 나타로 자아를 가진 기계다.",
+            "aspects": {
+                "trickal.ed_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.elf": 1,
+                "trickal.follower": 1,
+                "trickal.cool": 2,
+                "trickal.cool_": 1
+            },
+            "icon": "trickal.ed",
+            "xtriggers": {
+                "promote": "trickal.ed3"
+            }
+        },
+        {
+            "id": "trickal.ed",
+            "label": "이드",
+            "description": "생명 유지 장치 나타 속에서 꿈을 꾸는 엘프. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+                "trickal.ed_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.elf": 1,
+                "acquaintance": 1,
+                "trickal.cool": 1,
+                "trickal.cool_": 1
+            },
+            "icon": "trickal.ed",
+            "xtriggers": {
+                "recredting": "trickal.ed2"
+            }
+        },
+        {
+            "id": "trickal.ed_",
+            "isAspect": true,
+            "isHidden": true,
+            "noArtNeeded": true
+        },
+		
+        {
+            "id": "trickal.xion4",
+            "label": "검은 마탄의 사수 시온 더 다크불릿",
+            "description": "마탄의 사수 덜크 원더러 시온 더 다크불릿은 타겟을 절대 놓치지 않는다.",
+            "aspects": {
+                "trickal.xion_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.exalted": 1,
+                "trickal.depression": 10,
+                "trickal.depression_": 1
+            },
+            "icon": "trickal.xion"
+        },
+        {
+            "id": "trickal.xion3",
+            "label": "사도 시온 더 다크불릿",
+            "description": "그녀의 가장 큰 강점은 적응력으로, 교단의 만능 해결사로 활약하기도 한다.",
+            "aspects": {
+                "trickal.xion_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.apostle": 1,
+                "trickal.depression": 5,
+                "trickal.depression_": 1
+            },
+            "icon": "trickal.xion",
+            "xtriggers": {
+                "promote": "trickal.xion4"
+            }
+        },
+        {
+            "id": "trickal.xion2",
+            "label": "신도 시온 더 다크불릿",
+            "description": "다크넷 운영자이기도 하며 저격이 주특기인 용병, 모나티엄 25에서 일하는 아르바이트이기도 하다.",
+            "aspects": {
+                "trickal.xion_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.ghost": 1,
+                "trickal.follower": 1,
+                "trickal.depression": 2,
+                "trickal.depression_": 1
+            },
+            "icon": "trickal.xion",
+            "xtriggers": {
+                "promote": "trickal.xion3"
+            }
+        },
+        {
+            "id": "trickal.xion",
+            "label": "시온 더 다크불릿",
+            "description": "엘리아스의 검은 빛, 자칭 '마탄의 사수'. [당신은 이 자를 추종자로 끌어들일 수 있습니다.]",
+            "aspects": {
+                "trickal.xion_": 1,
+                "trickal.creature": 1,
+                "trickal.eldain": 1,
+                "trickal.ghost": 1,
+                "acquaintance": 1,
+                "trickal.depression": 1,
+                "trickal.depression_": 1
+            },
+            "icon": "trickal.xion",
+            "xtriggers": {
+                "recruiting": "trickal.xion2"
+            }
+        },
+        {
+            "id": "trickal.xion_",
             "isAspect": true,
             "isHidden": true,
             "noArtNeeded": true
