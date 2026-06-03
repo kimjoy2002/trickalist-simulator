@@ -78,6 +78,38 @@
             "craftable": false,
             "hintonly": true
 		}, {
+            "id": "trickal.hint.goldy.trade",
+            "label": "골디의 상품을 살펴볼까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.goldy": 1
+            },
+            "startdescription": "골디는 정품만을 취급하는 황금빛 상인이다. [골디와 대화하면 값나가는 상품을 확인할 수 있습니다. 골드 셋을 함께 올리면 엘리프 하나를, 참! 잘했어요 셋을 함께 올리면 골든 크레파스 하나를 받을 수 있습니다.]",
+            "craftable": false,
+            "hintonly": true
+		}, {
+            "id": "trickal.hint.goldy.elif",
+            "label": "골디에게 엘리프를 살까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.goldy": 1,
+                "trickal.gold": 3
+            },
+            "startdescription": "골디의 저울 위에 골드 셋이 놓였다. [시작하면 골드 셋을 지불하고 엘리프 하나를 받습니다.]",
+            "craftable": false,
+            "hintonly": true
+		}, {
+            "id": "trickal.hint.goldy.goldencrayon",
+            "label": "골디에게 골든 크레파스를 받을까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.goldy": 1,
+                "trickal.niceticket": 3
+            },
+            "startdescription": "골디의 저울 위에 참! 잘했어요 셋이 놓였다. [시작하면 참! 잘했어요 셋을 지불하고 골든 크레파스 하나를 받습니다.]",
+            "craftable": false,
+            "hintonly": true
+		}, {
             "id": "trickal.hint.cook.fail",
             "label": "연회장에서 요리를 해볼까?",
             "actionid": "trickal.work",

@@ -99,7 +99,7 @@
             "label": "에르피엔의 협력자",
             "description": "신도가 될 자는 아니지만 믿음직한 누군가를 만났다.",
             "spec": [
-                "trickal.renewa",
+                "trickal.renewa.theater",
 				"trickal.goldy",
 				"trickal.crepe"
             ],
@@ -317,6 +317,24 @@
                 "trickal.tool.diamondbracelet",
                 "trickal.tool.firewood",
                 "trickal.tool.greedring"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.goldy.goods",
+            "label": "골디의 진열장",
+            "description": "황금의 무게만큼이나 특별한 상품이 준비된다.",
+            "spec": [
+                "trickal.tool.steelsword",
+                "trickal.tool.shiningtiara",
+                "trickal.tool.diamondbracelet",
+                "trickal.tool.firewood",
+                "trickal.tool.greedring",
+                "trickal.food.macaroon",
+                "trickal.food.aircutlet",
+                "trickal.food.ssam",
+                "trickal.food.fireicecoffe",
+                "trickal.food.tanghulu"
             ],
             "resetonexhaustion": true
         },

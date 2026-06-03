@@ -575,6 +575,119 @@
                 }
             ],
             "warmup": 30
+        },
+        {
+            "id": "trickal.talktogoldy.showgoods",
+            "label": "골디에게 상품을 보여달라 하기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.goldy": 1,
+                "trickal.gold": -3,
+                "trickal.niceticket": -3
+            },
+            "deckeffects": {
+                "trickal.goldy.goods": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.talktogoldy.buygoods",
+                    "chance": 100
+                }
+            ],
+            "startdescription": "\"어서오세요, 교주님! 좋은 상품은 좋은 고객을 알아보는 법이죠.\" 골디가 정중하게 진열품 하나를 꺼내 보인다.",
+            "description": ".",
+            "warmup": 10,
+            "craftable": true
+        },
+        {
+            "id": "trickal.talktogoldy.buygoods",
+            "label": "골디가 꺼낸 물건을 살까?",
+            "actionid": "trickal.talk",
+            "slots": [
+                {
+                    "id": "Elif",
+                    "label": "구매가",
+                    "required": {
+                        "trickal.elif": 1
+                    },
+                    "description": "엘리프 하나를 내면 골디가 보여준 정품을 가져갈 수 있다."
+                }
+            ],
+            "startdescription": "\"센스가 좋은 분이시네요. 부담스럽게 생각마시고 천천히 살펴보세요.\"",
+            "description": ".",
+            "warmup": 30,
+            "craftable": false,
+            "linked": [
+                {
+                    "id": "trickal.talktogoldy.buygoods.success",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.talktogoldy.buygoods.fail",
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "trickal.talktogoldy.buygoods.success",
+            "label": "골디와 거래를 마치다",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.elif": 1
+            },
+            "effects": {
+                "trickal.elif": -1
+            },
+            "startdescription": "엘리프의 빛이 골디의 손아귀에서 잠깐 흔들렸다.",
+            "description": "거래는 성립되었다. 골디는 물건을 건네며 고개를 끄덕였다. 황금의 무게는 절대 가볍지 않다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.talktogoldy.buygoods.fail",
+            "label": "골디의 물건을 사지 않다",
+            "actionid": "trickal.talk",
+            "effects": {
+                "trickal.worth": -1
+            },
+            "startdescription": "\"괜찮습니다, 교주님. 좋은 상품은 서두르지 않아도 제 값을 알아보는 분을 만나니까요.\"",
+            "description": "골디는 물건을 다시 거두었다. 진열대는 조용해졌지만, 황금빛 저울은 여전히 흔들리지 않는다.",
+            "warmup": 0,
+            "craftable": false
+        },
+        {
+            "id": "trickal.talktogoldy.buygoldencrayon",
+            "label": "골디에게 골든 크레파스 받기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.goldy": 1,
+                "trickal.niceticket": 3
+            },
+            "effects": {
+                "trickal.niceticket": -3,
+                "trickal.goldencrayon": 1
+            },
+            "description": "노력의 증표가 셋 모였다. 나는 이 노력에 대한 댓가를 받을만한 자격이 있다.",
+            "startdescription": "\"노력의 증표네요! 이런 성실함에는 특별한 물건이 어울리죠.\" 골디가 황금빛 크레파스를 내민다.",
+            "warmup": 30,
+            "craftable": true
+        },
+        {
+            "id": "trickal.talktogoldy.buyelif",
+            "label": "골디에게 엘리프 사기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.goldy": 1,
+                "trickal.gold": 3
+            },
+            "effects": {
+                "trickal.gold": -3,
+                "trickal.elif": 1
+            },
+            "description": "골드 셋. 그것은 세계수의 보석을 구매하기에 합리적인 가격이다.",
+            "startdescription": "\"정확히 3골드, 확인했습니다. 좋은 거래였어요, 교주님.\" 골디의 손끝에서 작은 보석이 빛난다.",
+            "warmup": 30,
+            "craftable": true
         }
 	]
 }

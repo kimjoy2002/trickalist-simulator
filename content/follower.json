@@ -10,7 +10,7 @@
             "icon": "trickal.bloomy"
         },
         {
-            "id": "trickal.renewa",
+            "id": "trickal.renewa.theater",
             "label": "극장 알바",
             "description": "최근 어디선가 나타나 요정 왕국 극장에서 티켓팅 알바를 하고 있는 엘프.",
             "aspects": {
@@ -18,7 +18,7 @@
                 "trickal.elf": 1,
                 "trickal.npc": 1
             },
-            "icon": "trickal.renewa"
+            "icon": "trickal.renewa.theater"
         },
         {
             "id": "trickal.goldy",
@@ -27,8 +27,41 @@
             "aspects": {
                 "trickal.creature": 1,
                 "trickal.dragon": 1,
+                "trickal.shopkeeper" : 1,
                 "trickal.npc": 1
             },
+            "slots": [
+                {
+                    "id": "Payment1",
+                    "label": "첫 번째 재화",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.gold": 1,
+                        "trickal.niceticket": 1
+                    },
+                    "description": "상위 재화로 바꾸기 위해선 동일한 재화 셋이 필요하다."
+                },
+                {
+                    "id": "Payment2",
+                    "label": "두 번째 재화",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.gold": 1,
+                        "trickal.niceticket": 1
+                    },
+                    "description": "상위 재화로 바꾸기 위해선 동일한 재화 셋이 필요하다."
+                },
+                {
+                    "id": "Payment3",
+                    "label": "세 번째 재화",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.gold": 1,
+                        "trickal.niceticket": 1
+                    },
+                    "description": "상위 재화로 바꾸기 위해선 동일한 재화 셋이 필요하다."
+                }
+            ],
             "icon": "trickal.goldy"
         },
         {
@@ -791,6 +824,7 @@
                 "trickal.sist_": 1,
                 "trickal.creature": 1,
                 "trickal.dragon": 1,
+                "trickal.shopkeeper" : 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
                 "trickal.exalted": 1,
@@ -807,6 +841,7 @@
                 "trickal.sist_": 1,
                 "trickal.creature": 1,
                 "trickal.dragon": 1,
+                "trickal.shopkeeper" : 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
                 "trickal.madness": 5,
@@ -825,6 +860,7 @@
                 "trickal.sist_": 1,
                 "trickal.creature": 1,
                 "trickal.dragon": 1,
+                "trickal.shopkeeper" : 1,
                 "trickal.follower": 1,
                 "trickal.madness": 2,
                 "trickal.madness_": 1
@@ -842,6 +878,7 @@
                 "trickal.sist_": 1,
                 "trickal.creature": 1,
                 "trickal.dragon": 1,
+                "trickal.shopkeeper" : 1,
                 "acquaintance": 1,
                 "trickal.madness": 1,
                 "trickal.madness_": 1

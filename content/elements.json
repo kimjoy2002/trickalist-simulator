@@ -104,6 +104,12 @@
             "description": "이것은 당신이 엘리아스의 구원자로서 역할을 다했다는 증표다."
         },
         {
+            "id": "trickal.goldencrayon",
+            "label": "골든 크레파스",
+            "description": "땀과 노력의 결실. 절대로 충족될 수 없는 끝없는 욕망을 상징한다.",
+            "icon": "trickal.goldencrayon"
+        },
+        {
             "id": "trickal.suspicion",
             "label": "의심",
             "description": "나는 교주로 잘 해내고있는가? 사실 나조차도 의문이 들기도 한다.",
@@ -583,7 +589,8 @@
                         "trickal.creature": 1
                     },
                     "forbidden": {
-						"trickal.bloomy": 1
+						"trickal.bloomy": 1,
+                        "trickal.npc": 1
                     },
                     "description": "준비가 된 자."
                 }
@@ -606,7 +613,8 @@
                         "trickal.creature": 1
                     },
                     "forbidden": {
-						"trickal.bloomy": 1
+						"trickal.bloomy": 1,
+                        "trickal.npc": 1
                     },
                     "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
                 },
@@ -668,7 +676,8 @@
                         "trickal.creature": 1
                     },
                     "forbidden": {
-						"trickal.bloomy": 1
+						"trickal.bloomy": 1,
+                        "trickal.npc": 1
                     },
                     "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
                 },
@@ -733,7 +742,8 @@
                         "trickal.creature": 1
                     },
                     "forbidden": {
-						"trickal.bloomy": 1
+						"trickal.bloomy": 1,
+                        "trickal.npc": 1
                     },
                     "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
                 },
@@ -795,7 +805,8 @@
                         "trickal.creature": 1
                     },
                     "forbidden": {
-						"trickal.bloomy": 1
+						"trickal.bloomy": 1,
+                        "trickal.npc": 1
                     },
                     "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
                 },
@@ -857,7 +868,8 @@
                         "trickal.creature": 1
                     },
                     "forbidden": {
-						"trickal.bloomy": 1
+						"trickal.bloomy": 1,
+                        "trickal.npc": 1
                     },
                     "description": "새로 끌어들일 자, 혹은 이미 나를 따르는 자."
                 },

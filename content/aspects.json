@@ -15,6 +15,13 @@
             "icon": "trickal.npc"
         },
         {
+            "id": "trickal.shopkeeper",
+            "label": "상인",
+            "description": "그들은 물건을 팔고 댓가를 받는다.",
+			"isAspect": true,
+            "icon": "trickal.shopkeeper"
+        },
+        {
             "id": "trickal.eternal",
             "label": "영원살이",
             "description": "'하루에 태어나, 하루에 잠든 하루살이들이 되었소. 영원에 잠들어, 영원에 새긴 영원살이들이 되었소.' - 에피카"
