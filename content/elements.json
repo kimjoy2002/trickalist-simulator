@@ -984,7 +984,7 @@
                 }
             ],
             "lifetime": 240,
-            "decayTo": "trickal.document.late",
+            "decayTo": "trickal.document.late"
         },
         {
             "id": "trickal.document.late",
@@ -1027,7 +1027,7 @@
                 "employment": "trickal.work.convenience"
             },
             "lifetime": 240,
-            "decayTo": "trickal.work.convenience.late",
+            "decayTo": "trickal.work.convenience.late"
         },
         {
             "id": "trickal.work.convenience.late",

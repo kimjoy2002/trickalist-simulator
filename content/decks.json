@@ -298,6 +298,42 @@
             "resetonexhaustion": true
         },
         {
+            "id": "trickal.sist.gold.goods",
+            "label": "시스트의 진열장",
+            "description": "시스트가 판매하는 수상한 물건.",
+            "spec": [
+                "trickal.tool.woodsword",
+                "trickal.tool.leafrobe",
+                "trickal.tool.jewring",
+                "trickal.tool.awl",
+                "trickal.tool.fairyrobe",
+                "trickal.cheese",
+                "trickal.egg",
+                "trickal.flour"
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "trickal.sist.niceticket.goods",
+            "label": "시스트의 비밀 상자",
+            "description": "시스트는 비장의 상품을 보여줄때 이 상자를 연다.",
+            "spec": [
+                "trickal.elif",
+                "trickal.elif",
+                "trickal.gold",
+                "trickal.gold",
+                "trickal.goldencrayon",
+                "trickal.goldencrayon",
+                "trickal.goldencrayon",
+                "trickal.spellcard.training",
+                "trickal.spellcard.scholar",
+                "trickal.spellcard.critical",
+                "trickal.spellcard.ignoreweak",
+                "trickal.spellcard.gethim"
+            ],
+            "resetonexhaustion": true
+        },
+        {
             "id": "trickal.monatium.goods",
             "label": "모나티엄에서 발견한 것",
             "description": "이 물건은 가치가 있어보인다.",

@@ -831,6 +831,18 @@
                 "trickal.madness": 10,
                 "trickal.madness_": 1
             },
+            "slots": [
+                {
+                    "id": "Payment",
+                    "label": "값",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.gold": 1,
+                        "trickal.niceticket": 1
+                    },
+                    "description": "무언가를 지불하기 위한 대가."
+                }
+            ],
             "icon": "trickal.sist"
         },
         {
@@ -847,6 +859,18 @@
                 "trickal.madness": 5,
                 "trickal.madness_": 1
             },
+            "slots": [
+                {
+                    "id": "Payment",
+                    "label": "값",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.gold": 1,
+                        "trickal.niceticket": 1
+                    },
+                    "description": "무언가를 지불하기 위한 대가."
+                }
+            ],
             "icon": "trickal.sist",
             "xtriggers": {
                 "promote": "trickal.sist4"
@@ -865,6 +889,18 @@
                 "trickal.madness": 2,
                 "trickal.madness_": 1
             },
+            "slots": [
+                {
+                    "id": "Payment",
+                    "label": "값",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.gold": 1,
+                        "trickal.niceticket": 1
+                    },
+                    "description": "무언가를 지불하기 위한 대가."
+                }
+            ],
             "icon": "trickal.sist",
             "xtriggers": {
                 "promote": "trickal.sist3"
@@ -878,7 +914,6 @@
                 "trickal.sist_": 1,
                 "trickal.creature": 1,
                 "trickal.dragon": 1,
-                "trickal.shopkeeper" : 1,
                 "acquaintance": 1,
                 "trickal.madness": 1,
                 "trickal.madness_": 1

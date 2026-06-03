@@ -11,7 +11,9 @@
             "newstart": true,
             "effects": {
                 "trickal.candy": 1,
-                "trickal.goldy": 1
+                "trickal.goldy": 1,
+                "trickal.sist": 1,
+                "trickal.niceticket": 10
             },
             "statusbarelements": [
                 "trickal.candy",

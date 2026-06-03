@@ -110,6 +110,28 @@
             "craftable": false,
             "hintonly": true
 		}, {
+            "id": "trickal.hint.sist.gold",
+            "label": "시스트에게 물건을 살까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.sist_": 1,
+                "trickal.gold": 1
+            },
+            "startdescription": "시스트에게 골드를 건네면 상품을 구매할 수 있다. 알다시피 상품의 출처와 품질은 장담할 수 없다. [시작하면 골드 하나를 지불하고, 준비된 상품 중 하나를 무작위로 받습니다.]",
+            "craftable": false,
+            "hintonly": true
+		}, {
+            "id": "trickal.hint.sist.ticket",
+            "label": "시스트에게 참! 잘했어요를 팔까?",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.sist_": 1,
+                "trickal.niceticket": 1
+            },
+            "startdescription": "이걸 시스트에게 파는 선택은 별로 추천하지 못한다. 이 증표의 진짜 가치를 판단하기엔 신도들에게는 아직 어렵다. [시작하면 참! 잘했어요 하나를 지불하고 무작위 상품 중 하나를 받습니다.]",
+            "craftable": false,
+            "hintonly": true
+		}, {
             "id": "trickal.hint.cook.fail",
             "label": "연회장에서 요리를 해볼까?",
             "actionid": "trickal.work",

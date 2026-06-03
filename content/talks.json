@@ -80,13 +80,51 @@
                 "trickal.elif": 5
             },
             "inductions": [{
-                    "id": "trickal.drawseason",
+                    "id": "trickal.drawseason"
                 },{
                     "id": "trickal.addwork"
                 }
             ],
             "startdescription": "\"방금 대장님이 너에게 생각을 읽는 힘을 주셨어. 세계수 교단을 이끌어가려면 도움이 될꺼야!\"",
             "warmup": 3
+        },
+        {
+            "id": "trickal.talktosist.gold",
+            "label": "시스트에게 골드를 주고 물건 받기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.sist_": 1,
+                "trickal.gold": 1
+            },
+            "effects": {
+                "trickal.gold": -1
+            },
+            "deckeffects": {
+                "trickal.sist.gold.goods": 1
+            },
+            "startdescription": "\"교주-사장님, 보는 안목이 있으시군요!\" 시스트가 어디선가 작은 꾸러미를 꺼낸다.",
+            "description": "골드 하나가 사라지고, 시스트가 내민 물건 하나가 남았다. \"환불은 없어요!\" ",
+            "warmup": 30,
+            "craftable": true
+        },
+        {
+            "id": "trickal.talktosist.ticket",
+            "label": "시스트에게 참! 잘했어요를 팔기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.sist_": 1,
+                "trickal.niceticket": 1
+            },
+            "effects": {
+                "trickal.niceticket": -1
+            },
+            "deckeffects": {
+                "trickal.sist.niceticket.goods": 1
+            },
+            "startdescription": "\"그 티켓 제가 사도 괜찮을까요? 물론 더 비싸게 팔기위한 투자죠.\" 시스트는 구석에 숨겨준 작은 상자의 자물쇠를 푼다.",
+            "description": "티켓 하나가 시스트의 손에서 사라졌다. 티켓이 정말 이정도의 가치로 충분했을까?",
+            "warmup": 30,
+            "craftable": true
         },
         {
             "id": "trickal.talktoacquaintance",
@@ -98,7 +136,7 @@
             },
 			"extantreqs": {
 				"trickal.prophecy": 1,
-				"trickal.worshipsomething": 1,
+				"trickal.worshipsomething": 1
 			},
             "slots": [
                 {
@@ -657,7 +695,7 @@
         },
         {
             "id": "trickal.talktogoldy.buygoldencrayon",
-            "label": "골디에게 골든 크레파스 받기",
+            "label": "골디에게 참! 잘했어요를 교환하기",
             "actionid": "trickal.talk",
             "requirements": {
                 "trickal.goldy": 1,
