@@ -630,10 +630,8 @@
             "label": "미약한 마법을 사용해서 불을 끄기",
             "requirements": {
                 "trickal.fire": 1,
-                "trickal.spell": 1
-            },
-            "forbidden": {
-				"trickal.delay": 1
+                "trickal.spell": 1,
+				"trickal.delay": -1
             },
             "grandreqs": {
                 "max([trickal.madness], max([trickal.active],max([trickal.pure],[trickal.depression])))": 1
@@ -660,10 +658,8 @@
             "label": "적당한 마법을 사용해서 불을 끄기",
             "requirements": {
                 "trickal.fire": 1,
-                "trickal.spell": 1
-            },
-            "forbidden": {
-				"trickal.delay": 1
+                "trickal.spell": 1,
+				"trickal.delay": -1
             },
             "grandreqs": {
                 "max([trickal.madness], max([trickal.active],max([trickal.pure],[trickal.depression])))": 5
@@ -690,10 +686,8 @@
             "label": "상당한 마법을 사용해서 불을 끄기",
             "requirements": {
                 "trickal.fire": 1,
-                "trickal.spell": 1
-            },
-            "forbidden": {
-				"trickal.delay": 1
+                "trickal.spell": 1,
+				"trickal.delay": -1
             },
             "grandreqs": {
                 "max([trickal.madness], max([trickal.active],max([trickal.pure],[trickal.depression])))": 8
@@ -721,10 +715,8 @@
             "requirements": {
                 "trickal.fire": 1,
                 "trickal.spell": 1,
-                "trickal.cool": 1
-            },
-            "forbidden": {
-				"trickal.delay": 1
+                "trickal.cool": 1,
+				"trickal.delay": -1
             },
             "actionid": "trickal.work",
             "startdescription": "냉정의 힘은 차가움과 진정의 힘을 담고 있다. 미약한 힘이라도 이와같이 뜨거운 열기를 진정시키는데는 쓸만할 것이다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 높은 힘을 가진 마법은 확률이 올라가고, 냉정의 힘은 불에 상성이 좋습니다.]",
@@ -749,10 +741,8 @@
             "requirements": {
                 "trickal.fire": 1,
                 "trickal.spell": 1,
-                "trickal.cool": 5
-            },
-            "forbidden": {
-				"trickal.delay": 1
+                "trickal.cool": 5,
+				"trickal.delay": -1
             },
             "actionid": "trickal.work",
             "startdescription": "냉정의 힘은 차가움과 진정의 힘을 담고 있다. 이정도의 냉정의 힘이라면 높은 확률로 불을 끌 수 있다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 높은 힘을 가진 마법은 확률이 올라가고, 냉정의 힘은 불에 상성이 좋습니다.]",
@@ -776,10 +766,8 @@
             "requirements": {
                 "trickal.fire": 1,
                 "trickal.spell": 1,
-                "trickal.cool": 8
-            },
-            "forbidden": {
-				"trickal.delay": 1
+                "trickal.cool": 8,
+				"trickal.delay": -1
             },
             "actionid": "trickal.work",
             "startdescription": "냉정의 힘은 차가움과 진정의 힘을 담고 있다. 아마 이정도의 냉정이라면 확실하게 불을 끌 것이다. [마법은 확실하진않지만 불을 끄기에 안전한 방법입니다. 그렇지만 이정도의 냉정의 힘이라면 불확실함조차 뛰어넘을 것입니다.]",

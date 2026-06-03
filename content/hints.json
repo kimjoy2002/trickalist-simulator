@@ -132,6 +132,30 @@
             "craftable": false,
             "hintonly": true
 		}, {
+            "id": "trickal.hint.crepe.cant.clean.koko",
+            "label": "이것은 청소할 수 없다.",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.crepe": 1,
+                "trickal.koko": 1
+            },
+            "startdescription": "크레페는 이 물건을 교주에게 다시 돌려주었다. \"이건 교주님에게 소중한 것이죠? 돌려드릴게요!\" [중요한 물건은 크레페에게 <b>청소</b>시킬 수 없습니다.]",
+			"$priority": 5,
+            "craftable": false,
+            "hintonly": true
+		},{
+            "id": "trickal.hint.crepe.cant.clean.prophecy",
+            "label": "이것은 청소할 수 없다.",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.crepe": 1,
+                "trickal.prophecy": 1
+            },
+            "startdescription": "크레페는 이 물건을 교주에게 다시 돌려주었다. \"이건 교주님에게 소중한 것이죠? 돌려드릴게요!\" [중요한 물건은 크레페에게 <b>청소</b>시킬 수 없습니다.]",
+			"$priority": 5,
+            "craftable": false,
+            "hintonly": true
+		}, {
             "id": "trickal.hint.cook.fail",
             "label": "연회장에서 요리를 해볼까?",
             "actionid": "trickal.work",

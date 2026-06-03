@@ -5,18 +5,18 @@
             "label": "불온한 기운",
             "actionid": "trickal.troubletime",
             "requirements": {
-                "trickal.seasontrouble": 1
+		        "trickal.seasontrouble": 1
             },
             "slots": [
                 {
                     "id": "Troublemaker",
                     "label": "누군가?",
-                    "required": {
-                        "trickal.troublemaker": 1
-                    },
+	                    "required": {
+	                        "trickal.troublemaker": 1
+	                    },
                     "description": "무언가 꿍꿍이가 있는 자.",
                     "greedy": true
-                }
+	            }
             ],
             "startdescription": "엘리아스는 너무나도 조용하고 평화롭다. 이런 날일수록 누군가가 말썽을 일으키던데...",
             "description": ".",
@@ -206,7 +206,7 @@
                 "trickal.diana_": -1
             },
             "alt": [
-				{
+                {
                     "id": "trickal.troubletime.pillage.rufo",
                     "chance": 100,
                     "additional": true,
@@ -215,8 +215,8 @@
                         "filter": {
                             "trickal.rufo_": 1
                         }
-                    }
-                },
+		            }
+		        },
                 {
                     "id": "trickal.troubletime.pillage.beni",
                     "chance": 100,
@@ -842,16 +842,16 @@
             },
             "alt": [
 				{
-                    "id": "trickal.troubletime.battle_dimension.exit_shady",
-                    "chance": 100,
-                    "additional": true,
-                    "expulsion": {
-                        "limit": 1,
-                        "filter": {
-                            "trickal.shady_": 1
-                        }
-                    }
-                },
+	                "id": "trickal.troubletime.battle_dimension.exit_shady",
+	                "chance": 100,
+	                "additional": true,
+	                "expulsion": {
+	                    "limit": 1,
+	                    "filter": {
+	                        "trickal.shady_": 1
+	                    }
+	                }
+	            }
             ],
             "startdescription": "멸망, 붕괴, 소멸, 그리고 장난. [괴수를 막기 위해선 반대 속성을 요구하는 만큼 맞춰야합니다. 2번의 기회가 더 있습니다.]",
             "description": ".",

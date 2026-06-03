@@ -127,6 +127,40 @@
             "craftable": true
         },
         {
+            "id": "trickal.talktocrepe.clean",
+            "label": "크레페에게 청소를 맡기기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.crepe": 1,
+                "trickal.prophecy": -1,
+                "trickal.koko": -1,
+                "trickal.monster": -1,
+                "trickal.creature": -2
+            },
+            "grandreqs": {
+                "max([trickal.collectable],max([trickal.spell],max([trickal.food],max([trickal.ingredient],max([trickal.goods],[text])))))": 1
+            },
+            "startdescription": "\"좋아요~ 좋아요~ 물걸레질 좋아요~\" 크레페는 노래를 흥얼거리면서 새로운 희생양을 찾고 있다. [크레페의 슬롯에 올라온 카드를 영구히 <b>청소</b>할 수 있습니다.]",
+            "description": "\"어때요? 깨끗해졌죠?\"",
+            "warmup": 15,
+            "craftable": true
+        }, {
+            "id": "trickal.talktocrepe.clean.empty",
+            "label": "크레페에게 청소를 맡기기",
+            "actionid": "trickal.talk",
+            "requirements": {
+                "trickal.crepe": 1,
+                "trickal.prophecy": -1,
+                "trickal.koko": -1,
+                "trickal.monster": -1,
+                "trickal.creature": -2
+            },
+            "$priority": -10,
+            "startdescription": "\"좋아요~ 좋아요~ 물걸레질 좋아요~\" 크레페는 노래를 흥얼거리면서 새로운 희생양을 찾고 있다. [크레페의 슬롯에 올라온 카드를 영구히 <b>청소</b>할 수 있습니다.]",
+            "description": "\"무... 무엇을 정리하면 좋을까? 공기요???\" 크레페를 놀리는건 여기까지하자.",
+            "warmup": 15,
+            "craftable": true
+        }, {
             "id": "trickal.talktoacquaintance",
             "label": "지인과 대화하기",
             "actionid": "trickal.talk",

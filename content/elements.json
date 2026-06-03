@@ -76,6 +76,9 @@
             "id": "trickal.elif",
             "label": "엘리프",
             "description": "엘리아스의 가장 귀한 세계수의 힘이 담긴 보석. [엘리프 카드를 대화에 올려놓아서 사도를 영입하거나 사도의 진급시 소모됩니다.]",
+			"aspects": {
+                "trickal.goods": 1
+            },
             "icon": "trickal.elif",
             "slots": [
                 {
@@ -96,17 +99,26 @@
             "id": "trickal.gold",
             "label": "골드",
             "description": "당신이 엘리아스에서 생활하기 위한 자금.",
+            "aspects": {
+                "trickal.goods": 1
+            },
             "icon": "trickal.gold"
         },
         {
             "id": "trickal.niceticket",
             "label": "참! 잘했어요",
+			"aspects": {
+                "trickal.goods": 1
+            },
             "description": "이것은 당신이 엘리아스의 구원자로서 역할을 다했다는 증표다."
         },
         {
             "id": "trickal.goldencrayon",
             "label": "골든 크레파스",
             "description": "땀과 노력의 결실. 절대로 충족될 수 없는 끝없는 욕망을 상징한다.",
+            "aspects": {
+                "trickal.goods": 1
+            },
             "icon": "trickal.goldencrayon"
         },
         {

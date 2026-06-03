@@ -72,6 +72,23 @@
                 "trickal.creature": 1,
                 "trickal.npc": 1
             },
+            "slots": [
+                {
+                    "id": "Target",
+                    "label": "정리할 것",
+                    "actionid": "trickal.talk",
+                    "required": {
+                        "trickal.collectable": 1,
+                        "trickal.spell": 1,
+                        "trickal.food": 1,
+                        "trickal.ingredient": 1,
+                        "trickal.goods": 1,
+                        "text": 1
+                    },
+                    "consumes": true,
+                    "description": "청소할 것."
+                }
+            ],
             "icon": "trickal.crepe"
         },
 		

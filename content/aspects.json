@@ -8,6 +8,13 @@
             "icon": "trickal.creature"
         },
         {
+            "id": "trickal.goods",
+            "label": "재화",
+            "description": "이 세계에서 살아가기 위해 필요한 것들.",
+			"isAspect": true,
+            "icon": "trickal.goods"
+        },
+        {
             "id": "trickal.npc",
             "label": "협력자",
             "description": "교단의 신도는 아니지만 직간접적으로 협력관계를 맺은 자.",
