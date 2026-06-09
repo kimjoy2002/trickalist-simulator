@@ -1075,46 +1075,51 @@
             "id": "trickal.foodpuzzle_1",
             "label": "에르핀이 원하는 것",
             "aspects": {
-                "trickal.puzzle": 1
+                "trickal.riddle": 1
             },
             "description": "'단순하지만 내가 가장 좋아하는 것' 분명히 에르핀은 그렇게 말했던 것 같다.",
-            "unique": true
+            "unique": true,
+            "icon": "trickal.puzzle"
         },
         {
             "id": "trickal.foodpuzzle_2",
             "label": "에르핀이 원하는 것",
             "aspects": {
-                "trickal.puzzle": 1
+                "trickal.riddle": 1
             },
             "description": "'수인의 숲에서 널려있던 가공품' 분명히 에르핀은 그렇게 말했던 것 같다.",
-            "unique": true
+            "unique": true,
+            "icon": "trickal.puzzle"
         },
         {
             "id": "trickal.foodpuzzle_3",
             "label": "에르핀이 원하는 것",
             "aspects": {
-                "trickal.puzzle": 1
+                "trickal.riddle": 1
             },
             "description": "'먹으면 코가 찡해지는 것' 분명히 에르핀은 그렇게 말했던 것 같다.",
-            "unique": true
+            "unique": true,
+            "icon": "trickal.puzzle"
         },
         {
             "id": "trickal.foodpuzzle_4",
             "label": "에르핀이 원하는 것",
             "aspects": {
-                "trickal.puzzle": 1
+                "trickal.riddle": 1
             },
             "description": "'엘프들이 먹는 이상한 막대기' 분명히 에르핀은 그렇게 말했던 것 같다.",
-            "unique": true
+            "unique": true,
+            "icon": "trickal.puzzle"
         },
         {
             "id": "trickal.foodpuzzle_5",
             "label": "에르핀이 원하는 것",
             "aspects": {
-                "trickal.puzzle": 1
+                "trickal.riddle": 1
             },
             "description": "'용족들이 심심풀이로 먹는 돌' 분명히 에르핀은 그렇게 말했던 것 같다.",
-            "unique": true
+            "unique": true,
+            "icon": "trickal.puzzle"
         }
 	]
 }

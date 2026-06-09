@@ -300,7 +300,7 @@
         {
             "id": "trickal.sist.gold.goods",
             "label": "시스트의 진열장",
-            "description": "시스트가 판매하는 수상한 물건.",
+            "description": "시스트가 판매하는 수상한 물건들.",
             "spec": [
                 "trickal.tool.woodsword",
                 "trickal.tool.leafrobe",
@@ -316,7 +316,7 @@
         {
             "id": "trickal.sist.niceticket.goods",
             "label": "시스트의 비밀 상자",
-            "description": "시스트는 비장의 상품을 보여줄때 이 상자를 연다.",
+            "description": "시스트가 판매하는 조금 더 가치있는 물건들.",
             "spec": [
                 "trickal.elif",
                 "trickal.elif",

@@ -1,0 +1,882 @@
+﻿{
+    "recipes":  [
+    {
+        "id":  "trickal.bloomy.ask",
+        "label":  "영춘이에게 물어보기",
+        "actionid":  "trickal.talk",
+        "requirements":  {
+            "trickal.bloomy":  1,
+            "trickal.bloomy.talked":  1
+        },
+        "slots":  [
+        {
+                "id":  "Question",
+                "label":  "질문거리",
+                "actionid":  "trickal.talk",
+                "required":  {
+                    "society":  1,
+                    "trickal.creature":  1,
+                    "location":  1,
+                    "trickal.sweet":  1,
+                    "trickal.goods":  1,
+                    "trickal.job":  1,
+                    "trickal.prophecy":  1,
+                    "trickal.food":  1,
+                    "trickal.ingredient":  1,
+                    "trickal.spell":  1,
+                    "trickal.collectable":  1,
+                    "trickal.riddle": 1,
+                    "text":  1
+                },
+                "forbidden":  {
+                    "trickal.bloomy":  1
+                },
+                "description":  "물어볼 것."
+            }
+        ],
+        "alt":  [
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.candy":  1
+                },
+                "label": "영춘이에게 왕사탕에 대해 묻기",
+                "startdescription":  "영춘이에게 왕사탕에 대해 물어보기로 했다.",
+                "description": "\"왕사탕은 교주의 몸이 움직일 수 있게 하는 달콤한 원동력이야. 몸을 쓰는 행동은 이와 연관이 있다고 생각하면 좋아. 물론 사용하게되면 일정시간은 회복시간이 필요하고 몸이 상하면 병원에 가야하지만 말이야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.starcandy":  1
+                },
+                "label":  "영춘이에게 별사탕에 대해 묻기",
+                "startdescription":  "영춘이에게 별사탕에 대해 물어보기로 했다.",
+                "description":  "\"별사탕은 생각이 반짝 하고 튀어나오는 힘이야. 서류를 빨리 처리하거나, 섬세한 일에 집중할 때 쓰면 좋아. 머리에도 휴식이 필요하니까 사용하면 잠깐은 기다려야 해!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.elif":  1
+                },
+                "label":  "영춘이에게 엘리프에 대해 묻기",
+                "startdescription":  "영춘이에게 엘리프에 대해 물어보기로 했다.",
+                "description":  "\"엘리프는 대장님의 힘이 깃든 보석이야! 새 신도를 모집할때 쓰거나 신도의 힘을 끌어올릴때 주로 써. 엘리프는 각종 이벤트나 골디로부터 직접 골드로 구매할 수도 있어!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.gold":  1
+                },
+                "label":  "영춘이에게 골드에 대해 묻기",
+                "startdescription":  "영춘이에게 골드에 대해 물어보기로 했다.",
+                "description":  "\"골드는 엘리아스에서 살아가기위한 필수 물건이야! 각종 상점이나 상인으로부터 물건을 구매하거나, 단순히 시간이 흐르는데도 필요해. 보통 일 토큰에서 일을 해서 돈을 벌 수 있어. 단순히 막노동을 해도 좋지만 요리를 해서 팔거나 일자리를 구하거나 좀 더 효율좋은 방법이 있으니 한번 찾아봐!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.niceticket":  1
+                },
+                "label":  "영춘이에게 참! 잘했어요에 대해 묻기",
+                "startdescription":  "영춘이에게 참! 잘했어요에 대해 물어보기로 했다.",
+                "description":  "\"이 도장은 엘리아스의 골칫거리를 해결했다는 증표야. 교주로서의 업적을 증명하는데 쓰일거야! 시스트에게 팔거나 골디를 통해 다른 재화로 교환할 수 도 있는데 아직 사용한적이 없다면 아껴두는 것도 좋을꺼야!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.goldencrayon":  1
+                },
+                "label":  "영춘이에게 골든 크레파스에 대해 묻기",
+                "startdescription":  "영춘이에게 골든 크레파스에 대해 물어보기로 했다.",
+                "description":  "\"이건 엘리아스에서 가장 귀한 재화중 하나야! 이걸 가지고 있는 교주는 강한 권위를 증명할 수 있다고 해. 당장 쓰임새가 없어보여도 가지고 있는게 좋을거야!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.document.late":  1
+                },
+                "label":  "영춘이에게 밀린 서류에 대해 묻기",
+                "startdescription":  "영춘이에게 밀린 서류에 대해 물어보기로 했다.",
+                "description":  "\"정말 아직도 서류를 처리하지 못한거야? 나에게 물어볼 시간에 얼른 일 토큰에 넣고 처리하라고! 사제장에 들키기 전에 말이지.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                     "trickal.bloomy":  1,
+                     "trickal.document":  1
+                 },
+                "label":  "영춘이에게 서류에 대해 묻기",
+                "startdescription":  "영춘이에게 서류에 대해 물어보기로 했다.",
+                "description":  "\"교단의 밀린 업무들을 처리하는건 교주의 주요 업무중 하나지. 그렇게 어렵진않으니까 일 토큰에 넣고 치워버려! 별사탕을 넣으면 좀 더 빠르게 처리도 가능하고 끝나면 교단에서 용돈도 주니까! 아, 너무 오랫동안 방치하면 사제장이 화낼테니까 조심해!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.prophecy":  4
+                },
+                "label":  "영춘이에게 수양록 네 번째 장에 대해 묻기",
+                "startdescription":  "영춘이에게 수양록 네 번째 장에 대해 물어보기로 했다.",
+                "description":  "\"아직 네번째 장은 사용할 수 없을거야. 너무 급하게 생각하지말고 천천히 생각해~\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.prophecy":  3
+                },
+                "extantreqs": {
+                    "trickal.follower": -1
+                },
+                "label":  "영춘이에게 수양록 세 번째 장에 대해 묻기",
+                "startdescription":  "영춘이에게 수양록 세 번째 장에 대해 물어보기로 했다.",
+                "description":  "\"세 번째 장 부터는 교단을 어느정도 키우고 쓰는게 좋을 것 같아. 아직 교단을 제대로 설립하지않았다면 사람들과 대화해보는것도 좋을거야!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.prophecy":  3
+                },
+                "extantreqs": {
+                    "trickal.apostle": -1
+                },
+                "label":  "영춘이에게 수양록 세 번째 장에 대해 묻기",
+                "startdescription":  "영춘이에게 수양록 세 번째 장에 대해 물어보기로 했다.",
+                "description":  "\"세 번째 장 부터는 교단을 어느정도 키우고 쓰는게 좋을 것 같아. 신도의 능력을 키우기 위해선 교단 카드를 대화 토큰에 올려놓고 교단에 맞는 힘을 7단계까지 도구나 스펠카드, 요리로 채워 넣어야 해. 다양한 곳을 탐험하면서 필요한 카드를 얻어보자!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.prophecy":  3
+                },
+                "label":  "영춘이에게 수양록 세 번째 장에 대해 묻기",
+                "startdescription":  "영춘이에게 수양록 세 번째 장에 대해 물어보기로 했다.",
+                "description":  "\"세 번째 장을 진행하려면 약간의 수수께끼를 풀어야할지도 몰라. 혹시 풀다가 잘 모르겠으면, 나에게 수수께끼를 가져와! 내가 답을 풀어줄게.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.prophecy":  2
+                },
+                "label":  "영춘이에게 수양록 두 번째 장에 대해 묻기",
+                "startdescription":  "영춘이에게 수양록 두 번째 장에 대해 물어보기로 했다.",
+                "description":  "\"수양록은 사실 교단의 예언서라고 불리고 있지만 교주의 일기장이라고 생각하면 될거야. 저번에 온 교주는 첫번째 장만 적고 사라졌거든. 우선은 새로운 장소를 탐험하고 새로운 사람들을 만나서 그것에 대해 적어볼까?\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.prophecy":  1
+                },
+                "label":  "영춘이에게 수양록에 대해 묻기",
+                "startdescription":  "영춘이에게 수양록에 대해 물어보기로 했다.",
+                "description":  "\"수양록은 사실 교단의 예언서라고 불리고 있지만 교주의 일기장이라고 생각하면 될거야. 저번에 온 교주는 첫번째 장만 적고 사라졌거든. 가능하면 가득 채우는걸 우리의 목표로 하자!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.foodpuzzle_1":  1
+                },
+                "label":  "영춘이에게 에르핀이 원하는 것에 대해 묻기",
+                "startdescription":  "영춘이에게 에르핀이 원하는 것에 대해 물어보기로 했다.",
+                "description":  "\"이건 딸기 케이크를 말하는걸거야. 에르핀이 가장 좋아하는 요리거든! 일 토큰에 교단 본부를 넣고 순수를 조금만 채우면 만들 수 있을거야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.foodpuzzle_2":  1
+                },
+                "label":  "영춘이에게 에르핀이 원하는 것에 대해 묻기",
+                "startdescription":  "영춘이에게 에르핀이 원하는 것에 대해 물어보기로 했다.",
+                "description":  "\"저번에 수인의 숲에 갔을때 본적이 있어, 아마 엘프들이 만든 캔사료였던가? 일 토큰에 교단 본부를 넣고 활발을 조금만 채우면 만들 수 있을거야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.foodpuzzle_3":  1
+                },
+                "label":  "영춘이에게 에르핀이 원하는 것에 대해 묻기",
+                "startdescription":  "영춘이에게 에르핀이 원하는 것에 대해 물어보기로 했다.",
+                "description":  "\"분명 계피맛 알사탕을 말하는걸거야. 일 토큰에 교단 본부를 넣고 광기를 조금만 채우면 만들 수 있을거야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.foodpuzzle_4":  1
+                },
+                "label":  "영춘이에게 에르핀이 원하는 것에 대해 묻기",
+                "startdescription":  "영춘이에게 에르핀이 원하는 것에 대해 물어보기로 했다.",
+                "description":  "\"엘프들이 먹는 이상한 막대기? 우주식량을 말하는거겠지? 일 토큰에 교단 본부를 넣고 냉정을 조금만 채우면 만들 수 있을거야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.foodpuzzle_5":  1
+                },
+                "label":  "영춘이에게 에르핀이 원하는 것에 대해 묻기",
+                "startdescription":  "영춘이에게 에르핀이 원하는 것에 대해 물어보기로 했다.",
+                "description":  "\"용족 사탕을 말하는거같네. 내가 보기엔 그냥 돌이지만. 일 토큰에 교단 본부를 넣고 우울을 조금만 채우면 만들 수 있을거야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.fire":  1
+                },
+                "label":  "영춘이에게 불이 난 장소에 대해 묻기",
+                "startdescription":  "영춘이에게 불이 난 장소에 대해 물어보기로 했다.",
+                "description":  "\"불을 조심해 교주! 일 토큰을 사용해서 불을 진화해야해! 왕사탕을 이용하면 체력이 피해를 받지만 불을 확실하게 끌 수 있어. 스펠 카드는 수치가 낮으면 확률이 낮아지지만 냉정 스펠 카드를 쓴다면 조금 더 도움이 될꺼야. 소방수 속성 캐릭터는 가장 확실한 진화 방법이야!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "hq":  1
+                },
+                "label":  "영춘이에게 교단 본부에 대해 묻기",
+                "startdescription":  "영춘이에게 교단 본부에 대해 물어보기로 했다.",
+                "description":  "\"본부는 우리가 사는 집이야! 일 토큰에 교단 본부를 올려놓으면 적절한 속성과 요리 재료를 추가해서 요리를 할 수 있어.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "society":  1
+                },
+                "label":  "영춘이에게 교단에 대해 묻기",
+                "startdescription":  "영춘이에게 교단에 대해 물어보기로 했다.",
+                "description":  "\"교단 카드를 통해서 신도를 모으거나 사도들에게 모험회를 시킬 수 있어. 대화 토큰에서 사도를 올리고 교단 카드를 마저 올리면 모험회를 통해서 요리 재료를 가져올거야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.goldy":  1
+                },
+                "label":  "영춘이에게 골디에 대해 묻기",
+                "startdescription":  "영춘이에게 골디에 대해 물어보기로 했다.",
+                "description":  "\"골디는 아마 교단에 믿을만한 물건을 팔러오는 상인이야. 엘리프를 통해 물건을 사거나 엘리프를 구매할수 있어. 제 값을 낸다면 황금 크레파스도 구매할 수 있을거야!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.crepe":  1
+                },
+                "label":  "영춘이에게 크레페에 대해 묻기",
+                "startdescription":  "영춘이에게 크레페에 대해 물어보기로 했다.",
+                "description":  "\"크레페는 교단의 청소를 담당하는 메이드야. 필요 없는 물건을 건네주면 청소해줄거야. 따로 얻는건 없으니 정말 필요없는 것들만 건네야 해!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.renewa.theater":  1
+                },
+                "label":  "영춘이에게 극장 알바에 대해 묻기",
+                "startdescription":  "영춘이에게 극장 알바에 대해 물어보기로 했다.",
+                "description":  "\"요정 왕국 극장에 티켓팅 알바를 하는 엘프? 글쎄 언제부터 나타난걸까.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.sist_":  1
+                },
+                "label":  "영춘이에게 시스트에 대해 묻기",
+                "startdescription":  "영춘이에게 시스트에 대해 물어보기로 했다.",
+                "description":  "\"시스트는 자수정의 용족이야. 온갖 상품을 요정왕국으로 밀수해오는 상인이야. 골드를 주면 물건을 구매가능하지만 종종 원가보다 비싸게 파니까 사기당하지않게 조심해!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.erpin_":  1
+                },
+                "label":  "영춘이에게 에르핀에 대해 묻기",
+                "startdescription":  "영춘이에게 에르핀에 대해 물어보기로 했다.",
+                "description":  "\"에르핀은 요정 왕국의 여왕이야! 항상 먹을걸 찾고 다닌다니까, 솔직하니까 속마음을 볼 필요도 없어.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.ner_":  1
+                },
+                "label":  "영춘이에게 네르에 대해 묻기",
+                "startdescription":  "영춘이에게 네르에 대해 물어보기로 했다.",
+                "description":  "\"네르는 교단의 사제장이야. 우리 대장님 부하 중 에이스라고! 교주라도 교단 관리를 소홀하게 하면 네르에게 혼날거야?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "acquaintance":  1
+                },
+                "label":  "영춘이에게 지인에 대해 묻기",
+                "startdescription":  "영춘이에게 지인에 대해 물어보기로 했다.",
+                "description":  "\"아직 어색한 사이지? 더 친한 사이가 되면 정보를 알 수 있을꺼야. 대화를 통해 교단의 일원으로 끌어들이자!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.ashur_":  1
+                },
+                "label":  "영춘이에게 에슈르에 대해 묻기",
+                "startdescription":  "영춘이에게 에슈르에 대해 물어보기로 했다.",
+                "description":  "\"에슈르는 요정 왕국 빵집의 주인이야. 자기 말로는 마법학교의 교장이라는데, 누가봐도 빵집이지?\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.butter_":  1
+                },
+                "label":  "영춘이에게 버터에 대해 묻기",
+                "startdescription":  "영춘이에게 버터에 대해 물어보기로 했다.",
+                "description":  "\"버터는 개 수인인데, 화나면 정말 무서워! 잘하면 요정왕국의 최종 결전 병기로 활용할 수 있지 않을까?\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                   "trickal.bloomy":  1,
+                   "trickal.elena_":  1
+                },
+                "label":  "영춘이에게 엘레나에 대해 묻기",
+                "startdescription":  "영춘이에게 엘레나에 대해 물어보기로 했다.",
+                "description":  "\"엘레나는 엘프 도시 모나티엄의 시장이야. 엘프들은 속내를 알기 힘들다니까, 저번에 집무실에도 감시 카메라를 설치하는걸 봤어.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.mayo_":  1
+                },
+                "label":  "영춘이에게 마요에 대해 묻기",
+                "startdescription":  "영춘이에게 마요에 대해 물어보기로 했다.",
+                "description":  "\"마요는 요정 왕국의 수집가야. 저번에 마요가 교주를 보는 눈이 이상하던데 찍힌거아냐?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.kommy_":  1
+                },
+                "label":  "영춘이에게 코미에 대해 묻기",
+                "startdescription":  "영춘이에게 코미에 대해 물어보기로 했다.",
+                "description":  "\"코미가 저번에 이해하기 힘든 말을 하더라. 아직 어린데 책을 주워서 읽다보니 이상한 영향을 받는걸까?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.gabia_":  1
+                },
+                "label":  "영춘이에게 가비아에 대해 묻기",
+                "startdescription":  "영춘이에게 가비아에 대해 물어보기로 했다.",
+                "description":  "\"가비아는 말소리가 너무 작아서 답답해. 본인도 그걸 알고 일부러 그러는거같아.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.levi_":  1
+                },
+                "label":  "영춘이에게 레비에 대해 묻기",
+                "startdescription":  "영춘이에게 레비에 대해 물어보기로 했다.",
+                "description":  "\"레비는 아직 정식 마녀가 되지못해서 항상 알바를 해. 근데 그 양이 얼마나 많은데 레비가 없으면 마녀 왕국이 마비가 된다고 해.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.speaki_":  1
+                },
+                "label":  "영춘이에게 스피키에 대해 묻기",
+                "startdescription":  "영춘이에게 스피키에 대해 물어보기로 했다.",
+                "description":  "\"스피키는 다른 애들을 흉내내는 정체성의 유령이야. 글쎄, 내 눈에는 그냥 사제장을 어설프게 흉내낸 유령으로 보이는데 말할정도로 그렇게 닮았나?.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.tig_":  1
+                },
+                "label":  "영춘이에게 티그에 대해 묻기",
+                "startdescription":  "영춘이에게 티그에 대해 물어보기로 했다.",
+                "description":  "\"티그는 다혈질인 호랑이 수인이야. 조금 바보같은 면이 우리 교단의 에르핀을 닮았지?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.rufo_":  1
+                },
+                "label":  "영춘이에게 루포에 대해 묻기",
+                "startdescription":  "영춘이에게 루포에 대해 물어보기로 했다.",
+                "description":  "\"루포는 사료스탕스의 일원인 여우 수인이야. 셋이 뭉치면 골치아픈 일이 벌어진다니까, 다행히 루포 혼자만 있다면 조용하겠지만.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.beni_":  1
+                },
+                "label":  "영춘이에게 베니에 대해 묻기",
+                "startdescription":  "영춘이에게 베니에 대해 물어보기로 했다.",
+                "description":  "\"베니는 사료스탕스의 일원인 곰의 수인이야. 혼자있을땐 솔직하고 좋은 아이인데 셋이 모이면 그 힘이 무섭다니깐\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.diana_":  1
+                },
+                "label":  "영춘이에게 디아나에 대해 묻기",
+                "startdescription":  "영춘이에게 디아나에 대해 물어보기로 했다.",
+                "description":  "\"디아나는 수인 마을을 관리하는 장로야. 수인 마을의 말썽꾸러기들을 관리할 수 있는건 디아나 촌장밖에 없어.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.rohne_":  1
+                },
+                "label":  "영춘이에게 로네에 대해 묻기",
+                "startdescription":  "영춘이에게 로네에 대해 물어보기로 했다.",
+                "description":  "\"로네는 엘프 도시에서 교단을 감시하러온 스파이... 라고 자기 입으로 직접 말하더라. 스파이치곤 좀 어리숙하고 얼빵하지?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.naia_":  1
+                },
+                "label":  "영춘이에게 나이아에 대해 묻기",
+                "startdescription":  "영춘이에게 나이아에 대해 물어보기로 했다.",
+                "description":  "\"나이아는 물의 정령이이라 아마 엘리아스에서 물을 다루는건 가장 능숙할거니까 교단에 혹시 불이 나면 도움이 되지않을까? 장난으로 물을 맞을걸 각오한다면 말이야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.silphir_":  1
+                },
+                "label":  "영춘이에게 실피르에 대해 묻기",
+                "startdescription":  "영춘이에게 실피르에 대해 물어보기로 했다.",
+                "description":  "\"실피르는 사파이어의 정령이야. 용족답게 서열에 대한 집착이 엄청난거같아!\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.espi_":  1
+                },
+                "label":  "영춘이에게 에스피에 대해 묻기",
+                "startdescription":  "영춘이에게 에스피에 대해 물어보기로 했다.",
+                "description":  "\"에스피는 꿈의 유령이야. 저번에 교주의 꿈을 몰래 훔쳐보려고 하더라. 꿈의 세계는 그렇게 재밌는걸까?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.velvet_":  1
+                },
+                "label":  "영춘이에게 벨벳에 대해 묻기",
+                "startdescription":  "영춘이에게 벨벳에 대해 물어보기로 했다.",
+                "description":  "\"벨벳은 마녀 왕국의 문제아인 고위 마녀야. 항상 말썽을 피우고 다니거든, 힘은 무식하게 강해서 막으려면 꽤나 고생할거야.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.marie_":  1
+                },
+                "label":  "영춘이에게 마리에 대해 묻기",
+                "startdescription":  "영춘이에게 마리에 대해 물어보기로 했다.",
+                "description":  "\"마리는 요정 왕국의 탐험가인데 보물이 목적이 아니라 터트리는게 목적인거같이도 보이네. 에르핀이 가출할때 항상 찾는 친구(부하?) 요정이기도 해!\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.canna_":  1
+                },
+                "label":  "영춘이에게 칸나에 대해 묻기",
+                "startdescription":  "영춘이에게 칸나에 대해 물어보기로 했다.",
+                "description":  "\"칸나는 엘프 도시의 진압반장이야. 성실해보이기는한데, 엘프들은 신용하기 힘드니깐~\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.meluna_":  1
+                },
+                "label":  "영춘이에게 멜루나에 대해 묻기",
+                "startdescription":  "영춘이에게 멜루나에 대해 물어보기로 했다.",
+                "description":  "\"멜루나는 엘리아스 제일 가는 재벌 요정이야. 근데 멜론의 정령은 뭘까? 정말 이상하지않아 교주?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.shady_":  1
+                },
+                "label":  "영춘이에게 셰이디에 대해 묻기",
+                "startdescription":  "영춘이에게 셰이디에 대해 물어보기로 했다.",
+                "description":  "\"셰이디를 조심해 교주! 유령들의 대장이라 유령들과 똑같이 장난은 좋아하는데 능력때문에 스케일이 다르거든. 아마 본인이 질리기전엔 어떻게 하기 힘들거야.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.jade_":  1
+                },
+                "label":  "영춘이에게 제이드에 대해 묻기",
+                "startdescription":  "영춘이에게 제이드에 대해 물어보기로 했다.",
+                "description":  "\"제이드는 비취옥의 용족이야. 항상 자기 도서관에 틀어박혀있어서 자주 보이진 않던데 의외네?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.fricle_":  1
+                },
+                "label":  "영춘이에게 프리클에 대해 묻기",
+                "startdescription":  "영춘이에게 프리클에 대해 물어보기로 했다.",
+                "description":  "\"프리클은 마녀 왕국의 2인자야. 여왕 자리를 노리는거같긴한데, 그래도 여왕으로의 충성심은 진짜인거같아.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.maestro_":  1
+                },
+                "label":  "영춘이에게 마에스트로 2호에 대해 묻기",
+                "startdescription":  "영춘이에게 마에스트로 2호에 대해 물어보기로 했다.",
+                "description":  "\"마에스트로 2호는 엘프들이 만든 AI 로봇이야. AI들은 진짜 생명이 있는걸까?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.rim_":  1
+                },
+                "label":  "영춘이에게 림에 대해 묻기",
+                "startdescription":  "영춘이에게 림에 대해 물어보기로 했다.",
+                "description":  "\"림은 균형의 유령이야. 항상 이상한 농담을 하던데 교주는 림의 농담을 어떻게 생각해?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.efreet_":  1
+                },
+                "label":  "영춘이에게 이프리트에 대해 묻기",
+                "startdescription":  "영춘이에게 이프리트에 대해 물어보기로 했다.",
+                "description":  "\"이프리트는 불의 정령이야. 불의 성질때문인가 항상 화가 나있더라. 조금 꼰대같은 면도 있기도하고?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.kidian_":  1
+                },
+                "label":  "영춘이에게 키디언에 대해 묻기",
+                "startdescription":  "영춘이에게 키디언에 대해 물어보기로 했다.",
+                "description":  "\"키디언은 흑요석의 용족이야. 연회장에 갈때마다 접시를 깨서 깜짝깜짝 놀란다니까.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.posher_":  1
+                },
+                "label":  "영춘이에게 포셔에 대해 묻기",
+                "startdescription":  "영춘이에게 포셔에 대해 물어보기로 했다.",
+                "description":  "\"포셔는 마녀 왕국의 약장수야. 교주도 저번에 포셔의 임상실험에 참여했었지?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.shoupan_":  1
+                },
+                "label":  "영춘이에게 슈팡에 대해 묻기",
+                "startdescription":  "영춘이에게 슈팡에 대해 물어보기로 했다.",
+                "description":  "\"슈팡은 요정 왕국의 배달원이야. 항상 슈파볼트란 기계를 타고다니는데 그거 넘어지면 안전할까?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.mago_":  1
+                },
+                "label":  "영춘이에게 마고에 대해 묻기",
+                "startdescription":  "영춘이에게 마고에 대해 물어보기로 했다.",
+                "description":  "\"마고는 수인 마을의 몇안되는 어른 수인이야. 꽤나 힘도 쎄다고 하네!\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.alice_":  1
+                },
+                "label":  "영춘이에게 앨리스에 대해 묻기",
+                "startdescription":  "영춘이에게 앨리스에 대해 물어보기로 했다.",
+                "description":  "\"앨리스는 타로 카드 점을 치기를 좋아하는 유령이야. 솔직히 내가 생각하기엔 좀 억지를 부리는거같긴하지만.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.rude_":  1
+                },
+                "label":  "영춘이에게 루드에 대해 묻기",
+                "startdescription":  "영춘이에게 루드에 대해 물어보기로 했다.",
+                "description":  "\"루드는 루비의 용족이야. 항상 트레이닝을 하고 다녀. 교주도 괜히 가까이 갔다가 강제로 운동당하지 않게 조심하라고~\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.festa_":  1
+                },
+                "label":  "영춘이에게 페스타에 대해 묻기",
+                "startdescription":  "영춘이에게 페스타에 대해 물어보기로 했다.",
+                "description":  "\"페스타는 자칭 아티스트라고 부르고 다니는 엘프야. 내가 보기엔 그냥 노숙자인데 말이지.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.amelia_":  1
+                },
+                "label":  "영춘이에게 아멜리아에 대해 묻기",
+                "startdescription":  "영춘이에게 아멜리아에 대해 물어보기로 했다.",
+                "description":  "\"아멜리아는 엘프 시장의 비서 엘프야. 가끔씩은 시장으로의 시선이 존경을 넘어서 무섭게 보일때가 있다니깐.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.sylla_":  1
+                },
+                "label":  "영춘이에게 실라에 대해 묻기",
+                "startdescription":  "영춘이에게 실라에 대해 물어보기로 했다.",
+                "description":  "\"실라는 바람의 정령이야. 정령의 대빵이라 실력은 확실한거같은데, 어째 매번 당하는 모습만 보이는걸까...\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.barong_":  1
+                },
+                "label":  "영춘이에게 바롱에 대해 묻기",
+                "startdescription":  "영춘이에게 바롱에 대해 물어보기로 했다.",
+                "description":  "\"바롱은 착각의 유령이야. 항상 헛소리를 늘어놓는다니깐, 교주도 바롱의 말은 너무 믿지 않는게 좋아.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.daya_":  1
+                },
+                "label":  "영춘이에게 다야에 대해 묻기",
+                "startdescription":  "영춘이에게 다야에 대해 물어보기로 했다.",
+                "description":  "\"다야는 용족의 1인자야. 용족들에게 서열은 그 무엇보다도 중요하거든, 그만큼 다야의 힘이 대단하단거겠지.\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.vivi_":  1
+                },
+                "label":  "영춘이에게 비비에 대해 묻기",
+                "startdescription":  "영춘이에게 비비에 대해 물어보기로 했다.",
+                "description":  "\"비비는 자신을 은의 용족이라고 소개하는데 조금 수상하지 않아? 엣츄! 그보다 요즘 왜 이렇게 몸이 아픈거지?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.epica_":  1
+                },
+                "label":  "영춘이에게 에피카에 대해 묻기",
+                "startdescription":  "영춘이에게 에피카에 대해 물어보기로 했다.",
+                "description":  "\"에피카는 이야기꾼 수인이야. 가끔씩 교단에 와서 이야기를 해주는데 정말 흥미진진했어!\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.aya_":  1
+                },
+                "label":  "영춘이에게 아야에 대해 묻기",
+                "startdescription":  "영춘이에게 아야에 대해 물어보기로 했다.",
+                "description":  "\"아야는 정령의 산 정상에 사는 마녀야. 만년설의 현자라고 불리던데, 교주 용케 만났네!\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.chloe_":  1
+                },
+                "label":  "영춘이에게 클로에에 대해 묻기",
+                "startdescription":  "영춘이에게 클로에에 대해 물어보기로 했다.",
+                "description":  "\"클로에는 요정 왕국에서 재단소를 하는 재단사 요정이야. 항상 머리에 인형을 매고 다니는데 분명 혼자 걸어다니는걸 봤어!\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.ui_":  1
+                },
+                "label":  "영춘이에게 우이에 대해 묻기",
+                "startdescription":  "영춘이에게 우이에 대해 물어보기로 했다.",
+                "description":  "\"이상해. 이슬비의 정령은 처음 보는 정령이야. 언제 이런 정령이 엘리아스에 나타난거지?\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.ed_":  1
+                },
+                "label":  "영춘이에게 이드에 대해 묻기",
+                "startdescription":  "영춘이에게 이드에 대해 물어보기로 했다.",
+                "description":  "\"교단의 지하실에서 이런게 있었다고? 좀 조사를 해봐야겠어...\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.xion_":  1
+                },
+                "label":  "영춘이에게 시온에 대해 묻기",
+                "startdescription":  "영춘이에게 시온에 대해 물어보기로 했다.",
+                "description":  "\"시온은 모나티엄 25에서 일하는 편의점 알바지? 가끔 중2병 옷을 입을때랑 완전 딴판이라니깐\" ",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.follower":  1
+                },
+                "label":  "영춘이에게 신도에 대해 묻기",
+                "startdescription":  "영춘이에게 신도에 대해 물어보기로 했다.",
+                "description":  "\"신도를 많이 모아야 교단을 이끌 수 있을꺼야. 우리 교단의 힘을 보여주면 신도의 힘을 더 높일 수 있을꺼야.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "location":  1
+                },
+                "label":  "영춘이에게 장소에 대해 묻기",
+                "startdescription":  "영춘이에게 장소에 대해 물어보기로 했다.",
+                "description":  "\"엘리아스에는 다양한 장소들이 있어. 여러 장소를 탐험하면서 새로운 사실을 알아가보는건 어때?\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.food":  1
+                },
+                "label":  "영춘이에게 음식에 대해 묻기",
+                "startdescription":  "영춘이에게 음식에 대해 물어보기로 했다.",
+                "description":  "\"음식은 신도의 힘을 키워주거나 선물할때 쓰이고 여러 위기상황의 해결책으로도 쓸 수 있어. 교단 본부에서 요리할때 각종 성격을 높이면 더 맛있는 요리를 할 수 있을꺼야!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.spell":  1
+                },
+                "label":  "영춘이에게 스펠카드에 대해 묻기",
+                "startdescription":  "영춘이에게 스펠카드에 대해 물어보기로 했다.",
+                "description":  "\"스펠카드는 신도에 힘을 부여하거나 각종 위기상황을 해결할때 쓰이는 마법이야. 사용하면 2분간 쿨타임이 생겨. 공부 토큰에 2개의 종류를 모아서 업그레이드하거나 하위 스펠카드로 쪼갤수도 있어.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.koko":  1
+                },
+                "label":  "영춘이에게 코코에 대해 묻기",
+                "startdescription":  "영춘이에게 코코에 대해 물어보기로 했다.",
+                "description":  "\"깨어날 때부터 있었던 도구 맞지? 잘 간직하는게 좋을거야! 위험한 물건이니 사도들에게 뺏기지 않게 조심하고!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.collectable":  1
+                },
+                "label":  "영춘이에게 수집품에 대해 묻기",
+                "startdescription":  "영춘이에게 수집품에 대해 물어보기로 했다.",
+                "description":  "\"수집품은 다양한 상황에서 쓰이는 도구야. 신도에게 대화를 통해 선물해서 신도의 힘을 키울 수 있어. 한번 건네준 수집품은 돌려 받을 수 없으니 조심해!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.goods":  1
+                },
+                "label":  "영춘이에게 재화에 대해 묻기",
+                "startdescription":  "영춘이에게 재화에 대해 물어보기로 했다.",
+                "description":  "\"이건 어딘가에 쓰이는 재화일꺼야. 내가 처음 보는 거라 정확한 용도를 모르겠네.\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.ingredient":  1
+                },
+                "label":  "영춘이에게 재료에 대해 묻기",
+                "startdescription":  "영춘이에게 재료에 대해 물어보기로 했다.",
+                "description":  "\"이 재료들은 교단 본부에서 요리를 할때 쓰이는 재료야. 사도와 대화할때 교단 카드를 올리면 가능한 모험회를 통해서 모을 수 있어. 사도의 성격에 따라 모을 수 있는 재료가 달라지니 참고해!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                    "trickal.bloomy":  1,
+                    "trickal.riddle":  1
+                },
+                "label":  "영춘이에게 수수께끼에 대해 묻기",
+                "startdescription":  "영춘이에게 수수께끼에 대해 물어보기로 했다.",
+                "description":  "\"이 수수께끼는... 미안해 나도 잘 모르겠어. 교주도 나에게 묻지만 말고 스스로 생각해보라고!\"",
+                "chance":  100
+            },
+            {
+                "requirements":  {
+                     "trickal.bloomy":  1,
+                     "text":  1
+                 },
+                "label":  "영춘이에게 책에 대해 묻기",
+                "startdescription":  "영춘이에게 책에 대해 물어보기로 했다.",
+                "description":  "\"책은 공부 토큰에서 읽어서 여러 마법적 지식을 얻을 수 있을거야. 소문에 의하면 몇몇 책들은 그 안에 숨겨진 존재들을 해방하기도 한다고 해 교주!\"",
+                "chance":  100
+            }
+        ],
+        "startdescription":  "\"뭐든 궁금한게 있으면 나에게 물어봐!\"",
+        "description":  "\"아무것도 안 물어보는 거야? 그럼 나중에 또 생각나면 다시 물어봐!\"",
+        "warmup":  3,
+        "craftable":  true,
+        "$priority":  50
+    }
+    ]
+}

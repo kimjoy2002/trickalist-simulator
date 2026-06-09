@@ -79,6 +79,14 @@
                 "trickal.starcandy": 1,
                 "trickal.elif": 5
             },
+            "mutations": [
+                {
+                    "filter": "trickal.bloomy",
+                    "mutate": "trickal.bloomy.talked",
+                    "level": 1,
+                    "additive": true
+                }
+            ],
             "inductions": [{
                     "id": "trickal.drawseason"
                 },{

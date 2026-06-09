@@ -272,7 +272,7 @@
                     "id": "Puzzle",
                     "label": "내가 해결한적이 있던가?",
                     "required": {
-                        "trickal.puzzle": 1
+                        "trickal.riddle": 1
                     },
                     "greedy": true
                 }
