@@ -114,12 +114,17 @@
         },
         {
             "id": "trickal.goldencrayon",
-            "label": "골든 크레파스",
+            "label": "황금 크레파스",
             "description": "땀과 노력의 결실. 절대로 충족될 수 없는 끝없는 욕망을 상징한다.",
             "aspects": {
                 "trickal.goods": 1
             },
             "icon": "trickal.goldencrayon"
+        },
+        {
+            "id": "trickal.ascensionplate",
+            "label": "승천의 의식",
+            "description": "승천을 위한 의식."
         },
         {
             "id": "trickal.suspicion",
@@ -974,6 +979,45 @@
             "aspects": {
                 "text": 1,
                 "trickal.prophecy": 4
+            },
+            "xtriggers": {
+                "ascend": "trickal.book5"
+            },
+            "icon": "trickal.book"
+        },
+        {
+            "id": "trickal.book5",
+            "label": "수양록",
+            "description": "세계수 교단의 예언서. 작성되어야할 일기. [수양록의 페이지를 채우는 것으로 결말에 다다를 수 있습니다.]",
+            "aspects": {
+                "text": 1,
+                "trickal.prophecy": 5
+            },
+            "xtriggers": {
+                "ascend": "trickal.book6"
+            },
+            "icon": "trickal.book"
+        },
+        {
+            "id": "trickal.book6",
+            "label": "수양록",
+            "description": "세계수 교단의 예언서. 작성되어야할 일기. [수양록의 페이지를 채우는 것으로 결말에 다다를 수 있습니다.]",
+            "aspects": {
+                "text": 1,
+                "trickal.prophecy": 6
+            },
+            "xtriggers": {
+                "ascend": "trickal.book7"
+            },
+            "icon": "trickal.book"
+        },
+        {
+            "id": "trickal.book7",
+            "label": "수양록",
+            "description": "세계수 교단의 예언서. 작성되어야할 일기. [수양록의 페이지를 채우는 것으로 결말에 다다를 수 있습니다.]",
+            "aspects": {
+                "text": 1,
+                "trickal.prophecy": 7
             },
             "icon": "trickal.book"
         },

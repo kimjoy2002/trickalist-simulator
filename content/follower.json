@@ -3118,7 +3118,7 @@
             "aspects": {
                 "trickal.vivi_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.dragon": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3136,7 +3136,7 @@
             "aspects": {
                 "trickal.vivi_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.dragon": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3156,7 +3156,7 @@
             "aspects": {
                 "trickal.vivi_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.dragon": 1,
                 "trickal.follower": 1,
                 "trickal.troublemaker": 1,
@@ -3175,7 +3175,7 @@
             "aspects": {
                 "trickal.vivi_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.dragon": 1,
                 "acquaintance": 1,
                 "trickal.troublemaker": 1,
@@ -3200,7 +3200,7 @@
             "aspects": {
                 "trickal.epica_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.beast": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3217,7 +3217,7 @@
             "aspects": {
                 "trickal.epica_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.beast": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3236,7 +3236,7 @@
             "aspects": {
                 "trickal.epica_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.beast": 1,
                 "trickal.follower": 1,
                 "trickal.active": 2,
@@ -3254,7 +3254,7 @@
             "aspects": {
                 "trickal.epica_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.beast": 1,
                 "acquaintance": 1,
                 "trickal.active": 1,
@@ -3278,7 +3278,7 @@
             "aspects": {
                 "trickal.aya_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.witch": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3295,7 +3295,7 @@
             "aspects": {
                 "trickal.aya_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.witch": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3314,7 +3314,7 @@
             "aspects": {
                 "trickal.aya_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.witch": 1,
                 "trickal.follower": 1,
                 "trickal.cool": 2,
@@ -3332,7 +3332,7 @@
             "aspects": {
                 "trickal.aya_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.witch": 1,
                 "acquaintance": 1,
                 "trickal.cool": 1,
@@ -3357,7 +3357,7 @@
             "aspects": {
                 "trickal.chloe_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.fairy": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3374,7 +3374,7 @@
             "aspects": {
                 "trickal.chloe_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.fairy": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3393,7 +3393,7 @@
             "aspects": {
                 "trickal.chloe_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.fairy": 1,
                 "trickal.follower": 1,
                 "trickal.madness": 2,
@@ -3411,7 +3411,7 @@
             "aspects": {
                 "trickal.chloe_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.fairy": 1,
                 "acquaintance": 1,
                 "trickal.madness": 1,
@@ -3436,7 +3436,7 @@
             "aspects": {
                 "trickal.ui_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.element": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3453,7 +3453,7 @@
             "aspects": {
                 "trickal.ui_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.element": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3472,7 +3472,7 @@
             "aspects": {
                 "trickal.ui_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.element": 1,
                 "trickal.follower": 1,
                 "trickal.active": 2,
@@ -3490,7 +3490,7 @@
             "aspects": {
                 "trickal.ui_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.element": 1,
                 "acquaintance": 1,
                 "trickal.active": 1,
@@ -3515,7 +3515,7 @@
             "aspects": {
                 "trickal.ed_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.elf": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3532,7 +3532,7 @@
             "aspects": {
                 "trickal.ed_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.elf": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3551,7 +3551,7 @@
             "aspects": {
                 "trickal.ed_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.elf": 1,
                 "trickal.follower": 1,
                 "trickal.cool": 2,
@@ -3569,7 +3569,7 @@
             "aspects": {
                 "trickal.ed_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.elf": 1,
                 "acquaintance": 1,
                 "trickal.cool": 1,
@@ -3594,7 +3594,7 @@
             "aspects": {
                 "trickal.xion_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.ghost": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3611,7 +3611,7 @@
             "aspects": {
                 "trickal.xion_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.ghost": 1,
                 "trickal.follower": 1,
                 "trickal.apostle": 1,
@@ -3630,7 +3630,7 @@
             "aspects": {
                 "trickal.xion_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.ghost": 1,
                 "trickal.follower": 1,
                 "trickal.depression": 2,
@@ -3648,7 +3648,7 @@
             "aspects": {
                 "trickal.xion_": 1,
                 "trickal.creature": 1,
-                "trickal.eldain": 1,
+                "trickal.eternal": 1,
                 "trickal.ghost": 1,
                 "acquaintance": 1,
                 "trickal.depression": 1,

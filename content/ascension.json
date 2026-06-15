@@ -39,7 +39,7 @@
 						"hq": 1
 					},
 					"label": "여긴 부적합하다!",
-					"startdescription": "교단 본부에서 나간 적이 없다면 교주로서 창피한 일일 것이다. 좀 더 다른 곳을 적어보자.",
+				"startdescription": "교단 본부에서 나간 적이 없다면 교주로서 창피한 일일 것이다. 좀 더 다른 곳을 적어보자."
                 },
                 {
 					"requirements": {
@@ -81,21 +81,21 @@
 						"trickal.erpin_": 1
 					},
 					"label": "이건 부적합하다!",
-					"startdescription": "교단에서 처음 만난 두명에 대해서는 굳이 쓸 필요가 없을 것이다. 다른 사람을 찾자.",
+                    "startdescription": "교단에서 처음 만난 두명에 대해서는 굳이 쓸 필요가 없을 것이다. 다른 사람을 찾자."
                 },
                 {
 					"requirements": {
 						"trickal.ner_": 1
 					},
 					"label": "이건 부적합하다!",
-					"startdescription": "교단에서 처음 만난 두명에 대해서는 굳이 쓸 필요가 없을 것이다. 다른 사람을 찾자.",
+                    "startdescription": "교단에서 처음 만난 두명에 대해서는 굳이 쓸 필요가 없을 것이다. 다른 사람을 찾자."
                 },
                 {
 					"requirements": {
 						"trickal.bloomy": 1
 					},
 					"label": "이건 부적합하다!",
-					"startdescription": "이 조그만 친구에 대해서는 비밀로 하자. 다른 사람을 찾자.",
+                    "startdescription": "이 조그만 친구에 대해서는 비밀로 하자. 다른 사람을 찾자."
                 },
                 {
 					"requirements": {
@@ -157,7 +157,7 @@
 						"trickal.koko": -1
 					},
 					"label": "이건 부적합하다!",
-					"startdescription": "내가 이 세계에서 처음 본 물건은 이것이 아니다. 분명 어딘가 떨어져있을텐데...",
+                    "startdescription": "내가 이 세계에서 처음 본 물건은 이것이 아니다. 분명 어딘가 떨어져있을텐데..."
                 },
                 {
 					"requirements": {
@@ -550,6 +550,263 @@
             "startdescription": "엘리아스에서 보았던 가장 신비스러운 힘을 적어보자...",
             "description": "분명히 작은 요정들은 자유자재로 쓰던 것 같던데...  [많은 마법들은 책을 통해 익힐 수 있습니다.]",
             "warmup": 30
+        },
+        {
+            "id": "trickal.booktoasc4",
+            "actionid": "trickal.study",
+            "craftable": true,
+            "description": "수양록의 네 번째 장을 쓰기 위한 준비를 한다.",
+            "label": "수양록의 네 번째 장을 쓴다.",
+            "requirements": {
+                "trickal.book4": 1
+            },
+            "startdescription": "수양록의 교주로서의 업적을 적어야 한다. 이제 네 번째 장을 채워나갈 준비를 한다.",
+            "linked": [
+                {
+                    "id": "trickal.booktoasc4.niceticket",
+                    "chance": 100
+                }
+            ],
+            "warmup": 3
+        },
+        {
+            "id": "trickal.booktoasc4.niceticket",
+            "actionid": "trickal.study",
+            "craftable": false,
+            "description": "아무리 고생했더라도 증명할 수 없다면 교단을 위해 노력했다고 말할 수 있을 것인가?",
+            "label": "수양록을 쓰다: 교단을 위해 노력한 증거",
+            "slots": [
+                {
+                    "id": "People",
+                    "label": "증거",
+                    "required": {
+						"trickal.niceticket": 1
+                    },
+                    "description": "내가 엘리아스를 위해 노력한 증거."
+                }
+            ],
+            "craftable": false,
+            "startdescription": "나는 엘리아스의 여러 문제들을 해결해왔다. 그것을 증명할 무언가를 적는다",
+            "alt": [
+                {
+					"requirements": {
+						"trickal.niceticket": 1
+					},
+					"label": "수양록을 쓰다: 교단을 위해 노력한 증거",
+					"startdescription": "'엘리아스에는 다양한 문제와 사건이 일어난다. 이것은 한때의 추억이다.'",
+					"linked": [
+						{
+							"id": "trickal.booktoasc4.people",
+							"chance": 100
+						}
+					]
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.booktoasc4.people",
+            "label": "수양록을 쓰다: 영원살이 사도",
+            "actionid": "trickal.study",
+            "slots": [
+                {
+                    "id": "People",
+                    "label": "영원살이",
+                    "required": {
+                        "trickal.eternal": 1
+                    },
+                    "description": "한 명의 영원살이 사도."
+                }
+            ],
+            "craftable": false,
+            "alt": [
+                
+                {
+					"requirements": {
+						"acquaintance": 1
+					},
+					"label": "좀 더 친해져야한다.",
+                    "startdescription": "이 아이는 아직 교단과 깊은 관계를 맺지 못했다. 그들을 올바른 길로 이끌어야한다."
+                },
+                {
+                    "requirements": {
+                        "trickal.eternal": 1
+                    },
+                    "aspects": {
+                        "ascend": 1
+                    },
+                    "label": "수양록을 쓰다: 영원살이 사도",
+                    "startdescription": "'이 사도는 평범한 사도들과는 특별한 능력을 지녔다. 영춘이는 이 아이들을 보고 이상한 기분을 느꼈다고 말했다.'",
+                    "description": "나는 내용을 정리하고 수양록을 덮는다. 다음에는 교단을 한계까지 성장시킨 후, 뒷 장을 적도록 하자."
+                }
+            ],
+            "startdescription": "최근 특별한 사도를 만난 적이 있다. 그 아이의 이름이 뭐더라...",
+            "description": "아직 그들을 만난 적이 없을지도 모른다. 조금 더 특별한 만남이 필요하다.",
+            "warmup": 30
+        },
+        {
+            "id": "trickal.booktoasc5",
+            "actionid": "trickal.study",
+            "craftable": true,
+            "description": "수양록의 다섯 번째 장을 쓰기 위한 준비를 한다.",
+            "label": "수양록의 다섯 번째 장을 쓴다.",
+            "requirements": {
+                "trickal.book5": 1
+            },
+            "startdescription": "교단의 길이 더욱 직조되는 가운데, 다섯 번째 장을 채우기 위한 준비를 한다.",
+            "linked": [
+                {
+                    "id": "trickal.booktoasc5.goldencrayon",
+                    "chance": 100
+                }
+            ],
+            "warmup": 3
+        },
+        {
+            "id": "trickal.booktoasc5.goldencrayon",
+            "actionid": "trickal.study",
+            "craftable": false,
+            "description": "나는 이 것을 찾아야한다. 무엇과 바꾸더라도",
+            "label": "수양록을 쓰다: 황금 크레파스",
+            "slots": [
+                {
+                    "id": "Crayon",
+                    "label": "황금 크레파스",
+                    "required": {
+						"trickal.goldencrayon": 1
+                    },
+                    "description": "내가 찾아야 할 것."
+                }
+            ],
+            "startdescription": "이 것은 교단에서 가장 희소성이 있는 보물이다.",
+            "alt": [
+                {
+					"requirements": {
+						"trickal.goldencrayon": 1
+					},
+					"label": "수양록을 쓰다: 황금 크레파스",
+					"startdescription": "'이 것은 그 무엇보다도 빛나고 아름답다. 나는 이것을 위해 교단을 성립한걸지도 모른다.'",
+					"linked": [
+						{
+							"id": "trickal.booktoasc5.people",
+							"chance": 100
+						}
+					]
+                }
+            ],
+            "warmup": 30
+        },
+        {
+            "id": "trickal.booktoasc5.people",
+            "label": "수양록을 쓰다: 관심사도",
+            "actionid": "trickal.study",
+            "slots": [
+                {
+                    "id": "People",
+                    "label": "관심사도",
+                    "required": {
+                        "trickal.exalted": 1
+                    },
+                    "description": "한 명의 관심사도."
+                }
+            ],
+            "craftable": false,
+            "alt": [
+                {
+                    "requirements": {
+                        "trickal.exalted": 1
+                    },
+                    "aspects": {
+                        "ascend": 1
+                    },
+                    "label": "수양록을 쓰다: 관심사도",
+                    "startdescription": "'이제 교단을 위해서 어떤 것도 희생할 수 있는 사도들이 있다. 이제 교단은 궁극적인 목표를 달성할 수 있을 것이다.'",
+                    "description": "때가 되었다."
+                }
+            ],
+            "startdescription": "교단이 삶이자 목적이 된 자들. 그들의 존재는 교단의 힘을 의미한다.",
+            "description": "만약 교단의 모든 힘을 사도에게 부여한다면...",
+            "warmup": 30
+        },
+        {
+            "id": "trickal.booktoasc6",
+            "actionid": "trickal.study",
+            "craftable": true,
+            "description": "수양록의 마지막 장을 쓸 준비를 한다.",
+            "label": "수양록의 여섯 번째 장을 쓴다.",
+            "requirements": {
+                "trickal.book6": 1
+            },
+            "linked": [
+                {
+                    "id": "trickal.booktoasc6.start",
+                    "chance": 100
+                },
+                {
+                    "id": "trickal.booktoasc6.complete",
+                    "chance": 100
+                }
+            ],
+            "startdescription": "수양록의 여섯 번째 장을 쓰며, 승천의 원판을 완성한다.",
+            "warmup": 3
+        },
+        {
+            "id": "trickal.booktoasc6.start",
+            "label": "수양록을 쓰다: 승천의 원판",
+            "actionid": "trickal.study",
+            "maxexecutions": 1,
+            "effects": {
+                "trickal.ascensionplate": 1
+            },
+            "craftable": false,
+            "startdescription": ".",
+            "description": "수양록의 마지막 장을 쓰기 위해선 의식이 필요하다."
+        },
+        {
+            "id": "trickal.booktoasc6.complete",
+            "label": "수양록을 쓰다: 의식의 준비",
+            "actionid": "trickal.study",
+            "craftable": false,
+            "slots": [
+                {
+                    "id": "Plate",
+                    "label": "의식",
+                    "required": {
+                        "trickal.ascensionplate": 1
+                    },
+                    "description": "완성된 의식."
+                }
+            ],
+            "alt": [
+                {
+                    "requirements": {
+                        "trickal.ascensionplate": 1
+                    },
+                    "aspects": {
+                        "ascend": 1
+                    },
+                    "label": "수양록을 쓰다: 의식의 준비",
+                    "startdescription": "'때가 왔다. 우리는 궁극적인 목표를 달성할 것이다.'",
+                    "description": "모든 것은 적혀졌다. 준비는 되었다."
+                }
+            ],
+            "startdescription": "나는 준비된 의식을 책의 마지막 장에 새겨야 한다.",
+            "description": "아직 준비가 되지않았다. [의식을 공부 토큰에 넣고 완성하세요.]",
+            "warmup": 30
+        },
+        {
+            "id": "trickal.booktoasc7",
+            "actionid": "trickal.study",
+            "craftable": true,
+            "label": "수양록을 바친다.",
+            "requirements": {
+                "trickal.book7": 1
+            },
+            "ending": "trickal.ending.ascension",
+            "signalEndingFlavour": "Grand",
+            "startdescription": "최후의 작별인사다. 저들은 남아있을 것이요, 나는 승천하리라. [이 선택은 게임을 성공적으로 끝낼 것입니다.]",
+            "description": ".",
+            "warmup": 60
         }
     ]
 }

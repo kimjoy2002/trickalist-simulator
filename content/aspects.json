@@ -138,7 +138,7 @@
         },
 		{
             "id": "trickal.exalted",
-            "label": "성자",
+            "label": "관심 사도",
 			"description": "이 자는 더 이상 강해질 수 없는 경지에 다다랐다... 최소한 내 통제 하에 있는 동안에는 더 강해질 수 없을 것이다.",
             "isAspect": true,
             "icon": "exalted"

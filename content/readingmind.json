@@ -29,6 +29,7 @@
                 "trickal.tool.shiningtiara": 1,
                 "trickal.tool.roneguntlet": 1,
                 "trickal.ner4": 1,
+                "trickal.ui4": 1,
                 "trickal.elif":2
             },
             "startdescription": "영춘이에게 도움(치트)을 받자.",
@@ -51,6 +52,21 @@
 			],
             "startdescription": "네르에게 도움(디버깅)을 받자.",
             "warmup": 10
+        },
+        {
+            "id": "trickal.mindreading.ascension",
+            "actionid": "trickal.mindreading",
+            "craftable": true,
+            "description": "수양록 네 번째 장과 승천의 원판을 마음 읽기 의식에 올려 세계수의 본질을 끌어낸다.",
+            "label": "원판 위에 책을 올려 승천을 부른다.",
+            "requirements": {
+                "trickal.prophecy": 7,
+                "trickal.goldencrayon": 1,
+                "trickal.niceticket": 1
+            },
+            "ending": "trickal.ending.ascension",
+            "startdescription": "책과 원판을 준비하고, 세계수의 속마음을 읽어 승천 의식을 완성한다.",
+            "warmup": 30
         }
     ]
 }
